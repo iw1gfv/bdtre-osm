@@ -13,6 +13,10 @@ shpuniti="shp-uniti"
 #directory che conterrà i files osm
 uscitaosm="uscita-osm"
 
+#directory che conterrà i files map
+uscitamap="uscita-map"
+
+
 #shp da usare:
 #esempio 001066_el_idr_2015.shp diventa el_idr perde i _ prima e dopo, i valori vanno messi fra " e separati da uno spazio
 sdu="tralic invaso el_vms edi_min alveo_a alveo albero ac_cic ab_cda edifc ac_vei ar_vms el_idr"
