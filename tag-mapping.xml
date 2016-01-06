@@ -514,12 +514,14 @@
 		<osm-tag key="TRAL_TY" value="traliccio" zoom-appear="8" />
 		<osm-tag key="TRAL_TY" value="antenna,ripetitore" zoom-appear="8" />
 		
+			</ways>
+		<pois>
 		<!--alberi-->
 		<osm-tag key="ALBERO_TY" value="altro" zoom-appear="16" />
 		<osm-tag key="ALBERO_TY" value="monumentale" zoom-appear="16" />
+		</pois>
 		
 		
-			</ways>
 	
 	
 	
