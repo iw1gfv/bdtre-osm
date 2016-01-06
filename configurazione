@@ -1,21 +1,20 @@
-#sorgenti bdtre zippati
-sbdtrez=aaaaa
+#sorgenti bdtre zippati, directory che contiene i file zippati del BDTRE scaricati
+sbdtrez=BDTRE
 
-#sorgentibdtre  non zippati
+#sorgentibdtre, directory che contiene i file non zippati
 sbdtre="sorgenti-bdtre"
 
 #shp usati, directory che conterrà i files shp utili alla creazione della mappa
 shpusati="shp-usati"
 
-#directory che conterrà il file unito dai files shp usati
+#shp uniti, directory che conterrà il file unito dai files shp usati
 shpuniti="shp-uniti"
 
-#directory che conterrà i files osm
+#uscita osm, directory che conterrà i files osm
 uscitaosm="uscita-osm"
 
-#directory che conterrà i files map
+#uscita map, directory che conterrà i files map
 uscitamap="uscita-map"
-
 
 #shp da usare:
 #esempio 001066_el_idr_2015.shp diventa el_idr perde i _ prima e dopo, i valori vanno messi fra " e separati da uno spazio
@@ -24,5 +23,5 @@ sdu="tralic invaso el_vms edi_min alveo_a alveo albero ac_cic ab_cda edifc ac_ve
 # indirizzo per scaricare il file del piemonte
 urlpiemonte="http://geodati.fmach.it/gfoss_geodata/osm/output_osm_regioni/piemonte.osm.bz2"
 
-#file piemonte.osm
+#file piemonte.osm, directory dove si trova il file scaricato
 filepiemonteosm=piemonte.osm/piemonte.osm

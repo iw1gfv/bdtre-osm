@@ -1,0 +1,84 @@
+Introduzione alla mappa BDTRE-OSM del Piemonte
+==============================================
+
+1. Panoramica
+-----------
+
+La mappa BDTRE-OSM del Piemonte è una mappa sinottica che utilizza i dati del BDTRE
+della Regione Piemonte e OSM. È una mappa specialistica: La base topografica,
+che è derivato dal BDTRE aggiornato al 2015. Da una prima analisi dei dati, alcune caratteristiche
+sono mancanti e/o non pienamente utilizzabili ed allora si utilizzano in parte i dati OSM, che sono recenti ma anche incompleti.
+La sinossi di tempi mostra le stesse caratteristiche provenienti da entrambi i set di dati: una strada può apparire come una
+fascia gialla (un poligono, presa dal BDTRE) con una strada simboleggiato su di esso
+(tratto da OSM). Ciò può essere fonte di confusione, soprattutto se le caratteristiche non lo fanno
+sovrapporsi correttamente.
+
+Inoltre, il BDTRE contiene le caratteristiche che sono scomparsi o non sono mai stati
+precisamente noti: i dati sono ricavati da ortofoto di varia data ed altre interpretazioni,
+voli ecc..... in alcuni casi sono quindi passibili di errori non ancora del tutto risolti.
+Non fare affidamento su caratteristiche della carta avente una rappresentazione diversa nella realtà!
+Ci si potrebbe perdere o finire in postipericolosi e non si può essere in grado di arrivare a destinazione.
+Non vi è nessuna garanzia e nessuna richiesta di correttezza.
+
+La mappa è anche una mappa specialistica perché è molto dettagliata e ha caratteristiche
+che non importa a un uso più informale: per esempio, i contorni sono molto densi
+a 10m di distanza, e sono stati inclusi tutti i punti quotati. Il grande dettaglio è buono
+per gli escursionisti, che sono il pubblico principale per la mappa, ma dovrebbe anche essere utile
+per cartografi fuori nel campo.
+
+
+2. Installazione e utilizzo
+---------------------------
+
+La mappa è pensata per dispositivi mobili con sistema operativo Android e dispositivi Gps Garmin serie Gpsmap 64ST
+(per il quale èstato sviluppato inizialmente). I test hanno dimostrato che verrà visualizzato su una varietà di altri dispositivi.
+
+La mappa in versione Garmin (il file gmapsupp.img) deve essere messo in una cartella denominata 'garmin'
+sulla scheda micro SD. Quando il dispositivo GPS viene acceso, dovrebbe venire visualizzata sullo schermo
+la schermata con le informazioni sulla licenza. La mappa è abbastanza grande e ci vorrà un momento prima di essere caricata.
+Un sacco di dettagli è visibile solo ad un alto livello di ingrandimento, quindi se mancano dettagli,
+assicuratevi di avere uno zoom abbastanza lontano.
+
+
+3. Dettagli tecnici
+--------------------
+
+La Regione Piemonte mette a disposizione i dati del BDTRE (Base Dati Territoriale di Riferimento degli Enti)
+per il riuso su base comunale nominati secondo il proprio codice ISTAT, sia come WMS sia come dato cartografico.
+
+I dati originali possono essere scaricati da questa pagina:
+
+http:/www.geoportale2.piemonte.it/geocatalogorp/?sezione=catalogo    (cercare per "geotopografico" .....)
+
+
+L'interfaccia non è molto adatto per l'acquisizione di tutti gli oltre 1200 comuni, ma se hai bisogno
+i dati originali, questa è la fonte ufficiale. Per aiutare con il processo, una lista
+di tutti i numeri dei comuni al fondo.
+
+
+4. Costruzione della mappa, uso degli scripts
+---------------------------------------------
+
+Prima di iniziare a fare girare i vari script è bene sistemare i vari percorsi e le destinazioni delle cartelle nel medesimo file in modo che gli script vadano a richiamare le medesime destinazioni senza doverle richiamare ogni volta.
+
+Le variabili da settare sono le seguenti:
+
+-- #sorgenti bdtre zippati = Cartella in cui sono presenti i file zippati inerenti i singoli comuni 
+
+La cartella è da creare nella posizione in cui viene specificata.
+
+-- #sorgentibdtre non zippati = directory in cui verranno messi i file scompattati 
+
+-- #shp usati = directory che conterrà i files shp utili alla creazione della mappa
+
+-- #shp uniti = directory che conterrà il file unito dai files shp usati = viene generato un maxi file shp contenente tutti i dati da convertire
+
+-- #uscita osm = directory che conterrà i files osm
+
+-- #uscita map = directory che conterrà i files map
+
+-- #shp da usare: = specificare quali file shp (per ogni comune sono presenti piu file con diversi elementi territoriali differenti) si intende convertire, a seconda di quello che si vuole convertire o meno bisogna aggiungere o togliere file
+
+-- # indirizzo per scaricare il file del piemonte = viene specificato l'indirizzo da cui scaricare i dati di openstreetmap che andranno ad integrarsi con i dati derivanti del BDTRE, in questo caso non bisogna modificare a meno che non cambi l'indirizzo
+
+-- #file piemonte.osm = directory dove si trova il file scaricato
