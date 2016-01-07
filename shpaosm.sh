@@ -22,37 +22,6 @@ do
 done
 
 
-
-
-
-
-#unconverte i files shp on osm
-# cd ../$shpusati
-#
-#
-# for i in $(ls *.shp)
-# 	 do
-# 	
-# 	 #prende il nome del tipo di shp, togliendo dal primo all'ultimo _ 
-# 	 tmp=${i#*_}
-# 	 tipodishp=`echo "${tmp%\_*}"`
-#          echo $tipodishp
-#
-#
-# 	#unisce i file shp
-#       if [ -f "../$shpuniti/$tipodishp.shp" ]
-#       then
-#            echo "creating shp"
-#            ogr2ogr -f 'ESRI Shapefile' -update -append ../$shpuniti/$tipodishp.shp $i 
-# 	 
-#       else
-#            echo "merging……"
-#       ogr2ogr -f 'ESRI Shapefile' "../$shpuniti/$tipodishp.shp" $i
-# fi
-# done
-
-
-
 ###################################### converte in OSM
 
 cd ../$shpusati
