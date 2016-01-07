@@ -22,3 +22,6 @@ urlpiemonte="http://geodati.fmach.it/gfoss_geodata/osm/output_osm_regioni/piemon
 
 #file piemonte.osm, directory dove si trova il file scaricato
 filepiemonteosm=piemonte.osm/piemonte.osm
+
+#Percorso completo del file ogr2osm.py
+ogr2osm="~/ogr2osm/ogr2osm.py
