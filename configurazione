@@ -7,9 +7,6 @@ sbdtre="sorgenti-bdtre"
 #shp usati, directory che conterrà i files shp utili alla creazione della mappa
 shpusati="shp-usati"
 
-#shp uniti, directory che conterrà il file unito dai files shp usati
-shpuniti="shp-uniti"
-
 #uscita osm, directory che conterrà i files osm
 uscitaosm="uscita-osm"
 

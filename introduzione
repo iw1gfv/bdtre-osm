@@ -71,8 +71,6 @@ La cartella è da creare nella posizione in cui viene specificata.
 
 -- #shp usati = directory che conterrà i files shp utili alla creazione della mappa
 
--- #shp uniti = directory che conterrà il file unito dai files shp usati = viene generato un maxi file shp contenente tutti i dati da convertire
-
 -- #uscita osm = directory che conterrà i files osm
 
 -- #uscita map = directory che conterrà i files map
@@ -81,4 +79,4 @@ La cartella è da creare nella posizione in cui viene specificata.
 
 -- # indirizzo per scaricare il file del piemonte = viene specificato l'indirizzo da cui scaricare i dati di openstreetmap che andranno ad integrarsi con i dati derivanti del BDTRE, in questo caso non bisogna modificare a meno che non cambi l'indirizzo
 
--- #file piemonte.osm = directory dove si trova il file scaricato
+-- #file piemonte.osm = directorye nome del file del file scaricato da gfoss, che contiene i dati di osm da unire alla bdtre.
