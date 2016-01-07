@@ -5,55 +5,83 @@ Introduzione alla mappa BDTRE-OSM del Piemonte
 -----------
 
 La mappa BDTRE-OSM del Piemonte è una mappa sinottica che utilizza i dati del BDTRE
-della Regione Piemonte e OSM. È una mappa specialistica: La base topografica,
-che è derivato dal BDTRE aggiornato al 2015. Da una prima analisi dei dati, alcune caratteristiche
-sono mancanti e/o non pienamente utilizzabili ed allora si utilizzano in parte i dati OSM, che sono recenti ma anche incompleti.
+della Regione Piemonte e OSM.
+È una mappa specialistica:
+La base topografica, che è derivato dal BDTRE aggiornato al 2015.
+Da una prima analisi dei dati, alcune caratteristiche sono mancanti e/o non pienamente utilizzabili ed allora si implementano
+in parte i dati OSM, che sono recenti ma anche incompleti.
 La sinossi di tempi mostra le stesse caratteristiche provenienti da entrambi i set di dati: una strada può apparire come una
-fascia gialla (un poligono, presa dal BDTRE) con una strada simboleggiato su di esso
-(tratto da OSM). Ciò può essere fonte di confusione, soprattutto se le caratteristiche non lo fanno
-sovrapporsi correttamente.
+fascia gialla (un poligono, preso dal BDTRE) con una strada simboleggiato su di esso (tratto da OSM).
+Ciò può essere fonte di confusione, soprattutto se le caratteristiche non vanno a sovrapporsi correttamente.
 
-Inoltre, il BDTRE contiene le caratteristiche che sono scomparsi o non sono mai stati
-precisamente noti: i dati sono ricavati da ortofoto di varia data ed altre interpretazioni,
-voli ecc..... in alcuni casi sono quindi passibili di errori non ancora del tutto risolti.
-Non fare affidamento su caratteristiche della carta avente una rappresentazione diversa nella realtà!
-Ci si potrebbe perdere o finire in postipericolosi e non si può essere in grado di arrivare a destinazione.
+Inoltre, il BDTRE contiene caratteristiche che sono scomparsi o non sono mai state verificate precisamente, i dati sono spesso ricavati da ortofoto di varia data ed altre interpretazioni,voli, ecc..... in alcuni casi sono quindi passibili di errori non ancora del tutto risolti.
+Non fare affidamento sulle caratteristiche della carta avente una rappresentazione diversa nella realtà!
+Ci si potrebbe perdere o finire in posti pericolosi e/0 non si può essere in grado di arrivare a destinazione.
 Non vi è nessuna garanzia e nessuna richiesta di correttezza.
 
 La mappa è anche una mappa specialistica perché è molto dettagliata e ha caratteristiche
 che non importa a un uso più informale: per esempio, i contorni sono molto densi
-a 10m di distanza, e sono stati inclusi tutti i punti quotati. Il grande dettaglio è buono
-per gli escursionisti, che sono il pubblico principale per la mappa, ma dovrebbe anche essere utile
-per cartografi fuori nel campo.
+a 10m di distanza. Il grande dettaglio è buono per gli escursionisti, che sono il pubblico principale per la mappa,
+ma dovrebbe anche essere utile per i cartografi sul campo per rilevi e/o verifiche.
 
 
 2. Installazione e utilizzo
 ---------------------------
 
 La mappa è pensata per dispositivi mobili con sistema operativo Android e dispositivi Gps Garmin serie Gpsmap 64ST
-(per il quale èstato sviluppato inizialmente). I test hanno dimostrato che verrà visualizzato su una varietà di altri dispositivi.
+(per il quale è stato sviluppato inizialmente). I test hanno dimostrato che verrà visualizzato anche su altri dispositivi.
 
 La mappa in versione Garmin (il file gmapsupp.img) deve essere messo in una cartella denominata 'garmin'
-sulla scheda micro SD. Quando il dispositivo GPS viene acceso, dovrebbe venire visualizzata sullo schermo
-la schermata con le informazioni sulla licenza. La mappa è abbastanza grande e ci vorrà un momento prima di essere caricata.
-Un sacco di dettagli è visibile solo ad un alto livello di ingrandimento, quindi se mancano dettagli,
-assicuratevi di avere uno zoom abbastanza lontano.
+sulla scheda micro SD e poi inserita nell'apposito slot all'interno del dispositivo. E' inoltre possibile caricare direttamente 
+il file sulla scheda sd collegando il dispositivo al PC con l'apposito cavo in dotazione al dispositivo. Ovviamente la velocità di trasmissione sarà notevolmente più bassa.
+Quando il dispositivo GPS viene acceso, viene visualizzata sullo schermo la schermata con le informazioni sulla licenza.
+La mappa è abbastanza grande e ci vorrà un momento prima di essere caricata.
+Un sacco di dettagli sono visibili solo ad un alto livello di zoom, quindi se mancano dettagli,
+assicuratevi di avere uno zoom appropriato.
+
+La mappa in versione PC è visualizzabile con il software Basecamp di Garmin sulle piattaforme Windows. Per poterla visualizzare
+è necessario scompattarla (se scaricata da internet) e lanciare il batch install.bat per fare in modo che vengano scritte nel sistema le chiavi di registro e poi aprire il software Basecamp per poterla vedere.
+Se invece è prodotta con questi script prelevare la cartella Basecamp dalla directory result per poi andarla ad installare come descritto prima.
 
 
 3. Dettagli tecnici
---------------------
+-------------------
+
+
+3.1 Prerequisiti
+----------------
+
+Per creare la mappa occorre che nel sistema siano presenti:
+
+-- Python gdal
+
+-- OpenJDK 7 oppure 8
+
+
+3.2 File del BDTRE
+------------------
 
 La Regione Piemonte mette a disposizione i dati del BDTRE (Base Dati Territoriale di Riferimento degli Enti)
-per il riuso su base comunale nominati secondo il proprio codice ISTAT, sia come WMS sia come dato cartografico.
+per il riuso su base comunale, nominati secondo il proprio codice ISTAT, sia come WMS sia come dato cartografico.
 
 I dati originali possono essere scaricati da questa pagina:
 
 http:/www.geoportale2.piemonte.it/geocatalogorp/?sezione=catalogo    (cercare per "geotopografico" .....)
 
 
-L'interfaccia non è molto adatto per l'acquisizione di tutti gli oltre 1200 comuni, ma se hai bisogno
-i dati originali, questa è la fonte ufficiale. Per aiutare con il processo, una lista
-di tutti i numeri dei comuni al fondo.
+L'interfaccia non è molto adatto per l'acquisizione di tutti gli oltre 1200 comuni, ma avendo bisogno dei dati,
+questa è la fonte ufficiale.
+Per aiutare con il processo, una lista di tutti i comuni si trova all'interno della cartella "comuni".
+
+Nella cartella "comuni" trovi un file pdf riepilogativo con tutti i comuni del Piemonte ed i relativi codici ISTAT. Per comodità i comuni
+sono stati divisi in piccoli file per provincia. 
+Per agevolare il dowload, sempre per provincia, sono stati creati dei file da dare in pasto a wget.
+Per il download, occorre creare la directory (verificare il nome da dare alla cartell nel file di configurazione) e copiare i file di dowload nella cartella appena creata.
+Da terminale, portarsi nella cartella e dare il comando wget -i nomeprovincia.txt e così via per tutte le province.
+Wget ci metterà del tempo a scaricare tutti i comuni viste le dimensioni notevoli di alcune province, in totale ci vorranno circa 5/6 ore
+ma molto dipende anche dalla reale velocità di download a disposizione.
+
+Ad esempio, per scaricare i comuni della provincia di Asti, da terminale (nella directory di download) digitare wget -i Asti_D.txt ed inviare, wget andrà avanti fino a che non avrà provveduto a finire e per le altre provincie basta cambiare il nome della provincia.
 
 
 4. Costruzione della mappa, uso degli scripts
