@@ -6,9 +6,8 @@ source "./configurazione"
 
 
 #trova e copia i files che parteciperanno alla creazione della mappa dopo aver eliminato quelli già presenti.
-rm $shpusati/*
-rm $shpuniti/*
-rm $uscitaosm/*
+#rm $shpusati/*
+#rm $uscitaosm/*
 
 
 
@@ -26,8 +25,9 @@ done
 
 cd ../$shpusati
 
-
-id=5000
+#5817956
+#3937111698
+id=3937119999
 
 
 for s in $(ls *.shp)
@@ -37,7 +37,7 @@ for s in $(ls *.shp)
 python /home/michele/ogr2osm/ogr2osm.py --positive-id --id=$id --add-version --add-timestamp --force "$s" -o "../$uscitaosm/$s.osm" 
 
 
-id=`expr $id + 500000`
+id=`expr $id + 20000`
 done
 
 
