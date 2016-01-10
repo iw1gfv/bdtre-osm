@@ -14,6 +14,7 @@ source "./configurazione"
 cd $sbdtre
 
 
+
 for tipo in $sdu
 do 
 
