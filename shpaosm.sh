@@ -38,7 +38,7 @@ for s in $(ls *.shp)
 python /home/michele/ogr2osm/ogr2osm.py --positive-id --id=$id --add-version --add-timestamp --force "$s" -o "../$uscitaosm/$s.osm" 
 
 
-id=`expr $id + 20000`
+id=`expr $id + 200000`
 done
 
 
