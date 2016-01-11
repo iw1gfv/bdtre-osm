@@ -21,7 +21,7 @@ sdu="tralic invaso el_vms edi_min alveo_a alveo albero ac_cic ab_cda edifc ac_ve
 urlpiemonte="http://geodati.fmach.it/gfoss_geodata/osm/output_osm_regioni/piemonte.osm.bz2"
 
 #file piemonte.osm, directory dove si trova il file scaricato
-filepiemonteosm="piemonte.osm/piemonte.osm"
+filepiemonteosm=piemonte.osm/piemonte.osm
 
 #Percorso completo del file ogr2osm.py
-ogr2osm="~/ogr2osm/ogr2osm.py"
+ogr2osm="~/ogr2osm/ogr2osm.py
