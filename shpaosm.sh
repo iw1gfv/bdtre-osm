@@ -6,8 +6,8 @@ source "./configurazione"
 
 
 #trova e copia i files che parteciperanno alla creazione della mappa dopo aver eliminato quelli già presenti.
-#rm $shpusati/*
-#rm $uscitaosm/*
+rm $shpusati/*
+rm $uscitaosm/*
 
 
 
