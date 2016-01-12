@@ -1,5 +1,5 @@
 #sorgenti bdtre zippati, directory che contiene i file zippati del BDTRE scaricati
-sbdtrez=BDTRE
+sbdtrez="BDTRE"
 
 #sorgentibdtre, directory che contiene i file non zippati
 sbdtre="sorgenti-bdtre"
@@ -25,3 +25,13 @@ filepiemonteosm="piemonte.osm/piemonte.osm"
 
 #Percorso completo del file ogr2osm.py
 ogr2osm="~/ogr2osm/ogr2osm.py"
+
+
+#Verifiche
+
+#verifica che sia presente la cacartellla con i file scaricati del BDTRE
+if [[ ! -d $bdtrez ]]
+then
+  echo "Non esiste la cartella con i file scaricati del BDTRE"
+  exit 1
+fi
