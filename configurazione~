@@ -35,5 +35,3 @@ then
   echo "Non esiste la cartella con i file scaricati del BDTRE"
   exit 1
 fi
-
-
