@@ -29,11 +29,3 @@ ogr2osm="~/ogr2osm/ogr2osm.py"
 
 #Verifiche
 
-#verifica che sia presente la cacartellla con i file scaricati del BDTRE
-if [[ ! -d $bdtrez ]]
-then
-  echo "Non esiste la cartella con i file scaricati del BDTRE"
-  exit 1
-fi
-
-
