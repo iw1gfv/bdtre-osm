@@ -7,7 +7,7 @@ Introduzione alla mappa BDTRE-OSM del Piemonte
 La mappa BDTRE-OSM del Piemonte è una mappa sinottica che utilizza i dati del BDTRE
 della Regione Piemonte e OSM.
 È una mappa specialistica:
-La base topografica, che è derivato dal BDTRE aggiornato al 2015.
+La base topografica, che è derivato dal BDTRE 2015 (aggiornato al 31/12/2014).
 Da una prima analisi dei dati, alcune caratteristiche sono mancanti e/o non pienamente utilizzabili ed allora si implementano
 in parte i dati OSM, che sono recenti ma anche incompleti.
 La sinossi di tempi mostra le stesse caratteristiche provenienti da entrambi i set di dati: una strada può apparire come una
@@ -47,17 +47,16 @@ Se invece è prodotta con questi script prelevare la cartella Basecamp dalla dir
 3. Dettagli tecnici
 -------------------
 
-
 3.1 Prerequisiti
 ----------------
 
 Per creare la mappa occorre che nel sistema (UBUNTU) siano presenti:
 
--- Python gdal
+-- Python-gdal
 
 -- OpenJDK 7 oppure 8
 
--- 20 Gb di memoria liberi sul hard disk
+-- ?? Gb di memoria liberi sul hard disk
 
 
 3.2 Spazio occupato dai file
@@ -67,8 +66,9 @@ Per creare la mappa occorre che nel sistema (UBUNTU) siano presenti:
 
 -- 
 
-3.3 ottenimento File del BDTRE
-------------------------------
+
+3.3 Ottenimento dati BDTRE
+--------------------------
 
 La Regione Piemonte mette a disposizione i dati del BDTRE (Base Dati Territoriale di Riferimento degli Enti)
 per il riuso su base comunale, nominati secondo il proprio codice ISTAT, sia come WMS sia come dato cartografico.
@@ -86,8 +86,26 @@ Nella cartella "comuni" trovi un file pdf riepilogativo con tutti i comuni del P
 sono stati divisi in piccoli file per provincia. 
 Per agevolare il dowload, sempre per provincia, sono stati creati dei file da dare in pasto a wget.
 
+I dati BDTRE vengono aggiornati annualmente alla data del 31/12 di ogni anni e resi disponibili nel febbraio/marzo dell'anno successivo.
+Tutti i dati e i servizi della BDTRE pubblicati sono resi disponibili con licenza Creative Commons - BY 2.5, che consente di utilizzare i dati previa attribuzione.
+Sul sito del geoportale della Regione Piemonte è presente un link alla licenza, seguendolo è possibile consultare il testo della licenza stessa.
+All'interno di ogni singolo file zip, è allegato un estratto della licenza in formato pdf.
 
-3.4 Conversione dati da formato SHP a formato OSM
+3.4 Ottenimento dati OSM
+------------------------
+
+I dati OSM (OpenStreetMap), sono visualizzabili graficamente sul sito internet www.openstreetmap.org. In questo modo però non sono da noi utilizzabili,
+in quanto abbiamo bisogno di lavorare con i dati vettoriali grezzi.
+
+I dati grezzi vengono forniti da OSM sotto forma di estratti (nazionali, regionali, ecc) in formato OSM e con licenza ODbl.
+Esistono molte vie e molti canali dove reperire i dati OSM, per quello che ci interessa per questo progetto li si può prendere qui:
+
+http://geodati.fmach.it/gfoss_geodata/osm/output_osm_regioni/piemonte.osm.bz2
+
+Gli estratti regionali vengono aggiornati settimanalmente il giovedì/venerdì.
+
+
+3.5 Conversione dati da formato SHP a formato OSM
 -------------------------------------------------
 
 I dati sono raccolti, su base comunale, in svariati file in formato shapefile ESRI.
@@ -107,41 +125,19 @@ Dunque questi dati non sono utilizzabili in un contesto OSM (come, per le import
 Poiché l'obiettivo è quello di creare una mappa per GPS e dispositivi Android, questo non è un problema.
 
 
-3.5 Conversione dati da formato OSM a formato IMG Garmin
+3.6 Conversione dati da formato OSM a formato IMG Garmin
 --------------------------------------------------------
 
-La seconda fase del processo, che crea i file in formato IMG Garmin,
-utilizza mkgmap, uno strumento OSM comune per creare mappe GPS per dispositivi Garmin. mkgmap è
-file di stile nutriti, e in questi tag file di stile ei loro valori sono assegnati ai
-codici per entità grafiche sulla mappa GPS. Questi tag ei ​​loro valori possono essere
-scelti arbitrariamente, in modo che il 'strano' tag: coppie di valori dalla convertito CTRN
-file possono essere utilizzati come qualsiasi altro tag: coppie di valori in formato OSM, e la
-fatto che i file non sono 'adeguati' files OSM non importa.
+La seconda fase del processo, che crea i file in formato IMG Garmin utilizza Mkgmap, uno strumento OSM comunente utilizzato per creare mappe GPS da impiegare nei dispositivi Garmin.
+Mkgmap lavora sulla base di file di stile, all'interno dei quali sono indicati quali elementi prendere e quali tag associare ai vari elementi che verranno poi visualizzati
+sul dispositivo GPS.
+Questi tag ed i loro valori possono essere scelti arbitrariamente, in modo che lo 'strano' tag convertito dai dati BDTRE possa avere un senso per la mappa creata.
 
-Solo pochi tag vengono utilizzati dai dati originali, e solo una parte dei dati sono
-usato. I dati CTRN sono solo un lato della mappa CTRN-OSM-GPS, l'altro lato è
-un recente download 'corretto' i dati OSM. La mappa finale è una sintesi di entrambi i dati
-imposta, e un tentativo è stato fatto per raccogliere le parti in modo che si completano a vicenda
-altro. Il processo di selezione potrebbe essere descritto o meno così:
+Per fare questo lavoro bisogna usare Mkgmap e Splitter che possono essere scaricati da qui:
 
-- Dove è necessaria la topografia di base, viene utilizzata la CTRN
-- Modi e punti di interesse sono tratte principalmente da OSM
+http://www.mkgmap.org.uk/download/mkgmap.html
 
-in alcune aree entrambi i set di dati forniscono dati. Ad esempio, OSM ha dati sui corpi di
-acqua, ma i dati del CTRN sull'acqua sono molto più dettagliata. Così per l'acqua, la
-Dati OSM non sono stati utilizzati a tutti e tutti i dati sono di acqua dal CTRN. Lo stesso
-vale per gli edifici, anche se OSM sta diventando sempre più completo per
-edifici. I dettagli specifici sono troppi per parlare; essi possono essere trovati
-guardare i file di stile nella cartella stili. Pubblicazione del toolchain per
-la creazione della mappa è anche un'offerta di modificare e adattare la mappa per personal
-esigenze e il gusto; per alcuni usi il completo CTRN senza potenziamenti OSM
-auspicabile, per altri dettagli più OSM.
-
-Una delle principali aree di lavoro per la sintesi era tenere tutti gli stili
-coerente e di fornire gli elementi grafici da utilizzare. I file di stile e di una
-File TYP sono inclusi e può essere modificato in base alle esigenze; alcuni di questi sono originale
-lavoro, e alcuni sono stati derivati ​​da modelli liberamente disponibili (vale a dire gli stili
-in OSM-stile, che sono stati ottenuti dallo stile mkgmap di default).
+http://www.mkgmap.org.uk/download/splitter.html
 
 
 4. Costruzione della mappa, uso  e sequenza degli scripts
@@ -168,6 +164,12 @@ crearla manualmente e scaricare all'interno i file, oppure trasfere la directory
 -- #indirizzo per scaricare il file del piemonte = viene specificato l'indirizzo da cui scaricare i dati di openstreetmap che andranno ad integrarsi con i dati derivanti del BDTRE, in questo caso non bisogna modificare a meno che non cambi l'indirizzo
 
 -- #file piemonte.osm = directorye nome del file del file scaricato da gfoss, che contiene i dati di osm da unire alla bdtre.
+
+-- #Percorso completo di Mkgmap
+scaricare e mettere nella home e cambiare il percorso nella configurazione con il nome esatto, se hai mkgmap aggiorna solo il percorso
+
+-- #Percorso completo di Splitter
+scaricare e mettere nella home e cambiare il percorso nella configurazione con il nome esatto, se hai splitter aggiorna solo il percorso
 
 
 4.1 Sequenza di script per la creazione della mappa per Android
