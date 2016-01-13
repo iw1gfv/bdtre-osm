@@ -26,6 +26,8 @@ filepiemonteosm="piemonte.osm/piemonte.osm"
 #Percorso completo del file ogr2osm.py
 ogr2osm="~/ogr2osm/ogr2osm.py"
 
+#Percorso completo di Mkgmap
+mkgmap="~/mkgmap-r3627/mkgmap.jar"
 
-#Verifiche
-
+#Percorso completo di Splitter
+mkgmap="~/splitter-r427/splitter.jar"
