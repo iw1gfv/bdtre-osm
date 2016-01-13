@@ -85,12 +85,6 @@ Per aiutare con il processo, una lista di tutti i comuni si trova all'interno de
 Nella cartella "comuni" trovi un file pdf riepilogativo con tutti i comuni del Piemonte ed i relativi codici ISTAT. Per comodità i comuni
 sono stati divisi in piccoli file per provincia. 
 Per agevolare il dowload, sempre per provincia, sono stati creati dei file da dare in pasto a wget.
-Per il download, occorre creare la directory (verificare il nome da dare alla cartell nel file di configurazione) e copiare i file di dowload nella cartella appena creata.
-Da terminale, portarsi nella cartella e dare il comando wget -i nomeprovincia.txt e così via per tutte le province.
-Wget ci metterà del tempo a scaricare tutti i comuni viste le dimensioni notevoli di alcune province, in totale ci vorranno circa 5/6 ore
-ma molto dipende anche dalla reale velocità di download a disposizione.
-
-Ad esempio, per scaricare i comuni della provincia di Asti, da terminale (nella directory di download) digitare wget -i Asti_D.txt ed inviare, wget andrà avanti fino a che non avrà provveduto a finire e per le altre provincie basta cambiare il nome della provincia.
 
 
 3.4 Conversione dati da formato SHP a formato OSM
@@ -99,26 +93,24 @@ Ad esempio, per scaricare i comuni della provincia di Asti, da terminale (nella 
 I dati sono raccolti, su base comunale, in svariati file in formato shapefile ESRI.
 Lo shp è un formato di interscambio per geodati non proprietario e quindi fruibile da tutti.
 
+Il formato shapefile ESRI, non ci consente di poter arrivare ad una mappa per dispositivi Garmin o Android senza doverci avvalere di software proprietari,
+per poter utilizzare tool e/o software liberi è necessario effettuare una conversione dei dati in ingresso in formato OSM (OpenStreetMap).
+Questo formato è molto potente e vi è uno strumento gratuito per convertire da ESRI shapefile in formato OSM.
+Si chiama ogr2osm ed è disponibile in diverse versioni, questo è quello utilizzato per questa mappa:
 
-Lavorare all'interno di questi limiti e di fornire gli stili appena scritti, il CTRN
-dati potrebbero essere convertiti in una mappa GPS adatto per i dispositivi Garmin in due
-passo processo. Il primo passo è stato quello di convertire i dati in OSM (OpenStreetMap)
-formato. Questo formato è molto potente, e vi è uno strumento gratuito per convertire da
-ESRI shapefile in formato OSM. Si chiama ogr2osm ed è disponibile in diversi
-versioni, questo è quello utilizzato per questa mappa:
+https://github.com/pnorman/ogr2osm
 
-https://github.com/andrewguertin/ogr2osm/blob/master/ogr2osm.py
+Funziona perché il formato shapefile ESRI è OGR-compatibile. I file risultanti in formato OSM non sono decisamente file OSM "appropriati".
+La struttura dei metadati in formato OSM appena creati non corrisponde alla struttura dei file OSM nativi, in quanto la conversione ha solo tradotto le geometrie
+lasciando invariati i campi a loro assegnati in origine. La comunità OSM forma un consenso su quali tag vengono utilizzati e quali valori dovrebbero essere assegnati alle geometrie
+Dunque questi dati non sono utilizzabili in un contesto OSM (come, per le importazioni).
+Poiché l'obiettivo è quello di creare una mappa per GPS e dispositivi Android, questo non è un problema.
 
-Funziona perché shapefile ESRI sono OGR-compatibili. I file risultanti in OSM
-formato non sono decisamente file OSM "appropriati". OSM strutture formato di metadati per
-le forme geometriche come tag: coppie di valori, mentre la comunità OSM forma un consenso
-su quali tag vengono utilizzati e quali valori dovrebbero essere assegnati a loro. In
-Al contrario, i file prodotti dai dati CTRN hanno selezionato solo ESRI
-i nomi dei campi shapefile i tag ei ​​corrispondenti valori come valori. Dunque
-questi dati non sono utilizzabili in un contesto OSM (come, per le importazioni).
 
-Poiché l'obiettivo è quello di creare una mappa GPS, si scopre che questo non è un problema.
-La seconda fase del processo, che crea i file in formato immagine garmin,
+3.5 Conversione dati da formato OSM a formato IMG Garmin
+--------------------------------------------------------
+
+La seconda fase del processo, che crea i file in formato IMG Garmin,
 utilizza mkgmap, uno strumento OSM comune per creare mappe GPS per dispositivi Garmin. mkgmap è
 file di stile nutriti, e in questi tag file di stile ei loro valori sono assegnati ai
 codici per entità grafiche sulla mappa GPS. Questi tag ei ​​loro valori possono essere
@@ -152,18 +144,16 @@ lavoro, e alcuni sono stati derivati ​​da modelli liberamente disponibili (v
 in OSM-stile, che sono stati ottenuti dallo stile mkgmap di default).
 
 
+4. Costruzione della mappa, uso  e sequenza degli scripts
+---------------------------------------------------------
 
-
-
-4. Costruzione della mappa, uso degli scripts
----------------------------------------------
-
-Prima di iniziare a fare girare i vari script è bene sistemare i percorsi delle cartelle in cui si trovano i file scaricati ed i vari tool che concorrono al lavoro, le variabili vanno indicate nel file configurazione.
-Tutte le variabili ed i percorsi sono tutte nel medesimo file, in modo che gli script vanno a richiamare le medesime senza doverle riscrivere o variare ogni volta che compaiono nei vari script.
+Prima di iniziare a fare girare gli script è bene sistemare i percorsi delle directori in cui si trovano i file scaricati ed i vari tool che concorrono al lavoro.
+le variabili vanno verificate/modificate nel file configurazione, in questo modo gli script vanno a richiamare le medesime senza doverle riscrivere o variare ogni volta che vengono lanciati gli script.
 
 Le variabili da settare sono le seguenti:
 
 -- #sorgenti bdtre zippati = Cartella in cui sono presenti i file zippati inerenti i singoli comuni 
+crearla manualmente e scaricare all'interno i file, oppure trasfere la directory con i file
 
 -- #sorgentibdtre non zippati = directory in cui verranno messi i file scompattati 
 
@@ -175,6 +165,23 @@ Le variabili da settare sono le seguenti:
 
 -- #shp da usare: = specificare quali file shp (per ogni comune sono presenti piu file con diversi elementi territoriali differenti) si intende convertire, a seconda di quello che si vuole convertire o meno bisogna aggiungere o togliere file
 
--- # indirizzo per scaricare il file del piemonte = viene specificato l'indirizzo da cui scaricare i dati di openstreetmap che andranno ad integrarsi con i dati derivanti del BDTRE, in questo caso non bisogna modificare a meno che non cambi l'indirizzo
+-- #indirizzo per scaricare il file del piemonte = viene specificato l'indirizzo da cui scaricare i dati di openstreetmap che andranno ad integrarsi con i dati derivanti del BDTRE, in questo caso non bisogna modificare a meno che non cambi l'indirizzo
 
 -- #file piemonte.osm = directorye nome del file del file scaricato da gfoss, che contiene i dati di osm da unire alla bdtre.
+
+
+4.1 Sequenza di script per la creazione della mappa per Android
+---------------------------------------------------------------
+
+Per prima cosa occorre creare la directory che conterrà i vari file (verificare il nome da dare alla cartella nel file di configurazione, se diverso variare il percorso) e scaricare i file all'interno.
+Per scaricare con wget ed i file preposti, da terminale portarsi nella cartella e dare il comando wget -i nomeprovincia.txt e così via per tutte le province.
+Wget ci metterà del tempo a scaricare tutti i comuni viste le dimensioni notevoli di alcune province, in totale ci vorranno circa 5/6 ore ma molto dipende anche dalla reale velocità di download a disposizione.
+
+Ad esempio, per scaricare i comuni della provincia di Asti, da terminale (nella directory di download) digitare wget -i Asti_D.txt ed inviare, wget andrà avanti fino a che non avrà provveduto a finire e per le altre provincie basta cambiare
+il nome della provincia.
+
+Una volta che si ha a disposizione i file e la relativa directory bisogna scompattare i file. Per farlo si utilizza lo script unzipbdtre.sh che provvede a creare la directory ed a scompattare tutti i file .zip.
+Da terminale (sempre all'interno della directory principale) lanciare lo script che scompatta digitando ./unzipbdtre.sh
+
+Terminato lo scompattamento degli zip è ora del primo passaggio di conversione, dal formato SHP al formato OSM.
+Da terminale (sempre all'interno della directory principale) lanciare lo script che converte digitando ./shpaosm.sh
