@@ -35,7 +35,7 @@ for s in $(ls *.shp)
 	 do
 	 echo "converto $s"
 	 #converte in osm
-python /home/michele/ogr2osm/ogr2osm.py --positive-id --id=$id --add-version --add-timestamp --force "$s" -o "../$uscitaosm/$s.osm" 
+python $ogr2osm --positive-id --id=$id --add-version --add-timestamp --force "$s" -o "../$uscitaosm/$s.osm" 
 
 
 id=`expr $id + 200000`
