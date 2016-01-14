@@ -514,11 +514,26 @@
 		<osm-tag key="TRAL_TY" value="traliccio" zoom-appear="8" />
 		<osm-tag key="TRAL_TY" value="antenna,ripetitore" zoom-appear="8" />
 		
+		<!--curve di livello-->
+		<osm-tag key="CV_LIV_TY" value="direttrice" zoom-appear="8" />
+		<osm-tag key="CV_LIV_TY" value="ordinaria, intermedia" zoom-appear="8" />
+		
+		<!--bosco-->
+		<osm-tag key="BOSCO_LIM" value="Non conosciuto" zoom-appear="8" />
+		
 			</ways>
+		
+		
 		<pois>
 		<!--alberi-->
 		<osm-tag key="ALBERO_TY" value="altro" zoom-appear="16" />
 		<osm-tag key="ALBERO_TY" value="monumentale" zoom-appear="16" />
+		
+		
+		<!--località significative-->
+		
+		<osm-tag key="LOC_SG_SGN" value="Non conosciuto" zoom-appear="6" />
+		
 		</pois>
 		
 		

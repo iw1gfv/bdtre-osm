@@ -1,25 +1,14 @@
 #!/bin/bash
 # #file per unire gli shp in modo da poterli vewdere facilmente con qgis
-# file=”merge.shp”
+
 #
 cd /home/michele/Scrivania/bdtre-osm/sorgenti-bdtre
-# for i in $(find . -type f -name "*.shp")
-# do
-#
-#       if [ -f “$file” ]
-#       then
-#            echo “creating final/merge.shp”
-#            ogr2ogr -f ‘ESRI Shapefile’ -update -append $file $i
-#       else
-#            echo “merging……”
-#       ogr2ogr -f ‘ESRI Shapefile’ $file $i
-# fi
-# done
 
 
 
 
-for i in $(find . -type f -name "*bosco*.shp")
+
+for i in $(find . -type f -name "*loc_sg*.shp")
 	 do
 	
 	 #prende il nome del tipo di shp, togliendo dal primo all'ultimo _ 
@@ -27,9 +16,8 @@ for i in $(find . -type f -name "*bosco*.shp")
 	 tmp=`basename $tmp2`
 	 echo $tmp
 	 tmp3=${tmp#*_}
-	 echo $tmp3
 	 tipodishp=`echo "${tmp3%\_*}"`
-         echo $tipodishp
+         
 
 
 	#unisce i file shp

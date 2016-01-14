@@ -15,7 +15,7 @@ uscitamap="uscita-map"
 
 #shp da usare:
 #esempio 001066_el_idr_2015.shp diventa el_idr perde i _ prima e dopo, i valori vanno messi fra " e separati da uno spazio
-sdu="tralic invaso el_vms edi_min alveo_a alveo albero ac_cic ab_cda edifc ac_vei ar_vms el_idr"
+sdu="tralic invaso el_vms edi_min alveo_a alveo albero ac_cic ab_cda edifc ac_vei ar_vms el_idr bosco cv_liv loc_sg"
 
 # indirizzo per scaricare il file del piemonte
 urlpiemonte="http://geodati.fmach.it/gfoss_geodata/osm/output_osm_regioni/piemonte.osm.bz2"
@@ -24,10 +24,10 @@ urlpiemonte="http://geodati.fmach.it/gfoss_geodata/osm/output_osm_regioni/piemon
 filepiemonteosm="piemonte.osm/piemonte.osm"
 
 #Percorso completo del file ogr2osm.py
-ogr2osm="~/ogr2osm/ogr2osm.py"
+ogr2osm=~/ogr2osm/ogr2osm.py
 
 #Percorso completo di Mkgmap
-mkgmap="~/mkgmap-r3627/mkgmap.jar"
+mkgmap=~/mkgmap-r3627/mkgmap.jar
 
 #Percorso completo di Splitter
-mkgmap="~/splitter-r427/splitter.jar"
+mkgmap=~/splitter-r427/splitter.jar

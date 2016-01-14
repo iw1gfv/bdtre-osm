@@ -41,7 +41,14 @@ python $ogr2osm --positive-id --id=$id --add-version --add-timestamp --force "$s
 id=`expr $id + 200000`
 done
 
+###################################### modifica i dile osm in modo da far apaprire le scritte <caption> di mapsforge.
 
+
+# nomi delle località
+cd ../$uscitaosm
+sed -i 's/LOC_SG_TOP/name/g' *_loc_sg_*
+
+ 
 
 
 
