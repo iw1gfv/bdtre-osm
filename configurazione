@@ -30,4 +30,4 @@ ogr2osm=~/ogr2osm/ogr2osm.py
 mkgmap=~/mkgmap-r3627/mkgmap.jar
 
 #Percorso completo di Splitter
-mkgmap=~/splitter-r427/splitter.jar
+splitter=~/splitter-r427/splitter.jar
