@@ -4,5 +4,5 @@ source "./configurazione"
 
 
 #trasforma la mappa .osm in .map aggiungendo la bounding box
-/home/michele/osmosis/bin/osmosis  --rx file=$uscitaosm/merge.osm  --mw file=$uscitamap/bdtre-osm.map tag-conf-file=tag-mapping.xml bbox=44,6,47,10
+$osmosis  --rx file=$uscitaosm/merge.osm  --mw file=$uscitamap/bdtre-osm.map tag-conf-file=tag-mapping.xml bbox=44,6,47,10
 
