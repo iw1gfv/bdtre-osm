@@ -509,6 +509,7 @@
 		<osm-tag key="EL_IDR_LIV" value="non in sottopasso" zoom-appear="8" />
 		<osm-tag key="INVASO_TY" value="lago artificiale" zoom-appear="8" />
 		<osm-tag key="EL_IDR_ART" value="artificiale" equivalent-values="naturale" zoom-appear="8" />
+		<osm-tag key="SP_ACQ_TY" value="lago" equivalent-values="stagno" zoom-appear="8" />
 		
 		
 		<!--tralicci pali-->

@@ -7,23 +7,28 @@ Introduzione alla mappa BDTRE-OSM del Piemonte
 La mappa BDTRE-OSM del Piemonte è una mappa sinottica che utilizza i dati del BDTRE
 della Regione Piemonte e OSM.
 È una mappa specialistica:
-La base topografica, che è derivato dal BDTRE 2015 (aggiornato al 31/12/2014).
+La base topografica, che è derivata dal BDTRE 2015 (aggiornato al 31/12/2014).
 Da una prima analisi dei dati, alcune caratteristiche sono mancanti e/o non pienamente utilizzabili ed allora si implementano
 in parte i dati OSM, che sono recenti ma anche incompleti.
+
+In pratica la mappa di OSM è trasparente, con lo sfondo del BDTRE.
+
 La sinossi di tempi mostra le stesse caratteristiche provenienti da entrambi i set di dati: una strada può apparire come una
-fascia gialla (un poligono, preso dal BDTRE) con una strada simboleggiato su di esso (tratto da OSM).
+fascia grigia (un poligono, preso dal BDTRE) con una striscia colorata posta su di essa (tratto da OSM).
 Ciò può essere fonte di confusione, soprattutto se le caratteristiche non vanno a sovrapporsi correttamente.
 
-Inoltre, il BDTRE contiene caratteristiche che sono scomparsi o non sono mai state verificate precisamente, i dati sono spesso ricavati da ortofoto di varia data ed altre interpretazioni,voli, ecc..... in alcuni casi sono quindi passibili di errori non ancora del tutto risolti.
-Non fare affidamento sulle caratteristiche della carta avente una rappresentazione diversa nella realtà!
-Ci si potrebbe perdere o finire in posti pericolosi e/0 non si può essere in grado di arrivare a destinazione.
-Non vi è nessuna garanzia e nessuna richiesta di correttezza.
 
-La mappa è anche una mappa specialistica perché è molto dettagliata e ha caratteristiche
+Il BDTRE contiene caratteristiche che sono scomparsi o non sono mai state verificate precisamente, i dati sono spesso ricavati da ortofoto di varia data ed altre interpretazioni,voli, ecc..... in alcuni casi sono quindi passibili di errori non ancora del tutto risolti.
+Non fare affidamento sulle caratteristiche della carta avente una rappresentazione diversa nella realtà!
+Ci si potrebbe perdere o finire in posti pericolosi e/o non essere in grado di arrivare a destinazione.
+Non vi è nessuna garanzia riguardo alla correttezza dei dati.
+
+==parte da rimuovere??
+Questa è una mappa specialistica perché è molto dettagliata ed ha caratteristiche
 che non importa a un uso più informale: per esempio, i contorni sono molto densi
 a 10m di distanza. Il grande dettaglio è buono per gli escursionisti, che sono il pubblico principale per la mappa,
 ma dovrebbe anche essere utile per i cartografi sul campo per rilevi e/o verifiche.
-
+==
 
 2. Installazione e utilizzo
 ---------------------------
@@ -42,6 +47,10 @@ assicuratevi di avere uno zoom appropriato.
 La mappa in versione PC è visualizzabile con il software Basecamp di Garmin sulle piattaforme Windows. Per poterla visualizzare
 è necessario scompattarla (se scaricata da internet) e lanciare il batch install.bat per fare in modo che vengano scritte nel sistema le chiavi di registro e poi aprire il software Basecamp per poterla vedere.
 Se invece è prodotta con questi script prelevare la cartella Basecamp dalla directory result per poi andarla ad installare come descritto prima.
+
+
+La mappa in versione android deve essere caricata nella directory del programma che la leggerà, oltre alla mappa bisognerà caricare la cartella del tema mapsforge nella directory dei temi.
+Tramite l'app che leggerà la mappa bisognerà selezionare il tema bdtre-osm.
 
 
 3. Dettagli tecnici
@@ -78,11 +87,11 @@ I dati originali possono essere scaricati da questa pagina:
 http:/www.geoportale2.piemonte.it/geocatalogorp/?sezione=catalogo    (cercare per "geotopografico" .....)
 
 
-L'interfaccia non è molto adatto per l'acquisizione di tutti gli oltre 1200 comuni, ma avendo bisogno dei dati,
+L'interfaccia non è molto adatta per l'acquisizione di tutti gli oltre 1200 comuni, ma avendo bisogno dei dati,
 questa è la fonte ufficiale.
 Per aiutare con il processo, una lista di tutti i comuni si trova all'interno della cartella "comuni".
 
-Nella cartella "comuni" trovi un file pdf riepilogativo con tutti i comuni del Piemonte ed i relativi codici ISTAT. Per comodità i comuni
+Nella cartella "comuni" si trova un file pdf riepilogativo con tutti i comuni del Piemonte ed i relativi codici ISTAT. Per comodità i comuni
 sono stati divisi in piccoli file per provincia. 
 Per agevolare il dowload, sempre per provincia, sono stati creati dei file da dare in pasto a wget.
 
@@ -105,8 +114,8 @@ http://geodati.fmach.it/gfoss_geodata/osm/output_osm_regioni/piemonte.osm.bz2
 Gli estratti regionali vengono aggiornati settimanalmente il giovedì/venerdì.
 
 
-3.5 Conversione dati da formato SHP a formato OSM
--------------------------------------------------
+3.5 Scaricamento dei dati e conversione dati da formato SHP a formato OSM
+-------------------------------------------------------------------------
 
 I dati sono raccolti, su base comunale, in svariati file in formato shapefile ESRI.
 Lo shp è un formato di interscambio per geodati non proprietario e quindi fruibile da tutti.
@@ -122,13 +131,37 @@ Funziona perché il formato shapefile ESRI è OGR-compatibile. I file risultanti
 La struttura dei metadati in formato OSM appena creati non corrisponde alla struttura dei file OSM nativi, in quanto la conversione ha solo tradotto le geometrie
 lasciando invariati i campi a loro assegnati in origine. La comunità OSM forma un consenso su quali tag vengono utilizzati e quali valori dovrebbero essere assegnati alle geometrie
 Dunque questi dati non sono utilizzabili in un contesto OSM (come, per le importazioni).
-Poiché l'obiettivo è quello di creare una mappa per GPS e dispositivi Android, questo non è un problema.
+Poiché l'obiettivo è quello di creare una mappa per GPS e dispositivi Android e Garmin, questo non è un problema.
+
+Per prima cosa occorre creare la directory che conterrà i vari file (verificare il nome da dare alla cartella nel file di configurazione, se diverso variare il percorso) e scaricare i file all'interno.
+Per scaricare con wget ed i file preposti, da terminale portarsi nella cartella e dare il comando wget -i nomeprovincia.txt e così via per tutte le province.
+Wget ci metterà del tempo a scaricare tutti i comuni viste le dimensioni notevoli di alcune province, in totale ci vorranno circa 5/6 ore ma molto dipende anche dalla reale velocità di download a disposizione.
+
+Ad esempio, per scaricare i comuni della provincia di Asti, da terminale (nella directory di download) digitare wget -i Asti_D.txt ed inviare, wget andrà avanti fino a che non avrà provveduto a finire e per le altre provincie basta cambiare
+il nome della provincia.
+
+Una volta che si ha a disposizione i file e la relativa directory bisogna scompattare i file. Per farlo si utilizza lo script unzipbdtre.sh che provvede a creare la directory ed a scompattare tutti i file .zip.
+Da terminale (sempre all'interno della directory principale) lanciare lo script che scompatta digitando ./unzipbdtre.sh
+
+Terminato lo scompattamento degli zip è ora del primo passaggio di conversione, dal formato SHP al formato OSM.
+Da terminale (sempre all'interno della directory principale) lanciare lo script che converte digitando ./shpaosm.s
+
+Questo passo è uguale, sia per Android che per Garmin, di qui in poi i passaggi sono diversi.
+
+
+3.6 Conversione dati da formato OSM a formato Mapsforge
+--------------------------------------------------------
+Aggiunta dei dati OSM ai dati BDTRE.
+Tramite lo script unisciosmbdtre.sh è possibile scaricare i dati OSM aggiornati ed unirli ai file in formato osm, derivati dal BDTRE, in un unico file in formato osm.
+Il file in formato osm viene convertito con Osmosis ed il plugin mapswriter in formato.map, pronto per essere installato su un dispositivo android.
+Il plugin mapswriter utilizza un file in formato .xml che indica quali tag portare in formato .map e quali tralasciare.
+Perchè la mappa venga visualizzata correttamente, sul dispositivo android deve essere installato il tema, che serve a visualizzare i tag del BDTRE, poichè non rispettano lo standard osm.
 
 
 3.6 Conversione dati da formato OSM a formato IMG Garmin
 --------------------------------------------------------
 
-La seconda fase del processo, che crea i file in formato IMG Garmin utilizza Mkgmap, uno strumento OSM comunente utilizzato per creare mappe GPS da impiegare nei dispositivi Garmin.
+La fase del processo che crea i file in formato IMG Garmin utilizza Mkgmap, uno strumento OSM comunente utilizzato per creare mappe GPS da impiegare nei dispositivi Garmin.
 Mkgmap lavora sulla base di file di stile, all'interno dei quali sono indicati quali elementi prendere e quali tag associare ai vari elementi che verranno poi visualizzati
 sul dispositivo GPS.
 Questi tag ed i loro valori possono essere scelti arbitrariamente, in modo che lo 'strano' tag convertito dai dati BDTRE possa avere un senso per la mappa creata.
@@ -172,18 +205,18 @@ scaricare e mettere nella home e cambiare il percorso nella configurazione con i
 scaricare e mettere nella home e cambiare il percorso nella configurazione con il nome esatto, se hai splitter aggiorna solo il percorso
 
 
+
+Gli script non sono pensati per avere un diverso albero delle directory, si possono modificare i nomi delle directory, ma non la loro posizione.
+
+
 4.1 Sequenza di script per la creazione della mappa per Android
 ---------------------------------------------------------------
+shpaosm.sh
+unisciosmbdtre.sh
+osmamap.sh
 
-Per prima cosa occorre creare la directory che conterrà i vari file (verificare il nome da dare alla cartella nel file di configurazione, se diverso variare il percorso) e scaricare i file all'interno.
-Per scaricare con wget ed i file preposti, da terminale portarsi nella cartella e dare il comando wget -i nomeprovincia.txt e così via per tutte le province.
-Wget ci metterà del tempo a scaricare tutti i comuni viste le dimensioni notevoli di alcune province, in totale ci vorranno circa 5/6 ore ma molto dipende anche dalla reale velocità di download a disposizione.
+4.1 Sequenza di script per la creazione della mappa per Garmin
+---------------------------------------------------------------
+shpaosm.sh
+Da completare...
 
-Ad esempio, per scaricare i comuni della provincia di Asti, da terminale (nella directory di download) digitare wget -i Asti_D.txt ed inviare, wget andrà avanti fino a che non avrà provveduto a finire e per le altre provincie basta cambiare
-il nome della provincia.
-
-Una volta che si ha a disposizione i file e la relativa directory bisogna scompattare i file. Per farlo si utilizza lo script unzipbdtre.sh che provvede a creare la directory ed a scompattare tutti i file .zip.
-Da terminale (sempre all'interno della directory principale) lanciare lo script che scompatta digitando ./unzipbdtre.sh
-
-Terminato lo scompattamento degli zip è ora del primo passaggio di conversione, dal formato SHP al formato OSM.
-Da terminale (sempre all'interno della directory principale) lanciare lo script che converte digitando ./shpaosm.sh
