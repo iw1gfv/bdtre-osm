@@ -44,11 +44,14 @@ done
 ###################################### modifica i dile osm in modo da far apaprire le scritte <caption> di mapsforge.
 
 
-# nomi delle località
+# toponomastica
 cd ../$uscitaosm
-sed -i 's/LOC_SG_TOP/name/g' *_loc_sg_*
+sed -i 's/NOME/name/g' *_toponomastica_*
 
- 
+#curve di livello rimuove anche gli zeri finali sulla quota
+#sed -i 's/CV_LIV_Q/name/g' *_cv_liv_* 
+#sed -i 's/.000000000000000"/"/g' *_cv_liv_*
+
 
 
 

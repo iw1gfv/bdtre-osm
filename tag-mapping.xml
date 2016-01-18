@@ -508,18 +508,25 @@
 		<osm-tag key="EL_IDR_LIV" value="in sottopasso" zoom-appear="8" />
 		<osm-tag key="EL_IDR_LIV" value="non in sottopasso" zoom-appear="8" />
 		<osm-tag key="INVASO_TY" value="lago artificiale" zoom-appear="8" />
+		<osm-tag key="EL_IDR_ART" value="artificiale" equivalent-values="naturale" zoom-appear="8" />
+		
 		
 		<!--tralicci pali-->
 		
 		<osm-tag key="TRAL_TY" value="traliccio" zoom-appear="8" />
 		<osm-tag key="TRAL_TY" value="antenna,ripetitore" zoom-appear="8" />
+		<osm-tag key="TR_ELE_POS" value="pensile" zoom-appear="8" />
+		
 		
 		<!--curve di livello-->
 		<osm-tag key="CV_LIV_TY" value="direttrice" zoom-appear="8" />
 		<osm-tag key="CV_LIV_TY" value="ordinaria, intermedia" zoom-appear="8" />
 		
-		<!--bosco-->
+		<!--terreno-->
 		<osm-tag key="BOSCO_LIM" value="Non conosciuto" zoom-appear="8" />
+		<osm-tag key="PS_INC_LIM" value="Non conosciuto" zoom-appear="8" />
+		<osm-tag key="CL_AGR_LIM" value="Non conosciuto" zoom-appear="8" />
+		
 		
 			</ways>
 		
@@ -530,9 +537,21 @@
 		<osm-tag key="ALBERO_TY" value="monumentale" zoom-appear="16" />
 		
 		
-		<!--località significative-->
-		
-		<osm-tag key="LOC_SG_SGN" value="Non conosciuto" zoom-appear="6" />
+		<!--toponomastica
+comuni
+idrografia
+isole amministrative
+localita' minori
+localita' principali
+monti
+stazioni
+altri laghi
+idrografia principale
+laghi principali
+pass e valichi
+		-->
+								
+		<osm-tag key="CATEGORIA" value="localita' principali"  equivalent-values="idrografia,isole amministrative,localita' minori,localita' principali,monti,stazioni,altri laghi,idrografia principale,laghi principali,pass e valichi"  zoom-appear="16" />
 		
 		</pois>
 		
