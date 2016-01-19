@@ -10,7 +10,7 @@ then
 fi
 
 #rimuove la cartella dei file scompattati
-rm $sbdtre
+rm -r $sbdtre
 
 #rcrea la cartella dei file scompattati
 mkdir $sbdtre
