@@ -55,28 +55,29 @@ sed -i 's/NOME/name/g' *_toponomastica_*
 
 
 
-###################################### Unisce i file osm/
-cd ../$uscitaosm
-rm merge.osm
-
-
-filesdaunire=`ls *.osm`
-for osm in $filesdaunire
-do
-    arg="$arg --rx $osm"
-done
-
-
-filesdaunire=`ls *.osm | head -n -1`
-
-for osm in $filesdaunire
-do
-    arg="$arg --merge"
-done
-
-
-osmosis $arg --wx merge.osm
-#echo $arg
+#PROBABILMENTE QUESTA PARTE È DA RIMUOVERE
+# ###################################### Unisce i file osm/
+# cd ../$uscitaosm
+# rm merge.osm
+#
+#
+# filesdaunire=`ls *.osm`
+# for osm in $filesdaunire
+# do
+#     arg="$arg --rx $osm"
+# done
+#
+#
+# filesdaunire=`ls *.osm | head -n -1`
+#
+# for osm in $filesdaunire
+# do
+#     arg="$arg --merge"
+# done
+#
+#
+# osmosis $arg --wx merge.osm
+# #echo $arg
 
 
 
