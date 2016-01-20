@@ -3,6 +3,29 @@
 source "./configurazione"
 
 
+#verifica che sia presente la cartella con i file sorgenti del BDTRE
+if [[ ! -d $sbdtre ]]
+then
+  echo "Non esiste la cartella $sbdtre, fai girare lo script unzipbdtre.sh prima di questo"
+  exit 1
+fi
+
+
+#crea la cartella dei file SHP usati se non è già esistente
+if [ -d $shpusati ]; then
+    echo "$shpusati esiste."
+else
+    mkdir $shpusati
+fi
+
+
+#crea la cartella dei file uscita osm se non è già esistente
+if [ -d $uscitaosm ]; then
+    echo "$uscitaosm esiste."
+else
+    mkdir $uscitaosm
+fi
+
 
 
 #trova e copia i files che parteciperanno alla creazione della mappa dopo aver eliminato quelli già presenti.
@@ -10,9 +33,7 @@ rm $shpusati/*
 rm $uscitaosm/*
 
 
-
 cd $sbdtre
-
 
 
 for tipo in $sdu
@@ -41,7 +62,7 @@ python $ogr2osm --positive-id --id=$id --add-version --add-timestamp --force "$s
 id=`expr $id + 200000`
 done
 
-###################################### modifica i dile osm in modo da far apaprire le scritte <caption> di mapsforge.
+###################################### modifica i file osm in modo da far apaprire le scritte <caption> di mapsforge.
 
 
 # toponomastica
