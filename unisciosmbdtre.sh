@@ -5,7 +5,7 @@ source "./configurazione"
 
 #scarica il file piemonte.bz2, se il download non riesce ferma lo script
 cd $piemonteosm
-wget -O piemonte.osm.bz2 $urlpiemonte || { echo 'Download non riuscito' ; exit 1; }
+#wget -O piemonte.osm.bz2 $urlpiemonte || { echo 'Download non riuscito' ; exit 1; }
 
 
 
