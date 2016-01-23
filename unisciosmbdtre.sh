@@ -10,7 +10,7 @@ cd $piemonteosm
 
 
 #decomprime il file e sovrascrive quello precedente 
-bzip2 -dkf piemonte.osm.bz2 || { echo 'Decompressione non riuscita' ; exit 1; }
+#bzip2 -dkf piemonte.osm.bz2 || { echo 'Decompressione non riuscita' ; exit 1; }
 
 
 
@@ -18,4 +18,4 @@ bzip2 -dkf piemonte.osm.bz2 || { echo 'Decompressione non riuscita' ; exit 1; }
 
 ###################################### Unisce i file osm/
 cd ../$uscitaosm
-$osmosis --rx merge.osm --rx ../$piemonteosm/piemonte.osm --merge --wx bdtre-osm.osm
+$osmosis --rx bdtre.osm --rx ../$piemonteosm/piemonte.osm --merge --wx bdtre-osm.osm

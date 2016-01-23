@@ -47,9 +47,8 @@ done
 
 cd ../$shpusati
 
-#5817956
-#3937111698
-id=3937119999
+#id massimo preso dalla history di osm con 99 davanti, in modo che sia motlo superiore per parecchio tempo
+id=993937119999
 
 
 for s in $(ls *.shp)
@@ -76,29 +75,7 @@ sed -i 's/NOME/name/g' *_toponomastica_*
 
 
 
-#PROBABILMENTE QUESTA PARTE È DA RIMUOVERE
-# ###################################### Unisce i file osm/
-# cd ../$uscitaosm
-# rm merge.osm
-#
-#
-# filesdaunire=`ls *.osm`
-# for osm in $filesdaunire
-# do
-#     arg="$arg --rx $osm"
-# done
-#
-#
-# filesdaunire=`ls *.osm | head -n -1`
-#
-# for osm in $filesdaunire
-# do
-#     arg="$arg --merge"
-# done
-#
-#
-# osmosis $arg --wx merge.osm
-# #echo $arg
+
 
 
 
