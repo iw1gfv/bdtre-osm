@@ -32,6 +32,11 @@ fi
 rm $shpusati/*
 rm $uscitaosm/*
 
+#id massimo preso dalla history di osm con 99 davanti, in modo che sia motlo superiore per parecchio tempo
+id=993937119999
+
+
+###################################### converte in OSM
 
 cd $sbdtre
 
@@ -39,26 +44,17 @@ cd $sbdtre
 for tipo in $sdu
 do 
 
-	find -name "*$tipo*" -exec cp {} ../$shpusati  \;
-done
 
-
-###################################### converte in OSM
-
-cd ../$shpusati
-
-#id massimo preso dalla history di osm con 99 davanti, in modo che sia motlo superiore per parecchio tempo
-id=993937119999
-
-
-for s in $(ls *.shp)
+for s in $(find -name "*$tipo*.shp" | cut -c3-)
 	 do
 	 echo "converto $s"
 	 #converte in osm
-python $ogr2osm --positive-id --id=$id --add-version --add-timestamp --force "$s" -o "../$uscitaosm/$s.osm" 
+nomeuscita=`basename $s`
+python $ogr2osm --positive-id --id=$id --add-version --add-timestamp --force ./$s -o "../$uscitaosm/$nomeuscita.osm" 
 
 
 id=`expr $id + 200000`
+done
 done
 
 ###################################### modifica i file osm in modo da far apaprire le scritte <caption> di mapsforge.
