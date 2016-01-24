@@ -1,0 +1,13 @@
+“Documento realizzato da [Licenziatario], basato su “BDTRE - Database GeoTopografico -
+2015”.
+La titolarità piena ed esclusiva del documento “BDTRE - Database GeoTopografico - 2015” è
+di Regione Piemonte (ai sensi della L. 633/41 e s.m.i.).
+Regione Piemonte autorizza la libera e gratuita consultazione, estrazione, riproduzione e
+modifica dei dati in essa contenuti da parte di chiunque vi abbia interesse per
+qualunque fine, purché nel rispetto dei termini della licenza Creative Commons –
+Attribuzione 2.5 Italia (testo integrale:
+http://creativecommons.org/licenses/by/2.5/it/legalcode).
+Si precisa esplicitamente che con la presente licenza il Licenziante intende autorizzare il
+Licenziatario ad esercitare, ferme restando le restrizioni della licenza di cui sopra,
+anche i diritti disciplinati dall’art. 102-bis e ss., L.633/41 e s.m.i. (c.d. diritto sui
+generis del costitutore di una banca dati).
