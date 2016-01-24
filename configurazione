@@ -15,7 +15,7 @@ uscitamap="uscita-map"
 
 #shp da usare:
 #esempio 001066_el_idr_2015.shp diventa el_idr perde i _ prima e dopo, i valori vanno messi fra " e separati da uno spazio
-sdu="tralic invaso el_vms edi_min albero ab_cda edifc ac_vei ar_vms bosco toponomastica cl_agr ps_inc tr_ele el_idr sp_acq"
+sdu="tralic invaso el_vms edi_min albero ab_cda edifc ac_vei ar_vms bosco toponomastica cl_agr ps_inc tr_ele el_idr sp_acq cv_liv"
 
 # indirizzo per scaricare il file del piemonte
 urlpiemonte="http://geodati.fmach.it/gfoss_geodata/osm/output_osm_regioni/piemonte.osm.bz2"
@@ -26,11 +26,26 @@ piemonteosm="piemonte.osm"
 #Percorso completo del file ogr2osm.py
 ogr2osm=~/ogr2osm/ogr2osm.py
 
+#Percorso completo di Osmosis
+osmosis=~/osmosis/bin/osmosis
+
+
+
+#Variabili creazione mappa Garmin
+
 #Percorso completo di Mkgmap
 mkgmap=~/mkgmap-r3627/mkgmap.jar
 
 #Percorso completo di Splitter
 splitter=~/splitter-r427/splitter.jar
 
-#Percorso completo di Osmosis
-osmosis=~/osmosis/bin/osmosis
+#Directory in cui vengono messi i file IMG del BDTRE
+BDTRE_IMG="bdtre-img"
+
+#inserimento del copyriht dei dati BDTRE
+copyright="Documento realizzato da $Licenziatario, basato su “BDTRE - Database GeoTopografico -
+2015"
+
+#La Regione Piemonte chiede che nell'attribuzione della licenza compaia il nome di chi realizza la mappa
+#Inserisci il tuo nome alla voce Licenziatario
+Licenziatario="Galosso Lucio"
