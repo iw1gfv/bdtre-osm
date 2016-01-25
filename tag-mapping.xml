@@ -554,6 +554,10 @@ pass e valichi
 								
 		<osm-tag key="CATEGORIA" value="localita' principali"  equivalent-values="idrografia,isole amministrative,localita' minori,localita' principali,monti,stazioni,altri laghi,idrografia principale,laghi principali,pass e valichi"  zoom-appear="16" />
 		
+		<osm-tag key="TIPO" value="2.08.06"  equivalent-values="2.08.07"  zoom-appear="16" />
+		
+		
+		
 		</pois>
 		
 		

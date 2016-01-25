@@ -11,14 +11,6 @@ then
 fi
 
 
-#crea la cartella dei file SHP usati se non è già esistente
-if [ -d $shpusati ]; then
-    echo "$shpusati esiste."
-else
-    mkdir $shpusati
-fi
-
-
 #crea la cartella dei file uscita osm se non è già esistente
 if [ -d $uscitaosm ]; then
     echo "$uscitaosm esiste."
@@ -28,8 +20,7 @@ fi
 
 
 
-#trova e copia i files che parteciperanno alla creazione della mappa dopo aver eliminato quelli già presenti.
-rm $shpusati/*
+#rimuove i files in uscita
 rm $uscitaosm/*
 
 #id massimo preso dalla history di osm con 99 davanti, in modo che sia motlo superiore per parecchio tempo
@@ -53,7 +44,7 @@ nomeuscita=`basename $s`
 python $ogr2osm --positive-id --id=$id --add-version --add-timestamp --force ./$s -o "../$uscitaosm/$nomeuscita.osm" 
 
 
-id=`expr $id + 200000`
+id=`expr $id + 9000000`
 done
 done
 
@@ -65,10 +56,13 @@ cd ../$uscitaosm
 sed -i 's/NOME/name/g' *_toponomastica_*
 
 #curve di livello rimuove anche gli zeri finali sulla quota
-#sed -i 's/CV_LIV_Q/name/g' *_cv_liv_* 
-#sed -i 's/.000000000000000"/"/g' *_cv_liv_*
+sed -i 's/CV_LIV_Q/name/g' *_cv_liv_* 
+sed -i 's/.000000000000000"/"/g' *_cv_liv_*
 
 
+#Punti quotati
+sed -i 's/QUOTA/name/g' *_p_altim_* 
+sed -i 's/[0-9][0-9][0-9]"\/>/"\/>/g' *_p_altim_*
 
 
 
