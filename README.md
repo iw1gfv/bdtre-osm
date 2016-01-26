@@ -194,12 +194,12 @@ Vi troverete diverse directory all'interno della directory scelta per i sorgenti
 
 4.1 Sequenza di script per la creazione della mappa per Android
 ---------------------------------------------------------------
-shpaosm.sh | converte i files shp in files.osm|
-uniscibdtre.sh | unisce tutti i files .osm della BDTRE in un unico file chiamato bdtre.osm|
-osmamap.sh | Unisce al file bdtre.osm il file piemonte.osm e converte tutto in .map|
+|shpaosm.sh | converte i files shp in files.osm|
+|uniscibdtre.sh | unisce tutti i files .osm della BDTRE in un unico file chiamato bdtre.osm|
+|osmamap.sh | Unisce al file bdtre.osm il file piemonte.osm e converte tutto in .map|
 
 4.1 Sequenza di script per la creazione della mappa per Garmin
 ---------------------------------------------------------------
-shpaosm.sh | converte i files shp in files.osm|
+|shpaosm.sh | converte i files shp in files.osm|
 Da completare...
 
