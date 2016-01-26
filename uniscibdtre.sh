@@ -34,9 +34,8 @@ done
 
 #crea gli argomenti con --merge
 argmerge=`yes " --merge" | head -n $nummerge`
-echo $numfiles
-echo $nummerge
-echo $tipo
+echo "$numfiles files da unire"
+
 
 #converte
 $osmosis $arg $argmerge  --wx file=UNITO_$tipo.osm
