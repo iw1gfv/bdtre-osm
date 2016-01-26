@@ -1,6 +1,14 @@
 Introduzione alla mappa BDTRE-OSM del Piemonte
 ==============================================
 
+Qui si trovano gli script per generare una mappa della regione Piemonte adatta all' escursionismo, all'ippica, al fuoristrada, al geocaching, alla mountainbike ed a tutte le attività all' aperto.
+Questa mappa copre il territorio dela regione Piemonte, usando i dati della BDTRE della regione Piemonte ed i dati di openstreetmap.org
+Le due mappe saranno sovrapposte sul dispositivo, lo strato in basso sarà la BDTRE, mentre quello in alto OSM.
+La toponomastica e le curve di livello anche se della bdtre sono sullo strato più alto.
+La mappa è adatta per funzionare su dispositivi Android con app in grado di leggere il formato mapsforge (Oruxmap, Locus, c:geo ed altre) e su dispositivi Garmin.
+La versione PC è una mappa Garmin, opportunamente adattata a funzionare su Basecamp e Qlandkartegt.
+
+
 1. Panoramica
 -----------
 
@@ -194,18 +202,18 @@ Vi troverete diverse directory all'interno della directory scelta per i sorgenti
 
 4.1 Sequenza di script per la creazione della mappa per Android
 ---------------------------------------------------------------
-| Comando     | Funzione                                                                  |
-|-------------|---------------------------------------------------------------------------|
-| shpaosm.sh  | Converte i files shp in files.osm                                         |
-| uniscibdtre | Unisce tutti i files .osm della BDTRE in un unico file chiamato bdtre.osm |
-| osmamap.sh  | Unisce al file bdtre.osm il file piemonte.osm e converte tutto in .map    |
-|             |                                                                           |
+Ordine| Comando     | Funzione                                                                  |
+------|-------------|---------------------------------------------------------------------------|
+1| shpaosm.sh  | Converte i files shp in files.osm                                         |
+2| uniscibdtre | Unisce tutti i files .osm della BDTRE in un unico file chiamato bdtre.osm |
+3| osmamap.sh  | Unisce al file bdtre.osm il file piemonte.osm e converte tutto in .map    |
+4|             |                                                                           |
 
 4.1 Sequenza di script per la creazione della mappa per Garmin
 --------------------------------------------------------------
-| Comando     | Funzione                                                                  |
-|-------------|---------------------------------------------------------------------------|
-| shpaosm.sh  | Converte i files shp in files.osm                                         |
+Ordine| Comando     | Funzione                                                                  |
+------|-------------|---------------------------------------------------------------------------|
+1| shpaosm.sh  | Converte i files shp in files.osm                                         |
 
 Da completare...
 
