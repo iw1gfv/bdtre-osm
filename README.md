@@ -151,10 +151,10 @@ Questo passo è uguale, sia per Android che per Garmin, di qui in poi i passaggi
 3.6 Conversione dati da formato OSM a formato Mapsforge
 --------------------------------------------------------
 Aggiunta dei dati OSM ai dati BDTRE.
-Tramite lo script unisciosmbdtre.sh è possibile scaricare i dati OSM aggiornati ed unirli ai file in formato osm, derivati dal BDTRE, in un unico file in formato osm.
+Tramite lo script unisciosmbdtre.sh è possibile scaricare i dati OSM aggiornati.
 Il file in formato osm viene convertito con Osmosis ed il plugin mapswriter in formato.map, pronto per essere installato su un dispositivo android.
 Il plugin mapswriter utilizza un file in formato .xml che indica quali tag portare in formato .map e quali tralasciare.
-Perchè la mappa venga visualizzata correttamente, sul dispositivo android deve essere installato il tema, che serve a visualizzare i tag del BDTRE, poichè non rispettano lo standard osm.
+*Perchè la mappa venga visualizzata correttamente, sul dispositivo android deve essere installato il tema, che serve a visualizzare i tag del BDTRE, poichè non rispettano lo standard osm.*
 
 
 3.6 Conversione dati da formato OSM a formato IMG Garmin
@@ -194,12 +194,12 @@ Vi troverete diverse directory all'interno della directory scelta per i sorgenti
 
 4.1 Sequenza di script per la creazione della mappa per Android
 ---------------------------------------------------------------
-shpaosm.sh | converte i files shp in files.osm
-uniscibdtre.sh | unisce tutti i files .osm della BDTRE in un unico file chiamato bdtre.osm
-osmamap.sh | Unisce al file bdtre.osm il file piemonte.osm e converte tutto in .map
+shpaosm.sh | converte i files shp in files.osm|
+uniscibdtre.sh | unisce tutti i files .osm della BDTRE in un unico file chiamato bdtre.osm|
+osmamap.sh | Unisce al file bdtre.osm il file piemonte.osm e converte tutto in .map|
 
 4.1 Sequenza di script per la creazione della mappa per Garmin
 ---------------------------------------------------------------
-shpaosm.sh | converte i files shp in files.osm
+shpaosm.sh | converte i files shp in files.osm|
 Da completare...
 
