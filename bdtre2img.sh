@@ -36,10 +36,10 @@ rm $BDTRE_IMG/*
 
 cd $uscitaosm
 
-java -Xmx3000m -jar $splitter \
+java $Xmx -jar $splitter \
 --max-nodes=1600000 \
---max-areas=200 \
---mapid=66121001 \
+--max-areas=300 \
+--mapid=66120001 \
 --output-dir=../$BDTRE_IMG \
 UNITO_cv_liv.osm
 
@@ -47,12 +47,12 @@ cd ..
 
 cd $BDTRE_IMG
 
-for infile in *.osm.pbf
+for infile in 66120*.osm.pbf
   do
   MAPNAME=$(basename $infile .osm.pbf)
   echo processing $MAPNAME
 
-  java -Xmx3000M -jar $mkgmap --code-page=1252 \
+  java $Xmx -jar $mkgmap --code-page=1252 \
     --mapname=$MAPNAME \
     --description="BDTRE Piemonte curve di livello" \
     --country-name="Italia" \
@@ -63,7 +63,89 @@ for infile in *.osm.pbf
     --draw-priority=12 \
     --transparent \
     --license-file=../bdtre_licenza.txt \
+    --gmapsupp \
   $infile
 done
 
-rm *.osm.pbf
+rm areas.*
+rm temp*.*
+
+
+#divide e converte i punti quotati in formato IMG
+
+cd ..
+
+cd $uscitaosm
+
+java $Xmx -jar $splitter \
+--max-nodes=15000 \
+--max-areas=50 \
+--mapid=66121001 \
+--output-dir=../$BDTRE_IMG \
+UNITO_p_altim.osm
+
+cd ..
+
+cd $BDTRE_IMG
+
+for infile in 66121*.osm.pbf
+  do
+  MAPNAME=$(basename $infile .osm.pbf)
+  echo processing $MAPNAME
+
+  java $Xmx -jar $mkgmap --code-page=1252 \
+    --mapname=$MAPNAME \
+    --description="BDTRE punti quotati" \
+    --country-name="Italia" \
+    --region-name="Piemonte" \
+    --copyright-message="$copyright" \
+    --style-file=../stile_garmin/bdtre \
+    --show-profiles=1 \
+    --draw-priority=22 \
+    --transparent \
+    --license-file=../bdtre_licenza.txt \
+  $infile
+done
+
+rm areas.*
+rm temp*.*
+
+
+#divide e converte gli edifici in formato IMG
+
+cd $uscitaosm
+
+java $Xmx -jar $splitter \
+--max-nodes=1600000 \
+--max-areas=300 \
+--mapid=66122001 \
+--output-dir=../$BDTRE_IMG \
+UNITO_edifc.osm
+UNITO_edi_min.osm
+
+cd ..
+
+cd $BDTRE_IMG
+
+for infile in 66122*.osm.pbf
+  do
+  MAPNAME=$(basename $infile .osm.pbf)
+  echo processing $MAPNAME
+
+  java $Xmx -jar $mkgmap --code-page=1252 \
+    --mapname=$MAPNAME \
+    --description="BDTRE Edifici" \
+    --country-name="Italia" \
+    --region-name="Piemonte" \
+    --copyright-message="$copyright" \
+    --style-file=../stile_garmin/bdtre \
+    --show-profiles=1 \
+    --draw-priority=12 \
+    --transparent \
+    --license-file=../bdtre_licenza.txt \
+    --gmapsupp \
+  $infile
+done
+
+rm areas.*
+rm temp*.*
