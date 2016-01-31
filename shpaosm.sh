@@ -13,7 +13,7 @@ fi
 
 #crea la cartella dei file uscita osm se non è già esistente
 if [ -d $uscitaosm ]; then
-    echo "$uscitaosm esiste."
+    echo "OK - $uscitaosm esiste."
 else
     mkdir $uscitaosm
 fi
@@ -44,14 +44,9 @@ nomeuscita=`basename $s`
 python $ogr2osm --positive-id --id=$id --add-version --add-timestamp --force ./$s -o "../$uscitaosm/$nomeuscita.osm" 
 
 
-id=`expr $id + 9000000`
-done
-done
 
-###################################### modifica i file osm in modo da far apaprire le scritte <caption> di mapsforge.
+# modifica i file osm in modo da far apaprire le scritte <caption> di mapsforge.
 
-
-# toponomastica
 cd ../$uscitaosm
 sed -i 's/NOME/name/g' *_toponomastica_*
 
@@ -63,6 +58,22 @@ sed -i 's/.000000000000000"/"/g' *_cv_liv_*
 #Punti quotati
 sed -i 's/QUOTA/name/g' *_p_altim_* 
 sed -i 's/[0-9][0-9][0-9]"\/>/"\/>/g' *_p_altim_*
+
+cd ../$sbdtre
+
+#converte in pbf
+$osmosis --rx ../$uscitaosm/$nomeuscita.osm --wb ../$uscitaosm/$nomeuscita.pbf omitmetadata=true
+rm ../$uscitaosm/$nomeuscita.osm
+
+
+id=`expr $id + 9000000`
+done
+done
+
+#####################################
+
+# toponomastica
+
 
 
 
