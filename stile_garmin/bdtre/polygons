@@ -1,0 +1,11 @@
+#Edificato minore
+
+EDI_MIN_ST='costruito'     [ 0x27 resolution 22 ]
+EDI_MIN_ST='in costruzione'     [ 0x27 resolution 22 ]
+EDI_MIN_ST='Non conosciuto'     [ 0x27 resolution 22 ]
+
+#Edificato
+
+EDIFC_STAT='costruito'     [ 0x27 resolution 22 ]
+EDIFC_STAT='in costruzione'     [ 0x27 resolution 22 ]
+EDIFC_STAT='Non conosciuto'     [ 0x27 resolution 22 ]
