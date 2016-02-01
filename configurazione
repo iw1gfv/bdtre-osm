@@ -49,3 +49,8 @@ copyright="Documento realizzato da $Licenziatario, basato su “BDTRE - Database
 #La Regione Piemonte chiede che nell'attribuzione della licenza compaia il nome di chi realizza la mappa
 #Inserisci il tuo nome alla voce Licenziatario
 Licenziatario="Galosso Lucio"
+
+
+#variabili per la pubbicazione online dei files zip
+
+dirzip="zip"
