@@ -15,7 +15,7 @@ uscitamap="uscita-map"
 
 #shp da usare:
 #esempio 001066_el_idr_2015.shp diventa el_idr perde i _ prima e dopo, i valori vanno messi fra " e separati da uno spazio
-sdu="tralic invaso edi_min albero ab_cda edifc ac_vei ar_vms bosco toponomastica cl_agr ps_inc tr_ele el_idr sp_acq p_altim"
+sdu="tralic invaso edi_min albero ab_cda edifc ac_vei ar_vms bosco toponomastica cl_agr ps_inc tr_ele el_idr sp_acq l_altim p_altim"
 
 # indirizzo per scaricare il file del piemonte
 urlpiemonte="http://geodati.fmach.it/gfoss_geodata/osm/output_osm_regioni/piemonte.osm.bz2"
@@ -41,6 +41,9 @@ splitter=~/splitter-r427/splitter.jar
 
 #Directory in cui vengono messi i file IMG del BDTRE
 BDTRE_IMG="bdtre-img"
+
+#Allocazione Ram da utilizzare per splitter e mkgmap
+Xmx=-Xmx3000M
 
 #inserimento del copyriht dei dati BDTRE
 copyright="Documento realizzato da $Licenziatario, basato su “BDTRE - Database GeoTopografico -
