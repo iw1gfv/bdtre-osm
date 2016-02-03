@@ -52,7 +52,6 @@ sed -i 's/NOME/name/g' *_toponomastica_*
 
 #curve di livello rimuove anche gli zeri finali sulla quota
 sed -i 's/QUOTA/name/g' *_l_altim_* 
-sed -i 's/.000000000000000"/"/g' *_l_altim_*
 
 
 #Punti quotati
