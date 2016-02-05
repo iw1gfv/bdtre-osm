@@ -5,7 +5,7 @@ source "./configurazione"
 #-----------------------------------------
 
 cd $uscitaosm
- rm bdtre.osm
+ rm bdtre.pbf
  rm UNITO_*.pbf
 
 ##################################### Unisce i file osm/

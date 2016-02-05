@@ -520,8 +520,8 @@
 		
 		
 		<!--curve di livello-->
-		<osm-tag key="CV_LIV_TY" value="direttrice" zoom-appear="8" />
-		<osm-tag key="CV_LIV_TY" value="ordinaria, intermedia" zoom-appear="8" />
+		<osm-tag key="TIPO" value="1.08.01"  equivalent-values="1.08.02,1.08.03,1.08.04,1.09.01" zoom-appear="14" />
+		
 		
 		<!--terreno-->
 		<osm-tag key="BOSCO_LIM" value="Non conosciuto" zoom-appear="8" />
@@ -529,114 +529,9 @@
 		<osm-tag key="CL_AGR_LIM" value="Non conosciuto" zoom-appear="8" />
 		
 		
-		<!--curve di livello di osm-->
-		   <!-- Elevation TAGS -->
+		</ways>		   
    
-      <osm-tag key="contour_ext" value="elevation_minor" zoom-appear="12" force-polygon-line="true" />
-      <osm-tag key="contour_ext" value="elevation_medium" zoom-appear="12" force-polygon-line="true" />
-      <osm-tag key="contour_ext" value="elevation_major" zoom-appear="12" force-polygon-line="true" />
-      <osm-tag key="ele" value="50" zoom-appear="14" />
-<osm-tag key="ele" value="100" zoom-appear="14" />
-<osm-tag key="ele" value="150" zoom-appear="14" />
-<osm-tag key="ele" value="200" zoom-appear="14" />
-<osm-tag key="ele" value="250" zoom-appear="14" />
-<osm-tag key="ele" value="300" zoom-appear="14" />
-<osm-tag key="ele" value="350" zoom-appear="14" />
-<osm-tag key="ele" value="400" zoom-appear="14" />
-<osm-tag key="ele" value="450" zoom-appear="14" />
-<osm-tag key="ele" value="500" zoom-appear="14" />
-<osm-tag key="ele" value="550" zoom-appear="14" />
-<osm-tag key="ele" value="600" zoom-appear="14" />
-<osm-tag key="ele" value="650" zoom-appear="14" />
-<osm-tag key="ele" value="700" zoom-appear="14" />
-<osm-tag key="ele" value="750" zoom-appear="14" />
-<osm-tag key="ele" value="800" zoom-appear="14" />
-<osm-tag key="ele" value="850" zoom-appear="14" />
-<osm-tag key="ele" value="900" zoom-appear="14" />
-<osm-tag key="ele" value="950" zoom-appear="14" />
-<osm-tag key="ele" value="1000" zoom-appear="14" />
-<osm-tag key="ele" value="1050" zoom-appear="14" />
-<osm-tag key="ele" value="1100" zoom-appear="14" />
-<osm-tag key="ele" value="1150" zoom-appear="14" />
-<osm-tag key="ele" value="1200" zoom-appear="14" />
-<osm-tag key="ele" value="1250" zoom-appear="14" />
-<osm-tag key="ele" value="1300" zoom-appear="14" />
-<osm-tag key="ele" value="1350" zoom-appear="14" />
-<osm-tag key="ele" value="1400" zoom-appear="14" />
-<osm-tag key="ele" value="1450" zoom-appear="14" />
-<osm-tag key="ele" value="1500" zoom-appear="14" />
-<osm-tag key="ele" value="1550" zoom-appear="14" />
-<osm-tag key="ele" value="1600" zoom-appear="14" />
-<osm-tag key="ele" value="1650" zoom-appear="14" />
-<osm-tag key="ele" value="1700" zoom-appear="14" />
-<osm-tag key="ele" value="1750" zoom-appear="14" />
-<osm-tag key="ele" value="1800" zoom-appear="14" />
-<osm-tag key="ele" value="1850" zoom-appear="14" />
-<osm-tag key="ele" value="1900" zoom-appear="14" />
-<osm-tag key="ele" value="1950" zoom-appear="14" />
-<osm-tag key="ele" value="2000" zoom-appear="14" />
-<osm-tag key="ele" value="2050" zoom-appear="14" />
-<osm-tag key="ele" value="2100" zoom-appear="14" />
-<osm-tag key="ele" value="2150" zoom-appear="14" />
-<osm-tag key="ele" value="2200" zoom-appear="14" />
-<osm-tag key="ele" value="2250" zoom-appear="14" />
-<osm-tag key="ele" value="2300" zoom-appear="14" />
-<osm-tag key="ele" value="2350" zoom-appear="14" />
-<osm-tag key="ele" value="2400" zoom-appear="14" />
-<osm-tag key="ele" value="2450" zoom-appear="14" />
-<osm-tag key="ele" value="2500" zoom-appear="14" />
-<osm-tag key="ele" value="2550" zoom-appear="14" />
-<osm-tag key="ele" value="2600" zoom-appear="14" />
-<osm-tag key="ele" value="2650" zoom-appear="14" />
-<osm-tag key="ele" value="2700" zoom-appear="14" />
-<osm-tag key="ele" value="2750" zoom-appear="14" />
-<osm-tag key="ele" value="2800" zoom-appear="14" />
-<osm-tag key="ele" value="2850" zoom-appear="14" />
-<osm-tag key="ele" value="2900" zoom-appear="14" />
-<osm-tag key="ele" value="2950" zoom-appear="14" />
-<osm-tag key="ele" value="3000" zoom-appear="14" />
-<osm-tag key="ele" value="3050" zoom-appear="14" />
-<osm-tag key="ele" value="3100" zoom-appear="14" />
-<osm-tag key="ele" value="3150" zoom-appear="14" />
-<osm-tag key="ele" value="3200" zoom-appear="14" />
-<osm-tag key="ele" value="3250" zoom-appear="14" />
-<osm-tag key="ele" value="3300" zoom-appear="14" />
-<osm-tag key="ele" value="3350" zoom-appear="14" />
-<osm-tag key="ele" value="3400" zoom-appear="14" />
-<osm-tag key="ele" value="3450" zoom-appear="14" />
-<osm-tag key="ele" value="3500" zoom-appear="14" />
-<osm-tag key="ele" value="3550" zoom-appear="14" />
-<osm-tag key="ele" value="3600" zoom-appear="14" />
-<osm-tag key="ele" value="3650" zoom-appear="14" />
-<osm-tag key="ele" value="3700" zoom-appear="14" />
-<osm-tag key="ele" value="3750" zoom-appear="14" />
-<osm-tag key="ele" value="3800" zoom-appear="14" />
-<osm-tag key="ele" value="3850" zoom-appear="14" />
-<osm-tag key="ele" value="3900" zoom-appear="14" />
-<osm-tag key="ele" value="3950" zoom-appear="14" />
-<osm-tag key="ele" value="4000" zoom-appear="14" />
-<osm-tag key="ele" value="4050" zoom-appear="14" />
-<osm-tag key="ele" value="4100" zoom-appear="14" />
-<osm-tag key="ele" value="4150" zoom-appear="14" />
-<osm-tag key="ele" value="4200" zoom-appear="14" />
-<osm-tag key="ele" value="4250" zoom-appear="14" />
-<osm-tag key="ele" value="4300" zoom-appear="14" />
-<osm-tag key="ele" value="4350" zoom-appear="14" />
-<osm-tag key="ele" value="4400" zoom-appear="14" />
-<osm-tag key="ele" value="4450" zoom-appear="14" />
-<osm-tag key="ele" value="4500" zoom-appear="14" />
-<osm-tag key="ele" value="4550" zoom-appear="14" />
-<osm-tag key="ele" value="4600" zoom-appear="14" />
-<osm-tag key="ele" value="4650" zoom-appear="14" />
-<osm-tag key="ele" value="4700" zoom-appear="14" />
-<osm-tag key="ele" value="4750" zoom-appear="14" />
-<osm-tag key="ele" value="4800" zoom-appear="14" />
-<osm-tag key="ele" value="4850" zoom-appear="14" />
-<osm-tag key="ele" value="4900" zoom-appear="14" />
-<osm-tag key="ele" value="4950" zoom-appear="14" />
-<osm-tag key="ele" value="5000" zoom-appear="14" />
-    		
-				</ways>
+		
 		
 		
 		<pois>
