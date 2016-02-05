@@ -217,6 +217,10 @@ osmamap.sh
 
 4.1 Sequenza di script per la creazione della mappa per Garmin
 ---------------------------------------------------------------
+scaricabdtre.sh
+unzipbdtre.sh
 shpaosm.sh
+uniscibdtre.sh
+bdtre2img.sh
 Da completare...
 
