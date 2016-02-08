@@ -28,12 +28,12 @@ else
     mkdir $BDTRE_IMG
 fi
 
+
 #cancella i file nella directory
-rm $BDTRE_IMG/*
+rm -r $BDTRE_IMG/*
 
 
 #divide e converte le curve di livello in formato IMG
-
 
 java $Xmx -jar $splitter \
 --max-nodes=1600000 \
@@ -66,6 +66,7 @@ done
 rm $BDTRE_IMG/areas.*
 rm $BDTRE_IMG/densities-out.txt
 rm $BDTRE_IMG/temp*.*
+rm $BDTRE_IMG/66*.osm.pbf
 
 
 #divide e converte i punti quotati in formato IMG
@@ -101,6 +102,7 @@ done
 rm $BDTRE_IMG/areas.*
 rm $BDTRE_IMG/densities-out.txt
 rm $BDTRE_IMG/temp*.*
+rm $BDTRE_IMG/66*.osm.pbf
 
 
 #divide e converte gli edifici in formato IMG
@@ -139,6 +141,7 @@ rm $uscitaosm/UNITO_edifici.pbf
 rm $BDTRE_IMG/areas.*
 rm $BDTRE_IMG/densities-out.txt
 rm $BDTRE_IMG/temp*.*
+rm $BDTRE_IMG/66*.osm.pbf
 
 
 #divide e converte gli alberi isolati in formato IMG
@@ -174,12 +177,13 @@ done
 rm $BDTRE_IMG/areas.*
 rm $BDTRE_IMG/densities-out.txt
 rm $BDTRE_IMG/temp*.*
+rm $BDTRE_IMG/66*.osm.pbf
 
 
 #divide e converte il bosco in formato IMG
 
 java $Xmx -jar $splitter \
---max-nodes=160000 \
+--max-nodes=1600000 \
 --max-areas=300 \
 --mapid=66124001 \
 --output-dir=$BDTRE_IMG \
@@ -209,3 +213,4 @@ done
 rm $BDTRE_IMG/areas.*
 rm $BDTRE_IMG/densities-out.txt
 rm $BDTRE_IMG/temp*.*
+rm $BDTRE_IMG/66*.osm.pbf
