@@ -15,7 +15,7 @@ uscitamap="uscita-map"
 
 #shp da usare:
 #esempio 001066_el_idr_2015.shp diventa el_idr perde i _ prima e dopo, i valori vanno messi fra " e separati da uno spazio
-sdu="tralic invaso edi_min albero ab_cda edifc ac_vei ar_vms bosco toponomastica cl_agr ps_inc tr_ele el_idr sp_acq l_altim p_altim l_altim"
+sdu="tralic invaso edi_min albero ab_cda edifc ac_vei ar_vms bosco toponomastica cl_agr ps_inc tr_ele el_idr sp_acq l_altim p_altim"
 
 # indirizzo per scaricare il file del piemonte
 urlpiemonte="http://geodati.fmach.it/gfoss_geodata/osm/output_osm_regioni/piemonte.osm.bz2"
@@ -51,7 +51,10 @@ copyright="Documento realizzato da $Licenziatario, basato su “BDTRE - Database
 
 #La Regione Piemonte chiede che nell'attribuzione della licenza compaia il nome di chi realizza la mappa
 #Inserisci il tuo nome alla voce Licenziatario
-Licenziatario="Galosso Lucio"
+Licenziatario="Michele Marchello e Lucio Galosso"
+
+#File di testo padre dei file typ
+TYPFILE_VERSION=BDTRE
 
 
 #variabili per la pubbicazione online dei files zip
