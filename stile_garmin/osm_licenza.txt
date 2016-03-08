@@ -1,0 +1,2 @@
+openstreetmap data: (c) openstreetmap.org contributors, see http://wiki.openstreetmap.org/index.php/attribution
+openstreetmap data are licensed under Open Database License, see www.opendatacommons.org/licenses/odbl
