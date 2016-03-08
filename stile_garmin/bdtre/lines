@@ -1,15 +1,15 @@
+
 #CURVE DI LIVELLO
 
 #Attribuisco a tutte le curve il tag minor_contour
 
-CV_LIV_TY=direttrice { add look = minor_contour }
-CV_LIV_TY='ordinaria, intermedia' { add look = minor_contour }
-
+ENT_LIN=2.08.01 { add look = minor_contour }
+ENT_LIN=2.08.02 { add look = minor_contour }
+ENT_LIN=2.08.03 { add look = minor_contour }
 
 #Assegno la quota ad ogni curva facendo la conversione
 
 look = minor_contour { name '${name|conv:m=>ft}' }
-
 
 #Assegno il tipo di curva in base alla quota
 
@@ -19,9 +19,29 @@ look = minor_contour & ( name ~ '.*[05]0\.0+' )
 look = medium_contour & ( name ~ '.*[05]00\.0+' )
  { set look = major_contour }
 
+# 2.08.04 Curva di livello di determinazione incerta
 
-#ed infine il codice
-look = major_contour     [ 0x22 resolution 20 ]
-look = medium_contour    [ 0x21 resolution 21 ]
-look = minor_contour     [ 0x20 resolution 22 ]
+ENT_LIN=2.08.04 { add look = uncertain_contour }
 
+# 2.08.05 Linea di discontinuità (break line)
+
+ENT_LIN=2.08.05 { add look = breakline }
+
+#assegno il codice della linea direttrice ed intermedia
+look = major_contour  { name '${name}'}    [ 0x22 resolution 20 ]
+look = medium_contour   { name '${name}'}  [ 0x21 resolution 21 ]
+
+#ed infine il codice della linea ordinaria
+look = minor_contour    		   [ 0x20 resolution 23 ]
+look = uncertain_contor                    [ 0x23 resolution 24 ]
+look = breakline                           [ 0x23 resolution 24 ]
+
+
+#Acqua
+
+EL_IDR_LIV='Non conosciuto'		   [ 0x18 resolution 21 ]
+EL_IDR_LIV='non in sottopasso'		   [ 0x18 resolution 21 ]
+EL_IDR_LIV='in sottopasso'		   [ 0x26 resolution 21 ]
+
+#elettrico
+TR_ELE_POS=pensile  { name '${LN_ELE_TEN}'}	   [ 0x29 resolution 21 ]

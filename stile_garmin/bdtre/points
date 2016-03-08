@@ -1,6 +1,33 @@
 
+#albero isolato
+ALBERO_TY=altro | ALBERO_TY=monumentale		[0x611e resolution 22]
 
 #punto quotato
-TIPO=2.08.06 | TIPO=2.08.07 | TIPO=2.09.05
-  { name '${name}'}
- [0x010303 resolution 23]
+TIPO=2.08.06 | TIPO=2.08.07 | TIPO=2.09.05  { name '${name}m'} [0x10303 resolution 23]
+
+#traliccio
+TRAL_TY=traliccio		[0x01608 resolution 20]
+
+#Antenna/ripetitore
+TRAL_TY='antenna, ripetitore'	[0x01611 resolution 21]
+
+#Toponomastica
+CATEGORIA='altri laghi'  	[0x650d resolution 21]
+CATEGORIA=laghi  		[0x650d resolution 20]
+CATEGORIA='laghi principali' 	[0x650d resolution 20]
+CATEGORIA=capoluoghi  		[0x0400 resolution 15]
+CATEGORIA=comuni  		[0x0800 resolution 21]
+CATEGORIA=idrografia  				[0x6512 resolution 21]
+CATEGORIA='idrografia principale'		[0x06505 resolution 21]
+CATEGORIA="localita' minori"  			[0x0d00 resolution 23]
+CATEGORIA="localita' principali"  		[0x0c00 resolution 22]
+CATEGORIA=monti  		[0x6616 resolution 20]
+CATEGORIA='passi e valichi'  	[0x660b resolution 20]
+CATEGORIA=porti    		[0x02f0f resolution 22]
+CATEGORIA=stazioni   		[0x1101f resolution 22]
+
+
+<finalize>
+# The finalizer section is executed for each element when a rule with an element type matches
+name=* { name '${name}' }
+include 'inc/address';

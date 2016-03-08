@@ -1,11 +1,53 @@
 #Edificato minore
 
-EDI_MIN_ST='costruito'     [ 0x27 resolution 22 ]
-EDI_MIN_ST='in costruzione'     [ 0x27 resolution 22 ]
-EDI_MIN_ST='Non conosciuto'     [ 0x27 resolution 22 ]
+EDI_MIN_ST=costruito     				[ 0x27 resolution 22 ]
+EDI_MIN_ST='in costruzione'     			[ 0x27 resolution 22 ]
+EDI_MIN_ST='Non conosciuto'     			[ 0x27 resolution 22 ]
+
 
 #Edificato
 
-EDIFC_STAT='costruito'     [ 0x27 resolution 22 ]
-EDIFC_STAT='in costruzione'     [ 0x27 resolution 22 ]
-EDIFC_STAT='Non conosciuto'     [ 0x27 resolution 22 ]
+EDIFC_STAT=costruito  { name '${EDIFC_NOME}'}   	[ 0x27 resolution 22 ]
+EDIFC_STAT='in costruzione'   { name '${EDIFC_NOME}'}   [ 0x27 resolution 22 ]
+EDIFC_STAT='Non conosciuto'   { name '${EDIFC_NOME}'}   [ 0x27 resolution 22 ]
+
+
+#Bosco
+BOSCO_LIM='Non conosciuto'      			[ 0x50 resolution 18 ]
+
+#laghi
+INVASO_TY='lago artificiale'				[ 0x3f resolution 21 ]
+SP_ACQ_TY=lago						[ 0x3c resolution 20 ]
+
+#fiumi
+AB_CDA_LIV='Non conosciuto'				[ 0x46 resolution 17 ]
+AB_CDA_LIV='non in sottopasso'				[ 0x46 resolution 17 ]
+AB_CDA_LIV='in sottopasso'				[ 0x47 resolution 17 ]
+
+#Strade
+AC_VEI_ZON=parcheggio						[ 0x05 resolution 22 ]
+AC_VEI_ZON='tronco carreggiata' & AC_VEI_LIV='non in sottopasso'		[ 0x2a resolution 22 ]
+AC_VEI_ZON='tronco carreggiata' & AC_VEI_LIV='in sottopasso'	[ 0x31 resolution 22 ]
+AC_VEI_ZON='tronco carreggiata' & AC_VEI_SED='in galleria'	[ 0x31 resolution 22 ]
+AC_VEI_ZON='tronco carreggiata' & AC_VEI_SED='su ponte/viadotto/cavalcavia'	[ 0x33 resolution 22 ]
+AR_VMS_LIV='Non conosciuto'					[ 0x34 resolution 22 ]
+AR_VMS_LIV='in sottopasso'					[ 0x34 resolution 22 ]
+AR_VMS_LIV='non in sottopasso'					[ 0x34 resolution 22 ]
+
+#Uso del suolo
+PS_INC_LIM='Non conosciuto'					[0x10f04 resolution 21]
+CL_AGR_TY=vigneti						[0x10f03 resolution 21]
+CL_AGR_TY=orti							[0x10f05 resolution 22]
+CL_AGR_TY=seminativi						[0x10f09 resolution 21]
+CL_AGR_TY=uliveti						[0x10f0a resolution 21]
+CL_AGR_TY=Risaie						[0x10f11 resolution 21]
+CL_AGR_TY='prati, erbai in genere e le marcite'			[0x10f04 resolution 21]
+CL_AGR_TY='Non conosciuto'					[0x10f09 resolution 21]
+CL_AGR_TY='in aree irrigue'					[0x10f04 resolution 21]
+CL_AGR_TY='in aree non irrigue'					[0x10f04 resolution 21]
+CL_AGR_TY=frutteti						[0x10f0f resolution 21]
+CL_AGR_TY=agrumeti						[0x10f0f resolution 21]
+CL_AGR_TY=altro							[0x10f04 resolution 21]
+
+#Comune
+ENTE_FOR=ISTAT   { name '${COMUNE_NOM}'}   			[ 0x10100 resolution 12 ]
