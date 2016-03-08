@@ -15,10 +15,10 @@ uscitamap="uscita-map"
 
 #shp da usare:
 #esempio 001066_el_idr_2015.shp diventa el_idr perde i _ prima e dopo, i valori vanno messi fra " e separati da uno spazio
-sdu="tralic invaso edi_min albero ab_cda edifc ac_vei ar_vms bosco toponomastica cl_agr ps_inc tr_ele el_idr sp_acq l_altim p_altim"
+sdu="tralic invaso edi_min albero ab_cda edifc ac_vei ar_vms bosco toponomastica cl_agr ps_inc tr_ele el_idr sp_acq l_altim p_altim comune"
 
 # indirizzo per scaricare il file del piemonte
-urlpiemonte="http://geodati.fmach.it/gfoss_geodata/osm/output_osm_regioni/piemonte.osm.bz2"
+urlpiemonte="http://geodati.fmach.it/gfoss_geodata/osm/output_osm_regioni/piemonte.pbf"
 
 #directory piemonte.osm, directory dove si trova il file scaricato
 piemonteosm="piemonte.osm"
@@ -33,8 +33,11 @@ osmosis=~/osmosis/bin/osmosis
 
 #Variabili creazione mappa Garmin
 
+#Cartella per i file di lavoroDTM10
+dtm="DTM10"
+
 #Percorso completo di Mkgmap
-mkgmap=~/mkgmap-r3627/mkgmap.jar
+mkgmap=~/mkgmap-r3669/mkgmap.jar
 
 #Percorso completo di Splitter
 splitter=~/splitter-r427/splitter.jar
@@ -43,7 +46,10 @@ splitter=~/splitter-r427/splitter.jar
 BDTRE_IMG="bdtre-img"
 
 #Allocazione Ram da utilizzare per splitter e mkgmap
-Xmx=-Xmx3000M
+Xmx=-Xmx4000M
+
+#copyrigt OSM
+copyrightosm="vedi www.openstreetmap.org/copyright"
 
 #inserimento del copyriht dei dati BDTRE
 copyright="Documento realizzato da $Licenziatario, basato su “BDTRE - Database GeoTopografico -
@@ -54,7 +60,10 @@ copyright="Documento realizzato da $Licenziatario, basato su “BDTRE - Database
 Licenziatario="Michele Marchello e Lucio Galosso"
 
 #File di testo padre dei file typ
-TYPFILE_VERSION=BDTRE
+TYPFILE_VERSION=bdtre
+
+#Percorso comleto di Gmaptool
+GMT=~/gmt/gmt
 
 
 #variabili per la pubbicazione online dei files zip

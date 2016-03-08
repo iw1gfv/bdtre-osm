@@ -57,16 +57,16 @@ for infile in $BDTRE_IMG/66120*.osm.pbf
     --output-dir=$BDTRE_IMG \
     --style-file=stile_garmin/bdtre \
     --show-profiles=1 \
-    --draw-priority=12 \
+    --draw-priority=18 \
     --transparent \
-    --license-file=bdtre_licenza.txt \
+    --license-file=stile_garmin/bdtre_licenza.txt \
   $infile
 done
 
 rm $BDTRE_IMG/areas.*
 rm $BDTRE_IMG/densities-out.txt
 rm $BDTRE_IMG/temp*.*
-rm $BDTRE_IMG/66*.osm.pbf
+rm $BDTRE_IMG/*.pbf
 
 
 #divide e converte i punti quotati in formato IMG
@@ -95,14 +95,14 @@ for infile in $BDTRE_IMG/66121*.osm.pbf
     --show-profiles=1 \
     --draw-priority=20 \
     --transparent \
-    --license-file=bdtre_licenza.txt \
+    --license-file=stile_garmin/bdtre_licenza.txt \
   $infile
 done
 
 rm $BDTRE_IMG/areas.*
 rm $BDTRE_IMG/densities-out.txt
 rm $BDTRE_IMG/temp*.*
-rm $BDTRE_IMG/66*.osm.pbf
+rm $BDTRE_IMG/*.pbf
 
 
 #divide e converte gli edifici in formato IMG
@@ -131,9 +131,9 @@ for infile in $BDTRE_IMG/66122*.osm.pbf
     --output-dir=$BDTRE_IMG \
     --style-file=stile_garmin/bdtre \
     --show-profiles=1 \
-    --draw-priority=10 \
+    --draw-priority=14 \
     --transparent \
-    --license-file=bdtre_licenza.txt \
+    --license-file=stile_garmin/bdtre_licenza.txt \
   $infile
 done
 
@@ -141,13 +141,13 @@ rm $uscitaosm/UNITO_edifici.pbf
 rm $BDTRE_IMG/areas.*
 rm $BDTRE_IMG/densities-out.txt
 rm $BDTRE_IMG/temp*.*
-rm $BDTRE_IMG/66*.osm.pbf
+rm $BDTRE_IMG/*.pbf
 
 
 #divide e converte gli alberi isolati in formato IMG
 
 java $Xmx -jar $splitter \
---max-nodes=15000 \
+--max-nodes=20000 \
 --max-areas=300 \
 --mapid=66123001 \
 --output-dir=$BDTRE_IMG \
@@ -170,14 +170,14 @@ for infile in $BDTRE_IMG/66123*.osm.pbf
     --show-profiles=1 \
     --draw-priority=20 \
     --transparent \
-    --license-file=bdtre_licenza.txt \
+    --license-file=stile_garmin/bdtre_licenza.txt \
   $infile
 done
 
 rm $BDTRE_IMG/areas.*
 rm $BDTRE_IMG/densities-out.txt
 rm $BDTRE_IMG/temp*.*
-rm $BDTRE_IMG/66*.osm.pbf
+rm $BDTRE_IMG/*.pbf
 
 
 #divide e converte il bosco in formato IMG
@@ -204,13 +204,347 @@ for infile in $BDTRE_IMG/66124*.osm.pbf
     --output-dir=$BDTRE_IMG \
     --style-file=stile_garmin/bdtre \
     --show-profiles=1 \
-    --draw-priority=10 \
+    --draw-priority=12 \
     --transparent \
-    --license-file=bdtre_licenza.txt \
+    --license-file=stile_garmin/bdtre_licenza.txt \
   $infile
 done
 
 rm $BDTRE_IMG/areas.*
 rm $BDTRE_IMG/densities-out.txt
 rm $BDTRE_IMG/temp*.*
-rm $BDTRE_IMG/66*.osm.pbf
+rm $BDTRE_IMG/*.pbf
+
+
+#divide e converte l'invaso  e sp_acq in formato IMG
+
+$osmosis -v --read-pbf-fast file=$uscitaosm/UNITO_invaso.pbf --rbf file=$uscitaosm/UNITO_sp_acq.pbf --merge --wb file=$uscitaosm/UNITO_laghi.pbf omitmetadata=true
+
+java $Xmx -jar $splitter \
+--max-nodes=30000 \
+--max-areas=200 \
+--mapid=66125001 \
+--output-dir=$BDTRE_IMG \
+$uscitaosm/UNITO_laghi.pbf
+
+
+for infile in $BDTRE_IMG/66125*.osm.pbf
+  do
+  MAPNAME=$(basename $infile .osm.pbf)
+  echo processing $MAPNAME
+
+  java $Xmx -jar $mkgmap --code-page=1252 \
+    --mapname=$MAPNAME \
+    --description="BDTRE Laghi" \
+    --country-name="Italia" \
+    --region-name="Piemonte" \
+    --copyright-message="$copyright" \
+    --output-dir=$BDTRE_IMG \
+    --style-file=stile_garmin/bdtre \
+    --show-profiles=1 \
+    --draw-priority=12 \
+    --transparent \
+    --license-file=stile_garmin/bdtre_licenza.txt \
+  $infile
+done
+
+rm $uscitaosm/UNITO_laghi.pbf
+rm $BDTRE_IMG/areas.*
+rm $BDTRE_IMG/densities-out.txt
+rm $BDTRE_IMG/temp*.*
+rm $BDTRE_IMG/*.pbf
+
+
+#divide e converte i canali in formato IMG
+
+java $Xmx -jar $splitter \
+--max-nodes=200000 \
+--max-areas=300 \
+--mapid=66126001 \
+--output-dir=$BDTRE_IMG \
+$uscitaosm/UNITO_el_idr.pbf
+
+
+for infile in $BDTRE_IMG/66126*.osm.pbf
+  do
+  MAPNAME=$(basename $infile .osm.pbf)
+  echo processing $MAPNAME
+
+  java $Xmx -jar $mkgmap --code-page=1252 \
+    --mapname=$MAPNAME \
+    --description="BDTRE Canali" \
+    --country-name="Italia" \
+    --region-name="Piemonte" \
+    --copyright-message="$copyright" \
+    --output-dir=$BDTRE_IMG \
+    --style-file=stile_garmin/bdtre \
+    --show-profiles=1 \
+    --draw-priority=18 \
+    --transparent \
+    --license-file=stile_garmin/bdtre_licenza.txt \
+  $infile
+done
+
+rm $BDTRE_IMG/areas.*
+rm $BDTRE_IMG/densities-out.txt
+rm $BDTRE_IMG/temp*.*
+rm $BDTRE_IMG/*.pbf
+
+
+#divide e converte i fiumi in formato IMG
+
+java $Xmx -jar $splitter \
+--max-nodes=300000 \
+--max-areas=300 \
+--mapid=66127001 \
+--output-dir=$BDTRE_IMG \
+$uscitaosm/UNITO_ab_cda.pbf
+
+
+for infile in $BDTRE_IMG/66127*.osm.pbf
+  do
+  MAPNAME=$(basename $infile .osm.pbf)
+  echo processing $MAPNAME
+
+  java $Xmx -jar $mkgmap --code-page=1252 \
+    --mapname=$MAPNAME \
+    --description="BDTRE Fiumi" \
+    --country-name="Italia" \
+    --region-name="Piemonte" \
+    --copyright-message="$copyright" \
+    --output-dir=$BDTRE_IMG \
+    --style-file=stile_garmin/bdtre \
+    --show-profiles=1 \
+    --draw-priority=12 \
+    --transparent \
+    --license-file=stile_garmin/bdtre_licenza.txt \
+  $infile
+done
+
+rm $BDTRE_IMG/areas.*
+rm $BDTRE_IMG/densities-out.txt
+rm $BDTRE_IMG/temp*.*
+rm $BDTRE_IMG/*.pbf
+
+
+#divide e converte i sentieri in formato IMG
+
+java $Xmx -jar $splitter \
+--max-nodes=500000 \
+--max-areas=300 \
+--mapid=66128001 \
+--output-dir=$BDTRE_IMG \
+$uscitaosm/UNITO_ar_vms.pbf
+
+
+for infile in $BDTRE_IMG/66128*.osm.pbf
+  do
+  MAPNAME=$(basename $infile .osm.pbf)
+  echo processing $MAPNAME
+
+  java $Xmx -jar $mkgmap --code-page=1252 \
+    --mapname=$MAPNAME \
+    --description="BDTRE Sentieri" \
+    --country-name="Italia" \
+    --region-name="Piemonte" \
+    --copyright-message="$copyright" \
+    --output-dir=$BDTRE_IMG \
+    --style-file=stile_garmin/bdtre \
+    --show-profiles=1 \
+    --draw-priority=14 \
+    --transparent \
+    --license-file=stile_garmin/bdtre_licenza.txt \
+  $infile
+done
+
+rm $BDTRE_IMG/areas.*
+rm $BDTRE_IMG/densities-out.txt
+rm $BDTRE_IMG/temp*.*
+rm $BDTRE_IMG/*.pbf
+
+
+#divide e converte le strade in formato IMG
+
+java $Xmx -jar $splitter \
+--max-nodes=1600000 \
+--max-areas=300 \
+--mapid=66129001 \
+--output-dir=$BDTRE_IMG \
+$uscitaosm/UNITO_ac_vei.pbf
+
+
+for infile in $BDTRE_IMG/66129*.osm.pbf
+  do
+  MAPNAME=$(basename $infile .osm.pbf)
+  echo processing $MAPNAME
+
+  java $Xmx -jar $mkgmap --code-page=1252 \
+    --mapname=$MAPNAME \
+    --description="BDTRE Strade" \
+    --country-name="Italia" \
+    --region-name="Piemonte" \
+    --copyright-message="$copyright" \
+    --output-dir=$BDTRE_IMG \
+    --style-file=stile_garmin/bdtre \
+    --show-profiles=1 \
+    --draw-priority=14 \
+    --transparent \
+    --license-file=stile_garmin/bdtre_licenza.txt \
+  $infile
+done
+
+rm $BDTRE_IMG/areas.*
+rm $BDTRE_IMG/densities-out.txt
+rm $BDTRE_IMG/temp*.*
+rm $BDTRE_IMG/*.pbf
+
+
+#divide e converte i tralicci e le linee elettriche in formato IMG
+
+$osmosis -v --read-pbf-fast file=$uscitaosm/UNITO_tralic.pbf --rbf file=$uscitaosm/UNITO_tr_ele.pbf --merge --wb file=$uscitaosm/UNITO_elettrico.pbf omitmetadata=true
+
+java $Xmx -jar $splitter \
+--max-nodes=20000 \
+--max-areas=300 \
+--mapid=66130001 \
+--output-dir=$BDTRE_IMG \
+$uscitaosm/UNITO_elettrico.pbf
+
+
+for infile in $BDTRE_IMG/66130*.osm.pbf
+  do
+  MAPNAME=$(basename $infile .osm.pbf)
+  echo processing $MAPNAME
+
+  java $Xmx -jar $mkgmap --code-page=1252 \
+    --mapname=$MAPNAME \
+    --description="BDTRE Linee elettriche" \
+    --country-name="Italia" \
+    --region-name="Piemonte" \
+    --copyright-message="$copyright" \
+    --output-dir=$BDTRE_IMG \
+    --style-file=stile_garmin/bdtre \
+    --show-profiles=1 \
+    --draw-priority=18 \
+    --transparent \
+    --license-file=stile_garmin/bdtre_licenza.txt \
+  $infile
+done
+
+rm $uscitaosm/UNITO_elettrico.pbf
+rm $BDTRE_IMG/areas.*
+rm $BDTRE_IMG/densities-out.txt
+rm $BDTRE_IMG/temp*.*
+rm $BDTRE_IMG/*.pbf
+
+
+#divide e converte la toponomastica in formato IMG
+
+java $Xmx -jar $splitter \
+--max-nodes=30000 \
+--max-areas=300 \
+--mapid=66131001 \
+--output-dir=$BDTRE_IMG \
+$uscitaosm/UNITO_toponomastica.pbf
+
+
+for infile in $BDTRE_IMG/66131*.osm.pbf
+  do
+  MAPNAME=$(basename $infile .osm.pbf)
+  echo processing $MAPNAME
+
+  java $Xmx -jar $mkgmap --code-page=1252 \
+    --mapname=$MAPNAME \
+    --description="BDTRE Toponomastica" \
+    --country-name="Italia" \
+    --region-name="Piemonte" \
+    --copyright-message="$copyright" \
+    --output-dir=$BDTRE_IMG \
+    --style-file=stile_garmin/bdtre \
+    --show-profiles=1 \
+    --draw-priority=20 \
+    --transparent \
+    --license-file=stile_garmin/bdtre_licenza.txt \
+    --bounds=bounds \
+    --location-autofill=is_in,nearest \
+  $infile
+done
+
+rm $BDTRE_IMG/areas.*
+rm $BDTRE_IMG/densities-out.txt
+rm $BDTRE_IMG/temp*.*
+rm $BDTRE_IMG/*.pbf
+
+#divide e converte le coltivazioni in formato IMG
+
+$osmosis -v --read-pbf-fast file=$uscitaosm/UNITO_ps_inc.pbf --rbf file=$uscitaosm/UNITO_cl_agr.pbf --merge --wb file=$uscitaosm/UNITO_coltiva.pbf omitmetadata=true
+
+
+java $Xmx -jar $splitter \
+--max-nodes=2000000 \
+--max-areas=300 \
+--mapid=66132001 \
+--output-dir=$BDTRE_IMG \
+$uscitaosm/UNITO_coltiva.pbf
+
+
+for infile in $BDTRE_IMG/66132*.osm.pbf
+  do
+  MAPNAME=$(basename $infile .osm.pbf)
+  echo processing $MAPNAME
+
+  java $Xmx -jar $mkgmap --code-page=1252 \
+    --mapname=$MAPNAME \
+    --description="BDTRE Coltivazioni" \
+    --country-name="Italia" \
+    --region-name="Piemonte" \
+    --copyright-message="$copyright" \
+    --output-dir=$BDTRE_IMG \
+    --style-file=stile_garmin/bdtre \
+    --show-profiles=1 \
+    --draw-priority=12 \
+    --transparent \
+    --license-file=stile_garmin/bdtre_licenza.txt \
+  $infile
+done
+
+rm $uscitaosm/UNITO_coltiva.pbf
+rm $BDTRE_IMG/areas.*
+rm $BDTRE_IMG/densities-out.txt
+rm $BDTRE_IMG/temp*.*
+rm $BDTRE_IMG/*.pbf
+
+#divide e converte il comune in formato IMG
+
+
+java $Xmx -jar $splitter \
+--max-nodes=150000 \
+--max-areas=300 \
+--mapid=66133001 \
+--output-dir=$BDTRE_IMG \
+$uscitaosm/UNITO_comune.pbf
+
+
+for infile in $BDTRE_IMG/66133*.osm.pbf
+  do
+  MAPNAME=$(basename $infile .osm.pbf)
+  echo processing $MAPNAME
+
+  java $Xmx -jar $mkgmap --code-page=1252 \
+    --mapname=$MAPNAME \
+    --description="BDTRE Comune" \
+    --country-name="Italia" \
+    --region-name="Piemonte" \
+    --copyright-message="$copyright" \
+    --output-dir=$BDTRE_IMG \
+    --style-file=stile_garmin/bdtre \
+    --show-profiles=1 \
+    --draw-priority=10 \
+    --license-file=stile_garmin/bdtre_licenza.txt \
+  $infile
+done
+
+rm $BDTRE_IMG/areas.*
+rm $BDTRE_IMG/densities-out.txt
+rm $BDTRE_IMG/temp*.*
+rm $BDTRE_IMG/*.pbf

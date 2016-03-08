@@ -222,5 +222,6 @@ unzipbdtre.sh
 shpaosm.sh
 uniscibdtre.sh
 bdtre2img.sh
-Da completare...
+osm2img.sh
+unisciimg.sh
 
