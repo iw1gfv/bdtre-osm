@@ -37,7 +37,7 @@ osmosis=~/osmosis/bin/osmosis
 dtm="DTM10"
 
 #Percorso completo di Mkgmap
-mkgmap=~/mkgmap-r3669/mkgmap.jar
+mkgmap=~/mkgmap-r3627/mkgmap.jar
 
 #Percorso completo di Splitter
 splitter=~/splitter-r427/splitter.jar
@@ -46,7 +46,7 @@ splitter=~/splitter-r427/splitter.jar
 BDTRE_IMG="bdtre-img"
 
 #Allocazione Ram da utilizzare per splitter e mkgmap
-Xmx=-Xmx4000M
+Xmx=-Xmx8000M
 
 #copyrigt OSM
 copyrightosm="vedi www.openstreetmap.org/copyright"

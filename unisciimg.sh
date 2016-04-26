@@ -29,11 +29,20 @@ fi
 rm -r finale/*
 
 #cancella i file TYP nella directory stile_garmin/Typ
-rm stile_garmin/Typ/2*.TYP
-rm stile_garmin/Typ/2*.typ
+rm stile_garmin/Typ/*.TYP
+rm stile_garmin/Typ/*.typ
 
+
+# compilo il file typ dal formato testo
+
+     java -jar $mkgmap \
+     --family-id=2000 \
+     stile_garmin/Typ/${TYPFILE_VERSION}.txt
+
+mv ${TYPFILE_VERSION}.typ stile_garmin/Typ
 
 MASTER_TYPFILE=stile_garmin/Typ/${TYPFILE_VERSION}.typ
+
 
 # creo le varianti del file master TYP file con le differenze
 # cambia solamente il family ID:
@@ -157,43 +166,43 @@ java -jar $mkgmap \
   --family-name="BDTRE Comune"  \
   --product-id=1                \
   $BDTRE_Comune                 \
-  --draw-priority=12            \
+  --draw-priority=10            \
   --family-name="BDTRE Bosco"   \
   --product-id=2                \
   $BDTRE_Bosco                  \
-  --draw-priority=12            \
+  --draw-priority=10            \
   --family-name="BDTRE Coltivazioni"   \
   --product-id=3                \
   $BDTRE_Coltiva                \
-  --draw-priority=12            \
+  --draw-priority=10            \
   --family-name="BDTRE Laghi"   \
   --product-id=4                \
   $BDTRE_Laghi                  \
-  --draw-priority=12            \
+  --draw-priority=10            \
   --family-name="BDTRE Fiumi"   \
   --product-id=5                \
   $BDTRE_Fiumi                  \
-  --draw-priority=14            \
+  --draw-priority=10            \
   --family-name="BDTRE Strade"  \
   --product-id=6                \
   $BDTRE_Strade                 \
-  --draw-priority=14            \
+  --draw-priority=10            \
   --family-name="BDTRE Sentieri"\
   --product-id=7                \
   $BDTRE_Sentieri               \
-  --draw-priority=14            \
+  --draw-priority=10            \
   --family-name="BDTRE Edifici" \
   --product-id=8                \
   $BDTRE_Edifici                \
-  --draw-priority=18            \
+  --draw-priority=12            \
   --family-name="BDTRE Curve di livello"   \
   --product-id=9                \
   $BDTRE_Curve                  \
-  --draw-priority=18            \
+  --draw-priority=14            \
   --family-name="BDTRE Canali"  \
   --product-id=10               \
   $BDTRE_Canali                 \
-  --draw-priority=18            \
+  --draw-priority=14            \
   --family-name="BDTRE Linee elettriche"  \
   --product-id=11               \
   $BDTRE_Linee_ele              \
@@ -206,10 +215,10 @@ java -jar $mkgmap \
   --product-id=13               \
   $BDTRE_Albero                 \
   --draw-priority=20            \
-  --family-name="BDTRE Toponimi"  \
+  --family-name="BDTRE Toponimi"\
   --product-id=14               \
   $BDTRE_Toponimi               \
-  --draw-priority=22            \
+  --draw-priority=18            \
   --family-name="OSM"   	\
   --product-id=15               \
   $OSM                          \

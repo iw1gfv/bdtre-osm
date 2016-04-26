@@ -93,7 +93,7 @@ for infile in $BDTRE_IMG/66121*.osm.pbf
     --output-dir=$BDTRE_IMG \
     --style-file=stile_garmin/bdtre \
     --show-profiles=1 \
-    --draw-priority=20 \
+    --draw-priority=21 \
     --transparent \
     --license-file=stile_garmin/bdtre_licenza.txt \
   $infile
@@ -131,7 +131,7 @@ for infile in $BDTRE_IMG/66122*.osm.pbf
     --output-dir=$BDTRE_IMG \
     --style-file=stile_garmin/bdtre \
     --show-profiles=1 \
-    --draw-priority=14 \
+    --draw-priority=17 \
     --transparent \
     --license-file=stile_garmin/bdtre_licenza.txt \
   $infile
@@ -168,7 +168,7 @@ for infile in $BDTRE_IMG/66123*.osm.pbf
     --output-dir=$BDTRE_IMG \
     --style-file=stile_garmin/bdtre \
     --show-profiles=1 \
-    --draw-priority=20 \
+    --draw-priority=22 \
     --transparent \
     --license-file=stile_garmin/bdtre_licenza.txt \
   $infile
@@ -204,7 +204,7 @@ for infile in $BDTRE_IMG/66124*.osm.pbf
     --output-dir=$BDTRE_IMG \
     --style-file=stile_garmin/bdtre \
     --show-profiles=1 \
-    --draw-priority=12 \
+    --draw-priority=11 \
     --transparent \
     --license-file=stile_garmin/bdtre_licenza.txt \
   $infile
@@ -242,7 +242,7 @@ for infile in $BDTRE_IMG/66125*.osm.pbf
     --output-dir=$BDTRE_IMG \
     --style-file=stile_garmin/bdtre \
     --show-profiles=1 \
-    --draw-priority=12 \
+    --draw-priority=13 \
     --transparent \
     --license-file=stile_garmin/bdtre_licenza.txt \
   $infile
@@ -279,7 +279,7 @@ for infile in $BDTRE_IMG/66126*.osm.pbf
     --output-dir=$BDTRE_IMG \
     --style-file=stile_garmin/bdtre \
     --show-profiles=1 \
-    --draw-priority=18 \
+    --draw-priority=19 \
     --transparent \
     --license-file=stile_garmin/bdtre_licenza.txt \
   $infile
@@ -315,7 +315,7 @@ for infile in $BDTRE_IMG/66127*.osm.pbf
     --output-dir=$BDTRE_IMG \
     --style-file=stile_garmin/bdtre \
     --show-profiles=1 \
-    --draw-priority=12 \
+    --draw-priority=14 \
     --transparent \
     --license-file=stile_garmin/bdtre_licenza.txt \
   $infile
@@ -351,7 +351,7 @@ for infile in $BDTRE_IMG/66128*.osm.pbf
     --output-dir=$BDTRE_IMG \
     --style-file=stile_garmin/bdtre \
     --show-profiles=1 \
-    --draw-priority=14 \
+    --draw-priority=16 \
     --transparent \
     --license-file=stile_garmin/bdtre_licenza.txt \
   $infile
@@ -387,7 +387,7 @@ for infile in $BDTRE_IMG/66129*.osm.pbf
     --output-dir=$BDTRE_IMG \
     --style-file=stile_garmin/bdtre \
     --show-profiles=1 \
-    --draw-priority=14 \
+    --draw-priority=15 \
     --transparent \
     --license-file=stile_garmin/bdtre_licenza.txt \
   $infile
@@ -425,7 +425,7 @@ for infile in $BDTRE_IMG/66130*.osm.pbf
     --output-dir=$BDTRE_IMG \
     --style-file=stile_garmin/bdtre \
     --show-profiles=1 \
-    --draw-priority=18 \
+    --draw-priority=20 \
     --transparent \
     --license-file=stile_garmin/bdtre_licenza.txt \
   $infile
@@ -455,14 +455,14 @@ for infile in $BDTRE_IMG/66131*.osm.pbf
 
   java $Xmx -jar $mkgmap --code-page=1252 \
     --mapname=$MAPNAME \
-    --description="BDTRE Toponomastica" \
+    --description="BDTRE Toponimi" \
     --country-name="Italia" \
     --region-name="Piemonte" \
     --copyright-message="$copyright" \
     --output-dir=$BDTRE_IMG \
     --style-file=stile_garmin/bdtre \
     --show-profiles=1 \
-    --draw-priority=20 \
+    --draw-priority=23 \
     --transparent \
     --license-file=stile_garmin/bdtre_licenza.txt \
     --bounds=bounds \

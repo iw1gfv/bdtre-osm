@@ -28,17 +28,17 @@ else
 fi
 
 #rimuove i file all'interno della cartella
-#rm $piemonteosm/*
+rm $piemonteosm/*
 
 cd $piemonteosm
 
 #scarica il file OSM
-#wget $urlpiemonte
+wget $urlpiemonte
 
 cd ..
 
 java $Xmx -jar $splitter \
---max-nodes=1800000 \
+--max-nodes=1600000 \
 --max-areas=300 \
 --mapid=66134001 \
 --output-dir=$piemonteosm \
@@ -59,7 +59,7 @@ for infile in $piemonteosm/*.osm.pbf
       --output-dir=$piemonteosm \
       --style-file=stile_garmin/osm \
       --show-profiles=1 \
-      --draw-priority=22 \
+      --draw-priority=24 \
       --transparent \
       --license-file=stile_garmin/osm_licenza.txt \
       --remove-short-arcs \
