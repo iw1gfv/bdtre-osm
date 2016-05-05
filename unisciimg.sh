@@ -58,7 +58,7 @@ done
 # e definisco i singoli file:
 
 BDTRE_Curve=$(ls $BDTRE_IMG/66120*.img)
-BDTRE_Punti_quotati=$(ls $BDTRE_IMG/66121*.img)
+BDTRE_Punti_quo=$(ls $BDTRE_IMG/66121*.img)
 BDTRE_Edifici=$(ls $BDTRE_IMG/66122*.img)
 BDTRE_Albero=$(ls $BDTRE_IMG/66123*.img)
 BDTRE_Bosco=$(ls $BDTRE_IMG/66124*.img)
@@ -80,7 +80,7 @@ rm -r finale/
 mkdir finale
 mkdir finale/etrex
 mkdir finale/64
-mkdir finale/mapsource
+mkdir finale/mappe
 
 # unisco il file di ogni strato in un file IMG separato per i nuovi disposistivi come ad es. il gps64
 
@@ -117,9 +117,6 @@ $GMT -j -o finale/64/Canali.img \
 $GMT -j -o finale/64/Linee_ele.img \
      -f 2010,1 -m "BDTRE Linee elettriche" $BDTRE_Linee_ele ./stile_garmin/Typ/2010.TYP
 
-$GMT -j -o finale/64/Punti_quo.img \
-     -f 2011,1 -m "BDTRE Punti quotati" $BDTRE_Punti_quotati ./stile_garmin/Typ/2011.TYP
-
 $GMT -j -o finale/64/Albero.img \
      -f 2012,1 -m "BDTRE Albero isolato" $BDTRE_Albero ./stile_garmin/Typ/2012.TYP
 
@@ -144,7 +141,6 @@ $GMT -j -o finale/etrex/gmapsupp.img -m "BDTRE-OSM-GPS (GPS)" \
      finale/64/Curve.img     \
      finale/64/Canali.img    \
      finale/64/Linee_ele.img \
-     finale/64/Punti_quo.img \
      finale/64/Albero.img    \
      finale/64/Toponimi.img  \
      finale/64/OSM.img
@@ -160,7 +156,7 @@ java -jar $mkgmap \
   --overview-mapname="mapset"   \
   --country-name="Italia"       \
   --region-name="Piemonte"      \
-  --output-dir=finale/mapsource \
+  --output-dir=finale/mappe     \
   --family-id=2000              \
   --draw-priority=10            \
   --family-name="BDTRE Comune"  \
@@ -207,10 +203,6 @@ java -jar $mkgmap \
   --product-id=11               \
   $BDTRE_Linee_ele              \
   --draw-priority=20            \
-  --family-name="BDTRE Punti quotati"  \
-  --product-id=12               \
-  $BDTRE_Punti_quotati          \
-  --draw-priority=20            \
   --family-name="BDTRE Albero isolato"  \
   --product-id=13               \
   $BDTRE_Albero                 \
@@ -228,13 +220,13 @@ java -jar $mkgmap \
 # Il file tdb che è stato creato nel processo non funziona
 # E non ne abbiamo bisogno, quindi provvedo ad eliminarlo:
 
-rm finale/mapsource/mapset.tdb
+rm finale/mappe/mapset.tdb
 
 
 # Facio un gmapsupp.img intermedio, lo utilizziamo per poi dividerlo
 # nella creazione dei file per Basecamp:
 
-$GMT -j -o finale/mapsource/gmapsupp.img \
+$GMT -j -o finale/mappe/gmapsupp.img \
      -m "BDTRE-OSM-GPS Map (PC version)" \
      -f 2000,1              \
      $BDTRE_Comune          \
@@ -248,7 +240,6 @@ $GMT -j -o finale/mapsource/gmapsupp.img \
      $BDTRE_Curve           \
      $BDTRE_Canali          \
      $BDTRE_Linee_ele       \
-     $BDTRE_Punti_quotati   \
      $BDTRE_Albero          \
      $BDTRE_Toponimi        \
      $OSM                   \
@@ -260,17 +251,17 @@ $GMT -j -o finale/mapsource/gmapsupp.img \
 
 $GMT -S \
      -f 2000,1 \
-     -o finale/mapsource \
-     finale/mapsource/gmapsupp.img
+     -o finale/mappe \
+     finale/mappe/gmapsupp.img
 
 # cancello il file intermedio gmapsupp.img
 
-rm finale/mapsource/gmapsupp.img
+rm finale/mappe/gmapsupp.img
 
 # E adesso bisogna patchare il file TDB affinchè contenga le corrette informazioni sul copyright
 # Per tutte le parti della mappa BDTRE - OSM- GPS
 
-python stile_garmin/tdbfile.py finale/mapsource/mapset.tdb
+python stile_garmin/tdbfile.py finale/mappe/mapset.tdb
 
 #cancella i file
 rm stile_garmin/Typ/x*.typ

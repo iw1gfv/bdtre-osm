@@ -19,4 +19,19 @@ zip -r "../bdtre-osm-pc-$data.zip" *
 
 #aggiunge la mappa
 cd ../../finale
-zip -r ../"$dirzip"/bdtre-osm-pc-$data.zip ./mapsource
+zip -r ../"$dirzip"/bdtre-osm-pc-$data.zip ./mappe
+
+cd ..
+
+
+cd $dirzip
+cd GPS
+#rimuove il vecchio file se presente
+rm ../bdtre-osm-gps-$data.zip
+
+#aggiunge la documentazione
+zip -r "../bdtre-osm-gps-$data.zip" *
+
+#aggiunge la mappa
+cd ../../finale/etrex
+zip -r ../../"$dirzip"/bdtre-osm-gps-$data.zip gmapsupp.img
