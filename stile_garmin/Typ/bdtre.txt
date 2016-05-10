@@ -1151,8 +1151,11 @@ Type=0x46
 ;GRMN_TYPE: Water Areas/LARGE_RIVER/Major river, typically at least 700 ft in width/Non NT
 String1=0x05,Fiume
 ExtendedLabels=N
+FontStyle=NormalFont
+CustomColor=No
 Xpm="0 0 1 0"
 "1 c #3995FF"
+
 [end]
 
 
@@ -1161,6 +1164,8 @@ Type=0x47
 ;GRMN_TYPE: Water Areas/RIVER_GT_700FT/Major river greater or equal to 700 ft in width/Non NT
 String1=0x05,Fiume sotterraneo
 ExtendedLabels=N
+FontStyle=NormalFont
+CustomColor=No
 Xpm="0 0 1 0"
 "1 c #6064F8"
 [end]
@@ -2302,15 +2307,15 @@ ExtendedLabels=N
 [_line]
 Type=0x20
 ;GRMN_TYPE: Contour Lines/MINOR_CONTOUR/Minor land-based contour line/Non NT
-UseOrientation=Y
+UseOrientation=N
 LineWidth=1
 BorderWidth=0
 Xpm="0 0 2 0"
 "1 c #CFA284"
 "2 c #FFFFFF"
 String1=0x05,Curva ordinaria
-ExtendedLabels=N
-FontStyle=NormalFont
+ExtendedLabels=Y
+FontStyle=NoLabel (invisible)
 CustomColor=No
 [end]
 
@@ -2318,14 +2323,14 @@ CustomColor=No
 [_line]
 Type=0x21
 ;GRMN_TYPE: Contour Lines/INT_CONTOUR/Intermediate contour (should be used for about every 5th contour line)/Non NT
-UseOrientation=Y
+UseOrientation=N
 LineWidth=2
 BorderWidth=0
 Xpm="0 0 2 0"
 "1 c #A16A45"
 "2 c #FFFFFF"
 String1=0x05,Curva intermedia
-ExtendedLabels=N
+ExtendedLabels=Y
 FontStyle=SmallFont
 CustomColor=No
 [end]
@@ -2333,14 +2338,14 @@ CustomColor=No
 
 [_line]
 Type=0x22
-UseOrientation=Y
+UseOrientation=N
 LineWidth=2
 BorderWidth=0
 Xpm="0 0 2 0"
 "1 c #8C5C3C"
 "2 c #FFFFFF"
 String1=0x05,Curva direttrice
-ExtendedLabels=N
+ExtendedLabels=Y
 FontStyle=SmallFont
 CustomColor=No
 [end]
@@ -2348,14 +2353,14 @@ CustomColor=No
 
 [_line]
 Type=0x23
-UseOrientation=Y
+UseOrientation=N
 LineWidth=1
 BorderWidth=0
 Xpm="0 0 2 0"
 "1 c #CFA284"
 "2 c #FFFFFF"
 String1=0x05,Curva di determinazione incerta
-ExtendedLabels=N
+ExtendedLabels=Y
 FontStyle=NoLabel (invisible)
 CustomColor=No
 [end]

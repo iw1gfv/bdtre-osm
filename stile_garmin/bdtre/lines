@@ -3,9 +3,8 @@
 
 #Attribuisco a tutte le curve il tag minor_contour
 
-ENT_LIN=2.08.01 { add look = minor_contour }
-ENT_LIN=2.08.02 { add look = minor_contour }
-ENT_LIN=2.08.03 { add look = minor_contour }
+CV_LIV_TY=direttrice { add look = minor_contour }
+CV_LIV_TY="ordinaria, intermedia" { add look = minor_contour }
 
 #Assegno la quota ad ogni curva facendo la conversione
 
@@ -18,14 +17,6 @@ look = minor_contour & ( name ~ '.*[05]0\.0+' )
 
 look = medium_contour & ( name ~ '.*[05]00\.0+' )
  { set look = major_contour }
-
-# 2.08.04 Curva di livello di determinazione incerta
-
-ENT_LIN=2.08.04 { add look = uncertain_contour }
-
-# 2.08.05 Linea di discontinuità (break line)
-
-ENT_LIN=2.08.05 { add look = breakline }
 
 #assegno il codice della linea direttrice ed intermedia
 look = major_contour  			   [ 0x22 resolution 20 ]

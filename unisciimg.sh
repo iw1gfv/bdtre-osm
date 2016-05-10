@@ -117,6 +117,9 @@ $GMT -j -o finale/64/Canali.img \
 $GMT -j -o finale/64/Linee_ele.img \
      -f 2010,1 -m "BDTRE Linee elettriche" $BDTRE_Linee_ele ./stile_garmin/Typ/2010.TYP
 
+$GMT -j -o finale/64/Punti_quo.img \
+     -f 2011,1 -m "BDTRE Punti quotati" $BDTRE_Punti_quo ./stile_garmin/Typ/2011.TYP
+
 $GMT -j -o finale/64/Albero.img \
      -f 2012,1 -m "BDTRE Albero isolato" $BDTRE_Albero ./stile_garmin/Typ/2012.TYP
 
@@ -141,6 +144,7 @@ $GMT -j -o finale/etrex/gmapsupp.img -m "BDTRE-OSM-GPS (GPS)" \
      finale/64/Curve.img     \
      finale/64/Canali.img    \
      finale/64/Linee_ele.img \
+     finale/64/Punti_quo.img \
      finale/64/Albero.img    \
      finale/64/Toponimi.img  \
      finale/64/OSM.img
@@ -202,6 +206,10 @@ java -jar $mkgmap \
   --family-name="BDTRE Linee elettriche"  \
   --product-id=11               \
   $BDTRE_Linee_ele              \
+  --draw-priority=14            \
+  --family-name="BDTRE Punti quotati"  \
+  --product-id=12               \
+  $BDTRE_Punti_quo              \
   --draw-priority=20            \
   --family-name="BDTRE Albero isolato"  \
   --product-id=13               \
@@ -240,6 +248,7 @@ $GMT -j -o finale/mappe/gmapsupp.img \
      $BDTRE_Curve           \
      $BDTRE_Canali          \
      $BDTRE_Linee_ele       \
+     $BDTRE_Punti_quo       \
      $BDTRE_Albero          \
      $BDTRE_Toponimi        \
      $OSM                   \

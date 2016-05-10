@@ -3,7 +3,7 @@
 ALBERO_TY=altro | ALBERO_TY=monumentale		{ name '${name}'} [0x611e resolution 22]
 
 #punto quotato
-TIPO=2.08.06 | TIPO=2.08.07 | TIPO=2.09.05  { name '${name}' } [0x10303 resolution 22]
+PT_QUO_RIL=altro  { name '${name}m' } [0x10303 resolution 22]
 
 #traliccio
 TRAL_TY=traliccio		[0x1608 resolution 20]

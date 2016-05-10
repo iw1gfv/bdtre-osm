@@ -20,9 +20,9 @@ INVASO_TY='lago artificiale'				[ 0x3f resolution 21 ]
 SP_ACQ_TY=lago						[ 0x3c resolution 20 ]
 
 #fiumi
-AB_CDA_LIV='Non conosciuto'				[ 0x46 resolution 17 ]
-AB_CDA_LIV='non in sottopasso'				[ 0x46 resolution 17 ]
-AB_CDA_LIV='in sottopasso'				[ 0x47 resolution 17 ]
+AB_CDA_LIV='Non conosciuto'	{ name '${NOME_ABBR}'}		[ 0x46 resolution 17 ]
+AB_CDA_LIV='non in sottopasso'	{ name '${NOME_ABBR}'}		[ 0x46 resolution 17 ]
+AB_CDA_LIV='in sottopasso'	{ name '${NOME_ABBR}'}		[ 0x47 resolution 17 ]
 
 #Strade
 AC_VEI_ZON=parcheggio						[ 0x05 resolution 22 ]
