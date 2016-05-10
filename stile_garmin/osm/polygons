@@ -1,0 +1,74 @@
+leisure=* & sport=* & name=* { set name='${name} (${sport})' }
+leisure=* & sport=* & name!=* { add name='${sport}' }
+
+include 'inc/name';
+
+aeroway=airport [0x07 resolution 20]
+aeroway=aerodrome [0x07 resolution 20]
+aeroway=helipad [0x0e resolution 22]
+
+amenity=hospital [ 0x0b resolution 18]
+amenity=parking [ 0x05 resolution 22]
+
+building=* {name '${name} (${addr:street} ${addr:housenumber})' | '${addr:street} ${addr:housenumber}' | '${name}' } [ 0x27 resolution 22 ]
+
+natural=sea [0x32 resolution 16]
+natural=beach [0x1b resolution 20]
+natural=cliff [0x10f06 resolution 21]
+natural=fell | landuse=meadow [0x41 resolution 20]
+natural=glacier [0x4d resolution 16]
+natural=grassland [0x10 resolution 20]
+natural=heath [0x10 resolution 20]
+natural=marsh | natural=wetland | natural=mud [0x51 resolution 20]
+natural=scree [0x45 resolution 20]
+natural=scrub [0x4f resolution 20]
+natural=water [0x3c resolution 20]
+natural=wood | landuse=wood [0x50 resolution 18]
+
+landuse=allotments [0x10f05 resolution 22]
+landuse=basin | landuse=reservoir [0x3f resolution 20]
+landuse=commercial | landuse=retail [0x10f00 resolution 21]
+landuse=farm | landuse=farmland [0x2b resolution 21]
+landuse=farmyard [0x2c resolution 21]
+landuse=forest [0x50 resolution 18]
+landuse=grass | landuse=village_green | leisure=garden | leisure=common | leisure=park [0x17 resolution 21]
+landuse=industrial [0x10f01 resolution 21]
+landuse=landfill [0x10f10 resolution 21]
+landuse=military [0x04 resolution 21]
+landuse=orchard	| natural=orchard | landuse=orchards | natural=orchards [0x10f0f resolution 21]
+landuse=quarry [0x10f0f resolution 20]
+landuse=railway [0x6 resolution 21]
+landuse=residential [0x2 resolution 20]
+landuse=vineyard [0x10f03 resolution 21]
+landuse=cemetery | landuse=cemetary | amenity=grave_yard [0x1a resolution 21]
+
+leisure=dog_park [0x8 resolution 22]
+leisure=golf_course [0x18 resolution 20]
+leisure=multi | leisure=ice_rink | leisure=pitch | leisure=stadium | leisure=sports_center | leisure=sports_centre | landuse=recreation_ground {name '${name} (${sport})' | '${name}' | '${sport}' } [0x19 resolution 20]
+leisure=track & area=yes {name '${name} (${sport})' | '${name}' } [0x19 resolution 20]
+leisure=playground [0x10104 resolution 22]
+leisure=water_park | leisure=marina | leisure=swimming_pool [0x9 resolution 20]
+
+power=generator & generator:source=solar [0x10f07 resolution 21]
+power=station | power=substation [0x25 resolution 20]
+
+tourism=camp_site [0x2e resolution 20]
+tourism=caravan_site [0x2e resolution 20]
+tourism=zoo [0x22 resolution 20]
+
+waterway=dam [0x10f02 resolution 21]
+waterway=riverbank [0x46 resolution 17]
+
+
+#PARCHI NATURALI
+(boundary=national_park | *=national_park)   [0x14 resolution 19] 
+(landuse=nature_reserve | boundary=nature_reserve | boundary=protected_area | landuse=protected_area)	{set leisure=nature_reserve}
+leisure = nature_reserve  [0x15 resolution 19]
+
+
+<finalize>
+# The finalizer section is executed for each element when a rule with an element type matches
+include 'inc/address';
+
+name=* { name '${name}' }
+

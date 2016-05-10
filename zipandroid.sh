@@ -12,11 +12,11 @@ data=`date +%Y-%m`
 cd $dirzip
 cd Android
 #rimuove il vecchio file se presente
-rm ../bdtre-osm-android-$data.zip
+rm ../bdtre-osm-android-*.zip
+
+#Copia la mappa nella directory dello zip
+cp ../../$uscitamap/bdtre-osm.map bdtre-osm-$data.map
 
 #aggiunge la documentazione
-zip -r "../bdtre-osm-android-$data.zip" *
+zip -r "../bdtre-osm-android-$data.zip" ./
 
-#aggiunge la mappa
-cd ../../$uscitamap
-zip ../"$dirzip"/bdtre-osm-android-$data.zip bdtre-osm.map

@@ -1,0 +1,26 @@
+Questa versione di BDTRE-OSM-GPS è adatta ad essere caricata sui GPS Garmin.
+
+1. Creare Una cartella chiamata Garmin sulla microsd del GPS
+2. Copiare il file gmapsupp.img dentro la cartella garmin.
+3. Rimuovere la microsd dal computer ed inserirla nel GPS
+4. Accendere il gps e la mappa verrà caricata
+5. Entrare nel menù dl GPS ed attivare la mappa nautica e, se presente, attivare la voce Punti di scand.
+6. dal menù di selezione delle mappe si possono attivare e disattivare i vari livelli della mappa:
+	
+	OSM (elementi quali strade, tralicci linee elettriche, campi, ecc)
+	BDTRE - Comune
+	BDTRE - Bosco
+	BDTRE - Coltivazioni
+	BDTRE - Laghi
+	BDTRE - Fiumi
+	BDTRE - Strade
+	BDTRE - Sentieri
+	BDTRE - Edifici
+	BDTRE - Curve di livello
+	BDTRE - Canali
+	BDTRE - Linee_ele
+	BDTRE - Albero
+	BDTRE - Toponimi
+	
+	
+Questa mappa ed i prossimi aggiornamenti si possono scaricare da piemontegps.altervista.org

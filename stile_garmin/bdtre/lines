@@ -28,8 +28,8 @@ ENT_LIN=2.08.04 { add look = uncertain_contour }
 ENT_LIN=2.08.05 { add look = breakline }
 
 #assegno il codice della linea direttrice ed intermedia
-look = major_contour  { name '${name}'}    [ 0x22 resolution 20 ]
-look = medium_contour   { name '${name}'}  [ 0x21 resolution 21 ]
+look = major_contour  			   [ 0x22 resolution 20 ]
+look = medium_contour   		   [ 0x21 resolution 21 ]
 
 #ed infine il codice della linea ordinaria
 look = minor_contour    		   [ 0x20 resolution 23 ]

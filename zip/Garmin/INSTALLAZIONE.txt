@@ -1,0 +1,58 @@
+Questa versione di BDTRE-OSM-PC è adatta ad essere utilizzata con i software:
+
+Mapsource
+Basecamp
+Qlandkartegt
+
+I file della mappa sono dentro la cartella mapsource.
+
+
+>>>>>>>>>>>>>>INSTALLAZIONE E DISIONSTALLAZIONE SU MAPSOURCE E BASECAMP<<<<<<<<<<<<<<<<
+
+INSTALLAZIONE:
+
+1 Estrarre la cartella bdtre-osm-pc.... contenuta nel file zip sul computer.
+
+2 Chiudere il programma Mapsource / Basecamp, se aperto.
+
+3 Entrare nella cartella map e fare doppio click sul file:
+
+install.bat
+
+Se l'installazione non riesce bisogna installare la mappa con i permessi di amministratore,
+fare click con il destro sul file install.bat e cliccare su esegui come amministratore, inserire la password. 
+
+
+
+
+DISINSTALLAZIONE:
+
+Entrare nella cartella mapsource e fare doppio click sul file:
+
+uninstall.bat
+
+Se la disinstallazione non riesce bisogna disinstallare la mappa con i permessi di amministratore,
+fare click con il destro sul file uninstall.bat e cliccare su esegui come amministratore, inserire la password. 
+
+
+ATTENZIONE!!!!
+Prima di cancellare la cartella o di spostarla eseguire la disinstallazione.
+Non caricare la mappa su un gps tramite mapsource, scaricare da piemontegps.altervista.org la verasione adatta al gps.
+
+
+
+
+
+
+>>>>>>>>>>>>>>INSTALLAZIONE E DISINSTALLAZIONE SU QLANDKARTEGT<<<<<<<<<<<<<<<<
+
+1 Estrarre la cartella bdtre-osm-pc.... contenuta nel file zip sul computer.
+
+2 Aprire Qlandkartegt
+
+2 Dal menù Mappa scegliere apri mappa e caricare il file mapset.tdb e alla prossima richiesta scegliere il file mapset.img.
+
+Con Qlandkartegt non è richiesta l'installazione della mappa.
+
+
+Questa mappa ed i futuri aggiornamenti possono essere scaricati da: piemontegps.altervista.org
