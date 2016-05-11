@@ -2803,6 +2803,24 @@ DayXpm="11 13 5 1"   Colormode=16
 
 [_point]
 Type=0x016
+SubType=0x03
+;GRMN_TYPE: //
+String1=0x05,civico
+ExtendedLabels=N
+FontStyle=NormalFont
+CustomColor=No
+DayXpm="4 4 1 1"   Colormode=16
+"  	c none"
+"    "
+"    "
+"    "
+"    "
+;1234
+[end]
+
+
+[_point]
+Type=0x016
 SubType=0x07
 ;GRMN_TYPE: //
 String1=0x05,Guado

@@ -15,7 +15,7 @@ uscitamap="uscita-map"
 
 #shp da usare:
 #esempio 001066_el_idr_2015.shp diventa el_idr perde i _ prima e dopo, i valori vanno messi fra " e separati da uno spazio
-sdu="ab_cda bosco comuni cv_liv pt_quo"
+sdu="ab_cda acc_pc ac_vei bosco comuni cv_liv pt_quo"
 
 # indirizzo per scaricare il file del piemonte
 urlpiemonte="http://geodati.fmach.it/gfoss_geodata/osm/output_osm_regioni/piemonte.pbf"
@@ -46,7 +46,7 @@ splitter=~/splitter-r427/splitter.jar
 BDTRE_IMG="bdtre-img"
 
 #Allocazione Ram da utilizzare per splitter e mkgmap
-Xmx=-Xmx8000M
+Xmx=-Xmx4000M
 
 #copyrigt OSM
 copyrightosm="vedi www.openstreetmap.org/copyright"
