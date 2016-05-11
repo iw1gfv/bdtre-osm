@@ -4,7 +4,7 @@ sbdtrez="BDTRE"
 #sorgentibdtre, directory che contiene i file non zippati
 sbdtre="sorgenti-bdtre"
 
-#shp usati, directory che conterrà i files shp utili alla creazione della mappa
+#shp usati, directory che conterrà i files shp utili alla creazione della mappa ////directory non più usata
 shpusati="shp-usati"
 
 #uscita osm, directory che conterrà i files osm
