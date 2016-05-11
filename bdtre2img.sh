@@ -40,7 +40,7 @@ java $Xmx -jar $splitter \
 --max-areas=300 \
 --mapid=66120001 \
 --output-dir=$BDTRE_IMG \
-$uscitaosm/UNITO_l_altim.pbf
+$uscitaosm/UNITO_cv_liv.pbf
 
 
 for infile in $BDTRE_IMG/66120*.osm.pbf
@@ -76,7 +76,7 @@ java $Xmx -jar $splitter \
 --max-areas=300 \
 --mapid=66121001 \
 --output-dir=$BDTRE_IMG \
-$uscitaosm/UNITO_p_altim.pbf
+$uscitaosm/UNITO_pt_quo.pbf
 
 
 for infile in $BDTRE_IMG/66121*.osm.pbf
@@ -516,7 +516,6 @@ rm $BDTRE_IMG/*.pbf
 
 #divide e converte il comune in formato IMG
 
-
 java $Xmx -jar $splitter \
 --max-nodes=150000 \
 --max-areas=300 \
@@ -533,6 +532,40 @@ for infile in $BDTRE_IMG/66133*.osm.pbf
   java $Xmx -jar $mkgmap --code-page=1252 \
     --mapname=$MAPNAME \
     --description="BDTRE Comune" \
+    --country-name="Italia" \
+    --region-name="Piemonte" \
+    --copyright-message="$copyright" \
+    --output-dir=$BDTRE_IMG \
+    --style-file=stile_garmin/bdtre \
+    --show-profiles=1 \
+    --draw-priority=10 \
+    --license-file=stile_garmin/bdtre_licenza.txt \
+  $infile
+done
+
+rm $BDTRE_IMG/areas.*
+rm $BDTRE_IMG/densities-out.txt
+rm $BDTRE_IMG/temp*.*
+rm $BDTRE_IMG/*.pbf
+
+#divide e converte il numero civico in formato IMG
+
+java $Xmx -jar $splitter \
+--max-nodes=150000 \
+--max-areas=300 \
+--mapid=66134001 \
+--output-dir=$BDTRE_IMG \
+$uscitaosm/UNITO_acc_pc.pbf
+
+
+for infile in $BDTRE_IMG/66134*.osm.pbf
+  do
+  MAPNAME=$(basename $infile .osm.pbf)
+  echo processing $MAPNAME
+
+  java $Xmx -jar $mkgmap --code-page=1252 \
+    --mapname=$MAPNAME \
+    --description="BDTRE civico" \
     --country-name="Italia" \
     --region-name="Piemonte" \
     --copyright-message="$copyright" \

@@ -1,0 +1,31 @@
+ab_cda = Fiumi (area)
+
+AB_CDA_LIV='Non conosciuto'	{ name '${NOME_ABBR}'}
+AB_CDA_LIV='non in sottopasso'	{ name '${NOME_ABBR}'}
+AB_CDA_LIV='in sottopasso'	{ name '${NOME_ABBR}'}
+
+
+acc_pc
+
+ACC_PC_TY='accesso esterno diretto' { name '${CIVICO_NUM} ${CIVICO_SUB}' }
+
+
+bosco = Bosco (area)
+
+BOSCO_LIM='Non conosciuto'
+
+
+comuni = Comune (area)
+
+ENTE_FOR=ISTAT   { name '${COMUNE_NOM}'}
+
+
+cv_liv = Curva di livello (linea)
+
+CV_LIV_TY=direttrice 			{ name '${name}m'}
+CV_LIV_TY="ordinaria, intermedia" 	{ name '${name}m'}
+
+
+pt_quo = Punto quotato (punto)
+
+PT_QUO_RIL=altro  { name '${name}m' }

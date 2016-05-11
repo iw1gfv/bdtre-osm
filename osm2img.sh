@@ -40,7 +40,7 @@ cd ..
 java $Xmx -jar $splitter \
 --max-nodes=1600000 \
 --max-areas=300 \
---mapid=66134001 \
+--mapid=66135001 \
 --output-dir=$piemonteosm \
 $piemonteosm/piemonte.pbf
 

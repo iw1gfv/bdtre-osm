@@ -47,7 +47,7 @@ MASTER_TYPFILE=stile_garmin/Typ/${TYPFILE_VERSION}.typ
 # creo le varianti del file master TYP file con le differenze
 # cambia solamente il family ID:
 
-for FID in 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014
+for FID in 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015
 do
   cp $MASTER_TYPFILE stile_garmin/Typ/$FID.TYP
   $GMT -w -y $FID,1 stile_garmin/Typ/$FID.TYP
@@ -71,7 +71,8 @@ BDTRE_Linee_ele=$(ls $BDTRE_IMG/66130*.img)
 BDTRE_Toponimi=$(ls $BDTRE_IMG/66131*.img)
 BDTRE_Coltiva=$(ls $BDTRE_IMG/66132*.img)
 BDTRE_Comune=$(ls $BDTRE_IMG/66133*.img)
-OSM=$(ls $piemonteosm/66134*.img)
+BDTRE_Civico=$(ls $BDTRE_IMG/66134*.img)
+OSM=$(ls $piemonteosm/66135*.img)
 
 
 # make the target directory
@@ -127,7 +128,10 @@ $GMT -j -o finale/64/Toponimi.img \
      -f 2013,1 -m "BDTRE Toponimi" $BDTRE_Toponimi ./stile_garmin/Typ/2013.TYP
 
 $GMT -j -o finale/64/OSM.img \
-     -f 2014,1 -m "OSM" $OSM ./stile_garmin/Typ/2014.TYP
+     -f 2014,1 -m "BDTRE Numero civico" $BDTRE_civico ./stile_garmin/Typ/2014.TYP
+
+$GMT -j -o finale/64/OSM.img \
+     -f 2015,1 -m "OSM" $OSM ./stile_garmin/Typ/2015.TYP
 
     
 # gli strati ora vengono uniti in un unico gmapsupp.img per i vecchi dispositivi:
@@ -147,6 +151,7 @@ $GMT -j -o finale/etrex/gmapsupp.img -m "BDTRE-OSM-GPS (GPS)" \
      finale/64/Punti_quo.img \
      finale/64/Albero.img    \
      finale/64/Toponimi.img  \
+     finale/64/Civico.img    \
      finale/64/OSM.img
 
 
@@ -218,9 +223,13 @@ java -jar $mkgmap \
   --family-name="BDTRE Toponimi"\
   --product-id=14               \
   $BDTRE_Toponimi               \
+  --draw-priority=20            \
+  --family-name="BDTRE Numero civico"\
+  --product-id=15               \
+  $BDTRE_civico                 \
   --draw-priority=18            \
   --family-name="OSM"   	\
-  --product-id=15               \
+  --product-id=16               \
   $OSM                          \
   $MASTER_TYPFILE
 
@@ -251,6 +260,7 @@ $GMT -j -o finale/mappe/gmapsupp.img \
      $BDTRE_Punti_quo       \
      $BDTRE_Albero          \
      $BDTRE_Toponimi        \
+     $BDTRE_Civico          \
      $OSM                   \
      $MASTER_TYPFILE
 

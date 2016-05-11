@@ -16,7 +16,7 @@ fi
 cd $sbdtrez
 
 #ciclo di scaricamento 
-cat ../comuni/lista_comuni.txt | \
+cat ../comuni/Torino.txt | \
 while read riga; do
 echo $riga
 
@@ -24,6 +24,6 @@ echo $riga
 codice=`echo $riga | cut -d " " -f 1`
 
 #scarica il file
-wget -nc http://www.datigeo-piem-download.it/static/regp01/BDTRE2015_VECTOR/BDTRE_DATABASE_GEOTOPOGRAFICO_2015-LIMI_COMUNI_10_GAIMSDWL-$codice-EPSG32632-SHP.zip -nv
+wget -nc http://www.datigeo-piem-download.it/static/regp01/BDTRE2016_VECTOR/BDTRE_DATABASE_GEOTOPOGRAFICO_2016-LIMI_COMUNI_10_GAIMSDWL-$codice-EPSG32632-SHP.zip -nv
 
 done 

@@ -19,13 +19,13 @@ look = medium_contour & ( name ~ '.*[05]00\.0+' )
  { set look = major_contour }
 
 #assegno il codice della linea direttrice ed intermedia
-look = major_contour  			   [ 0x22 resolution 20 ]
-look = medium_contour   		   [ 0x21 resolution 21 ]
+look = major_contour  	{ name '${name}m'}	   [ 0x22 resolution 20 ]
+look = medium_contour   { name '${name}m'}	   [ 0x21 resolution 21 ]
 
 #ed infine il codice della linea ordinaria
-look = minor_contour    		   [ 0x20 resolution 23 ]
-look = uncertain_contor                    [ 0x23 resolution 24 ]
-look = breakline                           [ 0x23 resolution 24 ]
+look = minor_contour    { name '${name}m'}	   [ 0x20 resolution 23 ]
+look = uncertain_contor { name '${name}m'}         [ 0x23 resolution 24 ]
+look = breakline        { name '${name}m'}         [ 0x23 resolution 24 ]
 
 
 #Acqua
