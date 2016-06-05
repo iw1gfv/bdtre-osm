@@ -1,23 +1,101 @@
 ab_cda = Fiumi (area)
 
-AB_CDA_LIV='Non conosciuto'	{ name '${NOME_ABBR}'}
-AB_CDA_LIV='non in sottopasso'	{ name '${NOME_ABBR}'}
-AB_CDA_LIV='in sottopasso'	{ name '${NOME_ABBR}'}
+AB_CDA_LIV='Non conosciuto'	{ name '${NOME_ABBR}'}	[ 0x46 ]
+AB_CDA_LIV='non in sottopasso'	{ name '${NOME_ABBR}'}	[ 0x46 ]
+AB_CDA_LIV='in sottopasso'	{ name '${NOME_ABBR}'}	[ 0x47 ]
 
 
-acc_pc
+acc_int = Civico interno (punto)
 
-ACC_PC_TY='accesso esterno diretto' { name '${CIVICO_NUM} ${CIVICO_SUB}' }
+ENTE_FOR=* { name '${ACC_INT_NR}' }	[ 0x1603 ]
+
+
+acc_pc = Numero civico (punto)
+
+ACC_PC_TY='accesso esterno diretto' { name '${CIVICO_NUM} ${CIVICO_SUB}' }	[ 0x1603 ]
+
+
+ac_ped = strada pedonale (area)
+
+AC_PED_FON=pavimentato			[ 0x2f ]
+AC_PED_FON='non pavimentato'		[ 0x2f ]
+
+
+ac_vei = strada (area)
+
+AC_VEI_ZON=parcheggio								[ 0x05 ]
+AC_VEI_ZON='tronco carreggiata' & AC_VEI_LIV='non in sottopasso'		[ 0x2a ]
+AC_VEI_ZON='tronco carreggiata' & AC_VEI_LIV='in sottopasso'			[ 0x31 ]
+AC_VEI_ZON='tronco carreggiata' & AC_VEI_SED='in galleria'			[ 0x31 ]
+AC_VEI_ZON='tronco carreggiata' & AC_VEI_SED='su ponte/viadotto/cavalcavia'	[ 0x33 ]
+
+
+ar_vms = strada (area)
+
+AR_VMS_LIV='Non conosciuto'			[ 0x34 ]
+AR_VMS_LIV='in sottopasso'			[ 0x34 ]
+AR_VMS_LIV='non in sottopasso'			[ 0x34 ]
+
+
+ar_vrd = verde (area)
+
+AR_VRD_TY=* { name '${AR_VRD_TY}' }	[ 0x17 ]
+
+
+albero = albero (punto)
+
+ALBERO_TY=altro | ALBERO_TY=monumentale		[ 0x611e ]
+
+
+Argine
+ARGN_TY='Non conosciuto'		[ 0x26 ]
+
+
+attr_sp = impianti sportivi (area)
+
+ATTR_SP_TY='vasca, piscina scoperta'	{ name '${ATTR_SP_TY}'}	[ 0x9 ]
+ATTR_SP_TY='tiro a segno, poligono'	{ name '${ATTR_SP_TY}'}	[ 0x19 ]
+ATTR_SP_TY='campo tennis'		{ name '${ATTR_SP_TY}'}	[ 0x19 ]
+ATTR_SP_TY='campo calcio'		{ name '${ATTR_SP_TY}'}	[ 0x19 ]
+ATTR_SP_TY='campo calcetto'		{ name '${ATTR_SP_TY}'}	[ 0x19 ]
+ATTR_SP_TY='campo bocce'		{ name '${ATTR_SP_TY}'}	[ 0x19 ]
+ATTR_SP_TY='campo basket, volley'	{ name '${ATTR_SP_TY}'}	[ 0x19 ]
+ATTR_SP_TY='campi sportivi'		{ name '${ATTR_SP_TY}'}	[ 0x19 ]
+ATTR_SP_TY='Non conosciuto'					[ 0x19 ]
+ATTR_SP_TY=gradinata			{ name '${ATTR_SP_TY}'}	[ 0x27 ]
 
 
 bosco = Bosco (area)
 
-BOSCO_LIM='Non conosciuto'
+BOSCO_LIM='Non conosciuto'	[ 0x50 ]
+
+
+cl_agr = coltivazioni (area)
+
+PS_INC_LIM='Non conosciuto'				[ 0x10f04 ]
+CL_AGR_TY=vigneti					[ 0x10f03 ]
+CL_AGR_TY=orti						[ 0x10f05 ]
+CL_AGR_TY=seminativi					[ 0x10f09 ]
+CL_AGR_TY=uliveti					[ 0x10f0a ]
+CL_AGR_TY=Risaie					[ 0x10f11 ]
+CL_AGR_TY='prati, erbai in genere e le marcite'		[ 0x10f04 ]
+CL_AGR_TY='Non conosciuto'				[ 0x10f09 ]
+CL_AGR_TY='in aree irrigue'				[ 0x10f04 ]
+CL_AGR_TY='in aree non irrigue'				[ 0x10f04 ]
+CL_AGR_TY=frutteti					[ 0x10f0f ]
+CL_AGR_TY=agrumeti					[ 0x10f0f ]
+CL_AGR_TY=altro						[ 0x10f04 ]
 
 
 comuni = Comune (area)
 
-ENTE_FOR=ISTAT   { name '${COMUNE_NOM}'}
+ENTE_FOR=ISTAT   { name '${COMUNE_NOM}'}	[ 0x10100 ]
+
+
+cv_aes = cava (area)
+
+CV_AES_TY=cava			{ name '${CV_AES_NOM}'}	[ 0x10f0f ]
+CV_AES_TY='Non conosciuto'	{ name '${CV_AES_NOM}'}	[ 0x10f0f ]
 
 
 cv_liv = Curva di livello (linea)
@@ -26,6 +104,202 @@ CV_LIV_TY=direttrice 			{ name '${name}m'}
 CV_LIV_TY="ordinaria, intermedia" 	{ name '${name}m'}
 
 
-pt_quo = Punto quotato (punto)
+diga = diga (area)
 
-PT_QUO_RIL=altro  { name '${name}m' }
+DIGA_CT=diga	[0x10f02 resolution 21]
+
+
+edificato
+
+EDIFC_USO=abitativa				{ name '${EDIFC_NOME}'}		[ 0x27 ]
+EDIFC_USO=residenziale				{ name '${EDIFC_NOME}'}		[ 0x27 ]
+EDIFC_TY='edificio rurale' & EDIFC_USO=residenziale	{ name '${EDIFC_NOME}'}		[ 0x27 ]
+EDIFC_USO='Non conosciuto'			{ name '${EDIFC_NOME}'}		[ 0x27 ]
+EDIFC_USO='Non definito'			{ name '${EDIFC_NOME}'}		[ 0x27 ]
+EDIFC_USO=municipio		{ name 'Municipio ${EDIFC_NOME}'}		[ 0x27 ]
+EDIFC_USO=museo 		{ name 'Museo ${EDIFC_NOME}'}			[ 0x27 ]
+EDIFC_USO='sede di scuola'			{ name 'Scuola ${EDIFC_NOME}'}	[ 0x27 ]
+EDIFC_USO=istruzione				{ name 'Scuola ${EDIFC_NOME}'}	[ 0x27 ]
+EDIFC_USO=amministrativo			{ name '${EDIFC_NOME}'}	[ 0x27 ]
+EDIFC_USO=biblioteca				{ name 'bibilioteca ${EDIFC_NOME}'}	[ 0x27 ]
+EDIFC_USO=campeggio				{ name 'campeggio ${EDIFC_NOME}'}	[ 0x27 ]
+EDIFC_USO=caserma				{ name 'caserma ${EDIFC_NOME}'}	[ 0x27 ]
+EDIFC_USO=centrale elettrica			{ name 'centrale elettrica ${EDIFC_NOME}'}	[ 0x27 ]
+EDIFC_USO=cinema				{ name 'cinema ${EDIFC_NOME}'}	[ 0x27 ]
+EDIFC_USO=depuratore				{ name 'depuratore ${EDIFC_NOME}'}	[ 0x27 ]
+EDIFC_USO=palestra				{ name 'palestra ${EDIFC_NOME}'}	[ 0x27 ]
+EDIFC_USO='edificio accessorio alle strade'	{ name '${EDIFC_NOME}'}		[ 0x27 ]
+EDIFC_USO=ricreativo				{ name '${EDIFC_NOME}'}		[ 0x27 ]
+EDIFC_USO='rifugio montano'			{ name 'rifugio ${EDIFC_NOME}'}		[ 0x27 ]
+EDIFC_USO=sanit					{ name '${EDIFC_NOME}'}		[ 0x27 ]
+EDIFC_USO='sede clinica'			{ name '${EDIFC_NOME}'}		[ 0x27 ]
+EDIFC_USO='sede di attivit culturali'		{ name '${EDIFC_NOME}'}		[ 0x27 ]
+EDIFC_USO='sede di attivit sportive'		{ name 'attività sportive ${EDIFC_NOME}'}	[ 0x27 ]
+EDIFC_USO="sede di forze dell'ordine"		{ name '${EDIFC_NOME}'}		[ 0x27 ]
+EDIFC_USO='sede di poste-telegrafi'		{ name '${EDIFC_NOME}'}		[ 0x27 ]
+EDIFC_USO='sede di servizio socio assistenziale'	{ name '${EDIFC_NOME}'}		[ 0x27 ]
+EDIFC_USO='sede di supermercato, ipermercato'		{ name '${EDIFC_NOME}'}		[ 0x27 ]
+EDIFC_USO='sede di vigili del fuoco'		{ name 'VV.FF ${EDIFC_NOME}'}		[ 0x27 ]
+EDIFC_USO='servizi di trasporto'		{ name '${EDIFC_NOME}'}		[ 0x27 ]
+EDIFC_USO='servizio pubblico'			{ name '${EDIFC_NOME}'}		[ 0x27 ]
+EDIFC_USO='sede di ospedale'			{ name '${EDIFC_NOME}'}		[ 0x27 ]
+EDIFC_USO='strutture ricettive'			{ name '${EDIFC_NOME}'}		[ 0x27 ]
+EDIFC_USO='teatro, auditorium'			{ name '${EDIFC_NOME}'}		[ 0x27 ]
+EDIFC_TY=generica & EDIFC_USO=agricolturale	{ name '${EDIFC_NOME}'}		[ 0x27 ]
+EDIFC_USO=fattoria				{ name 'fattoria ${EDIFC_NOME}'}	[ 0x27 ]
+EDIFC_USO=fienile				{ name 'fienile ${EDIFC_NOME}'}	[ 0x27 resolution 22 ]
+EDIFC_USO='stazione di telecomunicazioni'	{ name 'telecomunicazioni ${EDIFC_NOME}'}		[ 0x27 ]
+EDIFC_USO='stazione di trasformazione'		{ name '${EDIFC_NOME}'}		[ 0x25 ]
+EDIFC_USO=industriale				{ name '${EDIFC_NOME}'}		[ 0x0f ]
+EDIFC_USO='stabilimento industriale'		{ name '${EDIFC_NOME}'}		[ 0x0f ]
+EDIFC_USO=commerciale				{ name '${EDIFC_NOME}'}		[ 0x10f00 ]
+EDIFC_USO='sede di centro commerciale'		{ name '${EDIFC_NOME}'}		[ 0x10f00 ]
+EDIFC_TY=chiesa					{ name 'Chiesa ${EDIFC_NOME}'}		[ 0x2d ]
+EDIFC_TY=campanile				{ name 'campanile ${EDIFC_NOME}'}	[ 0x2d ]
+EDIFC_TY=capannone & EDIFC_USO=agricolturale	{ name '${EDIFC_NOME}'}		[ 0x2c ]
+EDIFC_USO=stalla				{ name '${EDIFC_NOME}'}		[ 0x2b ]
+EDIFC_TY=mulino 				{ name '${EDIFC_NOME}'}		[ 0x2c ]
+EDIFC_USO='stazione passeggeri ferroviaria'	{ name '${EDIFC_NOME}'}		[ 0x41 ]
+EDIFC_USO=ferroviario				{ name '${EDIFC_NOME}'}		[ 0x41 ]
+
+
+
+edificato minore
+
+EDI_MIN_TY=altro	     						[ 0x27 ]
+EDI_MIN_TY=baracca	     		{ name '${EDI_MIN_TY}'}		[ 0x27 ]
+EDI_MIN_TY=cappella	     		{ name '${EDI_MIN_TY}'}		[ 0x2d ]
+EDI_MIN_TY='edicola funeraria' 		{ name '${EDI_MIN_TY}'}		[ 0x2d ]
+EDI_MIN_TY='edifici minori ricreativo/sportivi'	     		{ name '${EDI_MIN_TY}'}		[ 0x27 ]
+EDI_MIN_TY='edificio cimiteriale di servizio'	     		{ name '${EDI_MIN_TY}'}		[ 0x27 ]
+EDI_MIN_TY='garage, box auto'  		{ name '${EDI_MIN_TY}'}		[ 0x27 ]
+EDI_MIN_TY='ingresso, portineria'	{ name '${EDI_MIN_TY}'}		[ 0x27 ]
+EDI_MIN_TY=loggiato	     		{ name '${EDI_MIN_TY}'}		[ 0x27 ]
+EDI_MIN_TY='Non conosciuto'    						[ 0x27 ]
+EDI_MIN_TY='servizi alle attrezzature sportive'		{ name '${EDI_MIN_TY}'}		[ 0x27 ]
+EDI_MIN_TY='servizi alle strutture produttive'		{ name '${EDI_MIN_TY}'}		[ 0x27 ]
+EDI_MIN_TY=spogliatoio			{ name '${EDI_MIN_TY}'}		[ 0x27 ]
+EDI_MIN_TY='tendone pressurizzato'	{ name '${EDI_MIN_TY}'}		[ 0x27 ]
+EDI_MIN_TY='tomba cimiteriale'		{ name '${EDI_MIN_TY}'}		[ 0x2d ]
+EDI_MIN_TY='torre, porta'		{ name '${EDI_MIN_TY}'}		[ 0x27 ]
+
+
+elementi di divisione
+
+EL_DIV_TY=*			[ 0x24 ]
+
+
+elemento copertura
+
+ELE_CP_TY='pensilina, tettoia'		{ name '${ELE_CP_TY}'}		[ 0x27 resolution 22 ]
+
+
+el_idr = elemento idrico (linea)
+
+EL_IDR_LIV='Non conosciuto'	{ name '${NOME_ABBR}'}	[ 0x18 ]
+EL_IDR_LIV='non in sottopasso'	{ name '${NOME_ABBR}'}	[ 0x18 ]
+EL_IDR_LIV='in sottopasso'	{ name '${NOME_ABBR}'}	[ 0x26 ]
+
+
+filari alberi/siepi
+FIL_AL_TY=alberi		{ name '${FIL_AL_TY}'}	[ 0x25 resolution 22 ]
+FIL_AL_TY=siepi			{ name '${FIL_AL_TY}'}	[ 0x25 resolution 22 ]
+
+
+#Forma terreno
+
+F_NTER_TY=rocce					[ 0x35 resolution 20 ]
+F_NTER_TY='spiaggia/arenile/dune'		[ 0x1b resolution 20 ]
+F_NTER_TY='pietraie e ghiaioni'			[ 0x26 resolution 20 ]
+#F_NTER_TY='area nuda'				[ 0x26 resolution 20 ]
+#F_NTER_TY='pietraie e ghiaioni'		[ 0x26 resolution 20 ]
+
+
+invaso =laghi (area)
+
+INVASO_TY='lago artificiale'	{ name '${NOME_ABBR}'} 	[ 0x3f ]
+
+
+Scarpata
+SCARPT_CON='Non conosciuto'		[ 0x26 ]
+
+
+sp_acq = laghi (area)
+
+SP_ACQ_TY=lago		{ name '${NOME_ABBR}'}		[ 0x3c ]
+SP_ACQ_TY=laguna	{ name '${NOME_ABBR}'}		[ 0x3c ]
+
+
+Toponomastica = Nomi (punto)
+CATEGORIA='altri laghi'			{ name '${name}'} [ 0x650d ]
+CATEGORIA=laghi    			{ name '${name}'} [ 0x650d ]
+CATEGORIA='laghi principali'		{ name '${name}'} [ 0x650d ]
+CATEGORIA=capoluoghi			{ name '${name}'} [ 0x0400 ]
+CATEGORIA=comuni			{ name '${name}'} [ 0x0800 ]
+CATEGORIA=idrografia 			{ name '${name}'} [ 0x6512 ]
+CATEGORIA='idrografia principale'	{ name '${name}'} [ 0x6505 ]
+CATEGORIA="localita' minori"		{ name '${name}'} [ 0x0d00 ]
+CATEGORIA="localita' principali"	{ name '${name}'} [ 0x0c00 ]
+CATEGORIA=monti				{ name '${name}'} [ 0x6616 ]
+CATEGORIA='passi e valichi'		{ name '${name}'} [ 0x660b ]
+CATEGORIA=porti				{ name '${name}'} [ 0x2f0f ]
+CATEGORIA=stazioni			{ name '${name}'} [ 0x6500 ]
+
+
+
+
+
+NON UTILIZZATI
+
+aatt
+ac_cic
+af_acq
+alveo
+alveo_a
+a_pveg
+ar_str
+a_tra
+bi_ind
+brk_ln
+canale
+condot
+cs_acq
+cs_edi
+el_acq
+el_fne
+el_fer
+el_str
+es_amm
+
+
+
+DRAW PRIORITY
+
+poligoni 10
+curve di livello 12
+linee 14
+osm 18
+punti 20
+toponimi 22
+
+
+
+ELENCO FAMIGLIE ELEMENTI GPS E PC
+
+curve di livello		66120 dp12
+impianti sportivi		66121 dp10
+edifici				66122 dp10
+albero				66123 dp20
+bosco				66124 dp10
+invaso e sp_acq (laghi)		66125 dp10
+canali el_idr			66126 dp14
+fiumi ab_cda			66127 dp10
+sentieri ar_vms			66128 dp10
+strade ac_vei			66129 dp10
+tralicci tralic tr_ele		66130 dp14
+toponomastica			66131 dp22
+coltiva ps_inc cl_agr		66132 dp10
+comune				66133 dp10
+civico acc_pc			66134 dp20
+verde cittadino ar_vrd		66135 dp10
+cava				66136 dp10

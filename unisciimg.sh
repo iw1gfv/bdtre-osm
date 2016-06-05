@@ -47,7 +47,7 @@ MASTER_TYPFILE=stile_garmin/Typ/${TYPFILE_VERSION}.typ
 # creo le varianti del file master TYP file con le differenze
 # cambia solamente il family ID:
 
-for FID in 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015
+for FID in 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018
 do
   cp $MASTER_TYPFILE stile_garmin/Typ/$FID.TYP
   $GMT -w -y $FID,1 stile_garmin/Typ/$FID.TYP
@@ -58,9 +58,9 @@ done
 # e definisco i singoli file:
 
 BDTRE_Curve=$(ls $BDTRE_IMG/66120*.img)
-BDTRE_Punti_quo=$(ls $BDTRE_IMG/66121*.img)
+BDTRE_Impianti=$(ls $BDTRE_IMG/66121*.img)
 BDTRE_Edifici=$(ls $BDTRE_IMG/66122*.img)
-BDTRE_Albero=$(ls $BDTRE_IMG/66123*.img)
+BDTRE_Alberi=$(ls $BDTRE_IMG/66123*.img)
 BDTRE_Bosco=$(ls $BDTRE_IMG/66124*.img)
 BDTRE_Laghi=$(ls $BDTRE_IMG/66125*.img)
 BDTRE_Canali=$(ls $BDTRE_IMG/66126*.img)
@@ -72,7 +72,10 @@ BDTRE_Toponimi=$(ls $BDTRE_IMG/66131*.img)
 BDTRE_Coltiva=$(ls $BDTRE_IMG/66132*.img)
 BDTRE_Comune=$(ls $BDTRE_IMG/66133*.img)
 BDTRE_Civico=$(ls $BDTRE_IMG/66134*.img)
-OSM=$(ls $piemonteosm/66135*.img)
+BDTRE_Verde=$(ls $BDTRE_IMG/66135*.img)
+BDTRE_Cava=$(ls $BDTRE_IMG/66136*.img)
+BDTRE_Divisioni=$(ls $BDTRE_IMG/66137*.img)
+OSM=$(ls $piemonteosm/66140*.img)
 
 
 # make the target directory
@@ -118,20 +121,29 @@ $GMT -j -o finale/64/Canali.img \
 $GMT -j -o finale/64/Linee_ele.img \
      -f 2010,1 -m "BDTRE Linee elettriche" $BDTRE_Linee_ele ./stile_garmin/Typ/2010.TYP
 
-$GMT -j -o finale/64/Punti_quo.img \
-     -f 2011,1 -m "BDTRE Punti quotati" $BDTRE_Punti_quo ./stile_garmin/Typ/2011.TYP
+$GMT -j -o finale/64/Impianti.img \
+     -f 2011,1 -m "BDTRE Impianti sportivi" $BDTRE_Impianti ./stile_garmin/Typ/2011.TYP
 
-$GMT -j -o finale/64/Albero.img \
-     -f 2012,1 -m "BDTRE Albero isolato" $BDTRE_Albero ./stile_garmin/Typ/2012.TYP
+$GMT -j -o finale/64/Alberi.img \
+     -f 2012,1 -m "BDTRE Alberi/siepi" $BDTRE_Albero ./stile_garmin/Typ/2012.TYP
 
 $GMT -j -o finale/64/Toponimi.img \
      -f 2013,1 -m "BDTRE Toponimi" $BDTRE_Toponimi ./stile_garmin/Typ/2013.TYP
 
-$GMT -j -o finale/64/OSM.img \
-     -f 2014,1 -m "BDTRE Numero civico" $BDTRE_civico ./stile_garmin/Typ/2014.TYP
+$GMT -j -o finale/64/Civico.img \
+     -f 2014,1 -m "BDTRE Numero civico" $BDTRE_Civico ./stile_garmin/Typ/2014.TYP
+
+$GMT -j -o finale/64/Verde.img \
+     -f 2015,1 -m "BDTRE Giardino cittadino" $BDTRE_Verde ./stile_garmin/Typ/2015.TYP
+
+$GMT -j -o finale/64/Cava.img \
+     -f 2016,1 -m "BDTRE Cava" $BDTRE_Cava ./stile_garmin/Typ/2016.TYP
+
+$GMT -j -o finale/64/Divisioni.img \
+     -f 2017,1 -m "OSM" $OSM ./stile_garmin/Typ/2017.TYP
 
 $GMT -j -o finale/64/OSM.img \
-     -f 2015,1 -m "OSM" $OSM ./stile_garmin/Typ/2015.TYP
+     -f 2018,1 -m "OSM" $OSM ./stile_garmin/Typ/2018.TYP
 
     
 # gli strati ora vengono uniti in un unico gmapsupp.img per i vecchi dispositivi:
@@ -148,10 +160,13 @@ $GMT -j -o finale/etrex/gmapsupp.img -m "BDTRE-OSM-GPS (GPS)" \
      finale/64/Curve.img     \
      finale/64/Canali.img    \
      finale/64/Linee_ele.img \
-     finale/64/Punti_quo.img \
-     finale/64/Albero.img    \
+     finale/64/Impianti.img  \
+     finale/64/Alberi.img    \
      finale/64/Toponimi.img  \
      finale/64/Civico.img    \
+     finale/64/Verde.img     \
+     finale/64/Cava.img      \
+     finale/64/Divisioni.img \
      finale/64/OSM.img
 
 
@@ -211,12 +226,12 @@ java -jar $mkgmap \
   --family-name="BDTRE Linee elettriche"  \
   --product-id=11               \
   $BDTRE_Linee_ele              \
-  --draw-priority=14            \
-  --family-name="BDTRE Punti quotati"  \
+  --draw-priority=10            \
+  --family-name="BDTRE Impianti sportivi"  \
   --product-id=12               \
-  $BDTRE_Punti_quo              \
+  $BDTRE_Impianti              \
   --draw-priority=20            \
-  --family-name="BDTRE Albero isolato"  \
+  --family-name="BDTRE Alberi/siepi"  \
   --product-id=13               \
   $BDTRE_Albero                 \
   --draw-priority=20            \
@@ -226,10 +241,22 @@ java -jar $mkgmap \
   --draw-priority=20            \
   --family-name="BDTRE Numero civico"\
   --product-id=15               \
-  $BDTRE_civico                 \
+  $BDTRE_Civico                 \
+  --draw-priority=10            \
+  --family-name="BDTRE Giardino cittadino"   	\
+  --product-id=16               \
+  $BDTRE_Verde                  \
+  --draw-priority=10            \
+  --family-name="BDTRE Cava"   	\
+  --product-id=17               \
+  $BDTRE_Cava                   \
+  --draw-priority=14            \
+  --family-name="BDTRE Divisioni del terreno"   	\
+  --product-id=18               \
+  $BDTRE_Cava                   \
   --draw-priority=18            \
   --family-name="OSM"   	\
-  --product-id=16               \
+  --product-id=19               \
   $OSM                          \
   $MASTER_TYPFILE
 
@@ -257,10 +284,13 @@ $GMT -j -o finale/mappe/gmapsupp.img \
      $BDTRE_Curve           \
      $BDTRE_Canali          \
      $BDTRE_Linee_ele       \
-     $BDTRE_Punti_quo       \
-     $BDTRE_Albero          \
+     $BDTRE_Impianti        \
+     $BDTRE_Alberi          \
      $BDTRE_Toponimi        \
      $BDTRE_Civico          \
+     $BDTRE_Verde           \
+     $BDTRE_Cava            \
+     $BDTRE_Divisioni       \
      $OSM                   \
      $MASTER_TYPFILE
 

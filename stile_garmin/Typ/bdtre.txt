@@ -22,51 +22,56 @@ Type=0x10f09,1
 Type=0x10f0a,1
 Type=0x10f0f,1
 Type=0x10f11,1
-Type=0x032,1
-Type=0x045,1
-Type=0x04d,1
-Type=0x04f,1
-Type=0x051,1
-Type=0x005,2
-Type=0x01b,2
-Type=0x02a,2
-Type=0x031,2
-Type=0x033,2
-Type=0x034,2
-Type=0x03c,2
-Type=0x03f,2
-Type=0x041,2
-Type=0x046,2
-Type=0x047,2
-Type=0x050,2
-Type=0x00c,3
-Type=0x10f00,3
+Type=0x35,1
+Type=0x32,1
+Type=0x45,1
+Type=0x4d,1
+Type=0x4f,1
+Type=0x51,1
+Type=0x05,2
+Type=0x1b,2
+Type=0x2a,2
+Type=0x2f,2
+Type=0x31,2
+Type=0x33,2
+Type=0x34,2
+Type=0x3c,2
+Type=0x3f,2
+Type=0x46,2
+Type=0x47,2
+Type=0x50,2
+Type=0x0c,3
+Type=0x26,3
 Type=0x10f01,3
 Type=0x10f02,3
 Type=0x01000,3
 Type=0x10f06,3
 Type=0x10f10,3
-Type=0x01a,3
-Type=0x02b,3
+Type=0x1a,3
 Type=0x10104,4
-Type=0x007,4
-Type=0x00b,4
-Type=0x00e,4
-Type=0x017,4
-Type=0x022,4
-Type=0x02c,4
-Type=0x006,5
-Type=0x008,5
-Type=0x009,5
+Type=0x07,4
+Type=0x0b,4
+Type=0x0e,4
+Type=0x17,4
+Type=0x22,4
+Type=0x06,5
+Type=0x08,5
+Type=0x09,5
 Type=0x10f07,5
-Type=0x018,5
-Type=0x019,5
-Type=0x025,5
-Type=0x02e,5
-Type=0x027,6
-Type=0x004,10
-Type=0x014,10
-Type=0x015,10
+Type=0x18,5
+Type=0x19,5
+Type=0x25,5
+Type=0x2e,5
+Type=0x27,6
+Type=0x0f,6
+Type=0x2b,6
+Type=0x2c,6
+Type=0x2d,6
+Type=0x41,6
+Type=0x10f00,6
+Type=0x04,10
+Type=0x14,10
+Type=0x15,10
 [End]
 
 
@@ -89,6 +94,8 @@ Xpm="0 0 1 0"
 Type=0x04
 String1=0x05,Zona militare
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 Xpm="32 32 2 1"
 "! c #FF006A"
 "  c none"
@@ -131,7 +138,7 @@ Xpm="32 32 2 1"
 [_polygon]
 Type=0x05
 String1=0x05,Parcheggio
-ExtendedLabels=Y
+ExtendedLabels=N
 FontStyle=Default
 CustomColor=No
 Xpm="32 32 2 1"
@@ -186,6 +193,8 @@ Xpm="0 0 1 0"
 Type=0x07
 String1=0x05,Aeroporto
 ExtendedLabels=N
+FontStyle=SmallFont
+CustomColor=No
 Xpm="32 32 2 1"
 "! c #8080FF"
 "# c #FFC0FF"
@@ -270,8 +279,10 @@ Xpm="32 32 2 1"
 
 [_polygon]
 Type=0x09
-String1=0x05,Parco aquatico
+String1=0x05,Piscina
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 Xpm="32 32 2 1"
 "! c #3995FF"
 "# c #656565"
@@ -314,7 +325,7 @@ Xpm="32 32 2 1"
 [_polygon]
 Type=0x0b
 String1=0x05,Ospedale
-ExtendedLabels=Y
+ExtendedLabels=N
 FontStyle=SmallFont
 CustomColor=No
 Xpm="32 32 2 1"
@@ -403,6 +414,8 @@ Xpm="32 32 2 1"
 Type=0x0e
 String1=0x05,Eliporto
 ExtendedLabels=N
+FontStyle=SmallFont
+CustomColor=No
 Xpm="32 32 2 1"
 "! c #8080FF"
 "# c #D5D5D5"
@@ -443,6 +456,49 @@ Xpm="32 32 2 1"
 
 
 [_polygon]
+Type=0x0f
+String1=0x05,Capannone industriale
+ExtendedLabels=N
+Xpm="32 32 2 1"
+"! c #FFFFFF"
+"# c #606060"
+"#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!"
+"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+"#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!"
+"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+"#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!"
+"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+"#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!"
+"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+"#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!"
+"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+"#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!"
+"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+"#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!"
+"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+"#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!"
+"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+"#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!"
+"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+"#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!"
+"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+"#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!"
+"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+"#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!"
+"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+"#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!"
+"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+"#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!"
+"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+"#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!"
+"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+"#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!"
+"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+;12345678901234567890123456789012
+[end]
+
+
+[_polygon]
 Type=0x10
 String1=0x05,Brughiera
 ExtendedLabels=N
@@ -454,7 +510,7 @@ Xpm="0 0 1 0"
 [_polygon]
 Type=0x14
 String1=0x05,Parco nazionale
-ExtendedLabels=Y
+ExtendedLabels=N
 FontStyle=SmallFont
 CustomColor=No
 Xpm="32 32 2 1"
@@ -499,7 +555,7 @@ Xpm="32 32 2 1"
 [_polygon]
 Type=0x15
 String1=0x05,Oasi / Riserva naturale
-ExtendedLabels=Y
+ExtendedLabels=N
 FontStyle=SmallFont
 CustomColor=No
 Xpm="32 32 2 1"
@@ -543,11 +599,11 @@ Xpm="32 32 2 1"
 
 [_polygon]
 Type=0x17
-String1=0x04,Park
+String1=0x05,Area verde
 ExtendedLabels=N
 Xpm="32 32 2 1"
-"! c #009520"
-"# c #BDFF8B"
+"# c #009520"
+"! c #BDFF8B"
 "################################"
 "################################"
 "################################"
@@ -588,6 +644,8 @@ Xpm="32 32 2 1"
 Type=0x18
 String1=0x05,Golf
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 Xpm="32 32 2 1"
 "! c #408000"
 "# c #BDFF7C"
@@ -630,7 +688,7 @@ Xpm="32 32 2 1"
 [_polygon]
 Type=0x19
 String1=0x05,Complesso sportivo
-ExtendedLabels=Y
+ExtendedLabels=N
 FontStyle=Default
 CustomColor=No
 Xpm="32 32 2 1"
@@ -761,7 +819,7 @@ Xpm="32 32 2 1"
 [_polygon]
 Type=0x22
 String1=0x05,Zoo
-ExtendedLabels=Y
+ExtendedLabels=N
 FontStyle=SmallFont
 CustomColor=No
 Xpm="32 32 2 1"
@@ -805,8 +863,8 @@ Xpm="32 32 2 1"
 
 [_polygon]
 Type=0x25
-String1=0x05,Stazione di traformazione
-ExtendedLabels=Y
+String1=0x05,Stazione di trasformazione
+ExtendedLabels=N
 FontStyle=Default
 CustomColor=No
 Xpm="32 32 2 1"
@@ -849,9 +907,52 @@ Xpm="32 32 2 1"
 
 
 [_polygon]
+Type=0x26
+String1=0x05,Zona pietrosa
+ExtendedLabels=N
+Xpm="32 32 2 1"
+"! c #C0C0C0"
+"# c #A0A0A0"
+"!!#########!#!!!!#!!!!!!###!!!!#"
+"!!#!!!!!!!#!##!!!##!!!!!#!!!!!!#"
+"!!##!!!!!##!!#!!!###############"
+"####!!!!!#!!!#############!!!!#!"
+"#!##!!!!!######!####!!!##!!!!!##"
+"#!!##!!!!#!###!!!!##!!!!##!!!!##"
+"#!!########!!#!!!!####!!##!!####"
+"####!!!!##!!!##!!##!!########!!!"
+"#!!##!!#####!!##!#!!!!##!!!##!!!"
+"#!!##!##!!!#######!!!!!###!####!"
+"#!######!!!!!#####!!!!##!!##!!##"
+"#######!!!!!!#!!#######!!!##!!!#"
+"###!#!!##!!!##!!##!!!!#!!!##!!!#"
+"#!!!#!!######!!!!#!!!!##!###!!!!"
+"#!!!####!!!!#!!!!#!!!!!###!!###!"
+"##!!###!!!!!###!!##!!####!!!!!#!"
+"#####!#!!!!!##########!!#!!!!!##"
+"#!!#!!###!!!#!!##!!###!!##!!#!!#"
+"#!!#!!#######!!#!!!#!!!!!#####!#"
+"#!!#!#!!#!!!#!##!!!##!!!###!!###"
+"##!!##!!##!!###!!!!#######!!!!##"
+"!!###!!!!########!!#!!!!!##!!###"
+"!!!#!!!!!!!#!!!!####!!!!!!####!#"
+"!!!#!!!!!!!#!!!!!!!#!!!!!##!!#!#"
+"!!!##!!!!!!##########!!!##!!!#!#"
+"!#####!!########!!!#######!!##!#"
+"##!!!########!#!!!!!##!!##!####!"
+"!!!!!##!!!!##!#!!!!!#!!!####!!##"
+"!!!!!##!!!!#####!!!##!!!####!!##"
+"!!!!###!!!!##!!#######!!##!####!"
+"!!!##!##!!!#!!!!##!!!#####!!##!!"
+"!!!#!!!#####!!!!!##!!!!!#!!!!!##"
+;12345678901234567890123456789012
+[end]
+
+
+[_polygon]
 Type=0x27
 String1=0x05,Edificio
-ExtendedLabels=Y
+ExtendedLabels=N
 FontStyle=Default
 CustomColor=No
 Xpm="0 0 1 0"
@@ -870,8 +971,7 @@ Xpm="0 0 1 0"
 
 [_polygon]
 Type=0x2b
-;GRMN_TYPE: //
-String1=0x05,Campo
+String1=0x05,Stalla
 ExtendedLabels=N
 Xpm="32 32 2 1"
 "! c #808040"
@@ -880,9 +980,6 @@ Xpm="32 32 2 1"
 "################################"
 "################################"
 "################################"
-"####!!!########!!###############"
-"###!###!!###!#####!######!!#!###"
-"########################!###!!##"
 "################################"
 "################################"
 "################################"
@@ -892,8 +989,6 @@ Xpm="32 32 2 1"
 "################################"
 "################################"
 "################################"
-"####!!!!#####!!###!#####!!!#####"
-"###!###!!###!##!#!#!#!!####!####"
 "################################"
 "################################"
 "################################"
@@ -901,8 +996,13 @@ Xpm="32 32 2 1"
 "################################"
 "################################"
 "################################"
-"##########!!##########!!!!######"
-"#######!!###!##!#!###!###!!#####"
+"################################"
+"################################"
+"################################"
+"################################"
+"################################"
+"################################"
+"################################"
 "################################"
 "################################"
 "################################"
@@ -914,9 +1014,10 @@ Xpm="32 32 2 1"
 
 [_polygon]
 Type=0x2c
-;GRMN_TYPE: //
-String1=0x05,Cascina
+String1=0x05,Capannone agricolo
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 Xpm="32 32 2 1"
 "! c #000000"
 "# c #C08040"
@@ -957,10 +1058,22 @@ Xpm="32 32 2 1"
 
 
 [_polygon]
+Type=0x2d
+String1=0x05,Edificio religioso
+ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
+Xpm="0 0 1 0"
+"1 c #FF00FF"
+[end]
+
+
+[_polygon]
 Type=0x2e
-;GRMN_TYPE: //
 String1=0x05,Campeggio
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 Xpm="32 32 2 1"
 "! c #004400"
 "# c #BDFF7C"
@@ -999,10 +1112,17 @@ Xpm="32 32 2 1"
 ;12345678901234567890123456789012
 [end]
 
+[_polygon]
+Type=0x2f
+String1=0x05,Area pedonale
+ExtendedLabels=N
+Xpm="0 0 1 0"
+"1 c #BDFFFF"
+[end]
+
 
 [_polygon]
 Type=0x31
-;GRMN_TYPE: //
 String1=0x05,Strada in galleria/sottopasso
 ExtendedLabels=N
 Xpm="0 0 1 0"
@@ -1012,7 +1132,6 @@ Xpm="0 0 1 0"
 
 [_polygon]
 Type=0x32
-;GRMN_TYPE: Water Areas/SEA/Sea/Non NT
 String1=0x05,Sea
 ExtendedLabels=N
 Xpm="0 0 1 0"
@@ -1022,7 +1141,6 @@ Xpm="0 0 1 0"
 
 [_polygon]
 Type=0x33
-;GRMN_TYPE: //
 String1=0x05,Ponte/Viadotto
 ExtendedLabels=N
 Xpm="0 0 1 0"
@@ -1032,7 +1150,6 @@ Xpm="0 0 1 0"
 
 [_polygon]
 Type=0x34
-;GRMN_TYPE: //
 String1=0x05,Strada campestre
 ExtendedLabels=N
 Xpm="0 0 1 0"
@@ -1041,9 +1158,20 @@ Xpm="0 0 1 0"
 
 
 [_polygon]
-Type=0x3c
-;GRMN_TYPE: Water Areas/LAKE_100MI/Lake less than 250 sq mi but greater or equal to 100 sq mi in area/Non NT
+Type=0x35
+String1=0x05,Zona rocciosa
 ExtendedLabels=N
+Xpm="0 0 1 0"
+"1 c #A0A0A0"
+[end]
+
+
+[_polygon]
+Type=0x3c
+String1=0x05,Lago
+ExtendedLabels=N
+FontStyle=SmallFont
+CustomColor=No
 Xpm="0 0 1 0"
 "1 c #98CCF8"
 [end]
@@ -1051,8 +1179,10 @@ Xpm="0 0 1 0"
 
 [_polygon]
 Type=0x3f
-;GRMN_TYPE: Water Areas/LAKE, LAKE_5MI/Medium sized lake, typically between 5 and 30 sq mi in area/Non NT
+String1=0x05,Lago artificiale
 ExtendedLabels=N
+FontStyle=SmallFont
+CustomColor=No
 Xpm="0 0 1 0"
 "1 c #98CCF8"
 [end]
@@ -1060,12 +1190,11 @@ Xpm="0 0 1 0"
 
 [_polygon]
 Type=0x41
-;GRMN_TYPE: Water Areas/LAKE_LT_1MI, SMALL_LAKE/Small lake, typically less than 5 sq mi in area/Non NT
-String1=0x00,Fell
+String1=0x05,Edificio ferroviario
 ExtendedLabels=N
 Xpm="32 32 2 1"
 "! c #FFCAB4"
-"# c #BDFFD5"
+"# c #949494"
 "######!!####!#!########!########"
 "#####!!###########!###!#####!!##"
 "#!#!######!#######!######!######"
@@ -1104,7 +1233,6 @@ Xpm="32 32 2 1"
 
 [_polygon]
 Type=0x45
-;GRMN_TYPE: //
 String1=0x05,Ghiaione
 ExtendedLabels=N
 Xpm="32 32 2 1"
@@ -1148,7 +1276,6 @@ Xpm="32 32 2 1"
 
 [_polygon]
 Type=0x46
-;GRMN_TYPE: Water Areas/LARGE_RIVER/Major river, typically at least 700 ft in width/Non NT
 String1=0x05,Fiume
 ExtendedLabels=N
 FontStyle=NormalFont
@@ -1161,7 +1288,6 @@ Xpm="0 0 1 0"
 
 [_polygon]
 Type=0x47
-;GRMN_TYPE: Water Areas/RIVER_GT_700FT/Major river greater or equal to 700 ft in width/Non NT
 String1=0x05,Fiume sotterraneo
 ExtendedLabels=N
 FontStyle=NormalFont
@@ -1173,9 +1299,10 @@ Xpm="0 0 1 0"
 
 [_polygon]
 Type=0x4d
-;GRMN_TYPE: Surface Cover Areas/GLACIER/Large area of compacted snow and ice/Non NT
 String1=0x05,Ghiacciaio
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 Xpm="32 32 2 1"
 "! c #0030FF"
 "# c #00CAFF"
@@ -1217,51 +1344,15 @@ Xpm="32 32 2 1"
 
 [_polygon]
 Type=0x4f
-;GRMN_TYPE: Surface Cover Areas/SCRUB/Scrub brush area/Non NT
-String1=0x05,Macchia
+String1=0x05,Argine
 ExtendedLabels=N
-Xpm="32 32 2 1"
-"! c #00FC00"
-"# c #F8FCC8"
-"####!!######!!!!####!!###!!!!!##"
-"############!!!###########!!!!##"
-"!!###########!#############!!###"
-"!!#############################!"
-"!!##!!##############!!#########!"
-"!##!!!!!###########!!!!!########"
-"###!!!!!####!#!####!!!!!!#######"
-"####!!!####!!!!!####!!!!########"
-"#####!!###!!!!!######!!#########"
-"!#########!!!!#################!"
-"!!#########!!############!!###!!"
-"!!##############!!######!!!!##!!"
-"!!!############!!!!!####!!!!###!"
-"!!############!!!!!!#####!!!!###"
-"########!!#####!!!!#######!!####"
-"#######!!!!#####!!!#############"
-"###!###!!!!#####################"
-"##!!!###!!!!#########!!####!!###"
-"#!!!#####!!########!!!!!##!!!!##"
-"##!!###############!!!!###!!!###"
-"####################!!#####!!###"
-"!!#######!!#####################"
-"!!!#####!!!!###########!!######!"
-"!!!#####!!!!####!#####!!!!#####!"
-"!!!!#####!!!!##!!!####!!!!######"
-"#!!#######!!##!!!!!####!!!!#!!##"
-"###############!!!!#####!!##!!!#"
-"#############################!!!"
-"###!!##############!!########!!!"
-"##!!!!######!!####!!!!########!#"
-"##!!!!!####!!!!###!!!!####!!####"
-"###!!!!####!!!!!###!!!!##!!!!###"
-;12345678901234567890123456789012
+Xpm="0 0 1 0"
+"1 c #BD9520"
 [end]
 
 
 [_polygon]
 Type=0x50
-;GRMN_TYPE: Surface Cover Areas/WOODS/Wooded or forested area/Non NT
 String1=0x05,Bosco
 ExtendedLabels=N
 Xpm="32 32 2 1"
@@ -1305,7 +1396,6 @@ Xpm="32 32 2 1"
 
 [_polygon]
 Type=0x51
-;GRMN_TYPE: Surface Cover Areas/WETLAND/Wetland or swamp area/Non NT
 String1=0x05,Zona umida
 ExtendedLabels=N
 Xpm="32 32 2 1"
@@ -1357,7 +1447,6 @@ Xpm="0 0 1 0"
 
 [_polygon]
 Type=0x10104
-;GRMN_TYPE: //
 String1=0x05,Parco giochi
 ExtendedLabels=N
 Xpm="32 32 2 1"
@@ -1401,9 +1490,10 @@ Xpm="32 32 2 1"
 
 [_polygon]
 Type=0x10f00
-;GRMN_TYPE: Customizable Areas/CUSTOMIZABLE_AREA_1/Customizable area/Non NT, NT
 String1=0x05,Area commerciale
 ExtendedLabels=N
+FontStyle=SmallFont
+CustomColor=No
 Xpm="32 32 2 1"
 "! c #D5D5D5"
 "# c #A4A4A4"
@@ -1668,6 +1758,8 @@ Type=0x10f06
 ;GRMN_TYPE: Customizable Areas/CUSTOMIZABLE_AREA_7/Customizable area/Non NT, NT
 String1=0x05,Scogliera
 ExtendedLabels=N
+FontStyle=SmallFont
+CustomColor=No
 Xpm="32 32 2 1"
 "! c #BD308B"
 "  c none"
@@ -1753,7 +1845,6 @@ Xpm="32 32 2 1"
 
 [_polygon]
 Type=0x10f09
-;GRMN_TYPE: Customizable Areas/CUSTOMIZABLE_AREA_10/Customizable area/Non NT, NT
 String1=0x05,Seminativi
 ExtendedLabels=N
 Xpm="0 0 1 0"
@@ -1763,7 +1854,6 @@ Xpm="0 0 1 0"
 
 [_polygon]
 Type=0x10f0a
-;GRMN_TYPE: Customizable Areas/CUSTOMIZABLE_AREA_11/Customizable area/Non NT, NT
 String1=0x05,Uliveti
 ExtendedLabels=N
 Xpm="32 32 2 1"
@@ -1854,6 +1944,8 @@ Type=0x10f10
 ;GRMN_TYPE: Customizable Areas/CUSTOMIZABLE_AREA_17/Customizable area/Non NT, NT
 String1=0x05,Discarica
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 Xpm="32 32 2 1"
 "! c #F8FC00"
 "# c #000080"
@@ -2270,7 +2362,7 @@ Xpm="32 2 2  1"
 "!!!!####!!!!####!!!!####!!!!####"
 "!!!!####!!!!####!!!!####!!!!####"
 ;12345678901234567890123456789012
-ExtendedLabels=Y
+ExtendedLabels=N
 FontStyle=LargeFont
 CustomColor=No
 [end]
@@ -2285,7 +2377,7 @@ BorderWidth=0
 Xpm="0 0 2 0"
 "1 c #FF3000"
 "2 c #C0C4C0"
-ExtendedLabels=Y
+ExtendedLabels=N
 FontStyle=NormalFont
 CustomColor=No
 [end]
@@ -2310,11 +2402,10 @@ Type=0x20
 UseOrientation=N
 LineWidth=1
 BorderWidth=0
-Xpm="0 0 2 0"
-"1 c #CFA284"
-"2 c #FFFFFF"
+Xpm="0 0 1 0"
+"1 c #BD958B"
 String1=0x05,Curva ordinaria
-ExtendedLabels=Y
+ExtendedLabels=N
 FontStyle=NoLabel (invisible)
 CustomColor=No
 [end]
@@ -2326,11 +2417,10 @@ Type=0x21
 UseOrientation=N
 LineWidth=2
 BorderWidth=0
-Xpm="0 0 2 0"
-"1 c #A16A45"
-"2 c #FFFFFF"
+Xpm="0 0 1 0"
+"1 c #BD958B"
 String1=0x05,Curva intermedia
-ExtendedLabels=Y
+ExtendedLabels=N
 FontStyle=SmallFont
 CustomColor=No
 [end]
@@ -2341,11 +2431,10 @@ Type=0x22
 UseOrientation=N
 LineWidth=2
 BorderWidth=0
-Xpm="0 0 2 0"
-"1 c #8C5C3C"
-"2 c #FFFFFF"
+Xpm="0 0 1 0"
+"1 c #BD958B"
 String1=0x05,Curva direttrice
-ExtendedLabels=Y
+ExtendedLabels=N
 FontStyle=SmallFont
 CustomColor=No
 [end]
@@ -2356,12 +2445,42 @@ Type=0x23
 UseOrientation=N
 LineWidth=1
 BorderWidth=0
-Xpm="0 0 2 0"
-"1 c #CFA284"
-"2 c #FFFFFF"
+Xpm="0 0 1 0"
+"1 c #BD958B"
 String1=0x05,Curva di determinazione incerta
-ExtendedLabels=Y
+ExtendedLabels=N
 FontStyle=NoLabel (invisible)
+CustomColor=No
+[end]
+
+
+[_line]
+Type=0x24
+UseOrientation=Y
+Xpm="32 1 2  1"
+"! c #414141"
+"# c #A4A4A4"
+"!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#"
+;12345678901234567890123456789012
+String1=0x05,Divisione del terreno
+ExtendedLabels=N
+[end]
+
+
+[_line]
+Type=0x25
+UseOrientation=Y
+Xpm="32 4 2  1"
+"! c #00C040"
+"  c none"
+"!!! !!! !!! !!! !!! !!! !!! !!! "
+"!!! !!! !!! !!! !!! !!! !!! !!! "
+" !   !   !   !   !   !   !   !  "
+" !   !   !   !   !   !   !   !  "
+;12345678901234567890123456789012
+String1=0x05,Filare di alberi/siepe
+ExtendedLabels=N
+FontStyle=NormalFont
 CustomColor=No
 [end]
 
@@ -2379,7 +2498,6 @@ ExtendedLabels=N
 
 [_line]
 Type=0x27
-;GRMN_TYPE: Misc. Line Types/AIRPORT_RUNWAY/Airport runway centerline/Non NT
 UseOrientation=N
 LineWidth=3
 BorderWidth=1
@@ -2388,12 +2506,13 @@ Xpm="0 0 2 0"
 "2 c #7B65B4"
 String1=0x05,Pista di atterraggio
 ExtendedLabels=N
+FontStyle=SmallFont
+CustomColor=No
 [end]
 
 
 [_line]
 Type=0x29
-;GRMN_TYPE: Misc. Line Types/POWERLINE/Powerline/Non NT
 UseOrientation=Y
 Xpm="32 1 2  1"
 "! c #101010"
@@ -2406,7 +2525,6 @@ ExtendedLabels=N
 
 [_line]
 Type=0x10103
-;GRMN_TYPE: //
 UseOrientation=Y
 Xpm="32 3 2  1"
 "! c #101010"
@@ -2434,7 +2552,7 @@ Xpm="32 6 2  1"
 "!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#"
 ;12345678901234567890123456789012
 String1=0x05,Diga
-ExtendedLabels=Y
+ExtendedLabels=N
 FontStyle=Default
 CustomColor=No
 [end]
@@ -2463,7 +2581,7 @@ LineWidth=2
 Xpm="0 0 1 0"
 "1 c #FF0000"
 String1=0x05,Zona militare
-ExtendedLabels=Y
+ExtendedLabels=N
 FontStyle=Default
 CustomColor=No
 [end]
@@ -2475,7 +2593,7 @@ UseOrientation=N
 LineWidth=2
 Xpm="0 0 1 0"
 "1 c #25821F"
-ExtendedLabels=Y
+ExtendedLabels=N
 [end]
 
 
@@ -2486,7 +2604,7 @@ ExtendedLabels=Y
 Type=0x004
 SubType=0x00
 ;GRMN_TYPE: Political Entities/CITY_1M/Large city with a range of (1, 2] million inhabitants/Non NT
-ExtendedLabels=Y
+ExtendedLabels=N
 FontStyle=LargeFont
 CustomColor=No
 DayXpm="10 10 15 1"   Colormode=16
@@ -2523,7 +2641,7 @@ DayXpm="10 10 15 1"   Colormode=16
 Type=0x008
 SubType=0x00
 ;GRMN_TYPE: Political Entities/CITY_50K, MEDIUM_CITY/Medium city center, typically 50K-1M inhabitants/Non NT
-ExtendedLabels=Y
+ExtendedLabels=N
 FontStyle=NormalFont
 CustomColor=No
 DayXpm="8 8 8 1"   Colormode=16
@@ -2551,7 +2669,7 @@ DayXpm="8 8 8 1"   Colormode=16
 Type=0x00a
 SubType=0x00
 ;GRMN_TYPE: Political Entities/CITY_10K/City with the range of (10, 20] thousand inhabitants/Non NT
-ExtendedLabels=Y
+ExtendedLabels=N
 FontStyle=NormalFont
 CustomColor=No
 DayXpm="8 8 8 1"   Colormode=16
@@ -2579,7 +2697,7 @@ DayXpm="8 8 8 1"   Colormode=16
 Type=0x00b
 SubType=0x00
 ;GRMN_TYPE: Political Entities/CITY_5K/City with the range of (5, 10] thousand inhabitants/Non NT
-ExtendedLabels=Y
+ExtendedLabels=N
 FontStyle=NormalFont
 CustomColor=No
 DayXpm="8 8 8 1"   Colormode=16
@@ -3188,7 +3306,7 @@ DayXpm="16 13 56 2"   Colormode=32
 Type=0x021
 SubType=0x0f
 ;GRMN_TYPE: //
-ExtendedLabels=Y
+ExtendedLabels=N
 FontStyle=NormalFont
 CustomColor=No
 DayXpm="5 5 2 1"   Colormode=16
@@ -3207,7 +3325,7 @@ DayXpm="5 5 2 1"   Colormode=16
 Type=0x028
 SubType=0x00
 ;GRMN_TYPE: Geographical Named Points of Interest - Water and Land Related/ISLAND/Island/Non NT, NT
-ExtendedLabels=Y
+ExtendedLabels=N
 FontStyle=NormalFont
 CustomColor=No
 DayXpm="6 6 5 1"   Colormode=16
@@ -3597,7 +3715,6 @@ DayXpm="16 16 26 2"   Colormode=16
 [_point]
 Type=0x02a
 SubType=0x07
-;GRMN_TYPE: Business - Food and Drink/RESTAURANT_FAST_FOOD/Fast food establishment, i.e. McDonalds/Non NT
 String1=0x05,Fast food
 ExtendedLabels=N
 DayXpm="16 16 23 2"   Colormode=16
@@ -3829,7 +3946,6 @@ DayXpm="18 18 26 2"   Colormode=16
 [_point]
 Type=0x02a
 SubType=0x0b
-;GRMN_TYPE: Business - Food and Drink/RESTAURANT_SEAFOOD/Seafood restaurant/Non NT
 String1=0x05,Ristorante di pesce
 ExtendedLabels=N
 DayXpm="16 16 17 1"   Colormode=16
@@ -12467,7 +12583,7 @@ DayXpm="16 15 90 2"   Colormode=32
 Type=0x02f
 SubType=0x00
 ;GRMN_TYPE: //
-ExtendedLabels=Y
+ExtendedLabels=N
 FontStyle=NormalFont
 CustomColor=No
 DayXpm="17 11 5 1"   Colormode=16
@@ -12848,7 +12964,7 @@ Type=0x02f
 SubType=0x08
 ;GRMN_TYPE: Business - Services/GND_TRANSPORT/Ground transportation status, i.e. a bus station/Non NT
 String1=0x05,Fermata autobus
-ExtendedLabels=Y
+ExtendedLabels=N
 FontStyle=NormalFont
 CustomColor=No
 DayXpm="16 16 7 1"   Colormode=16
@@ -13071,7 +13187,7 @@ Type=0x02f
 SubType=0x17
 ;GRMN_TYPE: /TRANSIT_SERVICES/Transit services/Non NT
 String1=0x05,Fermata tram
-ExtendedLabels=Y
+ExtendedLabels=N
 FontStyle=NormalFont
 CustomColor=No
 DayXpm="15 15 2 1"   Colormode=0
@@ -15341,7 +15457,6 @@ DayXpm="16 16 35 2"   Colormode=32
 [_point]
 Type=0x061
 SubType=0x1d
-;GRMN_TYPE: //
 String1=0x05,Spuntone roccioso
 ExtendedLabels=N
 DayXpm="17 15 114 2"   Colormode=0
@@ -15590,7 +15705,7 @@ DayXpm="16 16 4 1"   Colormode=32
 Type=0x065
 SubType=0x00
 String1=0x05,Stazione ferroviaria
-ExtendedLabels=Y
+ExtendedLabels=N
 FontStyle=NormalFont
 CustomColor=No
 DayXpm="16 13 95 2"   Colormode=16
@@ -15939,7 +16054,7 @@ DayXpm="16 16 108 2"   Colormode=32
 [_point]
 Type=0x065
 SubType=0x05
-ExtendedLabels=Y
+ExtendedLabels=N
 FontStyle=LargeFont
 CustomColor=No
 DayXpm="1 1 0 1"   Colormode=16
@@ -16061,7 +16176,7 @@ DayXpm="14 12 12 1"   Colormode=0
 Type=0x065
 SubType=0x12
 ;GRMN_TYPE: Geographical Named Points of Interest - Water Related/STREAM/Stream/Non NT, NT
-ExtendedLabels=Y
+ExtendedLabels=N
 FontStyle=NormalFont
 CustomColor=No
 DayXpm="1 1 0 1"   Colormode=16
@@ -16256,7 +16371,7 @@ DayXpm="9 8 3 1"   Colormode=16
 Type=0x066
 SubType=0x16
 ;GRMN_TYPE: Geographical Named Points of Interest - Land Related/SUMMIT/Summit, top of a hill or mountain/Non NT, NT
-ExtendedLabels=Y
+ExtendedLabels=N
 FontStyle=NormalFont
 CustomColor=No
 DayXpm="14 12 25 2"   Colormode=16
