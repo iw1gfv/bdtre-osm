@@ -47,7 +47,7 @@ MASTER_TYPFILE=stile_garmin/Typ/${TYPFILE_VERSION}.typ
 # creo le varianti del file master TYP file con le differenze
 # cambia solamente il family ID:
 
-for FID in 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018
+for FID in 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019
 do
   cp $MASTER_TYPFILE stile_garmin/Typ/$FID.TYP
   $GMT -w -y $FID,1 stile_garmin/Typ/$FID.TYP
@@ -75,6 +75,7 @@ BDTRE_Civico=$(ls $BDTRE_IMG/66134*.img)
 BDTRE_Verde=$(ls $BDTRE_IMG/66135*.img)
 BDTRE_Cava=$(ls $BDTRE_IMG/66136*.img)
 BDTRE_Divisioni=$(ls $BDTRE_IMG/66137*.img)
+BDTRE_Terreno=$(ls $BDTRE_IMG/66138*.img)
 OSM=$(ls $piemonteosm/66140*.img)
 
 
@@ -140,10 +141,14 @@ $GMT -j -o finale/64/Cava.img \
      -f 2016,1 -m "BDTRE Cava" $BDTRE_Cava ./stile_garmin/Typ/2016.TYP
 
 $GMT -j -o finale/64/Divisioni.img \
-     -f 2017,1 -m "OSM" $OSM ./stile_garmin/Typ/2017.TYP
+     -f 2017,1 -m "BDTRE Divisioni del terreno" $BDTRE_Divisioni ./stile_garmin/Typ/2017.TYP
+
+$GMT -j -o finale/64/Terreno.img \
+     -f 2018,1 -m "BDTRE Forme del terreno" $BDTRE_Divisioni ./stile_garmin/Typ/2018.TYP
+
 
 $GMT -j -o finale/64/OSM.img \
-     -f 2018,1 -m "OSM" $OSM ./stile_garmin/Typ/2018.TYP
+     -f 2019,1 -m "OSM" $OSM ./stile_garmin/Typ/2019.TYP
 
     
 # gli strati ora vengono uniti in un unico gmapsupp.img per i vecchi dispositivi:
@@ -167,6 +172,7 @@ $GMT -j -o finale/etrex/gmapsupp.img -m "BDTRE-OSM-GPS (GPS)" \
      finale/64/Verde.img     \
      finale/64/Cava.img      \
      finale/64/Divisioni.img \
+     finale/64/Terreno.img   \
      finale/64/OSM.img
 
 
@@ -253,10 +259,14 @@ java -jar $mkgmap \
   --draw-priority=14            \
   --family-name="BDTRE Divisioni del terreno"   	\
   --product-id=18               \
-  $BDTRE_Cava                   \
+  $BDTRE_Divisioni              \
+  --draw-priority=10            \
+  --family-name="BDTRE Forme del terreno"   	\
+  --product-id=19               \
+  $BDTRE_Terreno                \
   --draw-priority=18            \
   --family-name="OSM"   	\
-  --product-id=19               \
+  --product-id=20               \
   $OSM                          \
   $MASTER_TYPFILE
 
@@ -291,6 +301,7 @@ $GMT -j -o finale/mappe/gmapsupp.img \
      $BDTRE_Verde           \
      $BDTRE_Cava            \
      $BDTRE_Divisioni       \
+     $BDTRE_Terreno         \
      $OSM                   \
      $MASTER_TYPFILE
 

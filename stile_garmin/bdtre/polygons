@@ -82,8 +82,15 @@ EDIFC_USO=ferroviario				{ name '${EDIFC_NOME}'}		[ 0x41 resolution 22 ]
 F_NTER_TY=rocce					[ 0x35 resolution 20 ]
 F_NTER_TY='spiaggia/arenile/dune'		[ 0x1b resolution 20 ]
 F_NTER_TY='pietraie e ghiaioni'			[ 0x26 resolution 20 ]
-#F_NTER_TY='area nuda'				[ 0x26 resolution 20 ]
-#F_NTER_TY='pietraie e ghiaioni'		[ 0x26 resolution 20 ]
+F_NTER_TY='area nuda'				[ 0x26 resolution 20 ]
+F_NTER_TY='Non conosciuto'			[ 0x26 resolution 20 ]
+
+
+#Forma particolare
+
+FOR_PC_TY='Non conosciuto'			[ 0x4f resolution 20 ]
+FOR_PC_TY=riparie				[ 0x4f resolution 20 ]
+FOR_PC_TY=rupestri				[ 0x4f resolution 20 ]
 
 
 #Impianti sportivi
@@ -129,16 +136,32 @@ AB_CDA_LIV='non in sottopasso'	{ name '${NOME_ABBR}'}		[ 0x46 resolution 17 ]
 AB_CDA_LIV='in sottopasso'	{ name '${NOME_ABBR}'}		[ 0x47 resolution 17 ]
 
 #Strade
-AC_PED_FON=pavimentato			[ 0x2f resolution 22 ]
-AC_PED_FON='non pavimentato'		[ 0x2f resolution 22 ]
+AC_VEI_ZON=banchina						[ 0x2a resolution 22 ]
+AC_VEI_ZON=controviale						[ 0x2a resolution 22 ]
+AC_VEI_ZON='fascia di sosta laterale'				[ 0x2a resolution 22 ]
+AC_VEI_ZON='golfo di fermata'					[ 0x2a resolution 22 ]
+AC_VEI_ZON='in area di pertinenza'				[ 0x2a resolution 22 ]
+AC_VEI_ZON=incrocio						[ 0x2a resolution 22 ]
+AC_VEI_ZON='isole di traffico a raso'				[ 0x36 resolution 22 ]
+AC_VEI_ZON='passaggio a livello'				[ 0x2a resolution 22 ]
+AC_VEI_ZON=piazza						[ 0x2a resolution 22 ]
+AC_VEI_ZON='piazzola di sosta'					[ 0x2a resolution 22 ]
+AC_VEI_ZON=rotatoria						[ 0x2a resolution 22 ]
 AC_VEI_ZON=parcheggio						[ 0x05 resolution 22 ]
-AC_VEI_ZON='tronco carreggiata' & AC_VEI_LIV='non in sottopasso'		[ 0x2a resolution 22 ]
-AC_VEI_ZON='tronco carreggiata' & AC_VEI_LIV='in sottopasso'	[ 0x31 resolution 22 ]
+AC_VEI_ZON='Non conosciuto' & AC_VEI_SED='a raso'		[ 0x2a resolution 22 ]
+AC_VEI_ZON='Non conosciuto' & AC_VEI_SED='su ponte/viadotto/cavalcavia'		[ 0x33 resolution 22 ]
+AC_VEI_ZON='tronco carreggiata' & AC_VEI_SED='altro'		[ 0x2a resolution 22 ]
+AC_VEI_ZON='tronco carreggiata' & AC_VEI_SED='a raso'		[ 0x2a resolution 22 ]
 AC_VEI_ZON='tronco carreggiata' & AC_VEI_SED='in galleria'	[ 0x31 resolution 22 ]
 AC_VEI_ZON='tronco carreggiata' & AC_VEI_SED='su ponte/viadotto/cavalcavia'	[ 0x33 resolution 22 ]
-AR_VMS_LIV='Non conosciuto'					[ 0x34 resolution 22 ]
-AR_VMS_LIV='in sottopasso'					[ 0x34 resolution 22 ]
-AR_VMS_LIV='non in sottopasso'					[ 0x34 resolution 22 ]
+AC_VEI_ZON='tronco ordinario' & AC_VEI_SED='a raso'		[ 0x33 resolution 22 ]
+AC_VEI_ZON='tronco ordinario' & AC_VEI_SED='su ponte/viadotto/cavalcavia'	[ 0x33 resolution 22 ]
+AR_VMS_TY=campestre						[ 0x34 resolution 22 ]
+AR_VMS_TY=sentiero						[ 0x34 resolution 22 ]
+AR_VMS_TY=tratturo						[ 0x34 resolution 22 ]
+AR_VMS_TY='Non conosciuto'					[ 0x34 resolution 22 ]
+AR_VMS_TY='carrareccia, carreggiabile, carrozzabile'		[ 0x2a resolution 22 ]
+
 
 #Uso del suolo
 PS_INC_LIM='Non conosciuto'					[0x10f04 resolution 21]
@@ -162,4 +185,4 @@ ENTE_FOR=ISTAT   { name '${COMUNE_NOM}'}   			[ 0x10100 resolution 12 ]
 SCARPT_CON='Non conosciuto'		[0x26 resolution 20]
 
 #Argine
-ARGN_TY='Non conosciuto'		[0x4f resolution 20]
+ARGN_TY='Non conosciuto'		[0x10101 resolution 20]
