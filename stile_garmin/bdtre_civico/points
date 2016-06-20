@@ -19,4 +19,7 @@
 
 
 
-levels = 0:24, 1:22, 2:21, 3:20, 4:19, 5:18, 6:16
+
+#Numero civico
+ACC_PC_TY='accesso esterno diretto'	{ name '${CIVICO_NUM} ${CIVICO_SUB}' }	[0x1603 resolution 24]
+ENTE_FOR=*				{ name '${ACC_INT_NR}' }	[0x1603 resolution 24]

@@ -55,7 +55,7 @@ for infile in $BDTRE_IMG/66120*.osm.pbf
     --region-name="Piemonte" \
     --copyright-message="$copyright" \
     --output-dir=$BDTRE_IMG \
-    --style-file=stile_garmin/bdtre \
+    --style-file=stile_garmin/bdtre_curve \
     --show-profiles=1 \
     --draw-priority=12 \
     --transparent \
@@ -91,11 +91,14 @@ for infile in $BDTRE_IMG/66121*.osm.pbf
     --region-name="Piemonte" \
     --copyright-message="$copyright" \
     --output-dir=$BDTRE_IMG \
-    --style-file=stile_garmin/bdtre \
+    --style-file=stile_garmin/bdtre_impianti \
     --show-profiles=1 \
+    --add-pois-to-areas \
     --draw-priority=20 \
     --transparent \
     --license-file=stile_garmin/bdtre_licenza.txt \
+    --bounds=bounds \
+    --location-autofill=is_in,nearest \
   $infile
 done
 
@@ -129,8 +132,9 @@ for infile in $BDTRE_IMG/66122*.osm.pbf
     --region-name="Piemonte" \
     --copyright-message="$copyright" \
     --output-dir=$BDTRE_IMG \
-    --style-file=stile_garmin/bdtre \
+    --style-file=stile_garmin/bdtre_edifici \
     --show-profiles=1 \
+    --add-pois-to-areas \
     --draw-priority=10 \
     --transparent \
     --license-file=stile_garmin/bdtre_licenza.txt \
@@ -168,7 +172,7 @@ for infile in $BDTRE_IMG/66123*.osm.pbf
     --region-name="Piemonte" \
     --copyright-message="$copyright" \
     --output-dir=$BDTRE_IMG \
-    --style-file=stile_garmin/bdtre \
+    --style-file=stile_garmin/bdtre_alberi \
     --show-profiles=1 \
     --draw-priority=20 \
     --transparent \
@@ -205,7 +209,7 @@ for infile in $BDTRE_IMG/66124*.osm.pbf
     --region-name="Piemonte" \
     --copyright-message="$copyright" \
     --output-dir=$BDTRE_IMG \
-    --style-file=stile_garmin/bdtre \
+    --style-file=stile_garmin/bdtre_bosco \
     --show-profiles=1 \
     --draw-priority=10 \
     --transparent \
@@ -243,7 +247,7 @@ for infile in $BDTRE_IMG/66125*.osm.pbf
     --region-name="Piemonte" \
     --copyright-message="$copyright" \
     --output-dir=$BDTRE_IMG \
-    --style-file=stile_garmin/bdtre \
+    --style-file=stile_garmin/bdtre_laghi \
     --show-profiles=1 \
     --draw-priority=10 \
     --transparent \
@@ -280,7 +284,7 @@ for infile in $BDTRE_IMG/66126*.osm.pbf
     --region-name="Piemonte" \
     --copyright-message="$copyright" \
     --output-dir=$BDTRE_IMG \
-    --style-file=stile_garmin/bdtre \
+    --style-file=stile_garmin/bdtre_canali \
     --show-profiles=1 \
     --draw-priority=14 \
     --transparent \
@@ -316,7 +320,7 @@ for infile in $BDTRE_IMG/66127*.osm.pbf
     --region-name="Piemonte" \
     --copyright-message="$copyright" \
     --output-dir=$BDTRE_IMG \
-    --style-file=stile_garmin/bdtre \
+    --style-file=stile_garmin/bdtre_fiumi \
     --show-profiles=1 \
     --draw-priority=10 \
     --transparent \
@@ -368,7 +372,7 @@ rm $BDTRE_IMG/*.pbf
 
 #divide e converte le strade in formato IMG
 
-$osmosis -v --read-pbf-fast file=$uscitaosm/UNITO_ac_vei.pbf --rbf file=$uscitaosm/UNITO_ac_ped.pbf --rbf file=$uscitaosm/UNITO_ar_vms.pbf --merge --merge --wb file=$uscitaosm/UNITO_strade.pbf omitmetadata=true
+$osmosis -v --read-pbf-fast file=$uscitaosm/UNITO_ac_vei.pbf --rbf file=$uscitaosm/UNITO_ac_ped.pbf --rbf file=$uscitaosm/UNITO_ar_vms.pbf --rbf file=$uscitaosm/UNITO_man_tr.pbf --merge --merge --merge --wb file=$uscitaosm/UNITO_strade.pbf omitmetadata=true
 
 java $Xmx -jar $splitter \
 --max-nodes=1600000 \
@@ -390,7 +394,7 @@ for infile in $BDTRE_IMG/66129*.osm.pbf
     --region-name="Piemonte" \
     --copyright-message="$copyright" \
     --output-dir=$BDTRE_IMG \
-    --style-file=stile_garmin/bdtre \
+    --style-file=stile_garmin/bdtre_strade \
     --show-profiles=1 \
     --draw-priority=10 \
     --transparent \
@@ -407,7 +411,7 @@ rm $BDTRE_IMG/*.pbf
 
 #divide e converte i tralicci e le linee elettriche in formato IMG
 
-$osmosis -v --read-pbf-fast file=$uscitaosm/UNITO_tralic.pbf --rbf file=$uscitaosm/UNITO_tr_ele.pbf --merge --wb file=$uscitaosm/UNITO_elettrico.pbf omitmetadata=true
+$osmosis -v --read-pbf-fast file=$uscitaosm/UNITO_nd_ele.pbf --rbf file=$uscitaosm/UNITO_tr_ele.pbf --merge --wb file=$uscitaosm/UNITO_elettrico.pbf omitmetadata=true
 
 java $Xmx -jar $splitter \
 --max-nodes=20000 \
@@ -429,7 +433,7 @@ for infile in $BDTRE_IMG/66130*.osm.pbf
     --region-name="Piemonte" \
     --copyright-message="$copyright" \
     --output-dir=$BDTRE_IMG \
-    --style-file=stile_garmin/bdtre \
+    --style-file=stile_garmin/bdtre_ele \
     --show-profiles=1 \
     --draw-priority=14 \
     --transparent \
@@ -466,7 +470,7 @@ for infile in $BDTRE_IMG/66131*.osm.pbf
     --region-name="Piemonte" \
     --copyright-message="$copyright" \
     --output-dir=$BDTRE_IMG \
-    --style-file=stile_garmin/bdtre \
+    --style-file=stile_garmin/bdtre_topo \
     --show-profiles=1 \
     --draw-priority=22 \
     --transparent \
@@ -507,7 +511,7 @@ for infile in $BDTRE_IMG/66132*.osm.pbf
     --region-name="Piemonte" \
     --copyright-message="$copyright" \
     --output-dir=$BDTRE_IMG \
-    --style-file=stile_garmin/bdtre \
+    --style-file=stile_garmin/bdtre_coltiv \
     --show-profiles=1 \
     --draw-priority=110 \
     --transparent \
@@ -581,7 +585,7 @@ for infile in $BDTRE_IMG/66134*.osm.pbf
     --region-name="Piemonte" \
     --copyright-message="$copyright" \
     --output-dir=$BDTRE_IMG \
-    --style-file=stile_garmin/bdtre \
+    --style-file=stile_garmin/bdtre_civico \
     --show-profiles=1 \
     --draw-priority=20 \
     --license-file=stile_garmin/bdtre_licenza.txt \
@@ -702,7 +706,7 @@ rm $BDTRE_IMG/*.pbf
 
 #divide e converte le forme del terreno in formato IMG
 
-$osmosis -v --read-pbf-fast file=$uscitaosm/UNITO_f_nter.pbf --rbf file=$uscitaosm/UNITO_for_pc.pbf --rbf file=$uscitaosm/UNITO_scarpt.pbf --rbf file=$uscitaosm/UNITO_argine.pbf --merge --merge --merge --wb file=$uscitaosm/UNITO_formter.pbf omitmetadata=true
+$osmosis -v --read-pbf-fast file=$uscitaosm/UNITO_f_nter.pbf --rbf file=$uscitaosm/UNITO_for_pc.pbf --rbf file=$uscitaosm/UNITO_scarpt.pbf --rbf file=$uscitaosm/UNITO_argine.pbf --rbf file=$uscitaosm/UNITO_ghi_nv.pbf --merge --merge --merge --merge --wb file=$uscitaosm/UNITO_formter.pbf omitmetadata=true
 
 java $Xmx -jar $splitter \
 --max-nodes=1600000 \

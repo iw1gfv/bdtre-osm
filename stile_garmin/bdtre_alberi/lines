@@ -19,4 +19,7 @@
 
 
 
-levels = 0:24, 1:22, 2:21, 3:20, 4:19, 5:18, 6:16
+
+#filari alberi/siepi
+FIL_AL_TY=alberi		{ name '${FIL_AL_TY}'}	[ 0x25 resolution 22 ]
+FIL_AL_TY=siepi			{ name '${FIL_AL_TY}'}	[ 0x25 resolution 22 ]

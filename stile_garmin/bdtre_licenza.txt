@@ -1,7 +1,5 @@
 Documento realizzato da Michele Marchello e Lucio Galosso, basato su “BDTRE - Database GeoTopografico -
-2016”, Carta Tecnica Regionale vettoriale in scala 1:10.000 della Regione Piemonte, [edizione 1991-2005]
-e su dati OpenStreetMap, © OpenStreetMap contributors, vedi http://wiki.openstreetmap.org/index.php/attribution
-La proprietà esclusiva dei dati della CTRN è della Regione Piemonte In accordo con la legge 633/41
+2016” e su dati OpenStreetMap, © OpenStreetMap contributors, vedi http://wiki.openstreetmap.org/index.php/attribution
 La titolarità piena ed esclusiva del documento “BDTRE - Database GeoTopografico - 2016” è
 di Regione Piemonte (ai sensi della L. 633/41 e s.m.i.).
 Regione Piemonte autorizza la libera e gratuita consultazione, estrazione, riproduzione e

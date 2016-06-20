@@ -19,4 +19,6 @@
 
 
 
-levels = 0:24, 1:22, 2:21, 3:20, 4:19, 5:18, 6:16
+
+#albero isolato
+ALBERO_TY=altro | ALBERO_TY=monumentale		[0x611e resolution 22]

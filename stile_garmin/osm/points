@@ -1,3 +1,24 @@
+#	These style files are part of the BDTRE-OSM package.
+#	I refer to them as a 'program' in the licensing text below.
+
+#	Copyright (C) 2016  Galosso Lucio
+
+#	This program is free software: you can redistribute it and/or modify
+#	it under the terms of the GNU General Public License as published by
+#	the Free Software Foundation, either version 3 of the License, or
+#	(at your option) any later version.
+
+#	This program is distributed in the hope that it will be useful,
+#	but WITHOUT ANY WARRANTY; without even the implied warranty of
+#	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#	GNU General Public License for more details.
+
+#	You should have received a copy of the GNU General Public License
+#	along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+
+
 
 addr:housenumber=* {set mkgmap:execute_finalize_rules=true}
 barrier=* & bicycle=*    { set mkgmap:bicycle='${bicycle|subst:private=>no}' }
@@ -113,9 +134,9 @@ amenity=library [0x2c03 resolution 24]
 amenity=nightclub [0x6504 resolution 24]
 amenity=parking [0x2f0b resolution 22 default_name 'Parcheggio']
 amenity=pharmacy [0x2e05 resolution 22]
-amenity=place_of_worship & religion=jewish [0x2c10 resolution 23]
-amenity=place_of_worship & religion=christian [0x2c0b resolution 23]
-amenity=place_of_worship & religion=muslim [0x2c0d resolution 23]
+amenity=place_of_worship & religion=jewish [0x2c10 resolution 22]
+amenity=place_of_worship & religion=christian [0x2c0b resolution 22]
+amenity=place_of_worship & religion=muslim [0x2c0d resolution 22]
 amenity=place_of_worship [0x2c0b resolution 23]
 amenity=police [0x3001 resolution 22]
 amenity=post_office [0x2f05 resolution 22]

@@ -19,6 +19,7 @@
 
 
 
+
 #CURVE DI LIVELLO
 
 #Attribuisco a tutte le curve il tag minor_contour
@@ -46,23 +47,3 @@ look = medium_contour   { name '${name}m'}	   [ 0x21 resolution 21 ]
 look = minor_contour    { name '${name}m'}	   [ 0x20 resolution 23 ]
 look = uncertain_contor { name '${name}m'}         [ 0x23 resolution 24 ]
 look = breakline        { name '${name}m'}         [ 0x23 resolution 24 ]
-
-
-#Acqua
-
-EL_IDR_LIV='Non conosciuto'	{ name '${NOME_ABBR}'}	[ 0x18 resolution 21 ]
-EL_IDR_LIV='non in sottopasso'	{ name '${NOME_ABBR}'}	[ 0x18 resolution 21 ]
-EL_IDR_LIV='in sottopasso'	{ name '${NOME_ABBR}'}	[ 0x26 resolution 21 ]
-
-
-#elettrico
-TR_ELE_POS=pensile  { name '${LN_ELE_TEN}'}	   [ 0x29 resolution 21 ]
-
-
-#elementi di divisione
-EL_DIV_TY=*			[ 0x24 resolution 22 ]
-
-
-#filari alberi/siepi
-FIL_AL_TY=alberi		{ name '${FIL_AL_TY}'}	[ 0x25 resolution 22 ]
-FIL_AL_TY=siepi			{ name '${FIL_AL_TY}'}	[ 0x25 resolution 22 ]

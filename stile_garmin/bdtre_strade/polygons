@@ -1,0 +1,61 @@
+#	These style files are part of the BDTRE-OSM package.
+#	I refer to them as a 'program' in the licensing text below.
+
+#	Copyright (C) 2016  Galosso Lucio
+
+#	This program is free software: you can redistribute it and/or modify
+#	it under the terms of the GNU General Public License as published by
+#	the Free Software Foundation, either version 3 of the License, or
+#	(at your option) any later version.
+
+#	This program is distributed in the hope that it will be useful,
+#	but WITHOUT ANY WARRANTY; without even the implied warranty of
+#	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#	GNU General Public License for more details.
+
+#	You should have received a copy of the GNU General Public License
+#	along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+
+
+
+#Strade
+AC_VEI_ZON=banchina						[ 0x2a resolution 22 ]
+AC_VEI_ZON=controviale						[ 0x2a resolution 22 ]
+AC_VEI_ZON='fascia di sosta laterale'				[ 0x2a resolution 22 ]
+AC_VEI_ZON='golfo di fermata'					[ 0x2a resolution 22 ]
+AC_VEI_ZON='in area di pertinenza'				[ 0x2a resolution 22 ]
+AC_VEI_ZON=incrocio						[ 0x2a resolution 22 ]
+AC_VEI_ZON='isole di traffico a raso'				[ 0x36 resolution 22 ]
+AC_VEI_ZON='passaggio a livello'				[ 0x2a resolution 22 ]
+AC_VEI_ZON=piazza						[ 0x2a resolution 22 ]
+AC_VEI_ZON='piazzola di sosta'					[ 0x2a resolution 22 ]
+AC_VEI_ZON=rotatoria						[ 0x2a resolution 22 ]
+AC_VEI_ZON=parcheggio						[ 0x05 resolution 22 ]
+AC_VEI_ZON='Non conosciuto' & AC_VEI_SED='a raso'		[ 0x2a resolution 22 ]
+AC_VEI_ZON='Non conosciuto' & AC_VEI_SED='su ponte/viadotto/cavalcavia'		[ 0x33 resolution 22 ]
+AC_VEI_ZON='tronco carreggiata' & AC_VEI_SED='altro'		[ 0x2a resolution 22 ]
+AC_VEI_ZON='tronco carreggiata' & AC_VEI_SED='a raso'		[ 0x2a resolution 22 ]
+AC_VEI_ZON='tronco carreggiata' & AC_VEI_SED='in galleria'	[ 0x31 resolution 22 ]
+AC_VEI_ZON='tronco carreggiata' & AC_VEI_SED='su ponte/viadotto/cavalcavia'	[ 0x33 resolution 22 ]
+AC_VEI_ZON='tronco ordinario' & AC_VEI_SED='a raso'		[ 0x33 resolution 22 ]
+AC_VEI_ZON='tronco ordinario' & AC_VEI_SED='su ponte/viadotto/cavalcavia'	[ 0x33 resolution 22 ]
+AR_VMS_TY=campestre						[ 0x34 resolution 22 ]
+AR_VMS_TY=sentiero						[ 0x34 resolution 22 ]
+AR_VMS_TY=tratturo						[ 0x34 resolution 22 ]
+AR_VMS_TY='Non conosciuto'					[ 0x34 resolution 22 ]
+AR_VMS_TY='carrareccia, carreggiabile, carrozzabile'		[ 0x2a resolution 22 ]
+
+AC_PED_FON=pavimentato			[ 0x2f resolution 22 ]
+AC_PED_FON='non pavimentato'		[ 0x2f resolution 22 ]
+
+MAN_TR_TY=altro					[ 0x36 resolution 22 ]
+MAN_TR_TY='marciapiede, sagrato, piazza'	[ 0x36 resolution 22 ]
+MAN_TR_TY=rotatoria				[ 0x36 resolution 22 ]
+MAN_TR_TY=spartitraffico			[ 0x36 resolution 22 ]
+MAN_TR_TY='isola di traffico'			[ 0x36 resolution 22 ]
+MAN_TR_TY='Non conosciuto'			[ 0x36 resolution 22 ]
+MAN_TR_TY='percorsi a gradinate'		[ 0x36 resolution 22 ]
+
+MAN_TR_TY=rampa					[ 0x1a resolution 22 ]

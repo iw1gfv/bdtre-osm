@@ -19,4 +19,17 @@
 
 
 
-levels = 0:24, 1:22, 2:21, 3:20, 4:19, 5:18, 6:16
+
+#Impianti sportivi
+
+ATTR_SP_TY='vasca, piscina scoperta'	{ name '${ATTR_SP_TY}'}	[0x9 resolution 21]
+ATTR_SP_TY='tiro a segno, poligono'	{ name '${ATTR_SP_TY}'}	[0x19 resolution 21]
+ATTR_SP_TY='campo tennis'		{ name '${ATTR_SP_TY}'}	[0x19 resolution 21]
+ATTR_SP_TY='campo calcio'		{ name '${ATTR_SP_TY}'}	[0x19 resolution 21]
+ATTR_SP_TY='campo calcetto'		{ name '${ATTR_SP_TY}'}	[0x19 resolution 21]
+ATTR_SP_TY='campo bocce'		{ name '${ATTR_SP_TY}'}	[0x19 resolution 21]
+ATTR_SP_TY='campo basket, volley'	{ name '${ATTR_SP_TY}'}	[0x19 resolution 21]
+ATTR_SP_TY='campi sportivi'		{ name '${ATTR_SP_TY}'}	[0x19 resolution 21]
+ATTR_SP_TY='Non conosciuto'					[0x19 resolution 21]
+ATTR_SP_TY=altro						[0x19 resolution 21]
+ATTR_SP_TY=gradinata			{ name '${ATTR_SP_TY}'}	[0x27 resolution 21]

@@ -19,4 +19,9 @@
 
 
 
-levels = 0:24, 1:22, 2:21, 3:20, 4:19, 5:18, 6:16
+
+#Acqua
+
+EL_IDR_LIV='Non conosciuto'	{ name '${NOME_ABBR}'}	[ 0x18 resolution 21 ]
+EL_IDR_LIV='non in sottopasso'	{ name '${NOME_ABBR}'}	[ 0x18 resolution 21 ]
+EL_IDR_LIV='in sottopasso'	{ name '${NOME_ABBR}'}	[ 0x26 resolution 21 ]

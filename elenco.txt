@@ -64,7 +64,8 @@ albero = albero (punto)
 ALBERO_TY=altro | ALBERO_TY=monumentale		[ 0x611e ]
 
 
-Argine (area)
+argine = argine (area)
+
 ARGN_TY='Non conosciuto'		[ 0x10101 ]
 
 
@@ -126,7 +127,7 @@ diga = diga (area)
 DIGA_CT=diga	[0x10f02 resolution 21]
 
 
-edificato (area)
+edifc = edifici (area)
 
 EDIFC_USO=abitativa				{ name '${EDIFC_NOME}'}		[ 0x27 ]
 EDIFC_USO=residenziale				{ name '${EDIFC_NOME}'}		[ 0x27 ]
@@ -180,7 +181,7 @@ EDIFC_USO='stazione passeggeri ferroviaria'	{ name '${EDIFC_NOME}'}		[ 0x41 ]
 EDIFC_USO=ferroviario				{ name '${EDIFC_NOME}'}		[ 0x41 ]
 
 
-edificato minore (area)
+edi_min = edificato minore (area)
 
 EDI_MIN_TY=altro	     						[ 0x27 ]
 EDI_MIN_TY=baracca	     		{ name '${EDI_MIN_TY}'}		[ 0x27 ]
@@ -200,14 +201,14 @@ EDI_MIN_TY='tomba cimiteriale'		{ name '${EDI_MIN_TY}'}		[ 0x2d ]
 EDI_MIN_TY='torre, porta'		{ name '${EDI_MIN_TY}'}		[ 0x27 ]
 
 
-elementi di divisione (linea)
+el_div = elementi di divisione (linea)
 
 EL_DIV_TY=*			[ 0x24 ]
 
 
-elemento copertura = edifici (area)
+ele_cp = edifici (area)
 
-ELE_CP_TY='pensilina, tettoia'		{ name '${ELE_CP_TY}'}		[ 0x27 resolution 22 ]
+ELE_CP_TY='pensilina, tettoia'		{ name '${ELE_CP_TY}'}		[ 0x27 ]
 
 
 el_idr = elemento idrico (linea)
@@ -217,25 +218,29 @@ EL_IDR_LIV='non in sottopasso'	{ name '${NOME_ABBR}'}	[ 0x18 ]
 EL_IDR_LIV='in sottopasso'	{ name '${NOME_ABBR}'}	[ 0x26 ]
 
 
-filari alberi/siepi = alberi (linea)
-FIL_AL_TY=alberi		{ name '${FIL_AL_TY}'}	[ 0x25 resolution 22 ]
-FIL_AL_TY=siepi			{ name '${FIL_AL_TY}'}	[ 0x25 resolution 22 ]
+fil_al = filari alberi/siepi (linea)
+FIL_AL_TY=alberi		{ name '${FIL_AL_TY}'}	[ 0x25 ]
+FIL_AL_TY=siepi			{ name '${FIL_AL_TY}'}	[ 0x25 ]
 
 
-Forma terreno = forme del terreno (area)
+f_nter = forme del terreno (area)
 
-F_NTER_TY=rocce					[ 0x35 resolution 20 ]
-F_NTER_TY='spiaggia/arenile/dune'		[ 0x1b resolution 20 ]
-F_NTER_TY='pietraie e ghiaioni'			[ 0x26 resolution 20 ]
-F_NTER_TY='area nuda'				[ 0x26 resolution 20 ]
-F_NTER_TY='Non conosciuto'			[ 0x26 resolution 20 ]
+F_NTER_TY=rocce					[ 0x35 ]
+F_NTER_TY='spiaggia/arenile/dune'		[ 0x1b ]
+F_NTER_TY='pietraie e ghiaioni'			[ 0x26 ]
+F_NTER_TY='area nuda'				[ 0x26 ]
+F_NTER_TY='Non conosciuto'			[ 0x26 ]
 
 
-Forma particolare = forme del terreno (area)
+For_pc = forme del terreno (area)
 
-FOR_PC_TY='Non conosciuto'			[ 0x4f resolution 20 ]
-FOR_PC_TY=riparie				[ 0x4f resolution 20 ]
-FOR_PC_TY=rupestri				[ 0x4f resolution 20 ]
+FOR_PC_TY='Non conosciuto'			[ 0x4f ]
+FOR_PC_TY=riparie				[ 0x4f ]
+FOR_PC_TY=rupestri				[ 0x4f ]
+
+
+ghi_nv = ghiacciaio (area)
+GHI_NV_TY='superficie di ghiacciaio'	{ name 'Ghiacciaio ${GHI_NV_NOM}'}	[0x4d ]
 
 
 invaso = laghi (area)
@@ -243,9 +248,31 @@ invaso = laghi (area)
 INVASO_TY='lago artificiale'	{ name '${NOME_ABBR}'} 	[ 0x3f ]
 
 
-Scarpata
+Scarpt = scarpata (area)
+
 SCARPT_CON='Non conosciuto'		[ 0x26 ]
 
+
+Man_tr = accessori (area)
+
+MAN_TR_TY=altro					[ 0x36 ]
+MAN_TR_TY='marciapiede, sagrato, piazza'	[ 0x36 ]
+MAN_TR_TY=rotatoria				[ 0x36 ]
+MAN_TR_TY=spartitraffico			[ 0x36 ]
+MAN_TR_TY='isola di traffico'			[ 0x36 ]
+MAN_TR_TY='Non conosciuto'			[ 0x36 ]
+MAN_TR_TY='percorsi a gradinate'		[ 0x36 ]
+
+
+#nd_ele
+ND_ELE_TY=traliccio				{ name 'N° ${ND_ELE_NUM} (${ND_ELE_NUM})'}	[0x1608 ]
+ND_ELE_TY=portale										[0x1609 ]
+ND_ELE_TY='cabina di trasformazione'		{ name '(${ND_ELE_IMP}) ${ND_ELE_NUM}'}		[0x6111 ]
+ND_ELE_TY='cabina utente alta tensione'		{ name '(${ND_ELE_IMP}) ${ND_ELE_NUM}'} 	[0x611a ]
+ND_ELE_TY='stazione di trasformazione primaria' { name '(${ND_ELE_IMP}) ${ND_ELE_NUM}'}		[0x6111 ]
+ND_ELE_TY='centrale idroelettrica'		{ name '(${ND_ELE_IMP}) ${ND_ELE_NUM}'}		[0x7203 ]
+ND_ELE_TY='centrale mista'			{ name '(${ND_ELE_IMP}) ${ND_ELE_NUM}'}		[0x7205 ]
+ND_ELE_TY='centrale termoelettrica'		{ name '(${ND_ELE_IMP}) ${ND_ELE_NUM}'}		[0x7205 ]
 
 sp_acq = laghi (area)
 
@@ -270,7 +297,9 @@ CATEGORIA=porti				{ name '${name}'} [ 0x2f0f ]
 CATEGORIA=stazioni			{ name '${name}'} [ 0x6500 ]
 
 
+#tr_ele = linea elettrica (linea)
 
+TR_ELE_POS=pensile  { name 'Linea (${LN_ELE_CTR}), ${LN_ELE_TEN} ${LN_ELE_NOM}'}	   [ 0x29 ]
 
 
 NON UTILIZZATI
@@ -298,18 +327,10 @@ galler
 gz_fer
 gz_str
 gz_vms
+ln_ele
 iz_str
-
-
-
-DRAW PRIORITY
-
-poligoni 10
-curve di livello 12
-linee 14
-osm 18
-punti 20
-toponimi 22
+loc_sg
+tralic
 
 
 
@@ -329,7 +350,7 @@ tralicci tralic tr_ele		66130 dp14
 toponomastica			66131 dp22
 coltiva ps_inc cl_agr		66132 dp10
 comune				66133 dp10
-civico acc_pc			66134 dp20
+civico acc_pc acc_int		66134 dp20
 verde cittadino ar_vrd		66135 dp10
 cava				66136 dp10
 divisioni del terreno		66137 dp14

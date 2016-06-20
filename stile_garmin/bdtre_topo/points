@@ -20,23 +20,6 @@
 
 
 
-#albero isolato
-ALBERO_TY=altro | ALBERO_TY=monumentale		[0x611e resolution 22]
-
-#punto quotato
-PT_QUO_RIL=altro  { name '${name}m' } [0x010303 resolution 22]
-
-#traliccio
-TRAL_TY=traliccio		[0x1608 resolution 20]
-
-#Antenna/ripetitore
-TRAL_TY='antenna, ripetitore'	[0x1611 resolution 21]
-
-#Numero civico
-ACC_PC_TY='accesso esterno diretto' { name '${CIVICO_NUM} ${CIVICO_SUB}' }	[0x1603 resolution 24]
-
-ENTE_FOR=* { name '${ACC_INT_NR}' }	[0x1603 resolution 24]
-
 #Toponomastica
 CATEGORIA='altri laghi'			{ name '${name}'} [0x650d resolution 21]
 CATEGORIA=laghi    			{ name '${name}'} [0x650d resolution 20]

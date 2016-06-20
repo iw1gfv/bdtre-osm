@@ -16,7 +16,7 @@ fi
 cd $sbdtrez
 
 #ciclo di scaricamento 
-cat ../comuni/Torino.txt | \
+cat ../comuni/lista_comuni.txt | \
 while read riga; do
 echo $riga
 

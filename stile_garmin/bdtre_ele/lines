@@ -19,4 +19,5 @@
 
 
 
-levels = 0:24, 1:22, 2:21, 3:20, 4:19, 5:18, 6:16
+#elettrico
+TR_ELE_POS=pensile  { name 'Linea (${LN_ELE_CTR}), ${LN_ELE_TEN} ${LN_ELE_NOM}'}	   [ 0x29 resolution 20 ]
