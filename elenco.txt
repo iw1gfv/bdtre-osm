@@ -248,11 +248,6 @@ invaso = laghi (area)
 INVASO_TY='lago artificiale'	{ name '${NOME_ABBR}'} 	[ 0x3f ]
 
 
-Scarpt = scarpata (area)
-
-SCARPT_CON='Non conosciuto'		[ 0x26 ]
-
-
 Man_tr = accessori (area)
 
 MAN_TR_TY=altro					[ 0x36 ]
@@ -262,9 +257,45 @@ MAN_TR_TY=spartitraffico			[ 0x36 ]
 MAN_TR_TY='isola di traffico'			[ 0x36 ]
 MAN_TR_TY='Non conosciuto'			[ 0x36 ]
 MAN_TR_TY='percorsi a gradinate'		[ 0x36 ]
+MAN_TR_TY='pista aeroporto non qualificata'			[ 0x07 ]
+MAN_TR_TY='piattaforma decollo atterraggio elicotteri'		[ 0x0e ]
 
 
-#nd_ele
+Mn_ind = similedifici (area)
+
+MN_IND_TY='cabina rete acqua'		{ name '${MN_IND_TY}'}		[ 0x27 ]
+MN_IND_TY='cabina rete gas'		{ name '${MN_IND_TY}'}		[ 0x27 ]
+MN_IND_TY='cabina trasformazione energia'				[ 0x25 ]
+MN_IND_TY='manufatti di impianti produzione energia'			[ 0x27 ]
+MN_IND_TY='Non conosciuto'						[ 0x0f ]
+MN_IND_TY=silo								[ 0x28 ]
+MN_IND_TY=serra								[ 0x28 ]
+MN_IND_TY=vasca								[ 0x28 ]
+
+
+#mu_div
+
+MU_DIV_TY=bastione			[0x10f0b ]
+MU_DIV_TY=divisori			[0x10f0b ]
+MU_DIV_TY=muro				[0x10f0b ]
+MU_DIV_TY='muro a secco'		[0x10f0b ]
+MU_DIV_TY='muro in muratura'		[0x10f0b ]
+
+
+#mu_sos
+
+MU_SOS_TY="muro d'ala"			[0x10f0b ]
+MU_SOS_TY='muro di sostegno'		[0x10f0b ]
+MU_SOS_TY='muro in muratura'		[0x10f0b ]
+MU_SOS_TY='Non conosciuto'		[0x10f0b ]
+MU_SOS_TY='rivestimento naturale'	[0x10f0c ]
+MU_SOS_TY='scarpata artificiale'	[0x10f06 ]
+MU_SOS_TY=terrapieno			[0x10f0c ]
+MU_SOS_TY='terrazzamento agricolo'	[0x10f0c ]
+
+
+nd_ele = nodi elettrici (punti)
+
 ND_ELE_TY=traliccio				{ name 'N° ${ND_ELE_NUM} (${ND_ELE_NUM})'}	[0x1608 ]
 ND_ELE_TY=portale										[0x1609 ]
 ND_ELE_TY='cabina di trasformazione'		{ name '(${ND_ELE_IMP}) ${ND_ELE_NUM}'}		[0x6111 ]
@@ -273,6 +304,12 @@ ND_ELE_TY='stazione di trasformazione primaria' { name '(${ND_ELE_IMP}) ${ND_ELE
 ND_ELE_TY='centrale idroelettrica'		{ name '(${ND_ELE_IMP}) ${ND_ELE_NUM}'}		[0x7203 ]
 ND_ELE_TY='centrale mista'			{ name '(${ND_ELE_IMP}) ${ND_ELE_NUM}'}		[0x7205 ]
 ND_ELE_TY='centrale termoelettrica'		{ name '(${ND_ELE_IMP}) ${ND_ELE_NUM}'}		[0x7205 ]
+
+
+Scarpt = scarpata (area)
+
+SCARPT_CON='Non conosciuto'		[ 0x10f06 ]
+
 
 sp_acq = laghi (area)
 
@@ -330,6 +367,9 @@ gz_vms
 ln_ele
 iz_str
 loc_sg
+mn_arr
+mn_int
+mn_mau
 tralic
 
 

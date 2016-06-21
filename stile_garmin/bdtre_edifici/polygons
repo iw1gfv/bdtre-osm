@@ -96,3 +96,15 @@ EDIFC_USO=stalla				{ name '${EDIFC_NOME}'}		[ 0x2b resolution 22 ]
 EDIFC_TY=mulino 				{ name '${EDIFC_NOME}'}		[ 0x2c resolution 22 default_name 'Mulino']
 EDIFC_USO='stazione passeggeri ferroviaria'	{ name '${EDIFC_NOME}'}		[ 0x41 resolution 22 ]
 EDIFC_USO=ferroviario				{ name '${EDIFC_NOME}'}		[ 0x41 resolution 22 ]
+
+
+#Mn_ind
+
+MN_IND_TY='cabina rete acqua'		{ name '${MN_IND_TY}'}		[ 0x27 resolution 22 ]
+MN_IND_TY='cabina rete gas'		{ name '${MN_IND_TY}'}		[ 0x27 resolution 22 ]
+MN_IND_TY='cabina trasformazione energia'				[ 0x25 resolution 20 ]
+MN_IND_TY='manufatti di impianti produzione energia'			[ 0x27 resolution 20 ]
+MN_IND_TY='Non conosciuto'						[ 0x0f resolution 22 ]
+MN_IND_TY=silo								[ 0x28 resolution 22 ]
+MN_IND_TY=serra								[ 0x28 resolution 22 ]
+MN_IND_TY=vasca								[ 0x28 resolution 22 ]

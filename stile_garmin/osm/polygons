@@ -26,7 +26,7 @@ include 'inc/name';
 
 aeroway=airport [0x07 resolution 20]
 aeroway=aerodrome [0x07 resolution 20]
-aeroway=helipad [0x0e resolution 22]
+aeroway=helipad [0x0e resolution 21]
 
 amenity=hospital [ 0x0b resolution 18]
 amenity=parking [ 0x05 resolution 22]

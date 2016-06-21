@@ -19,5 +19,7 @@
 
 
 
-#elettrico
-TR_ELE_POS=pensile  { name 'Linea (${LN_ELE_CTR}), ${LN_ELE_TEN} ${LN_ELE_NOM}'}	   [ 0x29 resolution 21 ]
+#cava
+
+CV_AES_TY=cava			{ name '${CV_AES_NOM}'}	[0x10f0f resolution 20]
+CV_AES_TY='Non conosciuto'	{ name '${CV_AES_NOM}'}	[0x10f0f resolution 20]

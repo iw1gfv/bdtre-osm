@@ -22,11 +22,11 @@
 
 
 #Nodi elettrici
-ND_ELE_TY=traliccio				{ name 'N° ${ND_ELE_NUM} (${ND_ELE_NUM})'}	[0x1608 resolution 20]
-ND_ELE_TY=portale										[0x1609 resolution 20]
-ND_ELE_TY='cabina di trasformazione'		{ name '(${ND_ELE_IMP}) ${ND_ELE_NUM}'}		[0x6111 resolution 22]
-ND_ELE_TY='cabina utente alta tensione'		{ name '(${ND_ELE_IMP}) ${ND_ELE_NUM}'} 	[0x611a resolution 22]
-ND_ELE_TY='stazione di trasformazione primaria' { name '(${ND_ELE_IMP}) ${ND_ELE_NUM}'}		[0x6111 resolution 22]
-ND_ELE_TY='centrale idroelettrica'		{ name '(${ND_ELE_IMP}) ${ND_ELE_NUM}'}		[0x7203 resolution 20]
-ND_ELE_TY='centrale mista'			{ name '(${ND_ELE_IMP}) ${ND_ELE_NUM}'}		[0x7205 resolution 20]
-ND_ELE_TY='centrale termoelettrica'		{ name '(${ND_ELE_IMP}) ${ND_ELE_NUM}'}		[0x7205 resolution 20]
+ND_ELE_TY=traliccio										[0x1608 resolution 21]
+ND_ELE_TY=portale										[0x1609 resolution 21]
+ND_ELE_TY='cabina di trasformazione'		{ name '(${ND_ELE_IMP}) ${ND_ELE_DEN}'}		[0x6111 resolution 22]
+ND_ELE_TY='cabina utente alta tensione'		{ name '(${ND_ELE_IMP}) ${ND_ELE_DEN}'} 	[0x611a resolution 22]
+ND_ELE_TY='stazione di trasformazione primaria' { name '(${ND_ELE_IMP}) ${ND_ELE_DEN}'}		[0x6111 resolution 22]
+ND_ELE_TY='centrale idroelettrica'		{ name '(${ND_ELE_IMP}) ${ND_ELE_DEN}'}		[0x7203 resolution 20]
+ND_ELE_TY='centrale mista'			{ name '(${ND_ELE_IMP}) ${ND_ELE_DEN}'}		[0x7205 resolution 20]
+ND_ELE_TY='centrale termoelettrica'		{ name '(${ND_ELE_IMP}) ${ND_ELE_DEN}'}		[0x7205 resolution 20]

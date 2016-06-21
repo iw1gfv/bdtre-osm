@@ -65,11 +65,14 @@ Type=0x19,5
 Type=0x25,5
 Type=0x2e,5
 Type=0x27,6
+Type=0x28,6
 Type=0x0f,6
 Type=0x2b,6
 Type=0x2c,6
 Type=0x2d,6
 Type=0x41,6
+Type=0x10f0b,6
+Type=0x10f0c,6
 Type=0x10f00,6
 Type=0x04,10
 Type=0x14,10
@@ -963,11 +966,20 @@ Xpm="0 0 1 0"
 
 
 [_polygon]
+Type=0x28
+String3=0x05,Edificio tecnico
+ExtendedLabels=N
+Xpm="0 0 1 0"
+"1 c #FF80C0"
+[end]
+
+
+[_polygon]
 Type=0x2a
 String1=0x05,Strada
 ExtendedLabels=N
 Xpm="0 0 1 0"
-"1 c #FFFFC0"
+"1 c #FFC000"
 [end]
 
 
@@ -1589,7 +1601,6 @@ Xpm="32 32 2 1"
 
 [_polygon]
 Type=0x10f01
-;GRMN_TYPE: Customizable Areas/CUSTOMIZABLE_AREA_2/Customizable area/Non NT, NT
 String1=0x05,Area industriale
 ExtendedLabels=N
 Xpm="32 32 2 1"
@@ -1633,7 +1644,6 @@ Xpm="32 32 2 1"
 
 [_polygon]
 Type=0x10f02
-;GRMN_TYPE: Customizable Areas/CUSTOMIZABLE_AREA_3/Customizable area/Non NT, NT
 String1=0x05,Diga
 ExtendedLabels=N
 Xpm="32 32 2 1"
@@ -1677,7 +1687,6 @@ Xpm="32 32 2 1"
 
 [_polygon]
 Type=0x10f03
-;GRMN_TYPE: Customizable Areas/CUSTOMIZABLE_AREA_4/Customizable area/Non NT, NT
 String1=0x05,Vigneto
 ExtendedLabels=N
 Xpm="32 32 2 1"
@@ -1721,7 +1730,6 @@ Xpm="32 32 2 1"
 
 [_polygon]
 Type=0x10f04
-;GRMN_TYPE: Customizable Areas/CUSTOMIZABLE_AREA_5/Customizable area/Non NT, NT
 String1=0x05,Pascolo
 ExtendedLabels=N
 Xpm="32 32 2 1"
@@ -1765,7 +1773,6 @@ Xpm="32 32 2 1"
 
 [_polygon]
 Type=0x10f05
-;GRMN_TYPE: Customizable Areas/CUSTOMIZABLE_AREA_6/Customizable area/Non NT, NT
 String1=0x05,Orto
 ExtendedLabels=N
 Xpm="32 32 2 1"
@@ -1809,8 +1816,7 @@ Xpm="32 32 2 1"
 
 [_polygon]
 Type=0x10f06
-;GRMN_TYPE: Customizable Areas/CUSTOMIZABLE_AREA_7/Customizable area/Non NT, NT
-String1=0x05,Scogliera
+String1=0x05,Scarpata
 ExtendedLabels=N
 FontStyle=SmallFont
 CustomColor=No
@@ -1855,7 +1861,6 @@ Xpm="32 32 2 1"
 
 [_polygon]
 Type=0x10f07
-;GRMN_TYPE: Customizable Areas/CUSTOMIZABLE_AREA_8/Customizable area/Non NT, NT
 String1=0x05,Impianto fotovoltaico
 ExtendedLabels=N
 Xpm="32 32 2 1"
@@ -1950,8 +1955,59 @@ Xpm="32 32 2 1"
 
 
 [_polygon]
+Type=0x10f0b
+String1=0x05,Muro
+ExtendedLabels=N
+Xpm="32 32 2 1"
+"! c #800000"
+"# c #000000"
+"################################"
+"#!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!"
+"#!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!"
+"#!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!"
+"#!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!"
+"#!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!"
+"#!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!"
+"#!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!"
+"################################"
+"!!!!!!!!#!!!!!!!!!!!!!!!#!!!!!!!"
+"!!!!!!!!#!!!!!!!!!!!!!!!#!!!!!!!"
+"!!!!!!!!#!!!!!!!!!!!!!!!#!!!!!!!"
+"!!!!!!!!#!!!!!!!!!!!!!!!#!!!!!!!"
+"!!!!!!!!#!!!!!!!!!!!!!!!#!!!!!!!"
+"!!!!!!!!#!!!!!!!!!!!!!!!#!!!!!!!"
+"!!!!!!!!#!!!!!!!!!!!!!!!#!!!!!!!"
+"################################"
+"#!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!"
+"#!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!"
+"#!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!"
+"#!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!"
+"#!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!"
+"#!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!"
+"#!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!"
+"################################"
+"!!!!!!!!#!!!!!!!!!!!!!!!#!!!!!!!"
+"!!!!!!!!#!!!!!!!!!!!!!!!#!!!!!!!"
+"!!!!!!!!#!!!!!!!!!!!!!!!#!!!!!!!"
+"!!!!!!!!#!!!!!!!!!!!!!!!#!!!!!!!"
+"!!!!!!!!#!!!!!!!!!!!!!!!#!!!!!!!"
+"!!!!!!!!#!!!!!!!!!!!!!!!#!!!!!!!"
+"!!!!!!!!#!!!!!!!!!!!!!!!#!!!!!!!"
+;12345678901234567890123456789012
+[end]
+
+
+[_polygon]
+Type=0x10f0c
+String1=0x05,Terrapieno
+ExtendedLabels=N
+Xpm="0 0 1 0"
+"1 c #BD9520"
+[end]
+
+
+[_polygon]
 Type=0x10f0f
-;GRMN_TYPE: Customizable Areas/CUSTOMIZABLE_AREA_16/Customizable area/Non NT, NT
 String1=0x05,Frutteto
 ExtendedLabels=N
 Xpm="32 32 2 1"
@@ -1995,7 +2051,6 @@ Xpm="32 32 2 1"
 
 [_polygon]
 Type=0x10f10
-;GRMN_TYPE: Customizable Areas/CUSTOMIZABLE_AREA_17/Customizable area/Non NT, NT
 String1=0x05,Discarica
 ExtendedLabels=N
 FontStyle=Default
@@ -2041,7 +2096,6 @@ Xpm="32 32 2 1"
 
 [_polygon]
 Type=0x10f11
-;GRMN_TYPE: Customizable Areas/CUSTOMIZABLE_AREA_18/Customizable area/Non NT, NT
 String1=0x05,Risaie
 ExtendedLabels=N
 Xpm="32 32 2 1"
@@ -2088,7 +2142,6 @@ Xpm="32 32 2 1"
 
 [_line]
 Type=0x01
-;GRMN_TYPE: Roads/INTERSTATE, MAJOR_HWY/Primary, divided, limited-access highway, akin to an interstate in the US/Non NT, NT
 UseOrientation=Y
 LineWidth=3
 BorderWidth=1
@@ -2102,7 +2155,6 @@ ExtendedLabels=N
 
 [_line]
 Type=0x02
-;GRMN_TYPE: Roads/PRINCIPAL_HWY/Principal highway, usually divided and limited access, akin to US highways/Non NT, NT
 UseOrientation=Y
 LineWidth=2
 BorderWidth=1
@@ -2116,7 +2168,6 @@ ExtendedLabels=N
 
 [_line]
 Type=0x03
-;GRMN_TYPE: Roads/OTHER_HWY/Other highway road, akin to a state highway in the US/Non NT, NT
 UseOrientation=Y
 LineWidth=2
 BorderWidth=1
@@ -2130,7 +2181,6 @@ ExtendedLabels=N
 
 [_line]
 Type=0x04
-;GRMN_TYPE: Roads/ARTERIAL/Main city thoroughfare/Non NT, NT
 UseOrientation=Y
 LineWidth=2
 BorderWidth=1
@@ -2144,7 +2194,6 @@ ExtendedLabels=N
 
 [_line]
 Type=0x05
-;GRMN_TYPE: Roads/COLLECTOR/Secondary city thoroughfare/Non NT, NT
 UseOrientation=Y
 LineWidth=3
 BorderWidth=1
@@ -2158,7 +2207,6 @@ ExtendedLabels=N
 
 [_line]
 Type=0x06
-;GRMN_TYPE: Roads/RESIDENTIAL/Residential street, these are typically the most numerous roads in a detailed city map and do not show up until the user is zoomed in quite far/Non NT, NT
 UseOrientation=Y
 LineWidth=1
 BorderWidth=1
@@ -2172,7 +2220,6 @@ ExtendedLabels=N
 
 [_line]
 Type=0x07
-;GRMN_TYPE: Roads/ALLEY, DRIVEWAY/Alleyway, private driveway to residence/Non NT, NT
 UseOrientation=Y
 LineWidth=2
 Xpm="0 0 1 0"
@@ -2184,7 +2231,6 @@ ExtendedLabels=N
 
 [_line]
 Type=0x08
-;GRMN_TYPE: Roads/LOW_SPEED_RAMP/Highway ramp which is to be driven at low speeds/Non NT, NT
 UseOrientation=Y
 LineWidth=2
 BorderWidth=1
@@ -2197,7 +2243,6 @@ ExtendedLabels=N
 
 [_line]
 Type=0x09
-;GRMN_TYPE: Roads/HIGH_SPEED_RAMP, RAMP/Highway ramp which is to be driven at high speeds/Non NT, NT
 UseOrientation=Y
 LineWidth=2
 Xpm="0 0 1 0"
@@ -2208,7 +2253,6 @@ ExtendedLabels=N
 
 [_line]
 Type=0x0a
-;GRMN_TYPE: Roads/UNPAVED_ROAD/Gravel or dirt road/Non NT, NT
 UseOrientation=Y
 Xpm="32 3 2  1"
 "! c #000000"
@@ -2224,7 +2268,6 @@ ExtendedLabels=N
 
 [_line]
 Type=0x0b
-;GRMN_TYPE: Roads/MAJOR_CONNECTOR/Major highway connector/Non NT, NT
 UseOrientation=Y
 LineWidth=2
 BorderWidth=0
@@ -2237,7 +2280,6 @@ ExtendedLabels=N
 
 [_line]
 Type=0x0c
-;GRMN_TYPE: Roads/ROUNDABOUT/Roundabout/Non NT, NT
 UseOrientation=Y
 LineWidth=2
 BorderWidth=1
@@ -2251,7 +2293,6 @@ ExtendedLabels=N
 
 [_line]
 Type=0x0d
-;GRMN_TYPE: Customizable Line Types/CUSTOMIZABLE_ROUTE_LINE_1/Routable customizable line/Non NT, NT
 UseOrientation=Y
 LineWidth=3
 BorderWidth=0
@@ -2264,7 +2305,6 @@ ExtendedLabels=N
 
 [_line]
 Type=0x0f
-;GRMN_TYPE: Customizable Line Types/CUSTOMIZABLE_ROUTE_LINE_3/Routable customizable line/Non NT, NT
 UseOrientation=N
 LineWidth=4
 BorderWidth=0
@@ -15366,7 +15406,6 @@ DayXpm="16 11 41 2"   Colormode=32
 [_point]
 Type=0x059
 SubType=0x04
-;GRMN_TYPE: //
 String1=0x05,Eliporto
 ExtendedLabels=N
 DayXpm="16 15 3 1"   Colormode=16

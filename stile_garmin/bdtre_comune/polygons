@@ -19,5 +19,6 @@
 
 
 
-#elettrico
-TR_ELE_POS=pensile  { name 'Linea (${LN_ELE_CTR}), ${LN_ELE_TEN} ${LN_ELE_NOM}'}	   [ 0x29 resolution 21 ]
+#Comune
+
+ENTE_FOR=ISTAT   { name '${COMUNE_NOM}'}   			[ 0x10100 resolution 12 ]
