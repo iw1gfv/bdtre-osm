@@ -75,3 +75,18 @@ MU_SOS_TY='rivestimento naturale'	[0x10f0c resolution 20]
 MU_SOS_TY='scarpata artificiale'	[0x10f06 resolution 20]
 MU_SOS_TY=terrapieno			[0x10f0c resolution 20]
 MU_SOS_TY='terrazzamento agricolo'	[0x10f0c resolution 20]
+
+
+#pe_uins
+PE_UINS_TY='area cimiteriale'		[0x1a resolution 21]
+PE_UINS_TY=campeggio			[0x2e resolution 20]
+PE_UINS_TY='campo da golf'		[0x18 resolution 20]
+PE_UINS_TY='centrale energia solare'	[0x10f07 resolution 21]
+PE_UINS_TY=depuratore			[0x10f08 resolution 21]
+PE_UINS_TY=parco			[0x17 resolution 21]
+PE_UINS_TY='parco giochi'		[0x10104 resolution 22]
+PE_UINS_TY='parco/giardino'		[0x17 resolution 21]
+
+#sc_dis
+SC_DIS_TY=discarica			[0x10f10 resolution 21]
+SC_DIS_TY=discarica			[0x10f10 resolution 21]

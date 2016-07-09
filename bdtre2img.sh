@@ -71,12 +71,14 @@ rm $BDTRE_IMG/*.pbf
 
 #divide e converte i impianti sportivi in formato IMG
 
+$osmosis -v --read-pbf-fast file=$uscitaosm/UNITO_attr_sp.pbf --rbf file=$uscitaosm/UNITO_pe_uins.pbf --merge --wb file=$uscitaosm/UNITO_sport.pbf omitmetadata=true
+
 java $Xmx -jar $splitter \
 --max-nodes=20000 \
 --max-areas=300 \
 --mapid=66121001 \
 --output-dir=$BDTRE_IMG \
-$uscitaosm/UNITO_attr_sp.pbf
+$uscitaosm/UNITO_sport.pbf
 
 
 for infile in $BDTRE_IMG/66121*.osm.pbf
@@ -102,6 +104,7 @@ for infile in $BDTRE_IMG/66121*.osm.pbf
   $infile
 done
 
+rm $uscitaosm/UNITO_sport.pbf
 rm $BDTRE_IMG/areas.*
 rm $BDTRE_IMG/densities-out.txt
 rm $BDTRE_IMG/temp*.*
@@ -110,7 +113,7 @@ rm $BDTRE_IMG/*.pbf
 
 #divide e converte gli edifici in formato IMG
 
-$osmosis -v --read-pbf-fast file=$uscitaosm/UNITO_edifc.pbf --rbf file=$uscitaosm/UNITO_edi_min.pbf --rbf file=$uscitaosm/UNITO_ele_cp.pbf --rbf file=$uscitaosm/UNITO_mn_ind.pbf --merge --merge --merge --wb file=$uscitaosm/UNITO_edifici.pbf omitmetadata=true
+$osmosis -v --read-pbf-fast file=$uscitaosm/UNITO_edifc.pbf --rbf file=$uscitaosm/UNITO_edi_min.pbf --rbf file=$uscitaosm/UNITO_ele_cp.pbf --rbf file=$uscitaosm/UNITO_mn_ind.pbf --rbf file=$uscitaosm/UNITO_par_ar.pbf --rbf file=$uscitaosm/UNITO_aatt.pbf --rbf file=$uscitaosm/UNITO_par_ar.pbf --merge --merge --merge --merge --merge --merge --wb file=$uscitaosm/UNITO_edifici.pbf omitmetadata=true
 
 java $Xmx -jar $splitter \
 --max-nodes=1600000 \
@@ -300,12 +303,15 @@ rm $BDTRE_IMG/*.pbf
 
 #divide e converte i fiumi in formato IMG
 
+$osmosis -v --read-pbf-fast file=$uscitaosm/UNITO_ab_cda.pbf --rbf file=$uscitaosm/UNITO_op_reg.pbf --merge --wb file=$uscitaosm/UNITO_fiumi.pbf omitmetadata=true
+
+
 java $Xmx -jar $splitter \
 --max-nodes=300000 \
 --max-areas=300 \
 --mapid=66127001 \
 --output-dir=$BDTRE_IMG \
-$uscitaosm/UNITO_ab_cda.pbf
+$uscitaosm/UNITO_fiumi.pbf
 
 
 for infile in $BDTRE_IMG/66127*.osm.pbf
@@ -328,20 +334,21 @@ for infile in $BDTRE_IMG/66127*.osm.pbf
   $infile
 done
 
+rm $uscitaosm/UNITO_fiumi.pbf
 rm $BDTRE_IMG/areas.*
 rm $BDTRE_IMG/densities-out.txt
 rm $BDTRE_IMG/temp*.*
 rm $BDTRE_IMG/*.pbf
 
 
-#divide e converte i sentieri in formato IMG
+#divide e converte i vertici di rete in formato IMG
 
 java $Xmx -jar $splitter \
---max-nodes=500000 \
+--max-nodes=30000 \
 --max-areas=300 \
 --mapid=66128001 \
 --output-dir=$BDTRE_IMG \
-$uscitaosm/UNITO_ar_vms.pbf
+$uscitaosm/UNITO_v_rete.pbf
 
 
 for infile in $BDTRE_IMG/66128*.osm.pbf
@@ -351,12 +358,12 @@ for infile in $BDTRE_IMG/66128*.osm.pbf
 
   java $Xmx -jar $mkgmap --code-page=1252 \
     --mapname=$MAPNAME \
-    --description="BDTRE Sentieri" \
+    --description="BDTRE Vertici di rete" \
     --country-name="Italia" \
     --region-name="Piemonte" \
     --copyright-message="$copyright" \
     --output-dir=$BDTRE_IMG \
-    --style-file=stile_garmin/bdtre \
+    --style-file=stile_garmin/bdtre_rete \
     --show-profiles=1 \
     --draw-priority=10 \
     --transparent \
@@ -372,7 +379,7 @@ rm $BDTRE_IMG/*.pbf
 
 #divide e converte le strade in formato IMG
 
-$osmosis -v --read-pbf-fast file=$uscitaosm/UNITO_ac_vei.pbf --rbf file=$uscitaosm/UNITO_ac_ped.pbf --rbf file=$uscitaosm/UNITO_ar_vms.pbf --rbf file=$uscitaosm/UNITO_man_tr.pbf --merge --merge --merge --wb file=$uscitaosm/UNITO_strade.pbf omitmetadata=true
+$osmosis -v --read-pbf-fast file=$uscitaosm/UNITO_ac_vei.pbf --rbf file=$uscitaosm/UNITO_ac_ped.pbf --rbf file=$uscitaosm/UNITO_ar_vms.pbf --rbf file=$uscitaosm/UNITO_man_tr.pbf --rbf file=$uscitaosm/UNITO_ponte.pbf --rbf file=$uscitaosm/UNITO_aatt.pbf --merge --merge --merge --merge --merge --wb file=$uscitaosm/UNITO_strade.pbf omitmetadata=true
 
 java $Xmx -jar $splitter \
 --max-nodes=1600000 \
@@ -693,6 +700,7 @@ for infile in $BDTRE_IMG/66137*.osm.pbf
     --output-dir=$BDTRE_IMG \
     --style-file=stile_garmin/bdtre_divisioni \
     --show-profiles=1 \
+    --add-pois-to-areas \
     --draw-priority=14 \
     --license-file=stile_garmin/bdtre_licenza.txt \
   $infile
@@ -706,7 +714,7 @@ rm $BDTRE_IMG/*.pbf
 
 #divide e converte le forme del terreno in formato IMG
 
-$osmosis -v --read-pbf-fast file=$uscitaosm/UNITO_f_nter.pbf --rbf file=$uscitaosm/UNITO_for_pc.pbf --rbf file=$uscitaosm/UNITO_scarpt.pbf --rbf file=$uscitaosm/UNITO_argine.pbf --rbf file=$uscitaosm/UNITO_ghi_nv.pbf --rbf file=$uscitaosm/UNITO_man_tr.pbf --merge --merge --merge --merge --merge --wb file=$uscitaosm/UNITO_formter.pbf omitmetadata=true
+$osmosis -v --read-pbf-fast file=$uscitaosm/UNITO_f_nter.pbf --rbf file=$uscitaosm/UNITO_for_pc.pbf --rbf file=$uscitaosm/UNITO_scarpt.pbf --rbf file=$uscitaosm/UNITO_argine.pbf --rbf file=$uscitaosm/UNITO_ghi_nv.pbf --rbf file=$uscitaosm/UNITO_man_tr.pbf --rbf file=$uscitaosm/UNITO_pe_uins.pbf --rbf file=$uscitaosm/UNITO_sc_dis.pbf --merge --merge --merge --merge --merge --merge --merge --wb file=$uscitaosm/UNITO_formter.pbf omitmetadata=true
 
 java $Xmx -jar $splitter \
 --max-nodes=1600000 \

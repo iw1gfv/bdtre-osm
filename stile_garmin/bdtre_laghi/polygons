@@ -23,7 +23,7 @@
 #laghi
 INVASO_TY='lago artificiale'	{ name '${NOME_ABBR}'} 	[ 0x3f resolution 21 ]
 SP_ACQ_TY=lago		{ name '${NOME_ABBR}'}		[ 0x3c resolution 20 ]
-SP_ACQ_TY=laguna	{ name '${NOME_ABBR}'}		[ 0x3c resolution 20 ]
+SP_ACQ_TY=stagno	{ name '${NOME_ABBR}'}		[ 0x3c resolution 20 ]
 
 #Diga
 

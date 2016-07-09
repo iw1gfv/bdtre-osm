@@ -47,3 +47,7 @@ EDIFC_USO=commerciale & mkgmap:area2poi=true				{ name '${EDIFC_NOME}'}		[ 0x2e0
 EDIFC_USO='sede di centro commerciale' & mkgmap:area2poi=true		{ name '${EDIFC_NOME}'}		[ 0x2e04 resolution 22 ]
 EDIFC_TY=chiesa & mkgmap:area2poi=true					{ name '${EDIFC_NOME}'}		[ 0x2c0b resolution 22 ]
 EDIFC_TY=campanile & mkgmap:area2poi=true				{ name '${EDIFC_NOME}'}		[ 0x5b00 resolution 20 ]
+
+
+#pe_uins
+PE_UINS_TY='struttura scolastica' & mkgmap:area2poi=true			[ 0x2c05 resolution 22 ]

@@ -34,6 +34,7 @@ Type=0x36,2
 Type=0x2f,2
 Type=0x31,2
 Type=0x34,2
+Type=0x37,2
 Type=0x3c,2
 Type=0x3f,2
 Type=0x46,2
@@ -51,10 +52,13 @@ Type=0x10f10,3
 Type=0x1a,3
 Type=0x10101,4
 Type=0x10104,4
+Type=0x10f08,4
+Type=0x38,4
 Type=0x07,4
 Type=0x0b,4
 Type=0x0e,4
 Type=0x17,4
+Type=0x55,4
 Type=0x22,4
 Type=0x06,5
 Type=0x08,5
@@ -88,7 +92,6 @@ Type=0x15,10
 
 [_polygon]
 Type=0x02
-String1=0x05,Area urbana
 ExtendedLabels=N
 Xpm="0 0 1 0"
 "1 c #FFCAFF"
@@ -1190,6 +1193,24 @@ Xpm="0 0 1 0"
 
 
 [_polygon]
+Type=0x37
+String1=0x05,Scalinata
+ExtendedLabels=N
+Xpm="0 0 1 0"
+"1 c #FFC000"
+[end]
+
+
+[_polygon]
+Type=0x36
+String1=0x05,Distributore carburante
+ExtendedLabels=N
+Xpm="0 0 1 0"
+"1 c #FFC040"
+[end]
+
+
+[_polygon]
 Type=0x3c
 String1=0x05,Lago
 ExtendedLabels=N
@@ -1492,6 +1513,18 @@ Xpm="32 32 2 1"
 "!!!!!!!!!!!!!###################"
 ;12345678901234567890123456789012
 [end]
+
+
+[_polygon]
+Type=0x55
+String1=0x05,Chiusa
+ExtendedLabels=N
+FontStyle=NormalFont
+CustomColor=No
+Xpm="0 0 1 0"
+"1 c #101010"
+[end]
+
 
 
 [_polygon]
@@ -1903,6 +1936,15 @@ Xpm="32 32 2 1"
 
 
 [_polygon]
+Type=0x10f08
+String1=0x05,Depuratore
+ExtendedLabels=N
+Xpm="0 0 1 0"
+"1 c #0000F8"
+[end]
+
+
+[_polygon]
 Type=0x10f09
 String1=0x05,Seminativi
 ExtendedLabels=N
@@ -2003,6 +2045,15 @@ String1=0x05,Terrapieno
 ExtendedLabels=N
 Xpm="0 0 1 0"
 "1 c #BD9520"
+[end]
+
+
+[_polygon]
+Type=0x10f0d
+String1=0x05,Cortile
+ExtendedLabels=N
+Xpm="0 0 1 0"
+"1 c #FF6500"
 [end]
 
 
@@ -3091,7 +3142,6 @@ DayXpm="20 16 3 1"   Colormode=16
 [_point]
 Type=0x016
 SubType=0x0c
-;GRMN_TYPE: //
 String1=0x05, Fontana
 ExtendedLabels=N
 DayXpm="11 13 2 1"   Colormode=16
@@ -3117,7 +3167,6 @@ DayXpm="11 13 2 1"   Colormode=16
 [_point]
 Type=0x016
 SubType=0x11
-;GRMN_TYPE: //
 String1=0x05,Antenna/ripetitore
 ExtendedLabels=N
 DayXpm="13 14 4 1"   Colormode=16
@@ -3146,7 +3195,6 @@ DayXpm="13 14 4 1"   Colormode=16
 [_point]
 Type=0x016
 SubType=0x1b
-;GRMN_TYPE: //
 String1=0x04,Wegkreuz
 ExtendedLabels=N
 DayXpm="8 11 2 1"   Colormode=16
@@ -3170,7 +3218,6 @@ DayXpm="8 11 2 1"   Colormode=16
 [_point]
 Type=0x01b
 SubType=0x01
-;GRMN_TYPE: //
 String1=0x05,Parco giochi
 ExtendedLabels=N
 DayXpm="12 10 48 2"   Colormode=16
@@ -3263,7 +3310,6 @@ DayXpm="8 11 2 1"   Colormode=16
 [_point]
 Type=0x01c
 SubType=0x02
-;GRMN_TYPE: //
 String1=0x05,Area cani
 ExtendedLabels=N
 DayXpm="16 16 4 1"   Colormode=16
@@ -6251,7 +6297,6 @@ DayXpm="16 16 64 2"   Colormode=32
 [_point]
 Type=0x02c
 SubType=0x01
-;GRMN_TYPE: Business - Attractions/THEME_PARK/Amusement or theme park, i.e. Disneyland/Non NT
 String1=0x05,Parco a tema
 ExtendedLabels=N
 DayXpm="16 16 42 2"   Colormode=16
@@ -7572,7 +7617,6 @@ DayXpm="14 12 17 1"   Colormode=16
 [_point]
 Type=0x02d
 SubType=0x04
-;GRMN_TYPE: Business - Entertainment/CASINO/Casino/Non NT
 String1=0x05,Casino
 ExtendedLabels=N
 DayXpm="14 14 5 1"   Colormode=16
@@ -7602,7 +7646,6 @@ DayXpm="14 14 5 1"   Colormode=16
 [_point]
 Type=0x02d
 SubType=0x05
-;GRMN_TYPE: Business - Entertainment/GOLF_COURSE/Golf course/Non NT
 String1=0x05,Golf club
 ExtendedLabels=N
 DayXpm="14 15 29 2"   Colormode=16
@@ -7657,7 +7700,6 @@ DayXpm="14 15 29 2"   Colormode=16
 [_point]
 Type=0x02d
 SubType=0x06
-;GRMN_TYPE: Business - Entertainment/SKI_CENTER/Ski area or resort/Non NT
 String1=0x05,sci
 ExtendedLabels=N
 DayXpm="16 16 27 2"   Colormode=16
@@ -7711,7 +7753,6 @@ DayXpm="16 16 27 2"   Colormode=16
 [_point]
 Type=0x02d
 SubType=0x07
-;GRMN_TYPE: Business - Entertainment/BOWLING/Bowling alley/Non NT
 String1=0x05,Bowling
 ExtendedLabels=N
 DayXpm="13 16 20 2"   Colormode=16
@@ -7758,7 +7799,6 @@ DayXpm="13 16 20 2"   Colormode=16
 [_point]
 Type=0x02d
 SubType=0x08
-;GRMN_TYPE: Business - Entertainment/ICE_SKATING/Ice skating rink/Non NT
 String1=0x01,Skate
 ExtendedLabels=N
 DayXpm="16 16 23 2"   Colormode=16
@@ -8505,7 +8545,6 @@ DayXpm="16 16 192 2"   Colormode=32
 [_point]
 Type=0x02d
 SubType=0x0f
-;GRMN_TYPE: //
 String1=0x05,Pingpong
 ExtendedLabels=N
 DayXpm="16 15 93 2"   Colormode=32
@@ -8739,7 +8778,6 @@ DayXpm="16 15 90 2"   Colormode=32
 [_point]
 Type=0x02d
 SubType=0x11
-;GRMN_TYPE: //
 String1=0x05,Handball
 ExtendedLabels=N
 DayXpm="16 16 55 2"   Colormode=32
@@ -8890,7 +8928,6 @@ DayXpm="16 16 43 2"   Colormode=32
 [_point]
 Type=0x02d
 SubType=0x13
-;GRMN_TYPE: //
 String1=0x05,Freccette
 ExtendedLabels=N
 DayXpm="16 16 130 2"   Colormode=32
@@ -9182,7 +9219,6 @@ DayXpm="16 16 109 2"   Colormode=32
 [_point]
 Type=0x02d
 SubType=0x15
-;GRMN_TYPE: //
 String1=0x04,Immersioni
 ExtendedLabels=N
 DayXpm="14 14 18 2"   Colormode=32
@@ -9225,7 +9261,6 @@ DayXpm="14 14 18 2"   Colormode=32
 [_point]
 Type=0x02d
 SubType=0x16
-;GRMN_TYPE: //
 String1=0x05,Arrampicata indoor
 ExtendedLabels=N
 DayXpm="16 16 6 1"   Colormode=16
@@ -9258,7 +9293,6 @@ DayXpm="16 16 6 1"   Colormode=16
 [_point]
 Type=0x02d
 SubType=0x17
-;GRMN_TYPE: //
 String1=0x05,Arrampicata
 ExtendedLabels=N
 DayXpm="16 16 6 1"   Colormode=16
@@ -9291,7 +9325,6 @@ DayXpm="16 16 6 1"   Colormode=16
 [_point]
 Type=0x02e
 SubType=0x00
-;GRMN_TYPE: //
 String1=0x05,Macelleria
 ExtendedLabels=N
 DayXpm="16 10 3 1"   Colormode=32
@@ -9315,7 +9348,6 @@ DayXpm="16 10 3 1"   Colormode=32
 [_point]
 Type=0x02e
 SubType=0x01
-;GRMN_TYPE: Business - Shopping/DEPARTMENT_STORE/Department store/Non NT
 String1=0x05,Grandi magazzini
 ExtendedLabels=N
 DayXpm="13 15 20 2"   Colormode=16
@@ -9361,7 +9393,6 @@ DayXpm="13 15 20 2"   Colormode=16
 [_point]
 Type=0x02e
 SubType=0x02
-;GRMN_TYPE: Business - Shopping/GROCERY_STORE/Grocery store/Non NT
 String1=0x05,Panetteria
 ExtendedLabels=N
 DayXpm="16 16 4 1"   Colormode=16
@@ -9392,7 +9423,6 @@ DayXpm="16 16 4 1"   Colormode=16
 [_point]
 Type=0x02e
 SubType=0x03
-;GRMN_TYPE: Business - Shopping/GENERAL_STORE/General store/Non NT
 String1=0x05,Emporio
 ExtendedLabels=N
 DayXpm="13 15 20 2"   Colormode=16
@@ -9486,7 +9516,6 @@ DayXpm="16 16 22 2"   Colormode=16
 [_point]
 Type=0x02e
 SubType=0x05
-;GRMN_TYPE: Business - Shopping/PHARMACY/Pharmacy/Non NT
 String1=0x05,Farmacia
 ExtendedLabels=N
 DayXpm="16 16 5 1"   Colormode=32
@@ -9518,7 +9547,6 @@ DayXpm="16 16 5 1"   Colormode=32
 [_point]
 Type=0x02e
 SubType=0x06
-;GRMN_TYPE: Business - Shopping/CONVENIENCE_STORE/Convenience store/Non NT
 String1=0x05,Minimarket
 ExtendedLabels=N
 DayXpm="12 16 112 2"   Colormode=32
@@ -9657,7 +9685,6 @@ DayXpm="12 16 112 2"   Colormode=32
 [_point]
 Type=0x02e
 SubType=0x07
-;GRMN_TYPE: Business - Shopping/CLOTHING_RETAIL/Clothing store/Non NT
 String1=0x05,Abbigliamento
 ExtendedLabels=N
 DayXpm="16 16 74 2"   Colormode=32
@@ -9758,7 +9785,6 @@ DayXpm="16 16 74 2"   Colormode=32
 [_point]
 Type=0x02e
 SubType=0x08
-;GRMN_TYPE: Business - Shopping/HOME_AND_GARDEN_STORE/House and garden store/Non NT
 String1=0x05,Giardinaggio
 ExtendedLabels=N
 DayXpm="14 16 98 2"   Colormode=32
@@ -9883,7 +9909,6 @@ DayXpm="14 16 98 2"   Colormode=32
 [_point]
 Type=0x02e
 SubType=0x09
-;GRMN_TYPE: Business - Shopping/HOME_FURNISHINGS_STORE/Furniture store/Non NT
 String1=0x05,Arredamento
 ExtendedLabels=N
 DayXpm="14 16 128 2"   Colormode=32
@@ -10038,7 +10063,6 @@ DayXpm="14 16 128 2"   Colormode=32
 [_point]
 Type=0x02e
 SubType=0x0b
-;GRMN_TYPE: Business - Shopping/SOFTWARE_RETAIL/Computer software store/Non NT
 String1=0x05,Computer
 ExtendedLabels=N
 DayXpm="16 13 117 2"   Colormode=32
@@ -11006,7 +11030,6 @@ DayXpm="16 7 60 2"   Colormode=32
 [_point]
 Type=0x02e
 SubType=0x13
-;GRMN_TYPE: //
 String1=0x05,Giocattoli
 ExtendedLabels=N
 DayXpm="15 16 177 2"   Colormode=32
@@ -13328,7 +13351,6 @@ DayXpm="16 16 13 1"   Colormode=32
 [_point]
 Type=0x02f
 SubType=0x19
-;GRMN_TYPE: //
 String1=0x05,Isola ecologica
 ExtendedLabels=N
 DayXpm="16 15 106 2"   Colormode=32
@@ -13931,7 +13953,6 @@ DayXpm="10 14 32 2"   Colormode=0
 [_point]
 Type=0x030
 SubType=0x06
-;GRMN_TYPE: Business - Emergency and Government/BORDER_CROSSING/Border crossing/Non NT
 String1=0x05,Ambasciata/consolato
 ExtendedLabels=N
 DayXpm="9 11 3 1"   Colormode=16
@@ -14579,7 +14600,6 @@ DayXpm="13 15 17 1"   Colormode=16
 [_point]
 Type=0x04a
 SubType=0x00
-;GRMN_TYPE: Misc. Points of Interest/PICNIC_AREA/Picnic area/Non NT, NT
 String1=0x05,Area Picnic
 ExtendedLabels=N
 DayXpm="13 11 75 2"   Colormode=16
@@ -14706,7 +14726,6 @@ DayXpm="16 16 3 1"   Colormode=32
 [_point]
 Type=0x04a
 SubType=0x02
-;GRMN_TYPE: //
 String1=0x05,Area grill
 ExtendedLabels=N
 DayXpm="16 16 5 1"   Colormode=16
@@ -15520,6 +15539,71 @@ DayXpm="16 16 35 2"   Colormode=32
 "#7#8#9#9#9#9%!%#%#%!#9#9#9#9#9%%"
 ;1234567890123456
 [end]
+
+
+[_point]
+Type=0x061
+SubType=0x02
+String1=0x05,Vertice della rete RDN
+ExtendedLabels=N
+DayXpm="17 17 4 1"   Colormode=0
+"!	c #FFFFFF"
+"#	c #848484"
+"%	c #000000"
+"?	c #777777"
+"!!!!!!!!!!!!!!!!!"
+"!!!!!!!!!!!!!!!!!"
+"!!!!!!!!!!!!!!!!!"
+"!!!!!!!!#!!!!!!!!"
+"!!!!!!!#%#!!!!!!!"
+"!!!!!!#%!%#!!!!!!"
+"!!!!!#%!!!%#!!!!!"
+"!!!!#%!!!!!%#!!!!"
+"!!!#%!!?%?!!%#!!!"
+"!!#%!!!%!%!!!%#!!"
+"!#%!!!!?%?!!!!%#!"
+"#%!!!!!!!!!!!!!%#"
+"%%%%%%%%%%%%%%%%%"
+"!!!!!!!!!!!!!!!!!"
+"!!!!!!!!!!!!!!!!!"
+"!!!!!!!!!!!!!!!!!"
+"!!!!!!!!!!!!!!!!!"
+;12345678901234567
+[end]
+
+
+
+[_point]
+Type=0x061
+SubType=0x04
+String1=0x05,vertice di raffittimento
+ExtendedLabels=N
+DayXpm="17 17 5 1"   Colormode=16
+"!	c #FFFFFF"
+"#	c #000000"
+"%	c #848484"
+"?	c #777777"
+"  	c none"
+"                 "
+"!!!!!!!!!!!!!!!!!"
+"!!!!!!!!!!!!!!!!!"
+"!!!!!!!!!!!!!!!!!"
+"!!!!!!!!!!!!!!!!!"
+"#################"
+"%#!!!!!!!!!!!!!#%"
+"!%#!!!!?#?!!!!#%!"
+"!!%#!!!#!#!!!#%!!"
+"!!!%#!!?#?!!#%!!!"
+"!!!!%#!!!!!#%!!!!"
+"!!!!!%#!!!#%!!!!!"
+"!!!!!!%#!#%!!!!!!"
+"!!!!!!!%#%!!!!!!!"
+"!!!!!!!!%!!!!!!!!"
+"!!!!!!!!!!!!!!!!!"
+"!!!!!!!!!!!!!!!!!"
+;12345678901234567
+[end]
+
 
 
 [_point]

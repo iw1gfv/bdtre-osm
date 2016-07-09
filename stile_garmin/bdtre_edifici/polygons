@@ -19,6 +19,14 @@
 
 
 
+#aatt
+
+AATT_TY=cortile				[ 0x10f0d resolution 22 ]
+AATT_TY=corte				[ 0x10f0d resolution 22 ]
+AATT_TY=aia				[ 0x10f0d resolution 22 ]
+AATT_TY=cavedio				[ 0x10f0d resolution 22 ]
+AATT_TY='spazio interno generico'	[ 0x10f0d resolution 22 ]
+
 #Elemento copertura
 
 ELE_CP_TY='pensilina, tettoia'		{ name '${ELE_CP_TY}'}		[ 0x27 resolution 22 ]
@@ -59,7 +67,7 @@ EDIFC_USO=amministrativo			{ name '${EDIFC_NOME}'}		[ 0x27 resolution 22 ]
 EDIFC_USO=biblioteca				{ name '${EDIFC_NOME}'}		[ 0x27 resolution 22 ]
 EDIFC_USO=campeggio				{ name '${EDIFC_NOME}'}		[ 0x27 resolution 22 ]
 EDIFC_USO=caserma				{ name 'caserma ${EDIFC_NOME}'}	[ 0x27 resolution 22 ]
-EDIFC_USO='centrale elettrica'			{ name '${EDIFC_NOME}'}		[ 0x27 resolution 22 ]
+EDIFC_USO='centrale elettrica'			{ name '${EDIFC_NOME}'}		[ 0x27 resolution 21 ]
 EDIFC_USO=cinema				{ name '${EDIFC_NOME}'}		[ 0x27 resolution 22 ]
 EDIFC_USO=depuratore				{ name 'depuratore ${EDIFC_NOME}'}	[ 0x27 resolution 22 ]
 EDIFC_USO=palestra				{ name 'palestra ${EDIFC_NOME}'}	[ 0x27 resolution 22 ]
@@ -108,3 +116,21 @@ MN_IND_TY='Non conosciuto'						[ 0x0f resolution 22 ]
 MN_IND_TY=silo								[ 0x28 resolution 22 ]
 MN_IND_TY=serra								[ 0x28 resolution 22 ]
 MN_IND_TY=vasca								[ 0x28 resolution 22 ]
+
+
+#Par_ar
+
+PAR_AR_TY='scalinata o scala esterna di edificio'			[ 0x37 resolution 22 ]
+
+
+#pe_uins
+PE_UINS_TY=agricolturale		[027 resolution 22]
+PE_UINS_TY=amministrativo		[027 resolution 22]
+PE_UINS_TY='centrale/stazione/sottostazione elettrica'	[0x27 resolution 21]
+PE_UINS_TY=industriale			[0x0f resolution 22]
+PE_UINS_TY=residenziale			[027 resolution 22]
+PE_UINS_TY=servizio			[027 resolution 22]
+PE_UINS_TY='stazione per telecomunicazioni'		[027 resolution 22]
+PE_UINS_TY='struttura ludico ricreativa'		[027 resolution 22]
+PE_UINS_TY='struttura ricreativo/sportiva'		[027 resolution 22]
+PE_UINS_TY='struttura scolastica'	[027 resolution 22]

@@ -1,7 +1,7 @@
-Questa versione di BDTRE-OSM-GPS è adatta ad essere caricata sui GPS Garmin.
+Questa versione di BDTRE-OSM è adatta ad essere caricata su molti dispositivi GPS Garmin.
 
-1. Creare Una cartella chiamata Garmin sulla microsd del GPS
-2. Copiare il file gmapsupp.img dentro la cartella garmin.
+1. Creare Una cartella chiamata Garmin sulla microsd del GPS (se non è già presente)
+2. Copiare il file gmapsupp.img dentro la cartella garmin (attenzione, se all'interno della cartella esiste già il file gmapsupp.img, questo verrà sovrascritto. Conviene fare una copia del file presente sulla sceda di memoria.
 3. Rimuovere la microsd dal computer ed inserirla nel GPS
 4. Accendere il gps e la mappa verrà caricata
 5. Entrare nel menù dl GPS ed attivare la mappa nautica e, se presente, attivare la voce Punti di scand.

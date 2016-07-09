@@ -56,10 +56,6 @@ sed -i 's/.0000"\/><tag k/"\/><tag k/g' *_cv_liv_*
 
 
 
-#Punti quotati
-sed -i 's/PT_QUO_Q/name/g' *_pt_quo_* 
-sed -i 's/[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]"\/>/"\/>/g' *_pt_quo_*
-
 cd ../$sbdtre
 
 #converte in pbf
@@ -70,16 +66,4 @@ rm ../$uscitaosm/$nomeuscita.osm
 id=`expr $id + 9000000`
 done
 done
-
-#####################################
-
-# toponomastica
-
-
-
-
-
-
-
-
 

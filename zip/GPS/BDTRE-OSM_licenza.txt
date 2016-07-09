@@ -1,0 +1,3 @@
+BDTRE-OSM è distribuito secondo la licenza CC BY-NC-SA 3.0 IT, puoi consultare il pdf (allegato al pacchetto) della licenza.
+
+I dati della regione piemonte e di openstreetmap sono anche loro distribuiti con le rispettive licenze, trovi un estratto delle licenze nella cartella documentazione.

@@ -32,3 +32,8 @@ ATTR_SP_TY='campo basket, volley' & mkgmap:area2poi=true	{ name '${ATTR_SP_TY}'}
 ATTR_SP_TY='campi sportivi' & mkgmap:area2poi=true		{ name '${ATTR_SP_TY}'}	[0x2d0a resolution 21]
 ATTR_SP_TY='Non conosciuto' & mkgmap:area2poi=true					[0x2d0a resolution 21]
 ATTR_SP_TY=altro & mkgmap:area2poi=true							[0x2d0a resolution 21]
+
+
+#pe_uins
+
+PE_UINS_TY='impianto sportivo' & mkgmap:area2poi=true					[0x2d0a resolution 21]

@@ -47,7 +47,7 @@ MASTER_TYPFILE=stile_garmin/Typ/${TYPFILE_VERSION}.typ
 # creo le varianti del file master TYP file con le differenze
 # cambia solamente il family ID:
 
-for FID in 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019
+for FID in 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024
 do
   cp $MASTER_TYPFILE stile_garmin/Typ/$FID.TYP
   $GMT -w -y $FID,1 stile_garmin/Typ/$FID.TYP
@@ -65,7 +65,7 @@ BDTRE_Bosco=$(ls $BDTRE_IMG/66124*.img)
 BDTRE_Laghi=$(ls $BDTRE_IMG/66125*.img)
 BDTRE_Canali=$(ls $BDTRE_IMG/66126*.img)
 BDTRE_Fiumi=$(ls $BDTRE_IMG/66127*.img)
-BDTRE_Sentieri=$(ls $BDTRE_IMG/66128*.img)
+BDTRE_Rete=$(ls $BDTRE_IMG/66128*.img)
 BDTRE_Strade=$(ls $BDTRE_IMG/66129*.img)
 BDTRE_Linee_ele=$(ls $BDTRE_IMG/66130*.img)
 BDTRE_Toponimi=$(ls $BDTRE_IMG/66131*.img)
@@ -76,7 +76,12 @@ BDTRE_Verde=$(ls $BDTRE_IMG/66135*.img)
 BDTRE_Cava=$(ls $BDTRE_IMG/66136*.img)
 BDTRE_Divisioni=$(ls $BDTRE_IMG/66137*.img)
 BDTRE_Terreno=$(ls $BDTRE_IMG/66138*.img)
-OSM=$(ls $piemonteosm/66140*.img)
+OSM_Protette=$(ls $piemonteosm/66139*.img)
+OSM_Militari=$(ls $piemonteosm/66140*.img)
+OSM_Ferrovie=$(ls $piemonteosm/66141*.img)
+OSM_Poi=$(ls $piemonteosm/66142*.img)
+OSM_Viabilita=$(ls $piemonteosm/66143*.img)
+OSM_Energie=$(ls $piemonteosm/66144*.img)
 
 
 # make the target directory
@@ -107,8 +112,8 @@ $GMT -j -o finale/64/Fiumi.img \
 $GMT -j -o finale/64/Strade.img \
      -f 2005,1 -m "BDTRE Strade" $BDTRE_Strade ./stile_garmin/Typ/2005.TYP
 
-$GMT -j -o finale/64/Sentieri.img \
-     -f 2006,1 -m "BDTRE Sentieri" $BDTRE_Sentieri ./stile_garmin/Typ/2006.TYP
+$GMT -j -o finale/64/Rete.img \
+     -f 2006,1 -m "BDTRE Vertici di rete" $BDTRE_Rete ./stile_garmin/Typ/2006.TYP
 
 $GMT -j -o finale/64/Edifici.img \
      -f 2007,1 -m "BDTRE Edifici" $BDTRE_Edifici ./stile_garmin/Typ/2007.TYP
@@ -144,11 +149,26 @@ $GMT -j -o finale/64/Divisioni.img \
      -f 2017,1 -m "BDTRE Divisioni del terreno" $BDTRE_Divisioni ./stile_garmin/Typ/2017.TYP
 
 $GMT -j -o finale/64/Terreno.img \
-     -f 2018,1 -m "BDTRE Forme del terreno" $BDTRE_Divisioni ./stile_garmin/Typ/2018.TYP
+     -f 2018,1 -m "BDTRE Forme del terreno" $BDTRE_Terreno ./stile_garmin/Typ/2018.TYP
 
 
-$GMT -j -o finale/64/OSM.img \
-     -f 2019,1 -m "OSM" $OSM ./stile_garmin/Typ/2019.TYP
+$GMT -j -o finale/64/Protette.img \
+     -f 2019,1 -m "OSM Aree protette" $OSM_Protette ./stile_garmin/Typ/2019.TYP
+
+$GMT -j -o finale/64/Militari.img \
+     -f 2020,1 -m "OSM Aree militari" $OSM_Militari ./stile_garmin/Typ/2020.TYP
+
+$GMT -j -o finale/64/Ferrovie.img \
+     -f 2021,1 -m "OSM Ferrovie" $OSM_Ferrovie ./stile_garmin/Typ/2021.TYP
+
+$GMT -j -o finale/64/Poi.img \
+     -f 2022,1 -m "OSM Poi" $OSM_Poi ./stile_garmin/Typ/2022.TYP
+
+$GMT -j -o finale/64/Viabilita.img \
+     -f 2023,1 -m "OSM Viabilità" $OSM_Viabilita ./stile_garmin/Typ/2023.TYP
+
+$GMT -j -o finale/64/Energie.img \
+     -f 2024,1 -m "OSM Energie" $OSM_Energie ./stile_garmin/Typ/2024.TYP
 
     
 # gli strati ora vengono uniti in un unico gmapsupp.img per i vecchi dispositivi:
@@ -160,7 +180,7 @@ $GMT -j -o finale/etrex/gmapsupp.img -m "BDTRE-OSM-GPS (GPS)" \
      finale/64/Laghi.img     \
      finale/64/Fiumi.img     \
      finale/64/Strade.img    \
-     finale/64/Sentieri.img  \
+     finale/64/Rete.img      \
      finale/64/Edifici.img   \
      finale/64/Curve.img     \
      finale/64/Canali.img    \
@@ -173,7 +193,12 @@ $GMT -j -o finale/etrex/gmapsupp.img -m "BDTRE-OSM-GPS (GPS)" \
      finale/64/Cava.img      \
      finale/64/Divisioni.img \
      finale/64/Terreno.img   \
-     finale/64/OSM.img
+     finale/64/Protette.img  \
+     finale/64/Militari.img  \
+     finale/64/Ferrovie.img  \
+     finale/64/Poi.img       \
+     finale/64/Viabilita.img \
+     finale/64/Energie.img
 
 
 # Ora creo versioni di divisione della mappa per l'utilizzo con Basecamp
@@ -197,7 +222,7 @@ java -jar $mkgmap \
   --product-id=2                \
   $BDTRE_Bosco                  \
   --draw-priority=10            \
-  --family-name="BDTRE Coltivazioni"   \
+  --family-name="BDTRE Coltivazioni" \
   --product-id=3                \
   $BDTRE_Coltiva                \
   --draw-priority=10            \
@@ -213,7 +238,7 @@ java -jar $mkgmap \
   --product-id=6                \
   $BDTRE_Strade                 \
   --draw-priority=10            \
-  --family-name="BDTRE Sentieri"\
+  --family-name="BDTRE Vertici di rete" \
   --product-id=7                \
   $BDTRE_Sentieri               \
   --draw-priority=10            \
@@ -221,7 +246,7 @@ java -jar $mkgmap \
   --product-id=8                \
   $BDTRE_Edifici                \
   --draw-priority=12            \
-  --family-name="BDTRE Curve di livello"   \
+  --family-name="BDTRE Curve di livello" \
   --product-id=9                \
   $BDTRE_Curve                  \
   --draw-priority=14            \
@@ -229,15 +254,15 @@ java -jar $mkgmap \
   --product-id=10               \
   $BDTRE_Canali                 \
   --draw-priority=14            \
-  --family-name="BDTRE Linee elettriche"  \
+  --family-name="BDTRE Linee elettriche" \
   --product-id=11               \
   $BDTRE_Linee_ele              \
   --draw-priority=10            \
-  --family-name="BDTRE Impianti sportivi"  \
+  --family-name="BDTRE Impianti sportivi" \
   --product-id=12               \
-  $BDTRE_Impianti              \
+  $BDTRE_Impianti               \
   --draw-priority=20            \
-  --family-name="BDTRE Alberi/siepi"  \
+  --family-name="BDTRE Alberi/siepi" \
   --product-id=13               \
   $BDTRE_Albero                 \
   --draw-priority=20            \
@@ -245,11 +270,11 @@ java -jar $mkgmap \
   --product-id=14               \
   $BDTRE_Toponimi               \
   --draw-priority=20            \
-  --family-name="BDTRE Numero civico"\
+  --family-name="BDTRE Numero civico" \
   --product-id=15               \
   $BDTRE_Civico                 \
   --draw-priority=10            \
-  --family-name="BDTRE Giardino cittadino"   	\
+  --family-name="BDTRE Giardino cittadino" \
   --product-id=16               \
   $BDTRE_Verde                  \
   --draw-priority=10            \
@@ -257,17 +282,37 @@ java -jar $mkgmap \
   --product-id=17               \
   $BDTRE_Cava                   \
   --draw-priority=14            \
-  --family-name="BDTRE Divisioni del terreno"   	\
+  --family-name="BDTRE Divisioni del terreno" \
   --product-id=18               \
   $BDTRE_Divisioni              \
   --draw-priority=10            \
-  --family-name="BDTRE Forme del terreno"   	\
+  --family-name="BDTRE Forme del terreno" \
   --product-id=19               \
   $BDTRE_Terreno                \
   --draw-priority=18            \
-  --family-name="OSM"   	\
+  --family-name="OSM Aree protette" \
   --product-id=20               \
-  $OSM                          \
+  $OSM_Protette                 \
+  --draw-priority=18            \
+  --family-name="OSM Aree militari" \
+  --product-id=21               \
+  $OSM_Militari                 \
+  --draw-priority=18            \
+  --family-name="OSM Ferrovie"  \
+  --product-id=22               \
+  $OSM_Ferrovie                 \
+  --draw-priority=18            \
+  --family-name="OSM Poi"       \
+  --product-id=23               \
+  $OSM_Poi                      \
+  --draw-priority=18            \
+  --family-name="OSM Viabilità" \
+  --product-id=24               \
+  $OSM_Viabilita                \
+  --draw-priority=18            \
+  --family-name="OSM Energie"   \
+  --product-id=25               \
+  $OSM_Energie                  \
   $MASTER_TYPFILE
 
 
@@ -289,7 +334,7 @@ $GMT -j -o finale/mappe/gmapsupp.img \
      $BDTRE_Laghi           \
      $BDTRE_Fiumi           \
      $BDTRE_Strade          \
-     $BDTRE_Sentieri        \
+     $BDTRE_Rete            \
      $BDTRE_Edifici         \
      $BDTRE_Curve           \
      $BDTRE_Canali          \
@@ -302,7 +347,12 @@ $GMT -j -o finale/mappe/gmapsupp.img \
      $BDTRE_Cava            \
      $BDTRE_Divisioni       \
      $BDTRE_Terreno         \
-     $OSM                   \
+     $OSM_Protette          \
+     $OSM_Militari          \
+     $OSM_Ferrovie          \
+     $OSM_Poi               \
+     $OSM_Viabilita         \
+     $OSM_Energie           \
      $MASTER_TYPFILE
 
 

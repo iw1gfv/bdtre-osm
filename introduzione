@@ -65,15 +65,19 @@ Per creare la mappa occorre che nel sistema (UBUNTU) siano presenti:
 
 -- OpenJDK 7 oppure 8
 
--- ?? Gb di memoria liberi sul hard disk
+-- 200 Gb di memoria liberi sul hard disk
 
 
 3.2 Spazio occupato dai file
 ----------------------------
 
--- 7 Gb solo ed esclusivamente per i file componenti il BDTRE
+-- 7.4 Gb di spazio per i file .zip del BDTRE
 
--- 
+-- 58.8 Gb di spazio per i file sorgenti utilizzati per la generazione della parte BDTRE
+
+-- 1.6 Gb di spazio per i file utili e uniti per la generazione della parte BDTRE
+
+-- 1.6 Gb di spazio per i file dei confini precompilati per la generazione delle mappe garmin
 
 
 3.3 Ottenimento dati BDTRE
@@ -209,19 +213,23 @@ scaricare e mettere nella home e cambiare il percorso nella configurazione con i
 Gli script non sono pensati per avere un diverso albero delle directory, si possono modificare i nomi delle directory, ma non la loro posizione.
 
 
-4.1 Sequenza di script per la creazione della mappa per Android
----------------------------------------------------------------
-shpaosm.sh
-unisciosmbdtre.sh
-osmamap.sh
-
-4.1 Sequenza di script per la creazione della mappa per Garmin
----------------------------------------------------------------
+4.1 Sequenza di script comuni per la creazione delle mappe
+----------------------------------------------------------
 scaricabdtre.sh
 unzipbdtre.sh
 shpaosm.sh
 uniscibdtre.sh
+
+
+4.2 Sequenza di script per la creazione della mappa per Android
+---------------------------------------------------------------
+unisciosmbdtre.sh
+osmamap.sh
+
+4.3 Sequenza di script per la creazione della mappa per Garmin
+---------------------------------------------------------------
 bdtre2img.sh
 osm2img.sh
 unisciimg.sh
+zipgarmin.sh
 

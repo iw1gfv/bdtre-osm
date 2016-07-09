@@ -33,3 +33,8 @@ ATTR_SP_TY='campi sportivi'		{ name '${ATTR_SP_TY}'}	[0x19 resolution 21]
 ATTR_SP_TY='Non conosciuto'					[0x19 resolution 21]
 ATTR_SP_TY=altro						[0x19 resolution 21]
 ATTR_SP_TY=gradinata			{ name '${ATTR_SP_TY}'}	[0x27 resolution 21]
+
+
+#pe_uins
+
+PE_UINS_TY='impianto sportivo'		[0x19 resolution 21]

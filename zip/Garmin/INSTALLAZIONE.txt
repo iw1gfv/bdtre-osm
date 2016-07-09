@@ -1,4 +1,4 @@
-Questa versione di BDTRE-OSM-PC è adatta ad essere utilizzata con i software:
+Questa versione di BDTRE-OSM è adatta ad essere utilizzata sul PC, visualizzata con uno dei software:
 
 Mapsource
 Basecamp

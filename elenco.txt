@@ -15,6 +15,16 @@ acc_pc = Numero civico (punto)
 ACC_PC_TY='accesso esterno diretto' { name '${CIVICO_NUM} ${CIVICO_SUB}' }	[ 0x1603 ]
 
 
+aatt
+
+AATT_TY=cortile							[ 0x10f0d ]
+AATT_TY=corte							[ 0x10f0d ]
+AATT_TY=aia							[ 0x10f0d ]
+AATT_TY=cavedio							[ 0x10f0d ]
+AATT_TY='spazio interno generico'				[ 0x10f0d ]
+AATT_TY='area antropizzata non ulteriormente qualificata'	[ 0x02 ]
+
+
 ac_ped = strada pedonale (area)
 
 AC_PED_FON=pavimentato			[ 0x2f ]
@@ -142,7 +152,7 @@ EDIFC_USO=amministrativo			{ name '${EDIFC_NOME}'}	[ 0x27 ]
 EDIFC_USO=biblioteca				{ name 'bibilioteca ${EDIFC_NOME}'}	[ 0x27 ]
 EDIFC_USO=campeggio				{ name 'campeggio ${EDIFC_NOME}'}	[ 0x27 ]
 EDIFC_USO=caserma				{ name 'caserma ${EDIFC_NOME}'}	[ 0x27 ]
-EDIFC_USO=centrale elettrica			{ name 'centrale elettrica ${EDIFC_NOME}'}	[ 0x27 ]
+EDIFC_USO=centrale elettrica			{ name '${EDIFC_NOME}'}	[ 0x27 ]
 EDIFC_USO=cinema				{ name 'cinema ${EDIFC_NOME}'}	[ 0x27 ]
 EDIFC_USO=depuratore				{ name 'depuratore ${EDIFC_NOME}'}	[ 0x27 ]
 EDIFC_USO=palestra				{ name 'palestra ${EDIFC_NOME}'}	[ 0x27 ]
@@ -273,7 +283,7 @@ MN_IND_TY=serra								[ 0x28 ]
 MN_IND_TY=vasca								[ 0x28 ]
 
 
-#mu_div
+mu_div
 
 MU_DIV_TY=bastione			[0x10f0b ]
 MU_DIV_TY=divisori			[0x10f0b ]
@@ -282,7 +292,7 @@ MU_DIV_TY='muro a secco'		[0x10f0b ]
 MU_DIV_TY='muro in muratura'		[0x10f0b ]
 
 
-#mu_sos
+mu_sos
 
 MU_SOS_TY="muro d'ala"			[0x10f0b ]
 MU_SOS_TY='muro di sostegno'		[0x10f0b ]
@@ -306,6 +316,50 @@ ND_ELE_TY='centrale mista'			{ name '(${ND_ELE_IMP}) ${ND_ELE_NUM}'}		[0x7205 ]
 ND_ELE_TY='centrale termoelettrica'		{ name '(${ND_ELE_IMP}) ${ND_ELE_NUM}'}		[0x7205 ]
 
 
+op_reg = chiusa (area)
+OP_REG_TY='briglia/pescaia'		[ 0x55 resolution 18 ]
+OP_REG_TY=chiusa			[ 0x55 resolution 18 ]
+OP_REG_TY='Non conosciuto'		[ 0x55 resolution 18 ]
+
+
+Par_ar = scalinata (area)
+
+PAR_AR_TY='scalinata o scala esterna di edificio'			[ 0x37 ]
+
+
+pe_uins = vari (area)
+
+PE_UINS_TY=agricolturale		[027 ]
+PE_UINS_TY=amministrativo		[027 ]
+PE_UINS_TY='area cimiteriale'		[0x1a ]
+PE_UINS_TY=campeggio			[0x2e ]
+PE_UINS_TY='campo da golf'		[0x18 ]
+PE_UINS_TY='centrale energia solare'	[0x10f07 ]
+PE_UINS_TY='centrale/stazione/sottostazione elettrica'	[0x27 ]
+PE_UINS_TY=depuratore			[0x10f08 ]
+PE_UINS_TY='impianto sportivo'		[0x19 ]
+PE_UINS_TY=industriale			[0x0f ]
+PE_UINS_TY=parco			[0x17 ]
+PE_UINS_TY='parco giochi'		[0x10104 ]
+PE_UINS_TY='parco/giardino'		[0x17 ]
+PE_UINS_TY=residenziale			[027 ]
+PE_UINS_TY=servizio			[027 ]
+PE_UINS_TY='stazione per telecomunicazioni'		[027 ]
+PE_UINS_TY='struttura ludico ricreativa'		[027 ]
+PE_UINS_TY='struttura ricreativo/sportiva'		[027 ]
+PE_UINS_TY='struttura scolastica'	[027 resolution 22]
+
+ponte = ponte (area)
+
+PONTE_VIE='a pi vie'				[ 0x33 ]
+PONTE_VIE='ad una via'				[ 0x33 ]
+
+
+#sc_dis = discarica (area)
+SC_DIS_TY=discarica			[0x10f10 ]
+SC_DIS_TY=discarica			[0x10f10 ]
+
+
 Scarpt = scarpata (area)
 
 SCARPT_CON='Non conosciuto'		[ 0x10f06 ]
@@ -314,7 +368,12 @@ SCARPT_CON='Non conosciuto'		[ 0x10f06 ]
 sp_acq = laghi (area)
 
 SP_ACQ_TY=lago		{ name '${NOME_ABBR}'}		[ 0x3c ]
-SP_ACQ_TY=laguna	{ name '${NOME_ABBR}'}		[ 0x3c ]
+SP_ACQ_TY=stagno	{ name '${NOME_ABBR}'}		[ 0x3c ]
+
+
+sv_str = servizio stradale (area)
+SV_STR_TY='area parcheggio'				[ 0x05 ]
+SV_STR_TY='stazione di rifornimento carburante'		[ 0x38 ]
 
 
 Toponomastica = Nomi (punto)
@@ -337,6 +396,11 @@ CATEGORIA=stazioni			{ name '${name}'} [ 0x6500 ]
 #tr_ele = linea elettrica (linea)
 
 TR_ELE_POS=pensile  { name 'Linea (${LN_ELE_CTR}), ${LN_ELE_TEN} ${LN_ELE_NOM}'}	   [ 0x29 ]
+
+
+#Vertici di rete
+V_RETE_TY=raffittimento				{ name 'ID. ${V_RETE_ID}'} [0x6104 ]
+V_RETE_TY='rdn (rete dinamica nazionale)'	{ name 'ID. ${V_RETE_ID}'} [0x6102 ]
 
 
 NON UTILIZZATI
@@ -370,28 +434,41 @@ loc_sg
 mn_arr
 mn_int
 mn_mau
+nd_idr
+palo
+pt_quo
+rt_fer
+rt_idn
+rt_idr
+rt_st1
+rt_wms
+scr_cr
+sd_fer
+tp_str
 tralic
+tr_str
+un_vol
 
 
 
 ELENCO FAMIGLIE ELEMENTI GPS E PC
 
-curve di livello		66120 dp12
-impianti sportivi		66121 dp10
-edifici				66122 dp10
-albero				66123 dp20
-bosco				66124 dp10
-invaso e sp_acq (laghi)		66125 dp10
-canali el_idr			66126 dp14
-fiumi ab_cda			66127 dp10
-				66128 dp10
-strade ac_vei ar_vms		66129 dp10
-tralicci tralic tr_ele		66130 dp14
-toponomastica			66131 dp22
-coltiva ps_inc cl_agr		66132 dp10
 comune				66133 dp10
-civico acc_pc acc_int		66134 dp20
-verde cittadino ar_vrd		66135 dp10
-cava				66136 dp10
-divisioni del terreno		66137 dp14
-forme del terreno		66138 dp10
+coltivazioni			66132 dp11
+bosco				66124 dp12
+laghi				66125 dp13
+fiumi				66127 dp14
+cava				66136 dp15
+forme del terreno		66138 dp16
+verde cittadino ar_vrd		66135 dp
+impianti sportivi		66121 dp
+strade ac_vei ar_vms		66129 dp
+edifici				66122 dp
+canali el_idr			66126 dp
+divisioni del terreno		66137 dp
+curve di livello		66120 dp
+albero				66123 dp
+tralicci tralic tr_ele		66130 dp
+vertici di rete			66128 dp
+toponomastica			66131 dp
+civico acc_pc acc_int		66134 dp

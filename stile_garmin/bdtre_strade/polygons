@@ -50,6 +50,8 @@ AR_VMS_TY='carrareccia, carreggiabile, carrozzabile'		[ 0x2a resolution 22 ]
 AC_PED_FON=pavimentato			[ 0x2f resolution 22 ]
 AC_PED_FON='non pavimentato'		[ 0x2f resolution 22 ]
 
+AATT_TY='area antropizzata non ulteriormente qualificata'	[ 0x02 resolution 20]
+
 MAN_TR_TY=altro					[ 0x36 resolution 22 ]
 MAN_TR_TY='marciapiede, sagrato, piazza'	[ 0x36 resolution 22 ]
 MAN_TR_TY=rotatoria				[ 0x36 resolution 22 ]
@@ -59,3 +61,9 @@ MAN_TR_TY='Non conosciuto'			[ 0x36 resolution 22 ]
 MAN_TR_TY='percorsi a gradinate'		[ 0x36 resolution 22 ]
 
 MAN_TR_TY=rampa					[ 0x1a resolution 22 ]
+
+PONTE_VIE='a pi vie'				[ 0x33 resolution 22 ]
+PONTE_VIE='ad una via'				[ 0x33 resolution 22 ]
+
+SV_STR_TY='area parcheggio'				[ 0x05 resolution 22 ]
+SV_STR_TY='stazione di rifornimento carburante'		[ 0x38 resolution 22 ]

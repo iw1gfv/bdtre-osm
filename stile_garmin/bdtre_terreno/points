@@ -23,3 +23,9 @@
 #Piazzola elicotteri
 
 MAN_TR_TY='piattaforma decollo atterraggio elicotteri' & mkgmap:area2poi=true		[ 0x5904 resolution 21 ]
+
+#pe_uins
+
+PE_UINS_TY=campeggio & mkgmap:area2poi=true			[ 0x2b03 resolution 22 ]
+PE_UINS_TY='centrale energia solare' & mkgmap:area2poi=true	[ 0x7206 resolution 21 ]
+PE_UINS_TY='parco giochi' & mkgmap:area2poi=true		[ 0x1b01 resolution 23 ]
