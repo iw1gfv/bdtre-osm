@@ -73,8 +73,6 @@ highway=road { add mkgmap:dead-end-check = false} [0x06 resolution 22]
 highway=pedestrian & area!=yes [0x12 resolution 22]
 highway=living_street [0x06 resolution 22]
 highway=residential [0x06 resolution 22]
-highway=bridleway [0x011 resolution 21]
-highway=byway [0x12 resolution 23]
 highway=steps [0x1a resolution 22]
 highway=raceway [0x13 resolution 21 default_name 'Pista']
 
@@ -83,17 +81,10 @@ highway=service & (service=alley|service=driveway) [0x07 resolution 22]
 highway=service [0x07 resolution 22]
 highway=services [0x07 resolution 22]
 
-highway=cycleway [0x19 resolution 23]
-
 highway=footway|highway=path [0x12 resolution 22]
 
-highway=track & tracktype=grade1 [0x0f resolution 22]
-highway=track & tracktype=grade2 [0x10 resolution 22]
-highway=track & tracktype=grade3 [0x11 resolution 22]
-highway=track & tracktype=grade4 [0x0b resolution 22]
-highway=track & tracktype=grade5 [0x0d resolution 22]
-highway=track [0x10 resolution 22]
 highway=unsurfaced [0x10 resolution 21]
+
 
 # Mop up any unrecognised highway types
 highway=* & area!=yes [0x07 resolution 23] 

@@ -14,7 +14,7 @@ CodePage=1252
 ;=========== POLYGONES : PRIORITE DANS L'AFFICHAGE ======
 [_drawOrder]
 Type=0x10100,0
-Type=0x002,1
+Type=0x2,1
 Type=0x10f03,1
 Type=0x10f04,1
 Type=0x10f05,1
@@ -517,7 +517,7 @@ Xpm="0 0 1 0"
 
 [_polygon]
 Type=0x14
-String1=0x05,Parco nazionale
+String1=0x05,Parco Nazionale
 ExtendedLabels=N
 FontStyle=SmallFont
 CustomColor=No
@@ -2368,7 +2368,6 @@ ExtendedLabels=N
 
 [_line]
 Type=0x10
-;GRMN_TYPE: Customizable Line Types/CUSTOMIZABLE_ROUTE_LINE_4/Routable customizable line/Non NT, NT
 UseOrientation=N
 LineWidth=3
 BorderWidth=0
@@ -2382,7 +2381,6 @@ ExtendedLabels=N
 
 [_line]
 Type=0x11
-;GRMN_TYPE: Customizable Line Types/CUSTOMIZABLE_ROUTE_LINE_5/Routable customizable line/Non NT, NT
 UseOrientation=N
 LineWidth=3
 BorderWidth=0
@@ -2395,7 +2393,6 @@ ExtendedLabels=N
 
 [_line]
 Type=0x12
-;GRMN_TYPE: Customizable Line Types/CUSTOMIZABLE_ROUTE_LINE_6/Routable customizable line/Non NT, NT
 UseOrientation=N
 LineWidth=2
 BorderWidth=0
@@ -2658,6 +2655,86 @@ ExtendedLabels=N
 
 
 [_line]
+Type=0x10000
+UseOrientation=Y
+Xpm="32 10 2  1"
+"# c #FF30FF"
+"  c none"
+"########        ########        "
+"########        ########        "
+"                                "
+"                                "
+"                                "
+"                                "
+"                                "
+"                                "
+"########        ########        "
+"########        ########        "
+;12345678901234567890123456789012
+String1=0x05,Hiking_route
+ExtendedLabels=N
+FontStyle=SmallFont
+CustomColor=No
+[end]
+
+
+[_line]
+Type=0x10001
+UseOrientation=Y
+Xpm="32 10 2  1"
+"# c #00CAFF"
+"  c none"
+"########        ########        "
+"########        ########        "
+"                                "
+"                                "
+"                                "
+"                                "
+"                                "
+"                                "
+"########        ########        "
+"########        ########        "
+;12345678901234567890123456789012
+String1=0x05,Cycle_route
+ExtendedLabels=N
+FontStyle=SmallFont
+CustomColor=No
+[end]
+
+
+[_line]
+Type=0x10012
+UseOrientation=N
+Xpm="32 3 2  1"
+"! c #000000"
+"  c none"
+"!       !       !       !       "
+"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+"!       !       !       !       "
+;12345678901234567890123456789012
+String1=0x05,Ski lift
+ExtendedLabels=N
+[end]
+
+
+[_line]
+Type=0x10013
+UseOrientation=N
+Xpm="32 5 2  1"
+"! c #101010"
+"  c none"
+"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+"  !                             "
+"  !                             "
+" ! !                            "
+" !!!                            "
+;12345678901234567890123456789012
+String1=0x05,Cable_car
+ExtendedLabels=N
+[end]
+
+
+[_line]
 Type=0x10103
 UseOrientation=Y
 Xpm="32 3 2  1"
@@ -2716,7 +2793,7 @@ Xpm="0 0 1 0"
 "1 c #FF0000"
 String1=0x05,Zona militare
 ExtendedLabels=N
-FontStyle=Default
+FontStyle=SmallFont
 CustomColor=No
 [end]
 
@@ -2727,7 +2804,10 @@ UseOrientation=N
 LineWidth=2
 Xpm="0 0 1 0"
 "1 c #25821F"
+String1=0x05,Parco Nazionale
 ExtendedLabels=N
+FontStyle=SmallFont
+CustomColor=No
 [end]
 
 
@@ -3286,7 +3366,6 @@ DayXpm="12 10 48 2"   Colormode=16
 [_point]
 Type=0x01b
 SubType=0x0d
-;GRMN_TYPE: //
 String1=0x05,Monumento
 ExtendedLabels=N
 DayXpm="8 11 2 1"   Colormode=16
@@ -3340,7 +3419,6 @@ DayXpm="16 16 4 1"   Colormode=16
 [_point]
 Type=0x01c
 SubType=0x04
-;GRMN_TYPE: //
 String1=0x05,Passaggio a livello
 ExtendedLabels=N
 DayXpm="11 16 4 1"   Colormode=16
@@ -3371,7 +3449,6 @@ DayXpm="11 16 4 1"   Colormode=16
 [_point]
 Type=0x020
 SubType=0x00
-;GRMN_TYPE: //
 String1=0x05,Uscita
 ExtendedLabels=N
 DayXpm="16 13 56 2"   Colormode=32
@@ -3451,7 +3528,6 @@ DayXpm="16 13 56 2"   Colormode=32
 [_point]
 Type=0x021
 SubType=0x0f
-;GRMN_TYPE: //
 ExtendedLabels=N
 FontStyle=NormalFont
 CustomColor=No
@@ -3470,7 +3546,6 @@ DayXpm="5 5 2 1"   Colormode=16
 [_point]
 Type=0x028
 SubType=0x00
-;GRMN_TYPE: Geographical Named Points of Interest - Water and Land Related/ISLAND/Island/Non NT, NT
 ExtendedLabels=N
 FontStyle=NormalFont
 CustomColor=No
@@ -3493,7 +3568,6 @@ DayXpm="6 6 5 1"   Colormode=16
 [_point]
 Type=0x02a
 SubType=0x00
-;GRMN_TYPE: Business - Food and Drink/RESTAURANT/General restaurant of unknown genre/Non NT
 String1=0x05, Ristorante
 ExtendedLabels=N
 DayXpm="16 16 26 2"   Colormode=16
@@ -3546,7 +3620,6 @@ DayXpm="16 16 26 2"   Colormode=16
 [_point]
 Type=0x02a
 SubType=0x01
-;GRMN_TYPE: Business - Food and Drink/RESTAURANT_AMERICAN/American cuisine/Non NT
 String1=0x05,Ristorante Americano
 ExtendedLabels=N
 DayXpm="26 20 32 2"   Colormode=16
@@ -3609,7 +3682,6 @@ DayXpm="26 20 32 2"   Colormode=16
 [_point]
 Type=0x02a
 SubType=0x02
-;GRMN_TYPE: Business - Food and Drink/RESTAURANT_ASIAN/Asian cuisine/Non NT
 String1=0x05,Ristorante Asiatico
 ExtendedLabels=N
 DayXpm="16 16 19 2"   Colormode=16
@@ -3655,7 +3727,6 @@ DayXpm="16 16 19 2"   Colormode=16
 [_point]
 Type=0x02a
 SubType=0x03
-;GRMN_TYPE: Business - Food and Drink/RESTAURANT_BARBECUE/Barbecue cuisine/Non NT
 String1=0x05,Barbecue
 ExtendedLabels=N
 DayXpm="16 16 26 2"   Colormode=16
@@ -3708,7 +3779,6 @@ DayXpm="16 16 26 2"   Colormode=16
 [_point]
 Type=0x02a
 SubType=0x04
-;GRMN_TYPE: Business - Food and Drink/RESTAURANT_CHINESE/Chinese cuisine/Non NT
 String1=0x05,Ristorante cinese
 ExtendedLabels=N
 DayXpm="16 16 12 1"   Colormode=16
@@ -3747,7 +3817,6 @@ DayXpm="16 16 12 1"   Colormode=16
 [_point]
 Type=0x02a
 SubType=0x05
-;GRMN_TYPE: Business - Food and Drink/RESTAURANT_DELI/Deli or sandwich shop/Non NT
 String1=0x05,Ristorante graco
 ExtendedLabels=N
 DayXpm="16 16 34 2"   Colormode=16
@@ -3808,7 +3877,6 @@ DayXpm="16 16 34 2"   Colormode=16
 [_point]
 Type=0x02a
 SubType=0x06
-;GRMN_TYPE: Business - Food and Drink/RESTAURANT_INTRNTNL/International cuisine/Non NT
 String1=0x05,Ristorante cucina internazionale
 ExtendedLabels=N
 DayXpm="16 16 26 2"   Colormode=16
@@ -3910,7 +3978,6 @@ DayXpm="16 16 23 2"   Colormode=16
 [_point]
 Type=0x02a
 SubType=0x08
-;GRMN_TYPE: Business - Food and Drink/RESTAURANT_ITALIAN/Italian cuisine/Non NT
 String1=0x05,Ristorante italiano
 ExtendedLabels=N
 DayXpm="26 20 32 2"   Colormode=16
@@ -3973,7 +4040,6 @@ DayXpm="26 20 32 2"   Colormode=16
 [_point]
 Type=0x02a
 SubType=0x09
-;GRMN_TYPE: Business - Food and Drink/RESTAURANT_MEXICAN/Mexican cuisine/Non NT
 String1=0x05, Ristorante messicano
 ExtendedLabels=N
 DayXpm="26 20 33 2"   Colormode=16
@@ -4037,7 +4103,6 @@ DayXpm="26 20 33 2"   Colormode=16
 [_point]
 Type=0x02a
 SubType=0x0a
-;GRMN_TYPE: Business - Food and Drink/RESTAURANT_PIZZA/Pizzeria/Non NT
 String1=0x05,Pizza
 ExtendedLabels=N
 DayXpm="18 18 26 2"   Colormode=16
@@ -4135,7 +4200,6 @@ DayXpm="16 16 17 1"   Colormode=16
 [_point]
 Type=0x02a
 SubType=0x0c
-;GRMN_TYPE: Business - Food and Drink/RESTAURANT_STEAK/Grill and steak brew pub restaurant/Non NT
 String1=0x05,Steak
 ExtendedLabels=N
 DayXpm="16 16 36 2"   Colormode=16
@@ -4198,7 +4262,6 @@ DayXpm="16 16 36 2"   Colormode=16
 [_point]
 Type=0x02a
 SubType=0x0d
-;GRMN_TYPE: Business - Food and Drink/RESTAURANT_DONUTS/Donut shop/Non NT
 String1=0x05,Donuts
 ExtendedLabels=N
 DayXpm="16 16 26 2"   Colormode=16
@@ -12687,7 +12750,6 @@ DayXpm="16 15 90 2"   Colormode=32
 [_point]
 Type=0x02f
 SubType=0x00
-;GRMN_TYPE: //
 ExtendedLabels=N
 FontStyle=NormalFont
 CustomColor=No
@@ -12715,7 +12777,6 @@ DayXpm="17 11 5 1"   Colormode=16
 [_point]
 Type=0x02f
 SubType=0x01
-;GRMN_TYPE: Business - Services/GAS_STATION/Gas, fuel station/Non NT
 ExtendedLabels=N
 DayXpm="12 14 16 1"   Colormode=16
 "!	c #000C98"
@@ -12755,7 +12816,6 @@ DayXpm="12 14 16 1"   Colormode=16
 [_point]
 Type=0x02f
 SubType=0x02
-;GRMN_TYPE: Business - Services/AUTO_RENTAL/Car rental location/Non NT
 String1=0x05,Autonoleggio
 ExtendedLabels=N
 DayXpm="15 13 30 2"   Colormode=16
@@ -13280,8 +13340,49 @@ DayXpm="24 18 9 1"   Colormode=16
 
 [_point]
 Type=0x02f
+SubType=0x15
+String1=0x05,Pilone
+ExtendedLabels=Y
+FontStyle=NoLabel (invisible)
+CustomColor=No
+DayXpm="4 4 1 1"   Colormode=0
+"!	c #000000"
+"!!!!"
+"!!!!"
+"!!!!"
+"!!!!"
+;1234
+[end]
+
+
+
+[_point]
+Type=0x02f
+SubType=0x16
+String1=0x05,Stazione impianto di risalita
+ExtendedLabels=Y
+FontStyle=NoLabel (invisible)
+CustomColor=No
+DayXpm="8 8 3 1"   Colormode=0
+"!	c #494949"
+"#	c #FA6666"
+"%	c #D5D5D5"
+"!!!!!!!!"
+"!######!"
+"!######!"
+"!######!"
+"!######!"
+"!######!"
+"!######!"
+"!!!!!!!!"
+;12345678
+[end]
+
+
+
+[_point]
+Type=0x02f
 SubType=0x17
-;GRMN_TYPE: /TRANSIT_SERVICES/Transit services/Non NT
 String1=0x05,Fermata tram
 ExtendedLabels=N
 FontStyle=NormalFont
@@ -13311,7 +13412,6 @@ DayXpm="15 15 2 1"   Colormode=0
 [_point]
 Type=0x02f
 SubType=0x18
-;GRMN_TYPE: //
 String1=0x05,Cassetta lettere
 ExtendedLabels=N
 DayXpm="16 16 13 1"   Colormode=32
@@ -15193,7 +15293,6 @@ DayXpm="12 16 60 2"   Colormode=32
 [_point]
 Type=0x051
 SubType=0x01
-;GRMN_TYPE: //
 String1=0x05,Telefono emergenza
 ExtendedLabels=N
 DayXpm="16 16 91 2"   Colormode=32
@@ -15311,7 +15410,6 @@ DayXpm="16 16 91 2"   Colormode=32
 [_point]
 Type=0x056
 SubType=0x01
-;GRMN_TYPE: //
 String1=0x04,Autovelox
 ExtendedLabels=N
 DayXpm="16 16 24 2"   Colormode=32
@@ -15362,7 +15460,6 @@ DayXpm="16 16 24 2"   Colormode=32
 [_point]
 Type=0x058
 SubType=0x01
-;GRMN_TYPE: //
 String1=0x05,Bunker
 ExtendedLabels=N
 DayXpm="16 11 41 2"   Colormode=32

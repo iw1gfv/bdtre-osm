@@ -20,6 +20,7 @@
 
 
 military=danger_area | military=range | landuse=military | military=airfield		[0x10216 resolution 20 continue]
+amenity=prison										[0x10216 resolution 22 continue]
 
 
 <finalize>
@@ -30,8 +31,3 @@ include 'inc/address';
 include 'inc/access';
 
 name=* { name '${name}' }
-
-highway=* & ref=* { addlabel '${ref}' }
-highway=* & int_ref=* { addlabel '${int_ref}' }
-highway=* & nat_ref=* { addlabel '${nat_ref}' }
-highway=* & reg_ref=* { addlabel '${reg_ref}' }

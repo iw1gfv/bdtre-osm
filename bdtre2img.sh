@@ -57,7 +57,7 @@ for infile in $BDTRE_IMG/66120*.osm.pbf
     --output-dir=$BDTRE_IMG \
     --style-file=stile_garmin/bdtre_curve \
     --show-profiles=1 \
-    --draw-priority=12 \
+    --draw-priority=24 \
     --transparent \
     --license-file=stile_garmin/bdtre_licenza.txt \
   $infile
@@ -96,7 +96,7 @@ for infile in $BDTRE_IMG/66121*.osm.pbf
     --style-file=stile_garmin/bdtre_impianti \
     --show-profiles=1 \
     --add-pois-to-areas \
-    --draw-priority=20 \
+    --draw-priority=18 \
     --transparent \
     --license-file=stile_garmin/bdtre_licenza.txt \
     --bounds=bounds \
@@ -138,7 +138,7 @@ for infile in $BDTRE_IMG/66122*.osm.pbf
     --style-file=stile_garmin/bdtre_edifici \
     --show-profiles=1 \
     --add-pois-to-areas \
-    --draw-priority=10 \
+    --draw-priority=20 \
     --transparent \
     --license-file=stile_garmin/bdtre_licenza.txt \
   $infile
@@ -177,7 +177,7 @@ for infile in $BDTRE_IMG/66123*.osm.pbf
     --output-dir=$BDTRE_IMG \
     --style-file=stile_garmin/bdtre_alberi \
     --show-profiles=1 \
-    --draw-priority=20 \
+    --draw-priority=25 \
     --transparent \
     --license-file=stile_garmin/bdtre_licenza.txt \
   $infile
@@ -214,7 +214,7 @@ for infile in $BDTRE_IMG/66124*.osm.pbf
     --output-dir=$BDTRE_IMG \
     --style-file=stile_garmin/bdtre_bosco \
     --show-profiles=1 \
-    --draw-priority=10 \
+    --draw-priority=12 \
     --transparent \
     --license-file=stile_garmin/bdtre_licenza.txt \
   $infile
@@ -252,7 +252,7 @@ for infile in $BDTRE_IMG/66125*.osm.pbf
     --output-dir=$BDTRE_IMG \
     --style-file=stile_garmin/bdtre_laghi \
     --show-profiles=1 \
-    --draw-priority=10 \
+    --draw-priority=13 \
     --transparent \
     --license-file=stile_garmin/bdtre_licenza.txt \
   $infile
@@ -289,7 +289,7 @@ for infile in $BDTRE_IMG/66126*.osm.pbf
     --output-dir=$BDTRE_IMG \
     --style-file=stile_garmin/bdtre_canali \
     --show-profiles=1 \
-    --draw-priority=14 \
+    --draw-priority=21 \
     --transparent \
     --license-file=stile_garmin/bdtre_licenza.txt \
   $infile
@@ -328,7 +328,7 @@ for infile in $BDTRE_IMG/66127*.osm.pbf
     --output-dir=$BDTRE_IMG \
     --style-file=stile_garmin/bdtre_fiumi \
     --show-profiles=1 \
-    --draw-priority=10 \
+    --draw-priority=14 \
     --transparent \
     --license-file=stile_garmin/bdtre_licenza.txt \
   $infile
@@ -365,7 +365,7 @@ for infile in $BDTRE_IMG/66128*.osm.pbf
     --output-dir=$BDTRE_IMG \
     --style-file=stile_garmin/bdtre_rete \
     --show-profiles=1 \
-    --draw-priority=10 \
+    --draw-priority=26 \
     --transparent \
     --license-file=stile_garmin/bdtre_licenza.txt \
   $infile
@@ -403,7 +403,7 @@ for infile in $BDTRE_IMG/66129*.osm.pbf
     --output-dir=$BDTRE_IMG \
     --style-file=stile_garmin/bdtre_strade \
     --show-profiles=1 \
-    --draw-priority=10 \
+    --draw-priority=19 \
     --transparent \
     --license-file=stile_garmin/bdtre_licenza.txt \
   $infile
@@ -442,7 +442,7 @@ for infile in $BDTRE_IMG/66130*.osm.pbf
     --output-dir=$BDTRE_IMG \
     --style-file=stile_garmin/bdtre_ele \
     --show-profiles=1 \
-    --draw-priority=14 \
+    --draw-priority=23 \
     --transparent \
     --license-file=stile_garmin/bdtre_licenza.txt \
   $infile
@@ -479,7 +479,7 @@ for infile in $BDTRE_IMG/66131*.osm.pbf
     --output-dir=$BDTRE_IMG \
     --style-file=stile_garmin/bdtre_topo \
     --show-profiles=1 \
-    --draw-priority=22 \
+    --draw-priority=27 \
     --transparent \
     --license-file=stile_garmin/bdtre_licenza.txt \
     --bounds=bounds \
@@ -520,7 +520,7 @@ for infile in $BDTRE_IMG/66132*.osm.pbf
     --output-dir=$BDTRE_IMG \
     --style-file=stile_garmin/bdtre_coltiv \
     --show-profiles=1 \
-    --draw-priority=110 \
+    --draw-priority=11 \
     --transparent \
     --license-file=stile_garmin/bdtre_licenza.txt \
   $infile
@@ -594,7 +594,7 @@ for infile in $BDTRE_IMG/66134*.osm.pbf
     --output-dir=$BDTRE_IMG \
     --style-file=stile_garmin/bdtre_civico \
     --show-profiles=1 \
-    --draw-priority=20 \
+    --draw-priority=28 \
     --license-file=stile_garmin/bdtre_licenza.txt \
   $infile
 done
@@ -630,7 +630,7 @@ for infile in $BDTRE_IMG/66135*.osm.pbf
     --output-dir=$BDTRE_IMG \
     --style-file=stile_garmin/bdtre_verde \
     --show-profiles=1 \
-    --draw-priority=10 \
+    --draw-priority=17 \
     --license-file=stile_garmin/bdtre_licenza.txt \
   $infile
 done
@@ -665,7 +665,7 @@ for infile in $BDTRE_IMG/66136*.osm.pbf
     --output-dir=$BDTRE_IMG \
     --style-file=stile_garmin/bdtre_cava \
     --show-profiles=1 \
-    --draw-priority=10 \
+    --draw-priority=15 \
     --license-file=stile_garmin/bdtre_licenza.txt \
   $infile
 done
@@ -701,7 +701,7 @@ for infile in $BDTRE_IMG/66137*.osm.pbf
     --style-file=stile_garmin/bdtre_divisioni \
     --show-profiles=1 \
     --add-pois-to-areas \
-    --draw-priority=14 \
+    --draw-priority=22 \
     --license-file=stile_garmin/bdtre_licenza.txt \
   $infile
 done
@@ -739,7 +739,7 @@ for infile in $BDTRE_IMG/66138*.osm.pbf
     --style-file=stile_garmin/bdtre_terreno \
     --show-profiles=1 \
     --add-pois-to-areas \
-    --draw-priority=10 \
+    --draw-priority=16 \
     --license-file=stile_garmin/bdtre_licenza.txt \
   $infile
 done

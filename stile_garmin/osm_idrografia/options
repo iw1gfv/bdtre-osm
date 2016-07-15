@@ -19,19 +19,4 @@
 
 
 
-landuse=military [0x04 resolution 21]
-
-
-landuse=military 								[0x04 resolution 21]
-military=airfield 								[0x04 resolution 21]
-amenity=prison 									[0x04 resolution 22]
-
-(military=danger_area | military=range ) & landuse!=military 			[0x04 resolution 21]
-
-
-<finalize>
-# The finalizer section is executed for each element when a rule with an element type matches
-include 'inc/address';
-
-name=* { name '${name}' }
-
+levels = 0:24, 1:22, 2:21, 3:20, 4:19, 5:18, 6:16

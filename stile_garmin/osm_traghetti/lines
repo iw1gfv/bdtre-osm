@@ -19,10 +19,9 @@
 
 
 
-# Confini parchi nazionali e parchi (oasi, ecc)
-boundary=national_park | *=national_park		[0x10217 resolution 19 continue] 
-landuse=nature_reserve | boundary=nature_reserve | boundary=protected_area | landuse=protected_area	{set leisure=nature_reserve}
-leisure=nature_reserve		[0x10217 resolution 19 continue]
+route=ferry {set mkgmap:numbers = false }
+route=ferry & (motorcar=no | motor_vehicle=no) {add mkgmap:ferry=1} [0x1b resolution 21]
+route=ferry {add mkgmap:ferry=1} [0x1b resolution 21]
 
 
 <finalize>
@@ -33,3 +32,8 @@ include 'inc/address';
 include 'inc/access';
 
 name=* { name '${name}' }
+
+highway=* & ref=* { addlabel '${ref}' }
+highway=* & int_ref=* { addlabel '${int_ref}' }
+highway=* & nat_ref=* { addlabel '${nat_ref}' }
+highway=* & reg_ref=* { addlabel '${reg_ref}' }

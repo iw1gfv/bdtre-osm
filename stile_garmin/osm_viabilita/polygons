@@ -19,14 +19,7 @@
 
 
 
-landuse=military [0x04 resolution 21]
-
-
-landuse=military 								[0x04 resolution 21]
-military=airfield 								[0x04 resolution 21]
-amenity=prison 									[0x04 resolution 22]
-
-(military=danger_area | military=range ) & landuse!=military 			[0x04 resolution 21]
+amenity=parking [ 0x05 resolution 22]
 
 
 <finalize>

@@ -453,22 +453,33 @@ un_vol
 
 ELENCO FAMIGLIE ELEMENTI GPS E PC
 
-comune				66133 dp10
-coltivazioni			66132 dp11
-bosco				66124 dp12
-laghi				66125 dp13
-fiumi				66127 dp14
-cava				66136 dp15
-forme del terreno		66138 dp16
-verde cittadino ar_vrd		66135 dp
-impianti sportivi		66121 dp
-strade ac_vei ar_vms		66129 dp
-edifici				66122 dp
-canali el_idr			66126 dp
-divisioni del terreno		66137 dp
-curve di livello		66120 dp
-albero				66123 dp
-tralicci tralic tr_ele		66130 dp
-vertici di rete			66128 dp
-toponomastica			66131 dp
-civico acc_pc acc_int		66134 dp
+BDTRE_Comune=$(ls $BDTRE_IMG/66133*.img)	dp10
+BDTRE_Coltiva=$(ls $BDTRE_IMG/66132*.img)	dp11
+BDTRE_Bosco=$(ls $BDTRE_IMG/66124*.img)		dp12
+BDTRE_Laghi=$(ls $BDTRE_IMG/66125*.img)		dp13
+BDTRE_Fiumi=$(ls $BDTRE_IMG/66127*.img)		dp14
+BDTRE_Cava=$(ls $BDTRE_IMG/66136*.img)		dp15
+BDTRE_Terreno=$(ls $BDTRE_IMG/66138*.img)	dp16
+BDTRE_Verde=$(ls $BDTRE_IMG/66135*.img)		dp17
+BDTRE_Impianti=$(ls $BDTRE_IMG/66121*.img)	dp18
+BDTRE_Strade=$(ls $BDTRE_IMG/66129*.img)	dp19
+BDTRE_Edifici=$(ls $BDTRE_IMG/66122*.img)	dp20
+BDTRE_Canali=$(ls $BDTRE_IMG/66126*.img)	dp21
+BDTRE_Divisioni=$(ls $BDTRE_IMG/66137*.img)	dp22
+BDTRE_Linee_ele=$(ls $BDTRE_IMG/66130*.img)	dp23
+BDTRE_Curve=$(ls $BDTRE_IMG/66120*.img)		dp24
+BDTRE_Alberi=$(ls $BDTRE_IMG/66123*.img)	dp25
+BDTRE_Rete=$(ls $BDTRE_IMG/66128*.img)		dp26
+BDTRE_Toponimi=$(ls $BDTRE_IMG/66131*.img)	dp27
+BDTRE_Civico=$(ls $BDTRE_IMG/66134*.img)	dp28
+OSM_Protette=$(ls $piemonteosm/66139*.img)	dp29
+OSM_Militari=$(ls $piemonteosm/66140*.img)	dp30
+OSM_Ferrovie=$(ls $piemonteosm/66141*.img)	dp32
+OSM_Poi=$(ls $piemonteosm/66142*.img)		dp33
+OSM_Viabilita=$(ls $piemonteosm/66143*.img)	dp34
+OSM_Energie=$(ls $piemonteosm/66144*.img)	dp31
+OSM_Risalita=$(ls $piemonteosm/66145*.img)	dp35
+OSM_Traghetti=$(ls $piemonteosm/66146*.img)	dp36
+OSM_Ciclovie=$(ls $piemonteosm/66147*.img)	dp37
+OSM_Sentieri=$(ls $piemonteosm/66148*.img)	dp38
+OSM_Idro=$(ls $piemonteosm/66149*.img)		dp39

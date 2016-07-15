@@ -19,10 +19,17 @@
 
 
 
-# Confini parchi nazionali e parchi (oasi, ecc)
-boundary=national_park | *=national_park		[0x10217 resolution 19 continue] 
-landuse=nature_reserve | boundary=nature_reserve | boundary=protected_area | landuse=protected_area	{set leisure=nature_reserve}
-leisure=nature_reserve		[0x10217 resolution 19 continue]
+(aerialway=tbar | aerialway=t-bar | piste:lift=tbar | piste:lift=t-bar | aerialway=schlepplift | piste:lift=schlepplift | drag_lift=tbar | drag_lift=t-bar)	{add mkgmap:label:1='Skilift ${name}' | 'Skilift'}	[0x10012 resolution 21]
+
+aerialway=platter 				{add mkgmap:label:1='Skilift ${name}' | 'Skilift'}		[0x10012 resolution 21]
+
+aerialway=drag_lift | piste:lift=drag_lift	{add mkgmap:label:1='Skilift ${name}' | 'Skilift'}		[0x10012 resolution 21]
+
+aerialway=cable_car				{add mkgmap:label:1='Funivia ${name}' | 'Funivia'}		[0x10013 resolution 21]
+
+aerialway=gondola				{add mkgmap:label:1='Cabinovia ${name}' | 'Cabinovia'}		[0x10013 resolution 21]
+
+aerialway=chair_lift  | aerialway=mixed_lift 	{add mkgmap:label:1='Seggiovia ${name}' | 'Seggiovia'}		[0x10013 resolution 21]
 
 
 <finalize>

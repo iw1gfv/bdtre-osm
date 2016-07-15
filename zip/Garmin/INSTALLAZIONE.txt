@@ -4,7 +4,7 @@ Mapsource
 Basecamp
 Qlandkartegt
 
-I file della mappa sono dentro la cartella mapsource.
+I file della mappa sono dentro la cartella mappe.
 
 
 >>>>>>>>>>>>>>INSTALLAZIONE E DISIONSTALLAZIONE SU MAPSOURCE E BASECAMP<<<<<<<<<<<<<<<<
@@ -15,7 +15,7 @@ INSTALLAZIONE:
 
 2 Chiudere il programma Mapsource / Basecamp, se aperto.
 
-3 Entrare nella cartella map e fare doppio click sul file:
+3 Entrare nella cartella mappe e fare doppio click sul file:
 
 install.bat
 
@@ -27,7 +27,7 @@ fare click con il destro sul file install.bat e cliccare su esegui come amminist
 
 DISINSTALLAZIONE:
 
-Entrare nella cartella mapsource e fare doppio click sul file:
+Entrare nella cartella mappe e fare doppio click sul file:
 
 uninstall.bat
 
@@ -37,7 +37,7 @@ fare click con il destro sul file uninstall.bat e cliccare su esegui come ammini
 
 ATTENZIONE!!!!
 Prima di cancellare la cartella o di spostarla eseguire la disinstallazione.
-Non caricare la mappa su un gps tramite mapsource, scaricare da piemontegps.altervista.org la verasione adatta al gps.
+Non caricare la mappa su un gps tramite mapsource, scaricare da piemontegps.altervista.org la verasione apposita per GPS.
 
 
 
