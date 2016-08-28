@@ -29,9 +29,5 @@ railway=tram [0x10103 resolution 22]
 
 <finalize>
 # The finalizer section is executed for each element when a rule with an element type matches
-
 include 'inc/address';
-# calculate the access rules
-include 'inc/access';
-
 name=* { name '${name}' }

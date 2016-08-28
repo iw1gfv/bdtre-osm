@@ -216,6 +216,7 @@ for infile in $piemonteosm/*.osm.pbf
       --output-dir=$piemonteosm \
       --style-file=stile_garmin/osm_viabilita \
       --show-profiles=1 \
+      --add-pois-to-areas \
       --draw-priority=34 \
       --transparent \
       --license-file=stile_garmin/osm_licenza.txt \
@@ -447,7 +448,46 @@ for infile in $piemonteosm/*.osm.pbf
       --output-dir=$piemonteosm \
       --style-file=stile_garmin/osm_idrografia \
       --show-profiles=1 \
+      --add-pois-to-areas \
       --draw-priority=39 \
+      --transparent \
+      --license-file=stile_garmin/osm_licenza.txt \
+      --remove-short-arcs \
+      --keep-going \
+      $infile 
+  done
+
+rm $piemonteosm/areas.*
+rm $piemonteosm/densities-out.txt
+rm $piemonteosm/temp*.*
+rm $piemonteosm/*osm.pbf
+
+
+#crea e converte elementi vari
+
+java $Xmx -jar $splitter \
+--max-nodes=1000000 \
+--max-areas=300 \
+--mapid=66150001 \
+--output-dir=$piemonteosm \
+$piemonteosm/piemonte.pbf
+
+
+for infile in $piemonteosm/*.osm.pbf
+  do
+  MAPNAME=$(basename $infile .osm.pbf)
+  echo converto $MAPNAME
+
+  java $Xmx -jar $mkgmap --code-page=1252 \
+      --mapname=$MAPNAME \
+      --description="OSM Varie" \
+      --country-name="Italia" \
+      --region-name="Piemonte" \
+      --copyright-message="$copyrightosm" \
+      --output-dir=$piemonteosm \
+      --style-file=stile_garmin/osm_varie \
+      --show-profiles=1 \
+      --draw-priority=40 \
       --transparent \
       --license-file=stile_garmin/osm_licenza.txt \
       --remove-short-arcs \

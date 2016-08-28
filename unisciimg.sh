@@ -47,7 +47,7 @@ MASTER_TYPFILE=stile_garmin/Typ/${TYPFILE_VERSION}.typ
 # creo le varianti del file master TYP file con le differenze
 # cambia solamente il family ID:
 
-for FID in 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029
+for FID in 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030
 do
   cp $MASTER_TYPFILE stile_garmin/Typ/$FID.TYP
   $GMT -w -y $FID,1 stile_garmin/Typ/$FID.TYP
@@ -65,7 +65,7 @@ BDTRE_Bosco=$(ls $BDTRE_IMG/66124*.img)
 BDTRE_Laghi=$(ls $BDTRE_IMG/66125*.img)
 BDTRE_Canali=$(ls $BDTRE_IMG/66126*.img)
 BDTRE_Fiumi=$(ls $BDTRE_IMG/66127*.img)
-BDTRE_Rete=$(ls $BDTRE_IMG/66128*.img)
+BDTRE_Quota=$(ls $BDTRE_IMG/66128*.img)
 BDTRE_Strade=$(ls $BDTRE_IMG/66129*.img)
 BDTRE_Linee_ele=$(ls $BDTRE_IMG/66130*.img)
 BDTRE_Toponimi=$(ls $BDTRE_IMG/66131*.img)
@@ -87,6 +87,7 @@ OSM_Traghetti=$(ls $piemonteosm/66146*.img)
 OSM_Ciclovie=$(ls $piemonteosm/66147*.img)
 OSM_Sentieri=$(ls $piemonteosm/66148*.img)
 OSM_Idro=$(ls $piemonteosm/66149*.img)
+OSM_Varie=$(ls $piemonteosm/66150*.img)
 
 
 # make the target directory
@@ -117,8 +118,8 @@ $GMT -j -o finale/64/Fiumi.img \
 $GMT -j -o finale/64/Strade.img \
      -f 2005,1 -m "BDTRE Strade" $BDTRE_Strade ./stile_garmin/Typ/2005.TYP
 
-$GMT -j -o finale/64/Rete.img \
-     -f 2006,1 -m "BDTRE Vertici di rete" $BDTRE_Rete ./stile_garmin/Typ/2006.TYP
+$GMT -j -o finale/64/Quota.img \
+     -f 2006,1 -m "BDTRE Punti quotati" $BDTRE_Quota ./stile_garmin/Typ/2006.TYP
 
 $GMT -j -o finale/64/Edifici.img \
      -f 2007,1 -m "BDTRE Edifici" $BDTRE_Edifici ./stile_garmin/Typ/2007.TYP
@@ -189,6 +190,9 @@ $GMT -j -o finale/64/Sentieri.img \
 $GMT -j -o finale/64/Idro.img \
      -f 2029,1 -m "OSM Idrografia" $OSM_Idro ./stile_garmin/Typ/2029.TYP
 
+$GMT -j -o finale/64/Varie.img \
+     -f 2030,1 -m "OSM Varie" $OSM_Varie ./stile_garmin/Typ/2030.TYP
+
     
 # gli strati ora vengono uniti in un unico gmapsupp.img per i vecchi dispositivi:
 
@@ -199,7 +203,7 @@ $GMT -j -o finale/etrex/gmapsupp.img -m "BDTRE-OSM-GPS (GPS)" \
      finale/64/Laghi.img     \
      finale/64/Fiumi.img     \
      finale/64/Strade.img    \
-     finale/64/Rete.img      \
+     finale/64/Quota.img     \
      finale/64/Edifici.img   \
      finale/64/Curve.img     \
      finale/64/Canali.img    \
@@ -222,7 +226,8 @@ $GMT -j -o finale/etrex/gmapsupp.img -m "BDTRE-OSM-GPS (GPS)" \
      finale/64/Traghetti.img \
      finale/64/Ciclovie.img  \
      finale/64/Sentieri.img  \
-     finale/64/Idro.img
+     finale/64/Idro.img      \
+     finale/64/Varie.img
 
 
 # Ora creo versioni di divisione della mappa per l'utilizzo con Basecamp
@@ -262,9 +267,9 @@ java -jar $mkgmap \
   --product-id=6                \
   $BDTRE_Strade                 \
   --draw-priority=26            \
-  --family-name="BDTRE Vertici di rete" \
+  --family-name="BDTRE Punti quotati" \
   --product-id=7                \
-  $BDTRE_Sentieri               \
+  $BDTRE_Quota                  \
   --draw-priority=20            \
   --family-name="BDTRE Edifici" \
   --product-id=8                \
@@ -288,7 +293,7 @@ java -jar $mkgmap \
   --draw-priority=25            \
   --family-name="BDTRE Alberi/siepi" \
   --product-id=13               \
-  $BDTRE_Albero                 \
+  $BDTRE_Alberi                 \
   --draw-priority=27            \
   --family-name="BDTRE Toponimi"\
   --product-id=14               \
@@ -342,7 +347,7 @@ java -jar $mkgmap \
   --product-id=26               \
   $OSM_Risalita                 \
   --draw-priority=36            \
-  --family-name="OSM Linee traghetti"   \
+  --family-name="OSM Linee Traghetti"   \
   --product-id=27               \
   $OSM_Traghetti                \
   --draw-priority=37            \
@@ -357,6 +362,10 @@ java -jar $mkgmap \
   --family-name="OSM Idrografia"\
   --product-id=30               \
   $OSM_Idro                     \
+  --draw-priority=40            \
+  --family-name="OSM Varie"     \
+  --product-id=31               \
+  $OSM_Varie                    \
   $MASTER_TYPFILE
 
 
@@ -378,7 +387,7 @@ $GMT -j -o finale/mappe/gmapsupp.img \
      $BDTRE_Laghi           \
      $BDTRE_Fiumi           \
      $BDTRE_Strade          \
-     $BDTRE_Rete            \
+     $BDTRE_Quota           \
      $BDTRE_Edifici         \
      $BDTRE_Curve           \
      $BDTRE_Canali          \
@@ -402,6 +411,7 @@ $GMT -j -o finale/mappe/gmapsupp.img \
      $OSM_Ciclovie          \
      $OSM_Sentieri          \
      $OSM_Idro              \
+     $OSM_Varie             \
      $MASTER_TYPFILE
 
 

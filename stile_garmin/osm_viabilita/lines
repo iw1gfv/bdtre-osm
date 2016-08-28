@@ -19,7 +19,6 @@
 
 
 
-addr:housenumber=* {set mkgmap:execute_finalize_rules=true}
 aeroway=runway [0x27 resolution 20]
 aeroway=taxiway [0x27 resolution 22]
 
@@ -52,7 +51,7 @@ junction=roundabout [0x0c resolution 22]
 # Strade
 highway=motorway & network=e-road    [0x01 resolution 16]
 highway=motorway  [0x01 resolution 16]
-highway=motorway_link & (mkgmap:exit_hint=true | mkgmap:dest_hint=true) [0x09 resolution 20]
+highway=motorway_link & (mkgmap:exit_hint=true | mkgmap:dest_hint=*) [0x09 resolution 20]
 highway=motorway_link [0x09 resolution 20]
 highway=trunk [0x02 resolution 19]
 highway=trunk_link [0x09 resolution 20]
@@ -92,11 +91,7 @@ highway=* & area!=yes [0x07 resolution 23]
 
 <finalize>
 # The finalizer section is executed for each element when a rule with an element type matches
-
-include 'inc/address';
-# calculate the access rules
 include 'inc/access';
-
 name=* { name '${name}' }
 
 highway=* & ref=* { addlabel '${ref}' }

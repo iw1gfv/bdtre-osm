@@ -15,7 +15,7 @@ uscitamap="uscita-map"
 
 #shp da usare:
 #esempio 001066_el_idr_2016.shp diventa el_idr perde i _ prima e dopo, i valori vanno messi fra " e separati da uno spazio
-sdu="aatt ab_cda acc_int acc_pc ac_ped ac_vei albero argine ar_vrd ar_vms attr_sp bosco cl_agr cv_aes comuni diga edifc edi_min el_div el_idr ele_cp fil_al f_nter for_pc ghi_nv invaso man_tr mn_ind mu_div mu_sos nd_ele op_reg par_ar pe_uins ponte ps_inc sc_dis sv_str scarpt sp_acq tr_ele v_rete toponomastica cv_liv"
+sdu="aatt ab_cda acc_int acc_pc ac_ped ac_vei albero argine ar_vrd ar_vms attr_sp bosco cl_agr cv_aes comuni diga edifc edi_min el_div el_idr ele_cp fil_al f_nter for_pc ghi_nv invaso man_tr mn_ind mu_div mu_sos nd_ele op_reg par_ar pe_uins ponte ps_inc sc_dis sv_str scarpt sp_acq tr_ele toponomastica cv_liv p_altim"
 
 # indirizzo per scaricare il file del piemonte
 urlpiemonte="http://geodati.fmach.it/gfoss_geodata/osm/output_osm_regioni/piemonte.pbf"
@@ -37,16 +37,16 @@ osmosis=~/osmosis/bin/osmosis
 dtm="DTM10"
 
 #Percorso completo di Mkgmap
-mkgmap=~/mkgmap-r3627/mkgmap.jar
+mkgmap=~/mkgmap-r3694/mkgmap.jar
 
 #Percorso completo di Splitter
-splitter=~/splitter-r427/splitter.jar
+splitter=~/splitter-r439/splitter.jar
 
 #Directory in cui vengono messi i file IMG del BDTRE
 BDTRE_IMG="bdtre-img"
 
 #Allocazione Ram da utilizzare per splitter e mkgmap
-Xmx=-Xmx14000M
+Xmx=-Xmx15000M
 
 #copyrigt OSM
 copyrightosm="vedi www.openstreetmap.org/copyright"

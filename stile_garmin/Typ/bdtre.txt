@@ -35,8 +35,6 @@ Type=0x2f,2
 Type=0x31,2
 Type=0x34,2
 Type=0x37,2
-Type=0x3c,2
-Type=0x3f,2
 Type=0x46,2
 Type=0x47,2
 Type=0x50,2
@@ -68,6 +66,8 @@ Type=0x18,5
 Type=0x19,5
 Type=0x25,5
 Type=0x2e,5
+Type=0x3c,5
+Type=0x3f,5
 Type=0x27,6
 Type=0x28,6
 Type=0x0f,6
@@ -1149,7 +1149,7 @@ Xpm="0 0 1 0"
 
 [_polygon]
 Type=0x32
-String1=0x05,Sea
+String1=0x05,Mare
 ExtendedLabels=N
 Xpm="0 0 1 0"
 "1 c #7BCAFF"
@@ -4314,7 +4314,6 @@ DayXpm="16 16 26 2"   Colormode=16
 [_point]
 Type=0x02a
 SubType=0x0e
-;GRMN_TYPE: Business - Food and Drink/RESTAURANT_CAFES/Cafe or coffee shop/Non NT
 String1=0x05,Cafe
 ExtendedLabels=N
 DayXpm="17 15 7 1"   Colormode=16
@@ -4347,7 +4346,6 @@ DayXpm="17 15 7 1"   Colormode=16
 [_point]
 Type=0x02a
 SubType=0x0f
-;GRMN_TYPE: Business - Food and Drink/RESTAURANT_FRENCH/French cuisine/Non NT
 String1=0x05,Ristorante francese
 ExtendedLabels=N
 DayXpm="26 20 32 2"   Colormode=16
@@ -4410,7 +4408,6 @@ DayXpm="26 20 32 2"   Colormode=16
 [_point]
 Type=0x02a
 SubType=0x10
-;GRMN_TYPE: Business - Food and Drink/RESTAURANT_GERMAN/German cuisine/Non NT
 String1=0x05,Ristorante tedesco
 ExtendedLabels=N
 DayXpm="26 20 33 2"   Colormode=16
@@ -4474,7 +4471,6 @@ DayXpm="26 20 33 2"   Colormode=16
 [_point]
 Type=0x02a
 SubType=0x11
-;GRMN_TYPE: Business - Food and Drink/RESTAURANT_BRITISH/British cuisine/Non NT
 String1=0x05,Ristorante inglese
 ExtendedLabels=N
 DayXpm="26 20 32 2"   Colormode=16
@@ -4537,7 +4533,6 @@ DayXpm="26 20 32 2"   Colormode=16
 [_point]
 Type=0x02a
 SubType=0x12
-;GRMN_TYPE: //
 String1=0x05,Ristorante vegano
 ExtendedLabels=N
 DayXpm="16 16 26 2"   Colormode=16
@@ -4590,7 +4585,6 @@ DayXpm="16 16 26 2"   Colormode=16
 [_point]
 Type=0x02a
 SubType=0x13
-;GRMN_TYPE: //
 String1=0x05,Ristorante vegetariano
 ExtendedLabels=N
 DayXpm="16 16 26 2"   Colormode=16
@@ -4643,7 +4637,6 @@ DayXpm="16 16 26 2"   Colormode=16
 [_point]
 Type=0x02a
 SubType=0x14
-;GRMN_TYPE: //
 String1=0x05,Ristorante cucina tipica
 ExtendedLabels=N
 DayXpm="16 16 26 2"   Colormode=16
@@ -4696,7 +4689,6 @@ DayXpm="16 16 26 2"   Colormode=16
 [_point]
 Type=0x02a
 SubType=0x15
-;GRMN_TYPE: //
 String1=0x05,Burger
 ExtendedLabels=N
 DayXpm="16 16 23 2"   Colormode=16
@@ -4746,7 +4738,6 @@ DayXpm="16 16 23 2"   Colormode=16
 [_point]
 Type=0x02a
 SubType=0x16
-;GRMN_TYPE: //
 ExtendedLabels=N
 DayXpm="16 16 26 2"   Colormode=16
 "!!	c #38D8D0"
@@ -4798,7 +4789,6 @@ DayXpm="16 16 26 2"   Colormode=16
 [_point]
 Type=0x02a
 SubType=0x17
-;GRMN_TYPE: //
 String1=0x05,Crepe
 ExtendedLabels=N
 DayXpm="16 16 26 2"   Colormode=16
@@ -4851,7 +4841,6 @@ DayXpm="16 16 26 2"   Colormode=16
 [_point]
 Type=0x02a
 SubType=0x18
-;GRMN_TYPE: //
 String1=0x05,Curry
 ExtendedLabels=N
 DayXpm="16 16 26 2"   Colormode=16
@@ -4904,7 +4893,6 @@ DayXpm="16 16 26 2"   Colormode=16
 [_point]
 Type=0x02a
 SubType=0x19
-;GRMN_TYPE: //
 String1=0x05,Ristorante turco
 ExtendedLabels=N
 DayXpm="16 16 26 2"   Colormode=16
@@ -4957,7 +4945,6 @@ DayXpm="16 16 26 2"   Colormode=16
 [_point]
 Type=0x02a
 SubType=0x1a
-;GRMN_TYPE: //
 String1=0x05,Fish and chips
 ExtendedLabels=N
 DayXpm="16 16 26 2"   Colormode=16
@@ -5010,7 +4997,6 @@ DayXpm="16 16 26 2"   Colormode=16
 [_point]
 Type=0x02a
 SubType=0x1b
-;GRMN_TYPE: //
 String1=0x05,Pasta
 ExtendedLabels=N
 DayXpm="16 16 26 2"   Colormode=16
@@ -5063,7 +5049,6 @@ DayXpm="16 16 26 2"   Colormode=16
 [_point]
 Type=0x02a
 SubType=0x1c
-;GRMN_TYPE: //
 String1=0x05,Ristorante
 ExtendedLabels=N
 DayXpm="16 16 26 2"   Colormode=16
@@ -5116,7 +5101,6 @@ DayXpm="16 16 26 2"   Colormode=16
 [_point]
 Type=0x02a
 SubType=0x1d
-;GRMN_TYPE: //
 String1=0x05,Panini
 ExtendedLabels=N
 DayXpm="16 16 156 2"   Colormode=32
@@ -5299,7 +5283,6 @@ DayXpm="16 16 156 2"   Colormode=32
 [_point]
 Type=0x02a
 SubType=0x1e
-;GRMN_TYPE: //
 String1=0x05,Biergarten
 ExtendedLabels=N
 DayXpm="16 16 172 2"   Colormode=32
@@ -5498,7 +5481,6 @@ DayXpm="16 16 172 2"   Colormode=32
 [_point]
 Type=0x02a
 SubType=0x1f
-;GRMN_TYPE: //
 String1=0x05,Sushi
 ExtendedLabels=N
 DayXpm="16 16 26 2"   Colormode=16
@@ -5551,7 +5533,6 @@ DayXpm="16 16 26 2"   Colormode=16
 [_point]
 Type=0x02b
 SubType=0x00
-;GRMN_TYPE: //
 String1=0x05,Hotel
 ExtendedLabels=N
 DayXpm="15 15 2 1"   Colormode=16
@@ -5579,7 +5560,6 @@ DayXpm="15 15 2 1"   Colormode=16
 [_point]
 Type=0x02b
 SubType=0x01
-;GRMN_TYPE: Business - Lodging/HOTEL/Hotel/Non NT
 String1=0x05,Motel
 ExtendedLabels=N
 DayXpm="16 16 79 2"   Colormode=32
@@ -5685,7 +5665,6 @@ DayXpm="16 16 79 2"   Colormode=32
 [_point]
 Type=0x02b
 SubType=0x02
-;GRMN_TYPE: Business - Lodging/BED_AND_BREAKFAST/Bed and breakfast inn/Non NT
 String1=0x05,Bed and Breakfast
 ExtendedLabels=N
 DayXpm="16 16 96 2"   Colormode=32
@@ -5835,7 +5814,6 @@ DayXpm="15 15 2 1"   Colormode=16
 [_point]
 Type=0x02b
 SubType=0x04
-;GRMN_TYPE: Business - Lodging/RESORT/Resort/Non NT
 String1=0x05,Resort
 ExtendedLabels=N
 DayXpm="14 11 19 2"   Colormode=16
@@ -5876,7 +5854,6 @@ DayXpm="14 11 19 2"   Colormode=16
 [_point]
 Type=0x02b
 SubType=0x06
-;GRMN_TYPE: //
 String1=0x05,Ostello
 ExtendedLabels=N
 DayXpm="16 16 61 2"   Colormode=32
@@ -5964,7 +5941,6 @@ DayXpm="16 16 61 2"   Colormode=32
 [_point]
 Type=0x02b
 SubType=0x07
-;GRMN_TYPE: //
 String1=0x05,Caravan
 ExtendedLabels=N
 DayXpm="16 10 59 2"   Colormode=32
@@ -6044,7 +6020,6 @@ DayXpm="16 10 59 2"   Colormode=32
 [_point]
 Type=0x02b
 SubType=0x08
-;GRMN_TYPE: //
 String1=0x05,Rifugio/bivacco
 ExtendedLabels=N
 DayXpm="16 16 198 2"   Colormode=32
@@ -6269,7 +6244,6 @@ DayXpm="16 16 198 2"   Colormode=32
 [_point]
 Type=0x02b
 SubType=0x09
-;GRMN_TYPE: //
 String1=0x05,Chalet
 ExtendedLabels=N
 DayXpm="16 16 64 2"   Colormode=32
@@ -6428,7 +6402,6 @@ DayXpm="16 16 42 2"   Colormode=16
 [_point]
 Type=0x02c
 SubType=0x02
-;GRMN_TYPE: Business - Attractions/MUSEUM/Museum or historical society/Non NT
 String1=0x05,Museo
 ExtendedLabels=N
 DayXpm="16 16 86 2"   Colormode=32
@@ -6541,7 +6514,6 @@ DayXpm="16 16 86 2"   Colormode=32
 [_point]
 Type=0x02c
 SubType=0x03
-;GRMN_TYPE: Business - Attractions/LIBRARY/Library/Non NT
 String1=0x05,Biblioteca
 ExtendedLabels=N
 DayXpm="18 16 5 1"   Colormode=16
@@ -6573,7 +6545,6 @@ DayXpm="18 16 5 1"   Colormode=16
 [_point]
 Type=0x02c
 SubType=0x04
-;GRMN_TYPE: Business - Attractions/LANDMARK/Landmark/Non NT
 ExtendedLabels=N
 DayXpm="14 12 30 2"   Colormode=16
 "!!	c #0874F8"
@@ -6625,7 +6596,6 @@ DayXpm="14 12 30 2"   Colormode=16
 [_point]
 Type=0x02c
 SubType=0x05
-;GRMN_TYPE: Business - Attractions/SCHOOL/School/Non NT
 String1=0x05,Istituto scolastico
 ExtendedLabels=N
 DayXpm="16 11 13 1"   Colormode=16
@@ -6660,7 +6630,6 @@ DayXpm="16 11 13 1"   Colormode=16
 [_point]
 Type=0x02c
 SubType=0x06
-;GRMN_TYPE: Business - Attractions/GARDEN, PARK/Garden, park/Non NT
 String1=0x01,
 ExtendedLabels=N
 DayXpm="5 7 3 1"   Colormode=16
@@ -6891,7 +6860,6 @@ DayXpm="10 16 14 1"   Colormode=16
 [_point]
 Type=0x02c
 SubType=0x0b
-;GRMN_TYPE: Business - Attractions/PLACE_OF_WORSHIP/Religious place of worship/Non NT
 String1=0x05,Chiesa
 ExtendedLabels=N
 DayXpm="8 16 3 1"   Colormode=32
@@ -6921,7 +6889,6 @@ DayXpm="8 16 3 1"   Colormode=32
 [_point]
 Type=0x02c
 SubType=0x0c
-;GRMN_TYPE: //
 String1=0x05,Sito archeologico
 ExtendedLabels=N
 DayXpm="16 16 6 1"   Colormode=16
@@ -6988,7 +6955,6 @@ DayXpm="8 18 6 1"   Colormode=16
 [_point]
 Type=0x02c
 SubType=0x10
-;GRMN_TYPE: Business - Attractions/POW_SYNAGOGUE/Religious place of worship/Non NT
 String1=0x05,Sinagoga
 ExtendedLabels=N
 DayXpm="8 17 4 1"   Colormode=16
@@ -7020,7 +6986,6 @@ DayXpm="8 17 4 1"   Colormode=16
 [_point]
 Type=0x02c
 SubType=0x13
-;GRMN_TYPE: //
 String1=0x05,Punto panoramico
 ExtendedLabels=N
 DayXpm="16 16 2 1"   Colormode=32
@@ -7049,7 +7014,6 @@ DayXpm="16 16 2 1"   Colormode=32
 [_point]
 Type=0x02c
 SubType=0x14
-;GRMN_TYPE: //
 String1=0x05,Faro
 ExtendedLabels=N
 DayXpm="16 16 6 1"   Colormode=32
@@ -7082,7 +7046,6 @@ DayXpm="16 16 6 1"   Colormode=32
 [_point]
 Type=0x02c
 SubType=0x15
-;GRMN_TYPE: //
 String1=0x04,Mulino a vento
 ExtendedLabels=N
 DayXpm="16 16 3 1"   Colormode=32
@@ -7112,7 +7075,6 @@ DayXpm="16 16 3 1"   Colormode=32
 [_point]
 Type=0x02c
 SubType=0x16
-;GRMN_TYPE: //
 String1=0x05,Videosorveglianza
 ExtendedLabels=N
 DayXpm="16 16 53 2"   Colormode=32
@@ -7192,7 +7154,6 @@ DayXpm="16 16 53 2"   Colormode=32
 [_point]
 Type=0x02c
 SubType=0x17
-;GRMN_TYPE: //
 String1=0x04,Rigassificatore
 ExtendedLabels=N
 DayXpm="16 16 75 2"   Colormode=32
@@ -7294,7 +7255,6 @@ DayXpm="16 16 75 2"   Colormode=32
 [_point]
 Type=0x02c
 SubType=0x18
-;GRMN_TYPE: //
 String1=0x05,Impianto industriale
 ExtendedLabels=N
 DayXpm="16 16 61 2"   Colormode=32
@@ -7382,7 +7342,6 @@ DayXpm="16 16 61 2"   Colormode=32
 [_point]
 Type=0x02c
 SubType=0x19
-;GRMN_TYPE: //
 String1=0x05,Torre idrica
 ExtendedLabels=N
 DayXpm="16 16 33 2"   Colormode=32
@@ -7442,7 +7401,6 @@ DayXpm="16 16 33 2"   Colormode=32
 [_point]
 Type=0x02c
 SubType=0x1a
-;GRMN_TYPE: //
 String1=0x05,Survey point
 ExtendedLabels=N
 DayXpm="9 16 47 2"   Colormode=32
@@ -7516,7 +7474,6 @@ DayXpm="9 16 47 2"   Colormode=32
 [_point]
 Type=0x02c
 SubType=0x1b
-;GRMN_TYPE: //
 String1=0x05,Prigione
 ExtendedLabels=N
 DayXpm="12 14 2 1"   Colormode=32
@@ -7543,7 +7500,6 @@ DayXpm="12 14 2 1"   Colormode=32
 [_point]
 Type=0x02d
 SubType=0x01
-;GRMN_TYPE: Business - Entertainment/LIVE_THEATER/Live theater/Non NT
 String1=0x05,Teatro
 ExtendedLabels=N
 DayXpm="16 15 38 2"   Colormode=16
@@ -7607,7 +7563,6 @@ DayXpm="16 15 38 2"   Colormode=16
 [_point]
 Type=0x02d
 SubType=0x02
-;GRMN_TYPE: Business - Entertainment/BAR/Bar or club/Non NT
 String1=0x05,Bar
 ExtendedLabels=N
 DayXpm="17 15 7 1"   Colormode=16
@@ -7640,7 +7595,6 @@ DayXpm="17 15 7 1"   Colormode=16
 [_point]
 Type=0x02d
 SubType=0x03
-;GRMN_TYPE: Business - Entertainment/MOVIE_THEATER/Movie theater or cinema/Non NT
 String1=0x05,Cinema
 ExtendedLabels=N
 DayXpm="14 12 17 1"   Colormode=16
@@ -10266,7 +10220,6 @@ DayXpm="16 13 117 2"   Colormode=32
 [_point]
 Type=0x02e
 SubType=0x0c
-;GRMN_TYPE: //
 String1=0x05,Negozio
 ExtendedLabels=N
 DayXpm="2 2 2 1"   Colormode=16
@@ -10281,7 +10234,6 @@ DayXpm="2 2 2 1"   Colormode=16
 [_point]
 Type=0x02e
 SubType=0x0d
-;GRMN_TYPE: //
 String1=0x05,Fiori
 ExtendedLabels=N
 DayXpm="12 16 108 2"   Colormode=32
@@ -10416,7 +10368,6 @@ DayXpm="12 16 108 2"   Colormode=32
 [_point]
 Type=0x02e
 SubType=0x0e
-;GRMN_TYPE: //
 String1=0x05,Acconciature
 ExtendedLabels=N
 DayXpm="12 16 77 2"   Colormode=32
@@ -10520,7 +10471,6 @@ DayXpm="12 16 77 2"   Colormode=32
 [_point]
 Type=0x02e
 SubType=0x0f
-;GRMN_TYPE: //
 String1=0x05,Fai-da-te
 ExtendedLabels=N
 DayXpm="16 16 151 2"   Colormode=32
@@ -10698,7 +10648,6 @@ DayXpm="16 16 151 2"   Colormode=32
 [_point]
 Type=0x02e
 SubType=0x10
-;GRMN_TYPE: //
 String1=0x05,Supermercato
 ExtendedLabels=N
 DayXpm="16 16 189 2"   Colormode=32
@@ -10914,7 +10863,6 @@ DayXpm="16 16 189 2"   Colormode=32
 [_point]
 Type=0x02e
 SubType=0x11
-;GRMN_TYPE: //
 String1=0x05,Bicciclette
 ExtendedLabels=N
 DayXpm="16 10 80 2"   Colormode=32
@@ -11015,7 +10963,6 @@ DayXpm="16 10 80 2"   Colormode=32
 [_point]
 Type=0x02e
 SubType=0x12
-;GRMN_TYPE: //
 String1=0x05,Ottico
 ExtendedLabels=N
 DayXpm="16 7 60 2"   Colormode=32
@@ -11573,7 +11520,6 @@ DayXpm="16 16 171 2"   Colormode=32
 [_point]
 Type=0x02e
 SubType=0x16
-;GRMN_TYPE: //
 String1=0x05,Bevande alcoliche
 ExtendedLabels=N
 DayXpm="16 16 179 2"   Colormode=32
@@ -11779,7 +11725,6 @@ DayXpm="16 16 179 2"   Colormode=32
 [_point]
 Type=0x02e
 SubType=0x17
-;GRMN_TYPE: //
 String1=0x05,Lbreria
 ExtendedLabels=N
 DayXpm="16 13 7 1"   Colormode=16
@@ -11810,7 +11755,6 @@ DayXpm="16 13 7 1"   Colormode=16
 [_point]
 Type=0x02e
 SubType=0x18
-;GRMN_TYPE: //
 String1=0x05,Elettronica
 ExtendedLabels=N
 DayXpm="16 13 149 2"   Colormode=32
@@ -11983,7 +11927,6 @@ DayXpm="16 13 149 2"   Colormode=32
 [_point]
 Type=0x02e
 SubType=0x19
-;GRMN_TYPE: //
 String1=0x05,Lavasecco
 ExtendedLabels=N
 DayXpm="11 16 57 2"   Colormode=32
@@ -12067,7 +12010,6 @@ DayXpm="11 16 57 2"   Colormode=32
 [_point]
 Type=0x02e
 SubType=0x1a
-;GRMN_TYPE: //
 String1=0x05,Chiosco
 ExtendedLabels=N
 DayXpm="11 16 86 2"   Colormode=32
@@ -12180,7 +12122,6 @@ DayXpm="11 16 86 2"   Colormode=32
 [_point]
 Type=0x02e
 SubType=0x1b
-;GRMN_TYPE: //
 String1=0x05,Hifi
 ExtendedLabels=N
 DayXpm="14 16 106 2"   Colormode=32
@@ -12313,7 +12254,6 @@ DayXpm="14 16 106 2"   Colormode=32
 [_point]
 Type=0x02e
 SubType=0x1c
-;GRMN_TYPE: //
 String1=0x05,Drogeria
 ExtendedLabels=N
 DayXpm="16 8 78 2"   Colormode=32
@@ -12410,7 +12350,6 @@ DayXpm="16 8 78 2"   Colormode=32
 [_point]
 Type=0x02e
 SubType=0x1d
-;GRMN_TYPE: //
 String1=0x05,Motocicli
 ExtendedLabels=N
 DayXpm="16 12 74 2"   Colormode=32
@@ -12507,7 +12446,6 @@ DayXpm="16 12 74 2"   Colormode=32
 [_point]
 Type=0x02e
 SubType=0x1e
-;GRMN_TYPE: //
 String1=0x05,Calzature
 ExtendedLabels=N
 DayXpm="16 9 108 2"   Colormode=32
@@ -12777,6 +12715,7 @@ DayXpm="17 11 5 1"   Colormode=16
 [_point]
 Type=0x02f
 SubType=0x01
+String1=0x05,Distributore carburante
 ExtendedLabels=N
 DayXpm="12 14 16 1"   Colormode=16
 "!	c #000C98"
@@ -13582,7 +13521,6 @@ DayXpm="16 15 106 2"   Colormode=32
 [_point]
 Type=0x02f
 SubType=0x1a
-;GRMN_TYPE: //
 String1=0x05,Cestino
 ExtendedLabels=N
 DayXpm="15 16 74 2"   Colormode=32
@@ -13683,7 +13621,6 @@ DayXpm="15 16 74 2"   Colormode=32
 [_point]
 Type=0x02f
 SubType=0x1b
-;GRMN_TYPE: //
 String1=0x05,Taxi
 ExtendedLabels=N
 DayXpm="16 16 4 1"   Colormode=16
@@ -13714,7 +13651,6 @@ DayXpm="16 16 4 1"   Colormode=16
 [_point]
 Type=0x030
 SubType=0x00
-;GRMN_TYPE: //
 String1=0x05,Edificio Pubblico
 ExtendedLabels=N
 DayXpm="1 1 1 1"   Colormode=0
@@ -13727,7 +13663,6 @@ DayXpm="1 1 1 1"   Colormode=0
 [_point]
 Type=0x030
 SubType=0x01
-;GRMN_TYPE: Business - Emergency and Government/POLICE_STATION/Police station/Non NT
 ExtendedLabels=N
 DayXpm="8 11 4 1"   Colormode=0
 "!	c #178E00"
@@ -13836,7 +13771,6 @@ DayXpm="16 16 58 2"   Colormode=32
 [_point]
 Type=0x030
 SubType=0x03
-;GRMN_TYPE: Business - Emergency and Government/CITY_HALL/City hall/Non NT
 String1=0x05,Municipio
 ExtendedLabels=N
 DayXpm="16 16 30 2"   Colormode=16
@@ -13893,7 +13827,6 @@ DayXpm="16 16 30 2"   Colormode=16
 [_point]
 Type=0x030
 SubType=0x04
-;GRMN_TYPE: Business - Emergency and Government/COURTHOUSE/Courthouse/Non NT
 String1=0x05,Tribunale
 ExtendedLabels=N
 DayXpm="16 11 82 2"   Colormode=32
@@ -13997,7 +13930,6 @@ DayXpm="16 11 82 2"   Colormode=32
 [_point]
 Type=0x030
 SubType=0x05
-;GRMN_TYPE: /COMMUNITY_CENTER/Community center/Non NT
 ExtendedLabels=N
 DayXpm="10 14 32 2"   Colormode=0
 "!!	c #F8FCF8"
@@ -14169,7 +14101,6 @@ DayXpm="16 8 74 2"   Colormode=32
 [_point]
 Type=0x030
 SubType=0x1a
-;GRMN_TYPE: //
 String1=0x05,Medico
 ExtendedLabels=N
 DayXpm="16 16 65 2"   Colormode=32
@@ -14261,7 +14192,6 @@ DayXpm="16 16 65 2"   Colormode=32
 [_point]
 Type=0x030
 SubType=0x1b
-;GRMN_TYPE: //
 String1=0x05,Dentista
 ExtendedLabels=N
 DayXpm="16 16 75 2"   Colormode=32
@@ -14363,7 +14293,6 @@ DayXpm="16 16 75 2"   Colormode=32
 [_point]
 Type=0x030
 SubType=0x1c
-;GRMN_TYPE: //
 String1=0x05,Veterinario
 ExtendedLabels=N
 DayXpm="16 16 144 2"   Colormode=32
@@ -14534,9 +14463,7 @@ DayXpm="16 16 144 2"   Colormode=32
 [_point]
 Type=0x030
 SubType=0x1d
-;GRMN_TYPE: //
-String1=0x02,Rettungsbox
-String2=0x04,rescue box
+String1=0x04,rescue box
 ExtendedLabels=N
 DayXpm="16 16 2 1"   Colormode=32
 "!	c #030359"  alpha=0
@@ -14564,7 +14491,6 @@ DayXpm="16 16 2 1"   Colormode=32
 [_point]
 Type=0x030
 SubType=0x1e
-;GRMN_TYPE: //
 String1=0x05,Emergency access point
 ExtendedLabels=N
 DayXpm="16 16 67 2"   Colormode=32
@@ -14658,7 +14584,6 @@ DayXpm="16 16 67 2"   Colormode=32
 [_point]
 Type=0x046
 SubType=0x00
-;GRMN_TYPE: //
 ExtendedLabels=N
 DayXpm="13 15 17 1"   Colormode=16
 "!	c #A85C00"
@@ -14796,7 +14721,6 @@ DayXpm="13 11 75 2"   Colormode=16
 [_point]
 Type=0x04a
 SubType=0x01
-;GRMN_TYPE: //
 String1=0x05,panchina
 ExtendedLabels=N
 DayXpm="16 16 3 1"   Colormode=32
@@ -14857,7 +14781,6 @@ DayXpm="16 16 5 1"   Colormode=16
 [_point]
 Type=0x04c
 SubType=0x00
-;GRMN_TYPE: Misc. Points of Interest/INFORMATION/Information/Non NT, NT
 ExtendedLabels=N
 DayXpm="14 14 29 2"   Colormode=16
 "!!	c #28D0F8"
@@ -14910,8 +14833,7 @@ DayXpm="14 14 29 2"   Colormode=16
 [_point]
 Type=0x04c
 SubType=0x01
-;GRMN_TYPE: //
-String1=0x04,segnavia
+String1=0x04,Segnavia
 ExtendedLabels=N
 DayXpm="15 15 3 1"   Colormode=16
 "!	c #000000"
@@ -14939,7 +14861,6 @@ DayXpm="15 15 3 1"   Colormode=16
 [_point]
 Type=0x04e
 SubType=0x00
-;GRMN_TYPE: Misc. Points of Interest/RESTROOMS/Restrooms/Non NT, NT
 String1=0x05,Toilets
 ExtendedLabels=N
 DayXpm="15 16 87 2"   Colormode=16
@@ -15053,7 +14974,6 @@ DayXpm="15 16 87 2"   Colormode=16
 [_point]
 Type=0x04e
 SubType=0x01
-;GRMN_TYPE: //
 String1=0x05,Doccia
 ExtendedLabels=N
 DayXpm="16 16 2 1"   Colormode=0
@@ -15082,7 +15002,6 @@ DayXpm="16 16 2 1"   Colormode=0
 [_point]
 Type=0x050
 SubType=0x00
-;GRMN_TYPE: Misc. Points of Interest/DRINKING_WATER/Drinking water/Non NT, NT
 ExtendedLabels=N
 DayXpm="16 16 98 2"   Colormode=32
 "!!	c #0169C9"  alpha=13
@@ -15206,7 +15125,6 @@ DayXpm="16 16 98 2"   Colormode=32
 [_point]
 Type=0x051
 SubType=0x00
-;GRMN_TYPE: Misc. Points of Interest/PHONE/Phone/Non NT, NT
 String1=0x05,Telefono
 ExtendedLabels=N
 DayXpm="12 16 60 2"   Colormode=32

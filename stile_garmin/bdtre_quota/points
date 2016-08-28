@@ -20,14 +20,5 @@
 
 
 
-#PARCHI NATURALI
-(boundary=national_park | *=national_park)   [0x14 resolution 19] 
-(landuse=nature_reserve | boundary=nature_reserve | boundary=protected_area | landuse=protected_area)	{set leisure=nature_reserve}
-leisure = nature_reserve  [0x15 resolution 19]
-
-
-<finalize>
-# The finalizer section is executed for each element when a rule with an element type matches
-include 'inc/address';
-name=* { name '${name}' }
-
+#punti quotati
+TIPO=2.08.06 | TIPO=2.08.07 | TIPO=2.08.08	{ name '${name} m'} [0x10303 resolution 22]

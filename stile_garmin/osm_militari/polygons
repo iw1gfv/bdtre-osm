@@ -32,6 +32,5 @@ amenity=prison 									[0x04 resolution 22]
 <finalize>
 # The finalizer section is executed for each element when a rule with an element type matches
 include 'inc/address';
-
 name=* { name '${name}' }
 

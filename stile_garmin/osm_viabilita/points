@@ -20,10 +20,7 @@
 
 
 
-#PARCHI NATURALI
-(boundary=national_park | *=national_park)   [0x14 resolution 19] 
-(landuse=nature_reserve | boundary=nature_reserve | boundary=protected_area | landuse=protected_area)	{set leisure=nature_reserve}
-leisure = nature_reserve  [0x15 resolution 19]
+amenity=parking & mkgmap:area2poi=true		[ 0x2f0b resolution 22 ]
 
 
 <finalize>

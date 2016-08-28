@@ -113,7 +113,7 @@ rm $BDTRE_IMG/*.pbf
 
 #divide e converte gli edifici in formato IMG
 
-$osmosis -v --read-pbf-fast file=$uscitaosm/UNITO_edifc.pbf --rbf file=$uscitaosm/UNITO_edi_min.pbf --rbf file=$uscitaosm/UNITO_ele_cp.pbf --rbf file=$uscitaosm/UNITO_mn_ind.pbf --rbf file=$uscitaosm/UNITO_par_ar.pbf --rbf file=$uscitaosm/UNITO_aatt.pbf --rbf file=$uscitaosm/UNITO_par_ar.pbf --merge --merge --merge --merge --merge --merge --wb file=$uscitaosm/UNITO_edifici.pbf omitmetadata=true
+$osmosis -v --read-pbf-fast file=$uscitaosm/UNITO_edifc.pbf --rbf file=$uscitaosm/UNITO_edi_min.pbf --rbf file=$uscitaosm/UNITO_ele_cp.pbf --rbf file=$uscitaosm/UNITO_mn_ind.pbf --rbf file=$uscitaosm/UNITO_par_ar.pbf --rbf file=$uscitaosm/UNITO_aatt.pbf --merge --merge --merge --merge --merge --wb file=$uscitaosm/UNITO_edifici.pbf omitmetadata=true
 
 java $Xmx -jar $splitter \
 --max-nodes=1600000 \
@@ -341,14 +341,14 @@ rm $BDTRE_IMG/temp*.*
 rm $BDTRE_IMG/*.pbf
 
 
-#divide e converte i vertici di rete in formato IMG
+#divide e converte i punti quotati in formato IMG
 
 java $Xmx -jar $splitter \
 --max-nodes=30000 \
 --max-areas=300 \
 --mapid=66128001 \
 --output-dir=$BDTRE_IMG \
-$uscitaosm/UNITO_v_rete.pbf
+$uscitaosm/UNITO_p_altim.pbf
 
 
 for infile in $BDTRE_IMG/66128*.osm.pbf
@@ -358,12 +358,12 @@ for infile in $BDTRE_IMG/66128*.osm.pbf
 
   java $Xmx -jar $mkgmap --code-page=1252 \
     --mapname=$MAPNAME \
-    --description="BDTRE Vertici di rete" \
+    --description="BDTRE Pumti quotati" \
     --country-name="Italia" \
     --region-name="Piemonte" \
     --copyright-message="$copyright" \
     --output-dir=$BDTRE_IMG \
-    --style-file=stile_garmin/bdtre_rete \
+    --style-file=stile_garmin/bdtre_quota \
     --show-profiles=1 \
     --draw-priority=26 \
     --transparent \
@@ -403,6 +403,7 @@ for infile in $BDTRE_IMG/66129*.osm.pbf
     --output-dir=$BDTRE_IMG \
     --style-file=stile_garmin/bdtre_strade \
     --show-profiles=1 \
+    --add-pois-to-areas \
     --draw-priority=19 \
     --transparent \
     --license-file=stile_garmin/bdtre_licenza.txt \

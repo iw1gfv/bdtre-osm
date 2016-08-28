@@ -57,9 +57,5 @@ ah_from_relation=yes 		{add mkgmap:label:1='${ahref} ${ahname}' | '${ahref}' | '
 
 <finalize>
 # The finalizer section is executed for each element when a rule with an element type matches
-
-include 'inc/address';
-# calculate the access rules
 include 'inc/access';
-
 name=* { name '${name}' }

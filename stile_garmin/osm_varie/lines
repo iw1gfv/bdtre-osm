@@ -19,10 +19,7 @@
 
 
 
-# Confini parchi nazionali e parchi (oasi, ecc)
-boundary=national_park | *=national_park		[0x10217 resolution 19 continue] 
-landuse=nature_reserve | boundary=nature_reserve | boundary=protected_area | landuse=protected_area	{set leisure=nature_reserve}
-leisure=nature_reserve		[0x10217 resolution 19 continue]
+natural=cliff | barrier=cliff		[0x10205 resolution 21]
 
 
 <finalize>

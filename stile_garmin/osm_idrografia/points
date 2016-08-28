@@ -19,13 +19,12 @@
 
 
 
-# Confini parchi nazionali e parchi (oasi, ecc)
-boundary=national_park | *=national_park		[0x10217 resolution 19 continue] 
-landuse=nature_reserve | boundary=nature_reserve | boundary=protected_area | landuse=protected_area	{set leisure=nature_reserve}
-leisure=nature_reserve		[0x10217 resolution 19 continue]
+
+natural=waterfall | waterway=waterfall & mkgmap:area2poi=true	[0x6508 resolution 21]
+natural=waterfall | waterway=waterfall				[0x6508 resolution 21]
 
 
 <finalize>
 # The finalizer section is executed for each element when a rule with an element type matches
-include 'inc/access';
 name=* { name '${name}' }
+include 'inc/address';

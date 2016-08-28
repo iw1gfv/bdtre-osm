@@ -48,11 +48,18 @@ python $ogr2osm --positive-id --id=$id --add-version --add-timestamp --force ./$
 # modifica i file osm in modo da far apaprire le scritte <caption> di mapsforge.
 
 cd ../$uscitaosm
+
+#Toponomastica
 sed -i 's/NOME/name/g' *_toponomastica_*
 
 #curve di livello rimuove anche gli zeri finali sulla quota
 sed -i 's/CV_LIV_Q/name/g' *_cv_liv_* 
 sed -i 's/.0000"\/><tag k/"\/><tag k/g' *_cv_liv_*
+
+
+#Punti quotati
+sed -i 's/QUOTA/name/g' *_p_altim_* 
+sed -i 's/[0-9][0-9][0-9]"\/>/"\/>/g' *_p_altim_*
 
 
 

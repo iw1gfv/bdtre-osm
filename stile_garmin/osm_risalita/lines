@@ -34,9 +34,5 @@ aerialway=chair_lift  | aerialway=mixed_lift 	{add mkgmap:label:1='Seggiovia ${n
 
 <finalize>
 # The finalizer section is executed for each element when a rule with an element type matches
-
-include 'inc/address';
-# calculate the access rules
 include 'inc/access';
-
 name=* { name '${name}' }

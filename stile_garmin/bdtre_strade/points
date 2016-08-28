@@ -20,6 +20,8 @@
 
 
 
-#Vertici di rete
-V_RETE_TY=raffittimento				{ name 'ID. ${V_RETE_ID}'} [0x6104 resolution 22]
-V_RETE_TY='rdn (rete dinamica nazionale)'	{ name 'ID. ${V_RETE_ID}'} [0x6102 resolution 22]
+#Strade
+AC_VEI_ZON=parcheggio & mkgmap:area2poi=true				[ 0x2f0b resolution 22 ]
+
+SV_STR_TY='area parcheggio' & mkgmap:area2poi=true			[ 0x2f0b resolution 22 ]
+SV_STR_TY='stazione di rifornimento carburante' & mkgmap:area2poi=true	[ 0x2f01 resolution 22 ]

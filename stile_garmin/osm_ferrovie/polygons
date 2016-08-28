@@ -25,6 +25,5 @@ landuse=railway [0x6 resolution 20]
 <finalize>
 # The finalizer section is executed for each element when a rule with an element type matches
 include 'inc/address';
-
 name=* { name '${name}' }
 
