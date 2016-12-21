@@ -54,11 +54,11 @@ finale="finale"
 Xmx=-Xmx15000M
 
 #copyrigt OSM
-copyrightosm="vedi www.openstreetmap.org/copyright"
+copyrightosm="openstreetmap data: (c) openstreetmap.org contributors, see http://wiki.openstreetmap.org/index.php/attribution"
 
 #inserimento del copyriht dei dati BDTRE
-copyright="Documento realizzato da $Licenziatario, basato su “BDTRE - Database GeoTopografico -
-2016"
+copyright="Documento realizzato da $Licenziatario, basato su 'BDTRE - Database GeoTopografico -
+2016' e su Carta Tecnica Regionale vettoriale in scala 1:10.000 della Regione Piemonte, [edizione 1991-2005]"
 
 #La Regione Piemonte chiede che nell'attribuzione della licenza compaia il nome di chi realizza la mappa
 #Inserisci il tuo nome alla voce Licenziatario
