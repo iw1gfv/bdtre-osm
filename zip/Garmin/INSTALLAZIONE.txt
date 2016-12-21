@@ -4,14 +4,14 @@ Mapsource
 Basecamp
 Qlandkartegt
 
-I file della mappa sono dentro la cartella mappe.
+I file della mappa si trovano all'interno della cartella mappe.
 
 
 >>>>>>>>>>>>>>INSTALLAZIONE E DISIONSTALLAZIONE SU MAPSOURCE E BASECAMP<<<<<<<<<<<<<<<<
 
 INSTALLAZIONE:
 
-1 Estrarre la cartella bdtre-osm-pc.... contenuta nel file zip sul computer.
+1 Estrarre la cartella Bdtre-osm-PC.... contenuta nel file zip sul computer.
 
 2 Chiudere il programma Mapsource / Basecamp, se aperto.
 
@@ -46,7 +46,7 @@ Non caricare la mappa su un gps tramite mapsource, scaricare da piemontegps.alte
 
 >>>>>>>>>>>>>>INSTALLAZIONE E DISINSTALLAZIONE SU QLANDKARTEGT<<<<<<<<<<<<<<<<
 
-1 Estrarre la cartella bdtre-osm-pc.... contenuta nel file zip sul computer.
+1 Estrarre la cartella Bdtre-osm-PC.... contenuta nel file zip sul computer.
 
 2 Aprire Qlandkartegt
 

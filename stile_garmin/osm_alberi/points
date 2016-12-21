@@ -19,20 +19,12 @@
 
 
 
-(aerialway=tbar | aerialway=t-bar | piste:lift=tbar | piste:lift=t-bar | aerialway=schlepplift | piste:lift=schlepplift | drag_lift=tbar | drag_lift=t-bar)	{add mkgmap:label:1='Skilift ${name}' | 'Skilift'}	[0x10012 resolution 21]
 
-aerialway=platter 				{add mkgmap:label:1='Skilift ${name}' | 'Skilift'}		[0x10012 resolution 21]
+natural=tree	[0x611e resolution 22]
 
-aerialway=drag_lift | piste:lift=drag_lift	{add mkgmap:label:1='Skilift ${name}' | 'Skilift'}		[0x10012 resolution 21]
-
-aerialway=cable_car				{add mkgmap:label:1='Funivia ${name}' | 'Funivia'}		[0x10013 resolution 21]
-
-aerialway=gondola				{add mkgmap:label:1='Cabinovia ${name}' | 'Cabinovia'}		[0x10013 resolution 21]
-
-aerialway=chair_lift  | aerialway=mixed_lift 	{add mkgmap:label:1='Seggiovia ${name}' | 'Seggiovia'}		[0x10013 resolution 21]
 
 
 <finalize>
 # The finalizer section is executed for each element when a rule with an element type matches
-include 'inc/access';
 name=* { name '${name}' }
+include 'inc/address';

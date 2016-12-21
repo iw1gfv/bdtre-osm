@@ -13,8 +13,7 @@ CodePage=1252
 
 ;=========== POLYGONES : PRIORITE DANS L'AFFICHAGE ======
 [_drawOrder]
-Type=0x10100,0
-Type=0x2,1
+Type=0x02,0
 Type=0x10f03,1
 Type=0x10f04,1
 Type=0x10f05,1
@@ -28,7 +27,6 @@ Type=0x45,1
 Type=0x4d,1
 Type=0x4f,1
 Type=0x51,1
-Type=0x05,2
 Type=0x1b,2
 Type=0x36,2
 Type=0x2f,2
@@ -58,6 +56,7 @@ Type=0x0e,4
 Type=0x17,4
 Type=0x55,4
 Type=0x22,4
+Type=0x05,5
 Type=0x06,5
 Type=0x08,5
 Type=0x09,5
@@ -77,6 +76,7 @@ Type=0x2d,6
 Type=0x41,6
 Type=0x10f0b,6
 Type=0x10f0c,6
+Type=0x10f0d,6
 Type=0x10f00,6
 Type=0x04,10
 Type=0x14,10
@@ -92,7 +92,10 @@ Type=0x15,10
 
 [_polygon]
 Type=0x02
+String1=0x05,Città
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 Xpm="0 0 1 0"
 "1 c #FFCAFF"
 [end]
@@ -192,6 +195,8 @@ Xpm="32 32 2 1"
 Type=0x06
 String1=0x05,Area ferroviaria
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 Xpm="0 0 1 0"
 "1 c #838383"
 [end]
@@ -201,7 +206,7 @@ Xpm="0 0 1 0"
 Type=0x07
 String1=0x05,Aeroporto
 ExtendedLabels=N
-FontStyle=SmallFont
+FontStyle=Default
 CustomColor=No
 Xpm="32 32 2 1"
 "! c #8080FF"
@@ -246,6 +251,8 @@ Xpm="32 32 2 1"
 Type=0x08
 String1=0x05,Area cani
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 Xpm="32 32 2 1"
 "! c #101010"
 "# c #A4A4A4"
@@ -334,7 +341,7 @@ Xpm="32 32 2 1"
 Type=0x0b
 String1=0x05,Ospedale
 ExtendedLabels=N
-FontStyle=SmallFont
+FontStyle=Default
 CustomColor=No
 Xpm="32 32 2 1"
 "! c #101010"
@@ -379,6 +386,8 @@ Xpm="32 32 2 1"
 Type=0x0c
 String1=0x05,Cava
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 Xpm="32 32 2 1"
 "! c #737373"
 "# c #101010"
@@ -422,7 +431,7 @@ Xpm="32 32 2 1"
 Type=0x0e
 String1=0x05,Eliporto
 ExtendedLabels=N
-FontStyle=SmallFont
+FontStyle=Default
 CustomColor=No
 Xpm="32 32 2 1"
 "! c #8080FF"
@@ -467,6 +476,8 @@ Xpm="32 32 2 1"
 Type=0x0f
 String1=0x05,Capannone industriale
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 Xpm="32 32 2 1"
 "! c #FFFFFF"
 "# c #606060"
@@ -510,6 +521,8 @@ Xpm="32 32 2 1"
 Type=0x10
 String1=0x05,Brughiera
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 Xpm="0 0 1 0"
 "1 c #80C000"
 [end]
@@ -519,7 +532,7 @@ Xpm="0 0 1 0"
 Type=0x14
 String1=0x05,Parco Nazionale
 ExtendedLabels=N
-FontStyle=SmallFont
+FontStyle=Default
 CustomColor=No
 Xpm="32 32 2 1"
 "! c #25821F"
@@ -564,7 +577,7 @@ Xpm="32 32 2 1"
 Type=0x15
 String1=0x05,Oasi / Riserva naturale
 ExtendedLabels=N
-FontStyle=SmallFont
+FontStyle=Default
 CustomColor=No
 Xpm="32 32 2 1"
 "! c #25821F"
@@ -609,6 +622,8 @@ Xpm="32 32 2 1"
 Type=0x17
 String1=0x05,Area verde
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 Xpm="32 32 2 1"
 "# c #009520"
 "! c #BDFF8B"
@@ -742,6 +757,8 @@ Xpm="32 32 2 1"
 Type=0x1a
 String1=0x05,Cimitero
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 Xpm="32 32 2 1"
 "! c #BDFF8B"
 "# c #202020"
@@ -785,6 +802,8 @@ Xpm="32 32 2 1"
 Type=0x1b
 String1=0x05,Spiaggia
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 Xpm="32 32 2 1"
 "! c #FFFF8B"
 "# c #BD956A"
@@ -828,7 +847,7 @@ Xpm="32 32 2 1"
 Type=0x22
 String1=0x05,Zoo
 ExtendedLabels=N
-FontStyle=SmallFont
+FontStyle=Default
 CustomColor=No
 Xpm="32 32 2 1"
 "! c #88D685"
@@ -918,6 +937,8 @@ Xpm="32 32 2 1"
 Type=0x26
 String1=0x05,Zona pietrosa
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 Xpm="32 32 2 1"
 "! c #C0C0C0"
 "# c #A0A0A0"
@@ -972,6 +993,8 @@ Xpm="0 0 1 0"
 Type=0x28
 String3=0x05,Edificio tecnico
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 Xpm="0 0 1 0"
 "1 c #FF80C0"
 [end]
@@ -981,6 +1004,8 @@ Xpm="0 0 1 0"
 Type=0x2a
 String1=0x05,Strada
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 Xpm="0 0 1 0"
 "1 c #FFC000"
 [end]
@@ -990,6 +1015,8 @@ Xpm="0 0 1 0"
 Type=0x2b
 String1=0x05,Stalla
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 Xpm="32 32 2 1"
 "! c #808040"
 "# c #FFC040"
@@ -1133,6 +1160,8 @@ Xpm="32 32 2 1"
 Type=0x2f
 String1=0x05,Area pedonale
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 Xpm="0 0 1 0"
 "1 c #BDFFFF"
 [end]
@@ -1142,6 +1171,8 @@ Xpm="0 0 1 0"
 Type=0x31
 String1=0x05,Strada in galleria/sottopasso
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 Xpm="0 0 1 0"
 "1 c #FFC000"
 [end]
@@ -1160,6 +1191,8 @@ Xpm="0 0 1 0"
 Type=0x33
 String1=0x05,Ponte/Viadotto
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 Xpm="0 0 1 0"
 "1 c #808080"
 [end]
@@ -1169,6 +1202,8 @@ Xpm="0 0 1 0"
 Type=0x34
 String1=0x05,Strada campestre
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 Xpm="0 0 1 0"
 "1 c #FF4000"
 [end]
@@ -1178,6 +1213,8 @@ Xpm="0 0 1 0"
 Type=0x35
 String1=0x05,Zona rocciosa
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 Xpm="0 0 1 0"
 "1 c #C5C5C5"
 [end]
@@ -1187,6 +1224,8 @@ Xpm="0 0 1 0"
 Type=0x36
 String1=0x05,Isola spartitraffico
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 Xpm="0 0 1 0"
 "1 c #FFC040"
 [end]
@@ -1196,6 +1235,8 @@ Xpm="0 0 1 0"
 Type=0x37
 String1=0x05,Scalinata
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 Xpm="0 0 1 0"
 "1 c #FFC000"
 [end]
@@ -1205,6 +1246,8 @@ Xpm="0 0 1 0"
 Type=0x36
 String1=0x05,Distributore carburante
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 Xpm="0 0 1 0"
 "1 c #FFC040"
 [end]
@@ -1214,7 +1257,7 @@ Xpm="0 0 1 0"
 Type=0x3c
 String1=0x05,Lago
 ExtendedLabels=N
-FontStyle=SmallFont
+FontStyle=Default
 CustomColor=No
 Xpm="0 0 1 0"
 "1 c #98CCF8"
@@ -1225,7 +1268,7 @@ Xpm="0 0 1 0"
 Type=0x3f
 String1=0x05,Lago artificiale
 ExtendedLabels=N
-FontStyle=SmallFont
+FontStyle=Default
 CustomColor=No
 Xpm="0 0 1 0"
 "1 c #98CCF8"
@@ -1236,6 +1279,8 @@ Xpm="0 0 1 0"
 Type=0x41
 String1=0x05,Edificio ferroviario
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 Xpm="32 32 2 1"
 "! c #FFCAB4"
 "# c #949494"
@@ -1279,6 +1324,8 @@ Xpm="32 32 2 1"
 Type=0x45
 String1=0x05,Ghiaione
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 Xpm="32 32 2 1"
 "! c #B4B4B4"
 "  c none"
@@ -1322,7 +1369,7 @@ Xpm="32 32 2 1"
 Type=0x46
 String1=0x05,Fiume
 ExtendedLabels=N
-FontStyle=NormalFont
+FontStyle=Default
 CustomColor=No
 Xpm="0 0 1 0"
 "1 c #3995FF"
@@ -1334,7 +1381,7 @@ Xpm="0 0 1 0"
 Type=0x47
 String1=0x05,Fiume sotterraneo
 ExtendedLabels=N
-FontStyle=NormalFont
+FontStyle=Default
 CustomColor=No
 Xpm="0 0 1 0"
 "1 c #6064F8"
@@ -1390,6 +1437,8 @@ Xpm="32 32 2 1"
 Type=0x4f
 String1=0x05,Zona ripariale/rupestre
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 Xpm="32 32 2 1"
 "! c #00FC00"
 "# c #F8FCC8"
@@ -1433,6 +1482,8 @@ Xpm="32 32 2 1"
 Type=0x50
 String1=0x05,Bosco
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 Xpm="32 32 2 1"
 "! c #258725"
 "# c #C8F2A4"
@@ -1476,6 +1527,8 @@ Xpm="32 32 2 1"
 Type=0x51
 String1=0x05,Zona umida
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 Xpm="32 32 2 1"
 "! c #101010"
 "# c #BDCAFF"
@@ -1519,19 +1572,10 @@ Xpm="32 32 2 1"
 Type=0x55
 String1=0x05,Chiusa
 ExtendedLabels=N
-FontStyle=NormalFont
+FontStyle=Default
 CustomColor=No
 Xpm="0 0 1 0"
 "1 c #101010"
-[end]
-
-
-
-[_polygon]
-Type=0x10100
-ExtendedLabels=N
-Xpm="0 0 1 0"
-"1 c #FFFFFF"
 [end]
 
 
@@ -1539,6 +1583,8 @@ Xpm="0 0 1 0"
 Type=0x10101
 String1=0x05,Argine
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 Xpm="0 0 1 0"
 "1 c #BD9520"
 [end]
@@ -1548,6 +1594,8 @@ Xpm="0 0 1 0"
 Type=0x10104
 String1=0x05,Parco giochi
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 Xpm="32 32 2 1"
 "! c #009520"
 "# c #BDFF8B"
@@ -1591,7 +1639,7 @@ Xpm="32 32 2 1"
 Type=0x10f00
 String1=0x05,Area commerciale
 ExtendedLabels=N
-FontStyle=SmallFont
+FontStyle=Default
 CustomColor=No
 Xpm="32 32 2 1"
 "! c #D5D5D5"
@@ -1636,6 +1684,8 @@ Xpm="32 32 2 1"
 Type=0x10f01
 String1=0x05,Area industriale
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 Xpm="32 32 2 1"
 "! c #A4A4A4"
 "# c #D5D5D5"
@@ -1679,6 +1729,8 @@ Xpm="32 32 2 1"
 Type=0x10f02
 String1=0x05,Diga
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 Xpm="32 32 2 1"
 "! c #C5C5C5"
 "# c #101010"
@@ -1722,6 +1774,8 @@ Xpm="32 32 2 1"
 Type=0x10f03
 String1=0x05,Vigneto
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 Xpm="32 32 2 1"
 "! c #FF656A"
 "# c #00FF40"
@@ -1765,6 +1819,8 @@ Xpm="32 32 2 1"
 Type=0x10f04
 String1=0x05,Pascolo
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 Xpm="32 32 2 1"
 "! c #BDCA20"
 "# c #00BB00"
@@ -1808,6 +1864,8 @@ Xpm="32 32 2 1"
 Type=0x10f05
 String1=0x05,Orto
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 Xpm="32 32 2 1"
 "! c #00FC00"
 "# c #F8FCC8"
@@ -1851,7 +1909,7 @@ Xpm="32 32 2 1"
 Type=0x10f06
 String1=0x05,Scarpata
 ExtendedLabels=N
-FontStyle=SmallFont
+FontStyle=Default
 CustomColor=No
 Xpm="32 32 2 1"
 "! c #BD308B"
@@ -1896,6 +1954,8 @@ Xpm="32 32 2 1"
 Type=0x10f07
 String1=0x05,Impianto fotovoltaico
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 Xpm="32 32 2 1"
 "! c #FFFF00"
 "# c #838383"
@@ -1939,6 +1999,8 @@ Xpm="32 32 2 1"
 Type=0x10f08
 String1=0x05,Depuratore
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 Xpm="0 0 1 0"
 "1 c #0000F8"
 [end]
@@ -1948,6 +2010,8 @@ Xpm="0 0 1 0"
 Type=0x10f09
 String1=0x05,Seminativi
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 Xpm="0 0 1 0"
 "1 c #BDCA00"
 [end]
@@ -1957,6 +2021,8 @@ Xpm="0 0 1 0"
 Type=0x10f0a
 String1=0x05,Uliveti
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 Xpm="32 32 2 1"
 "! c #BD9500"
 "# c #7BFF00"
@@ -2000,6 +2066,8 @@ Xpm="32 32 2 1"
 Type=0x10f0b
 String1=0x05,Muro
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 Xpm="32 32 2 1"
 "! c #800000"
 "# c #000000"
@@ -2043,6 +2111,8 @@ Xpm="32 32 2 1"
 Type=0x10f0c
 String1=0x05,Terrapieno
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 Xpm="0 0 1 0"
 "1 c #BD9520"
 [end]
@@ -2052,6 +2122,8 @@ Xpm="0 0 1 0"
 Type=0x10f0d
 String1=0x05,Cortile
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 Xpm="0 0 1 0"
 "1 c #FF6500"
 [end]
@@ -2061,6 +2133,8 @@ Xpm="0 0 1 0"
 Type=0x10f0f
 String1=0x05,Frutteto
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 Xpm="32 32 2 1"
 "! c #FF6500"
 "# c #00CA00"
@@ -2149,6 +2223,8 @@ Xpm="32 32 2 1"
 Type=0x10f11
 String1=0x05,Risaie
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 Xpm="32 32 2 1"
 "! c #0000F8"
 "# c #F8FCC8"
@@ -2201,6 +2277,8 @@ Xpm="0 0 2 0"
 "2 c #000000"
 String1=0x05,Autostrada
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 [end]
 
 
@@ -2214,6 +2292,8 @@ Xpm="0 0 2 0"
 "2 c #000000"
 String1=0x05,Autostrada
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 [end]
 
 
@@ -2227,6 +2307,8 @@ Xpm="0 0 2 0"
 "2 c #808080"
 String1=0x05,Strada principale
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 [end]
 
 
@@ -2240,6 +2322,8 @@ Xpm="0 0 2 0"
 "2 c #000000"
 String1=0x05,Strada secondaria
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 [end]
 
 
@@ -2253,6 +2337,8 @@ Xpm="0 0 2 0"
 "2 c #000000"
 String1=0x05,Strada locale
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 [end]
 
 
@@ -2266,6 +2352,8 @@ Xpm="0 0 2 0"
 "2 c #404040"
 String1=0x05,Via
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 [end]
 
 
@@ -2275,8 +2363,10 @@ UseOrientation=Y
 LineWidth=2
 Xpm="0 0 1 0"
 "1 c #FFC040"
-String1=0x05,via
+String1=0x05,Via
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 [end]
 
 
@@ -2288,7 +2378,10 @@ BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #FFFF80"
 "2 c #101010"
+String1=0x05,Raccordo
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 [end]
 
 
@@ -2298,7 +2391,10 @@ UseOrientation=Y
 LineWidth=2
 Xpm="0 0 1 0"
 "1 c #4080FF"
+String1=0x05,Raccordo autostradale
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 [end]
 
 
@@ -2314,6 +2410,8 @@ Xpm="32 3 2  1"
 ;12345678901234567890123456789012
 String1=0x05,Ferrovia in disuso
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 [end]
 
 
@@ -2325,7 +2423,10 @@ BorderWidth=0
 Xpm="0 0 2 0"
 "1 c #A87800"
 "2 c #000000"
+String1=0x05,Sentiero
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 [end]
 
 
@@ -2339,6 +2440,8 @@ Xpm="0 0 2 0"
 "2 c #000000"
 String1=0x05,Rotatoria
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 [end]
 
 
@@ -2350,7 +2453,10 @@ BorderWidth=0
 Xpm="0 0 2 0"
 "1 c #F80000"
 "2 c #800000"
+String1=0x05,Sentiero
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 [end]
 
 
@@ -2362,7 +2468,10 @@ BorderWidth=0
 Xpm="0 0 2 0"
 "1 c #0C42C2"
 "2 c #FFFFFF"
+String1=0x05,Sentiero
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 [end]
 
 
@@ -2374,8 +2483,10 @@ BorderWidth=0
 Xpm="0 0 2 0"
 "1 c #DE2E1B"
 "2 c #FFFFFF"
-String1=0x05,strada sterrata
+String1=0x05,Strada sterrata
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 [end]
 
 
@@ -2387,7 +2498,10 @@ BorderWidth=0
 Xpm="0 0 2 0"
 "1 c #FF9404"
 "2 c #FFFFFF"
+String1=0x05,Sentiero
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 [end]
 
 
@@ -2399,8 +2513,10 @@ BorderWidth=0
 Xpm="0 0 2 0"
 "1 c #333131"
 "2 c #FFFFFF"
-String1=0x04,Fu
+String1=0x05,Percorso pedonale
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 [end]
 
 
@@ -2415,6 +2531,8 @@ Xpm="32 2 2  1"
 ;12345678901234567890123456789012
 String1=0x05,Pista
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 [end]
 
 
@@ -2430,6 +2548,8 @@ Xpm="32 3 2  1"
 ;12345678901234567890123456789012
 String1=0x05,Ferrovia
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 [end]
 
 
@@ -2441,6 +2561,8 @@ Xpm="0 0 1 0"
 "1 c #3995FF"
 String1=0x05,Canale
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 [end]
 
 
@@ -2455,6 +2577,8 @@ Xpm="32 2 2  1"
 ;12345678901234567890123456789012
 String1=0x05,Pista ciclabile
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 [end]
 
 
@@ -2472,6 +2596,8 @@ Xpm="32 5 2  1"
 ;12345678901234567890123456789012
 String1=0x05,Scalinata
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 [end]
 
 
@@ -2483,8 +2609,10 @@ Xpm="32 1 2  1"
 "  c none"
 "!!!!    !!!!    !!!!    !!!!    "
 ;12345678901234567890123456789012
-String1=0x05,traghetto passeggeri
+String1=0x05,Traghetto passeggeri
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 [end]
 
 
@@ -2497,8 +2625,9 @@ Xpm="32 2 2  1"
 "!!!!####!!!!####!!!!####!!!!####"
 "!!!!####!!!!####!!!!####!!!!####"
 ;12345678901234567890123456789012
+String1=0x05,Confine
 ExtendedLabels=N
-FontStyle=LargeFont
+FontStyle=NoLabel (invisible)
 CustomColor=No
 [end]
 
@@ -2511,8 +2640,9 @@ BorderWidth=0
 Xpm="0 0 2 0"
 "1 c #FF3000"
 "2 c #C0C4C0"
+String1=0x05,Confine
 ExtendedLabels=N
-FontStyle=NormalFont
+FontStyle=NoLabel (invisible)
 CustomColor=No
 [end]
 
@@ -2525,7 +2655,10 @@ BorderWidth=0
 Xpm="0 0 2 0"
 "1 c #000000"
 "2 c #F8FCF8"
+String1=0x05,Confine
 ExtendedLabels=N
+FontStyle=NoLabel (invisible)
+CustomColor=No
 [end]
 
 
@@ -2552,7 +2685,7 @@ Xpm="0 0 1 0"
 "1 c #BD958B"
 String1=0x05,Curva intermedia
 ExtendedLabels=N
-FontStyle=SmallFont
+FontStyle=Default
 CustomColor=No
 [end]
 
@@ -2566,7 +2699,7 @@ Xpm="0 0 1 0"
 "1 c #BD958B"
 String1=0x05,Curva direttrice
 ExtendedLabels=N
-FontStyle=SmallFont
+FontStyle=Default
 CustomColor=No
 [end]
 
@@ -2595,6 +2728,8 @@ Xpm="32 1 2  1"
 ;12345678901234567890123456789012
 String1=0x05,Divisione del terreno
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 [end]
 
 
@@ -2611,7 +2746,7 @@ Xpm="32 4 2  1"
 ;12345678901234567890123456789012
 String1=0x05,Filare di alberi/siepe
 ExtendedLabels=N
-FontStyle=NormalFont
+FontStyle=Default
 CustomColor=No
 [end]
 
@@ -2624,6 +2759,8 @@ Xpm="0 0 1 0"
 "1 c #6064F8"
 String1=0x05,Canale sotterraneo
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 [end]
 
 
@@ -2651,6 +2788,8 @@ Xpm="32 1 2  1"
 "  !!!  !  !!!  !  !!!  !  !!!  !"
 ;12345678901234567890123456789012
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 [end]
 
 
@@ -2712,8 +2851,10 @@ Xpm="32 3 2  1"
 "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 "!       !       !       !       "
 ;12345678901234567890123456789012
-String1=0x05,Ski lift
+String1=0x05,Skilift
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 [end]
 
 
@@ -2729,9 +2870,29 @@ Xpm="32 5 2  1"
 " ! !                            "
 " !!!                            "
 ;12345678901234567890123456789012
-String1=0x05,Cable_car
+String1=0x05,Funivia
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 [end]
+
+
+[_line]
+Type=0x10014
+UseOrientation=N
+Xpm="32 3 2  1"
+"! c #000000"
+"  c none"
+"!!!!    !!!!    !!!!    !!!!    "
+"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+"!!!!    !!!!    !!!!    !!!!    "
+;12345678901234567890123456789012
+String1=0x05,Tapis roulant
+ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
+[end]
+
 
 
 [_line]
@@ -2744,8 +2905,10 @@ Xpm="32 3 2  1"
 "!!!!!!!!########!!!!!!!!########"
 "!!!!!!!!########!!!!!!!!########"
 ;12345678901234567890123456789012
-String1=0x05,Tram
+String1=0x05,Linea Tramviaria
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 [end]
 
 
@@ -2782,6 +2945,8 @@ Xpm="32 4 2  1"
 ;12345678901234567890123456789012
 String1=0x05,Scogliera
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 [end]
 
 
@@ -2854,7 +3019,7 @@ DayXpm="10 10 15 1"   Colormode=16
 Type=0x008
 SubType=0x00
 ExtendedLabels=N
-FontStyle=NormalFont
+FontStyle=Default
 CustomColor=No
 DayXpm="8 8 8 1"   Colormode=16
 "!	c #009000"
@@ -2881,7 +3046,7 @@ DayXpm="8 8 8 1"   Colormode=16
 Type=0x00a
 SubType=0x00
 ExtendedLabels=N
-FontStyle=NormalFont
+FontStyle=Default
 CustomColor=No
 DayXpm="8 8 8 1"   Colormode=16
 "!	c #009000"
@@ -2908,7 +3073,7 @@ DayXpm="8 8 8 1"   Colormode=16
 Type=0x00b
 SubType=0x00
 ExtendedLabels=N
-FontStyle=NormalFont
+FontStyle=Default
 CustomColor=No
 DayXpm="8 8 8 1"   Colormode=16
 "!	c #009000"
@@ -2935,6 +3100,8 @@ DayXpm="8 8 8 1"   Colormode=16
 Type=0x00c
 SubType=0x00
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="6 6 5 1"   Colormode=16
 "!	c #00A000"
 "#	c #F8FCF8"
@@ -2955,6 +3122,8 @@ DayXpm="6 6 5 1"   Colormode=16
 Type=0x00d
 SubType=0x00
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="6 6 5 1"   Colormode=16
 "!	c #00A000"
 "#	c #F8FCF8"
@@ -2976,6 +3145,8 @@ Type=0x016
 SubType=0x00
 String1=0x05,Maneggio
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 14 76 2"   Colormode=16
 "!!	c #FFFFFF"
 "!#	c #F3F3F3"
@@ -3076,6 +3247,8 @@ Type=0x016
 SubType=0x01
 String1=0x05,Castello
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="10 13 2 1"   Colormode=16
 "!	c #000000"
 "  	c none"
@@ -3101,6 +3274,8 @@ Type=0x016
 SubType=0x02
 String1=0x05,Resti di castello
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="11 13 5 1"   Colormode=16
 "!	c #808080"
 "#	c #000000"
@@ -3127,17 +3302,19 @@ DayXpm="11 13 5 1"   Colormode=16
 [_point]
 Type=0x016
 SubType=0x03
-String1=0x05,civico
+String1=0x05,Numero civico
 ExtendedLabels=N
-FontStyle=NormalFont
+FontStyle=Default
 CustomColor=No
-DayXpm="4 4 1 1"   Colormode=16
-"  	c none"
-"    "
-"    "
-"    "
-"    "
-;1234
+DayXpm="5 5 2 1"   Colormode=0
+"#	c #000000"
+"!	c #F8FCF8"
+"!!!!!"
+"!###!"
+"!###!"
+"!###!"
+"!!!!!"
+;12345
 [end]
 
 
@@ -3146,6 +3323,8 @@ Type=0x016
 SubType=0x07
 String1=0x05,Guado
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="11 5 5 1"   Colormode=16
 "!	c #000000"
 "#	c #C0C0C0"
@@ -3166,6 +3345,8 @@ Type=0x016
 SubType=0x08
 String1=0x05,Traliccio
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="7 16 3 1"   Colormode=16
 "!	c #303030"
 "#	c #808080"
@@ -3195,6 +3376,8 @@ Type=0x016
 SubType=0x09
 String1=0x05,Portale
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="20 16 3 1"   Colormode=16
 "!	c #303030"
 "#	c #808080"
@@ -3224,6 +3407,8 @@ Type=0x016
 SubType=0x0c
 String1=0x05, Fontana
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="11 13 2 1"   Colormode=16
 "!	c #0026FF"
 "#	c #FFFFFF"
@@ -3249,6 +3434,8 @@ Type=0x016
 SubType=0x11
 String1=0x05,Antenna/ripetitore
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="13 14 4 1"   Colormode=16
 "!	c #000000"
 "#	c #080808"
@@ -3275,8 +3462,10 @@ DayXpm="13 14 4 1"   Colormode=16
 [_point]
 Type=0x016
 SubType=0x1b
-String1=0x04,Wegkreuz
+String1=0x05,Edicola votiva
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="8 11 2 1"   Colormode=16
 "!	c #000000"
 "  	c none"
@@ -3300,6 +3489,8 @@ Type=0x01b
 SubType=0x01
 String1=0x05,Parco giochi
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="12 10 48 2"   Colormode=16
 "!!	c #FFFFFF"
 "!#	c #F8F8F8"
@@ -3368,6 +3559,8 @@ Type=0x01b
 SubType=0x0d
 String1=0x05,Monumento
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="8 11 2 1"   Colormode=16
 "!	c #000000"
 "  	c none"
@@ -3391,6 +3584,8 @@ Type=0x01c
 SubType=0x02
 String1=0x05,Area cani
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 16 4 1"   Colormode=16
 "!	c #888888"
 "#	c #222222"
@@ -3421,6 +3616,8 @@ Type=0x01c
 SubType=0x04
 String1=0x05,Passaggio a livello
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="11 16 4 1"   Colormode=16
 "!	c #C0C0C0"
 "#	c #FF0000"
@@ -3451,6 +3648,8 @@ Type=0x020
 SubType=0x00
 String1=0x05,Uscita
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 13 56 2"   Colormode=32
 "!!	c #FFFFFF"  alpha=0
 "!#	c #7F7F7F"  alpha=0
@@ -3528,8 +3727,9 @@ DayXpm="16 13 56 2"   Colormode=32
 [_point]
 Type=0x021
 SubType=0x0f
+String1=0x05,Area di servizio
 ExtendedLabels=N
-FontStyle=NormalFont
+FontStyle=Default
 CustomColor=No
 DayXpm="5 5 2 1"   Colormode=16
 "!	c #FFFFFF"
@@ -3546,8 +3746,9 @@ DayXpm="5 5 2 1"   Colormode=16
 [_point]
 Type=0x028
 SubType=0x00
+String1=0x05, Località
 ExtendedLabels=N
-FontStyle=NormalFont
+FontStyle=Default
 CustomColor=No
 DayXpm="6 6 5 1"   Colormode=16
 "!	c #00A000"
@@ -3570,6 +3771,8 @@ Type=0x02a
 SubType=0x00
 String1=0x05, Ristorante
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 16 26 2"   Colormode=16
 "!!	c #38D8D0"
 "!#	c #F8FCF8"
@@ -3622,6 +3825,8 @@ Type=0x02a
 SubType=0x01
 String1=0x05,Ristorante Americano
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="26 20 32 2"   Colormode=16
 "!!	c #000000"
 "!#	c #202020"
@@ -3684,6 +3889,8 @@ Type=0x02a
 SubType=0x02
 String1=0x05,Ristorante Asiatico
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 16 19 2"   Colormode=16
 "!!	c #F8C058"
 "!#	c #F8FCF8"
@@ -3729,6 +3936,8 @@ Type=0x02a
 SubType=0x03
 String1=0x05,Barbecue
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 16 26 2"   Colormode=16
 "!!	c #38D8D0"
 "!#	c #F8FCF8"
@@ -3781,6 +3990,8 @@ Type=0x02a
 SubType=0x04
 String1=0x05,Ristorante cinese
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 16 12 1"   Colormode=16
 "!	c #000000"
 "#	c #BD6500"
@@ -3817,8 +4028,10 @@ DayXpm="16 16 12 1"   Colormode=16
 [_point]
 Type=0x02a
 SubType=0x05
-String1=0x05,Ristorante graco
+String1=0x05,Ristorante greco
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 16 34 2"   Colormode=16
 "!!	c #F0A438"
 "!#	c #F8FCF8"
@@ -3879,6 +4092,8 @@ Type=0x02a
 SubType=0x06
 String1=0x05,Ristorante cucina internazionale
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 16 26 2"   Colormode=16
 "!!	c #38D8D0"
 "!#	c #F8FCF8"
@@ -3931,6 +4146,8 @@ Type=0x02a
 SubType=0x07
 String1=0x05,Fast food
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 16 23 2"   Colormode=16
 "!!	c #000000"
 "!#	c #FFFFFF"
@@ -3980,6 +4197,8 @@ Type=0x02a
 SubType=0x08
 String1=0x05,Ristorante italiano
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="26 20 32 2"   Colormode=16
 "!!	c #000000"
 "!#	c #202020"
@@ -4042,6 +4261,8 @@ Type=0x02a
 SubType=0x09
 String1=0x05, Ristorante messicano
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="26 20 33 2"   Colormode=16
 "!!	c #000000"
 "!#	c #202020"
@@ -4105,6 +4326,8 @@ Type=0x02a
 SubType=0x0a
 String1=0x05,Pizza
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="18 18 26 2"   Colormode=16
 "!!	c #000000"
 "!#	c #7B0000"
@@ -4159,6 +4382,8 @@ Type=0x02a
 SubType=0x0b
 String1=0x05,Ristorante di pesce
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 16 17 1"   Colormode=16
 "!	c #980000"
 "#	c #F8FCF8"
@@ -4200,8 +4425,10 @@ DayXpm="16 16 17 1"   Colormode=16
 [_point]
 Type=0x02a
 SubType=0x0c
-String1=0x05,Steak
+String1=0x05,Steakhouse
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 16 36 2"   Colormode=16
 "!!	c #000000"
 "!#	c #390000"
@@ -4264,6 +4491,8 @@ Type=0x02a
 SubType=0x0d
 String1=0x05,Donuts
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 16 26 2"   Colormode=16
 "!!	c #38D8D0"
 "!#	c #F8FCF8"
@@ -4314,8 +4543,10 @@ DayXpm="16 16 26 2"   Colormode=16
 [_point]
 Type=0x02a
 SubType=0x0e
-String1=0x05,Cafe
+String1=0x05,Cafè
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="17 15 7 1"   Colormode=16
 "!	c #101010"
 "#	c #7B656A"
@@ -4348,6 +4579,8 @@ Type=0x02a
 SubType=0x0f
 String1=0x05,Ristorante francese
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="26 20 32 2"   Colormode=16
 "!!	c #000000"
 "!#	c #202020"
@@ -4410,6 +4643,8 @@ Type=0x02a
 SubType=0x10
 String1=0x05,Ristorante tedesco
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="26 20 33 2"   Colormode=16
 "!!	c #000000"
 "!#	c #202020"
@@ -4473,6 +4708,8 @@ Type=0x02a
 SubType=0x11
 String1=0x05,Ristorante inglese
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="26 20 32 2"   Colormode=16
 "!!	c #000000"
 "!#	c #202020"
@@ -4535,6 +4772,8 @@ Type=0x02a
 SubType=0x12
 String1=0x05,Ristorante vegano
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 16 26 2"   Colormode=16
 "!!	c #38D8D0"
 "!#	c #F8FCF8"
@@ -4587,6 +4826,8 @@ Type=0x02a
 SubType=0x13
 String1=0x05,Ristorante vegetariano
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 16 26 2"   Colormode=16
 "!!	c #38D8D0"
 "!#	c #F8FCF8"
@@ -4639,6 +4880,8 @@ Type=0x02a
 SubType=0x14
 String1=0x05,Ristorante cucina tipica
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 16 26 2"   Colormode=16
 "!!	c #38D8D0"
 "!#	c #F8FCF8"
@@ -4691,6 +4934,8 @@ Type=0x02a
 SubType=0x15
 String1=0x05,Burger
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 16 23 2"   Colormode=16
 "!!	c #000000"
 "!#	c #FFFFFF"
@@ -4738,7 +4983,10 @@ DayXpm="16 16 23 2"   Colormode=16
 [_point]
 Type=0x02a
 SubType=0x16
+String1=0x05,Ristorante specialità pollo
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 16 26 2"   Colormode=16
 "!!	c #38D8D0"
 "!#	c #F8FCF8"
@@ -4789,8 +5037,10 @@ DayXpm="16 16 26 2"   Colormode=16
 [_point]
 Type=0x02a
 SubType=0x17
-String1=0x05,Crepe
+String1=0x05,Crepes
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 16 26 2"   Colormode=16
 "!!	c #38D8D0"
 "!#	c #F8FCF8"
@@ -4843,6 +5093,8 @@ Type=0x02a
 SubType=0x18
 String1=0x05,Curry
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 16 26 2"   Colormode=16
 "!!	c #38D8D0"
 "!#	c #F8FCF8"
@@ -4895,6 +5147,8 @@ Type=0x02a
 SubType=0x19
 String1=0x05,Ristorante turco
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 16 26 2"   Colormode=16
 "!!	c #38D8D0"
 "!#	c #F8FCF8"
@@ -4947,6 +5201,8 @@ Type=0x02a
 SubType=0x1a
 String1=0x05,Fish and chips
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 16 26 2"   Colormode=16
 "!!	c #38D8D0"
 "!#	c #F8FCF8"
@@ -4999,6 +5255,8 @@ Type=0x02a
 SubType=0x1b
 String1=0x05,Pasta
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 16 26 2"   Colormode=16
 "!!	c #38D8D0"
 "!#	c #F8FCF8"
@@ -5051,6 +5309,8 @@ Type=0x02a
 SubType=0x1c
 String1=0x05,Ristorante
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 16 26 2"   Colormode=16
 "!!	c #38D8D0"
 "!#	c #F8FCF8"
@@ -5103,6 +5363,8 @@ Type=0x02a
 SubType=0x1d
 String1=0x05,Panini
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 16 156 2"   Colormode=32
 "!!	c #000000"  alpha=15
 "!#	c #4C1000"  alpha=12
@@ -5285,6 +5547,8 @@ Type=0x02a
 SubType=0x1e
 String1=0x05,Biergarten
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 16 172 2"   Colormode=32
 "!!	c #000000"  alpha=15
 "!#	c #DCD6BD"  alpha=0
@@ -5483,6 +5747,8 @@ Type=0x02a
 SubType=0x1f
 String1=0x05,Sushi
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 16 26 2"   Colormode=16
 "!!	c #38D8D0"
 "!#	c #F8FCF8"
@@ -5535,6 +5801,8 @@ Type=0x02b
 SubType=0x00
 String1=0x05,Hotel
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="15 15 2 1"   Colormode=16
 "!	c #39FF00"
 "#	c #FFFFFF"
@@ -5562,6 +5830,8 @@ Type=0x02b
 SubType=0x01
 String1=0x05,Motel
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 16 79 2"   Colormode=32
 "!!	c #FFFFFF"  alpha=0
 "!#	c #838383"  alpha=0
@@ -5667,6 +5937,8 @@ Type=0x02b
 SubType=0x02
 String1=0x05,Bed and Breakfast
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 16 96 2"   Colormode=32
 "!!	c #FFFFFF"  alpha=0
 "!#	c #FEFEFE"  alpha=0
@@ -5789,6 +6061,8 @@ Type=0x02b
 SubType=0x03
 String1=0x05,Campeggio
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="15 15 2 1"   Colormode=16
 "!	c #FFFFFF"
 "#	c #101010"
@@ -5816,6 +6090,8 @@ Type=0x02b
 SubType=0x04
 String1=0x05,Resort
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="14 11 19 2"   Colormode=16
 "!!	c #006400"
 "!#	c #F8FCF8"
@@ -5856,6 +6132,8 @@ Type=0x02b
 SubType=0x06
 String1=0x05,Ostello
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 16 61 2"   Colormode=32
 "!!	c #FFFFFF"  alpha=0
 "!#	c #D4D4D4"  alpha=0
@@ -5941,8 +6219,10 @@ DayXpm="16 16 61 2"   Colormode=32
 [_point]
 Type=0x02b
 SubType=0x07
-String1=0x05,Caravan
+String1=0x05,Area camper
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 10 59 2"   Colormode=32
 "!!	c #000000"  alpha=15
 "!#	c #0D0D0D"  alpha=15
@@ -6022,6 +6302,8 @@ Type=0x02b
 SubType=0x08
 String1=0x05,Rifugio/bivacco
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 16 198 2"   Colormode=32
 "!!	c #000000"  alpha=15
 "!#	c #4096E2"  alpha=14
@@ -6246,6 +6528,8 @@ Type=0x02b
 SubType=0x09
 String1=0x05,Chalet
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 16 64 2"   Colormode=32
 "!!	c #FFFFFF"  alpha=0
 "!#	c #FBFBFB"  alpha=0
@@ -6336,6 +6620,8 @@ Type=0x02c
 SubType=0x01
 String1=0x05,Parco a tema
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 16 42 2"   Colormode=16
 "!!	c #300000"
 "!#	c #F8FCF8"
@@ -6404,6 +6690,8 @@ Type=0x02c
 SubType=0x02
 String1=0x05,Museo
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 16 86 2"   Colormode=32
 "!!	c #000000"  alpha=15
 "!#	c #333333"  alpha=9
@@ -6516,6 +6804,8 @@ Type=0x02c
 SubType=0x03
 String1=0x05,Biblioteca
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="18 16 5 1"   Colormode=16
 "!	c #B83000"
 "#	c #F8FCF8"
@@ -6545,7 +6835,10 @@ DayXpm="18 16 5 1"   Colormode=16
 [_point]
 Type=0x02c
 SubType=0x04
+String1=0x05,Attrazione turistica
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="14 12 30 2"   Colormode=16
 "!!	c #0874F8"
 "!#	c #F8FCF8"
@@ -6598,6 +6891,8 @@ Type=0x02c
 SubType=0x05
 String1=0x05,Istituto scolastico
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 11 13 1"   Colormode=16
 "!	c #909490"
 "#	c #F8FCF8"
@@ -6630,8 +6925,10 @@ DayXpm="16 11 13 1"   Colormode=16
 [_point]
 Type=0x02c
 SubType=0x06
-String1=0x01,
+String1=0x05,Parco
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="5 7 3 1"   Colormode=16
 "!	c #009541"
 "#	c #101010"
@@ -6652,6 +6949,8 @@ Type=0x02c
 SubType=0x07
 String1=0x05,Zoo
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 14 106 2"   Colormode=32
 "!!	c #000000"  alpha=15
 "!#	c #FFFFFF"  alpha=11
@@ -6782,6 +7081,8 @@ Type=0x02c
 SubType=0x09
 String1=0x05,Sala concerti
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="14 12 18 2"   Colormode=16
 "!!	c #F8E068"
 "!#	c #F8FCF8"
@@ -6822,6 +7123,8 @@ Type=0x02c
 SubType=0x0a
 String1=0x05,Vineria
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="10 16 14 1"   Colormode=16
 "!	c #F8FCF8"
 "#	c #000000"
@@ -6862,6 +7165,8 @@ Type=0x02c
 SubType=0x0b
 String1=0x05,Chiesa
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="8 16 3 1"   Colormode=32
 "!	c #000000"  alpha=15
 "#	c #1A1A1A"  alpha=0
@@ -6891,6 +7196,8 @@ Type=0x02c
 SubType=0x0c
 String1=0x05,Sito archeologico
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 16 6 1"   Colormode=16
 "!	c #FF0000"
 "#	c #BD0000"
@@ -6923,6 +7230,8 @@ Type=0x02c
 SubType=0x0d
 String1=0x05,Moschea
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="8 18 6 1"   Colormode=16
 "!	c #7F7F7F"
 "#	c #6D6D6D"
@@ -6957,6 +7266,8 @@ Type=0x02c
 SubType=0x10
 String1=0x05,Sinagoga
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="8 17 4 1"   Colormode=16
 "!	c #414141"
 "#	c #949494"
@@ -6988,6 +7299,8 @@ Type=0x02c
 SubType=0x13
 String1=0x05,Punto panoramico
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 16 2 1"   Colormode=32
 "!	c #000000"  alpha=15
 "#	c #0000FF"  alpha=0
@@ -7016,6 +7329,8 @@ Type=0x02c
 SubType=0x14
 String1=0x05,Faro
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 16 6 1"   Colormode=32
 "!	c #000000"  alpha=15
 "#	c #FF0000"  alpha=0
@@ -7048,6 +7363,8 @@ Type=0x02c
 SubType=0x15
 String1=0x04,Mulino a vento
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 16 3 1"   Colormode=32
 "!	c #000000"  alpha=15
 "#	c #000000"  alpha=0
@@ -7075,8 +7392,10 @@ DayXpm="16 16 3 1"   Colormode=32
 [_point]
 Type=0x02c
 SubType=0x16
-String1=0x05,Videosorveglianza
+String1=0x05,Telecamera
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 16 53 2"   Colormode=32
 "!!	c #000000"  alpha=3
 "!#	c #000000"  alpha=6
@@ -7156,6 +7475,8 @@ Type=0x02c
 SubType=0x17
 String1=0x04,Rigassificatore
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 16 75 2"   Colormode=32
 "!!	c #000000"  alpha=15
 "!#	c #303030"  alpha=15
@@ -7257,6 +7578,8 @@ Type=0x02c
 SubType=0x18
 String1=0x05,Impianto industriale
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 16 61 2"   Colormode=32
 "!!	c #000000"  alpha=15
 "!#	c #000000"  alpha=8
@@ -7344,6 +7667,8 @@ Type=0x02c
 SubType=0x19
 String1=0x05,Torre idrica
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 16 33 2"   Colormode=32
 "!!	c #FFFFFF"  alpha=0
 "!#	c #96969F"  alpha=0
@@ -7401,8 +7726,10 @@ DayXpm="16 16 33 2"   Colormode=32
 [_point]
 Type=0x02c
 SubType=0x1a
-String1=0x05,Survey point
+String1=0x05,Punto di rilievo
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="9 16 47 2"   Colormode=32
 "!!	c #FFFFFF"  alpha=0
 "!#	c #FEFDFB"  alpha=0
@@ -7476,6 +7803,8 @@ Type=0x02c
 SubType=0x1b
 String1=0x05,Prigione
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="12 14 2 1"   Colormode=32
 "!	c #FFFFFF"  alpha=0
 "#	c #000000"  alpha=0
@@ -7502,6 +7831,8 @@ Type=0x02d
 SubType=0x01
 String1=0x05,Teatro
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 15 38 2"   Colormode=16
 "!!	c #F89400"
 "!#	c #F8FCF8"
@@ -7565,6 +7896,8 @@ Type=0x02d
 SubType=0x02
 String1=0x05,Bar
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="17 15 7 1"   Colormode=16
 "!	c #101010"
 "#	c #7B656A"
@@ -7597,6 +7930,8 @@ Type=0x02d
 SubType=0x03
 String1=0x05,Cinema
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="14 12 17 1"   Colormode=16
 "!	c #282828"
 "#	c #F8FCF8"
@@ -7634,8 +7969,10 @@ DayXpm="14 12 17 1"   Colormode=16
 [_point]
 Type=0x02d
 SubType=0x04
-String1=0x05,Casino
+String1=0x05,Casinò
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="14 14 5 1"   Colormode=16
 "!	c #F80000"
 "#	c #F8FCF8"
@@ -7665,6 +8002,8 @@ Type=0x02d
 SubType=0x05
 String1=0x05,Golf club
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="14 15 29 2"   Colormode=16
 "!!	c #009800"
 "!#	c #F8FCF8"
@@ -7717,8 +8056,10 @@ DayXpm="14 15 29 2"   Colormode=16
 [_point]
 Type=0x02d
 SubType=0x06
-String1=0x05,sci
+String1=0x05,Piste da sci
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 16 27 2"   Colormode=16
 "!!	c #5040B8"
 "!#	c #F8FCF8"
@@ -7772,6 +8113,8 @@ Type=0x02d
 SubType=0x07
 String1=0x05,Bowling
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="13 16 20 2"   Colormode=16
 "!!	c #181818"
 "!#	c #F8FCF8"
@@ -7818,6 +8161,8 @@ Type=0x02d
 SubType=0x08
 String1=0x01,Skate
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 16 23 2"   Colormode=16
 "!!	c #38D8D0"
 "!#	c #F8FCF8"
@@ -7867,6 +8212,8 @@ Type=0x02d
 SubType=0x09
 String1=0x01,Nuoto
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 16 11 1"   Colormode=16
 "!	c #C0C4C0"
 "#	c #F8FCF8"
@@ -7904,6 +8251,8 @@ Type=0x02d
 SubType=0x0a
 String1=0x05,Centro sportivo
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 16 19 2"   Colormode=16
 "!!	c #008C00"
 "!#	c #F8FCF8"
@@ -7949,6 +8298,8 @@ Type=0x02d
 SubType=0x0b
 String1=0x05,Aeromodellismo
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="13 14 11 1"   Colormode=16
 "!	c #C0C4C0"
 "#	c #F8FCF8"
@@ -7982,8 +8333,10 @@ DayXpm="13 14 11 1"   Colormode=16
 [_point]
 Type=0x02d
 SubType=0x0c
-String1=0x05,calcio
+String1=0x05,Calcio
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 15 135 2"   Colormode=32
 "!!	c #000000"  alpha=15
 "!#	c #000000"  alpha=4
@@ -8144,6 +8497,8 @@ Type=0x02d
 SubType=0x0d
 String1=0x05,Pallavolo
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 16 176 2"   Colormode=32
 "!!	c #000000"  alpha=15
 "!#	c #CACACA"  alpha=4
@@ -8346,6 +8701,8 @@ Type=0x02d
 SubType=0x0e
 String1=0x05,Basket
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 16 192 2"   Colormode=32
 "!!	c #000000"  alpha=15
 "!#	c #000000"  alpha=15
@@ -8564,6 +8921,8 @@ Type=0x02d
 SubType=0x0f
 String1=0x05,Pingpong
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 15 93 2"   Colormode=32
 "!!	c #FFFFFF"  alpha=0
 "!#	c #EBDDDD"  alpha=0
@@ -8682,6 +9041,8 @@ Type=0x02d
 SubType=0x10
 String1=0x05,Tennis
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 15 90 2"   Colormode=32
 "!!	c #000000"  alpha=15
 "!#	c #B0AAD1"  alpha=14
@@ -8797,6 +9158,8 @@ Type=0x02d
 SubType=0x11
 String1=0x05,Handball
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 16 55 2"   Colormode=32
 "!!	c #959595"  alpha=0
 "!#	c #242424"  alpha=0
@@ -8878,6 +9241,8 @@ Type=0x02d
 SubType=0x12
 String1=0x05,Bocce
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 16 43 2"   Colormode=32
 "!!	c #FFFFFF"  alpha=0
 "!#	c #F7F7F7"  alpha=0
@@ -8947,6 +9312,8 @@ Type=0x02d
 SubType=0x13
 String1=0x05,Freccette
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 16 130 2"   Colormode=32
 "!!	c #000000"  alpha=15
 "!#	c #000000"  alpha=12
@@ -9103,6 +9470,8 @@ Type=0x02d
 SubType=0x14
 String1=0x05,Tiro con l'arco
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 16 109 2"   Colormode=32
 "!!	c #FFFFFF"  alpha=0
 "!#	c #969696"  alpha=0
@@ -9238,6 +9607,8 @@ Type=0x02d
 SubType=0x15
 String1=0x04,Immersioni
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="14 14 18 2"   Colormode=32
 "!!	c #EFEFEF"  alpha=0
 "!#	c #F7ECEC"  alpha=0
@@ -9280,6 +9651,8 @@ Type=0x02d
 SubType=0x16
 String1=0x05,Arrampicata indoor
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 16 6 1"   Colormode=16
 "!	c #BD9520"
 "#	c #FFFFFF"
@@ -9312,6 +9685,8 @@ Type=0x02d
 SubType=0x17
 String1=0x05,Arrampicata
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 16 6 1"   Colormode=16
 "!	c #7B6541"
 "#	c #FFFFFF"
@@ -9340,10 +9715,40 @@ DayXpm="16 16 6 1"   Colormode=16
 
 
 [_point]
+Type=0x02d
+SubType=0x18
+String1=0x05,Parapendio
+ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
+Xpm="15 15 2 1"
+"    c #d0006f"
+"#   c #ffffff"
+"               "
+"               "
+"    ###        "
+"    #######    "
+"    ########## "
+"  #########    "
+"   #####       "
+"  #### #       "
+" ##    # ##    "
+"     ######    "
+"   ######      "
+"    ##  ###    "
+"               "
+"               "
+"               "
+[end]
+
+
+[_point]
 Type=0x02e
 SubType=0x00
 String1=0x05,Macelleria
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 10 3 1"   Colormode=32
 "!	c #000000"  alpha=15
 "#	c #000000"  alpha=0
@@ -9367,6 +9772,8 @@ Type=0x02e
 SubType=0x01
 String1=0x05,Grandi magazzini
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="13 15 20 2"   Colormode=16
 "!!	c #F86400"
 "!#	c #F8FCF8"
@@ -9412,6 +9819,8 @@ Type=0x02e
 SubType=0x02
 String1=0x05,Panetteria
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 16 4 1"   Colormode=16
 "!	c #FFCA41"
 "#	c #101010"
@@ -9442,6 +9851,8 @@ Type=0x02e
 SubType=0x03
 String1=0x05,Emporio
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="13 15 20 2"   Colormode=16
 "!!	c #F86400"
 "!#	c #F8FCF8"
@@ -9487,6 +9898,8 @@ Type=0x02e
 SubType=0x04
 String1=0x05,Centro commerciale
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 16 22 2"   Colormode=16
 "!!	c #F8CC08"
 "!#	c #F8FCF8"
@@ -9535,6 +9948,8 @@ Type=0x02e
 SubType=0x05
 String1=0x05,Farmacia
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 16 5 1"   Colormode=32
 "!	c #FFFFFF"  alpha=0
 "#	c #00CA00"  alpha=7
@@ -9566,6 +9981,8 @@ Type=0x02e
 SubType=0x06
 String1=0x05,Minimarket
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="12 16 112 2"   Colormode=32
 "!!	c #000000"  alpha=15
 "!#	c #EA7907"  alpha=3
@@ -9704,6 +10121,8 @@ Type=0x02e
 SubType=0x07
 String1=0x05,Abbigliamento
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 16 74 2"   Colormode=32
 "!!	c #000000"  alpha=15
 "!#	c #000000"  alpha=13
@@ -9804,6 +10223,8 @@ Type=0x02e
 SubType=0x08
 String1=0x05,Giardinaggio
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="14 16 98 2"   Colormode=32
 "!!	c #000000"  alpha=15
 "!#	c #FD19D2"  alpha=10
@@ -9928,6 +10349,8 @@ Type=0x02e
 SubType=0x09
 String1=0x05,Arredamento
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="14 16 128 2"   Colormode=32
 "!!	c #000000"  alpha=15
 "!#	c #787264"  alpha=11
@@ -10082,6 +10505,8 @@ Type=0x02e
 SubType=0x0b
 String1=0x05,Computer
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 13 117 2"   Colormode=32
 "!!	c #000000"  alpha=15
 "!#	c #A5AFB8"  alpha=0
@@ -10222,11 +10647,13 @@ Type=0x02e
 SubType=0x0c
 String1=0x05,Negozio
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="2 2 2 1"   Colormode=16
 "!	c #FFFFFF"
 "  	c none"
 "!!"
-" !"
+"!!"
 ;12
 [end]
 
@@ -10234,8 +10661,10 @@ DayXpm="2 2 2 1"   Colormode=16
 [_point]
 Type=0x02e
 SubType=0x0d
-String1=0x05,Fiori
+String1=0x05,Fioraio
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="12 16 108 2"   Colormode=32
 "!!	c #000000"  alpha=15
 "!#	c #F68506"  alpha=1
@@ -10370,6 +10799,8 @@ Type=0x02e
 SubType=0x0e
 String1=0x05,Acconciature
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="12 16 77 2"   Colormode=32
 "!!	c #FFFFFF"  alpha=0
 "!#	c #828282"  alpha=0
@@ -10473,6 +10904,8 @@ Type=0x02e
 SubType=0x0f
 String1=0x05,Fai-da-te
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 16 151 2"   Colormode=32
 "!!	c #000000"  alpha=15
 "!#	c #B0BED2"  alpha=5
@@ -10650,6 +11083,8 @@ Type=0x02e
 SubType=0x10
 String1=0x05,Supermercato
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 16 189 2"   Colormode=32
 "!!	c #000000"  alpha=15
 "!#	c #999A9B"  alpha=15
@@ -10863,8 +11298,10 @@ DayXpm="16 16 189 2"   Colormode=32
 [_point]
 Type=0x02e
 SubType=0x11
-String1=0x05,Bicciclette
+String1=0x05,Biciclette
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 10 80 2"   Colormode=32
 "!!	c #FFFFFF"  alpha=0
 "!#	c #F4F4F4"  alpha=0
@@ -10965,6 +11402,8 @@ Type=0x02e
 SubType=0x12
 String1=0x05,Ottico
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 7 60 2"   Colormode=32
 "!!	c #FEFEFE"  alpha=0
 "!#	c #C0C0C0"  alpha=0
@@ -11042,6 +11481,8 @@ Type=0x02e
 SubType=0x13
 String1=0x05,Giocattoli
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="15 16 177 2"   Colormode=32
 "!!	c #000000"  alpha=15
 "!#	c #000000"  alpha=10
@@ -11245,6 +11686,8 @@ Type=0x02e
 SubType=0x14
 String1=0x05,Videoteca
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 6 64 2"   Colormode=32
 "!!	c #FFFFFF"  alpha=0
 "!#	c #636363"  alpha=0
@@ -11325,6 +11768,8 @@ Type=0x02e
 SubType=0x15
 String1=0x05,Articoli da campeggio
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 16 171 2"   Colormode=32
 "!!	c #000000"  alpha=15
 "!#	c #000607"  alpha=5
@@ -11522,6 +11967,8 @@ Type=0x02e
 SubType=0x16
 String1=0x05,Bevande alcoliche
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 16 179 2"   Colormode=32
 "!!	c #000000"  alpha=15
 "!#	c #2D4B12"  alpha=12
@@ -11727,6 +12174,8 @@ Type=0x02e
 SubType=0x17
 String1=0x05,Lbreria
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 13 7 1"   Colormode=16
 "!	c #737373"
 "#	c #525252"
@@ -11757,6 +12206,8 @@ Type=0x02e
 SubType=0x18
 String1=0x05,Elettronica
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 13 149 2"   Colormode=32
 "!!	c #000000"  alpha=15
 "!#	c #343434"  alpha=14
@@ -11929,6 +12380,8 @@ Type=0x02e
 SubType=0x19
 String1=0x05,Lavasecco
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="11 16 57 2"   Colormode=32
 "!!	c #737373"  alpha=1
 "!#	c #9E9E9E"  alpha=15
@@ -12012,6 +12465,8 @@ Type=0x02e
 SubType=0x1a
 String1=0x05,Chiosco
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="11 16 86 2"   Colormode=32
 "!!	c #000000"  alpha=15
 "!#	c #385E17"  alpha=9
@@ -12124,6 +12579,8 @@ Type=0x02e
 SubType=0x1b
 String1=0x05,Hifi
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="14 16 106 2"   Colormode=32
 "!!	c #000000"  alpha=4
 "!#	c #000000"  alpha=13
@@ -12256,6 +12713,8 @@ Type=0x02e
 SubType=0x1c
 String1=0x05,Drogeria
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 8 78 2"   Colormode=32
 "!!	c #0C4755"  alpha=14
 "!#	c #30889C"  alpha=1
@@ -12352,6 +12811,8 @@ Type=0x02e
 SubType=0x1d
 String1=0x05,Motocicli
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 12 74 2"   Colormode=32
 "!!	c #FFFFFF"  alpha=0
 "!#	c #F9F9F9"  alpha=0
@@ -12448,6 +12909,8 @@ Type=0x02e
 SubType=0x1e
 String1=0x05,Calzature
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 9 108 2"   Colormode=32
 "!!	c #000000"  alpha=15
 "!#	c #1E2325"  alpha=7
@@ -12575,6 +13038,8 @@ Type=0x02e
 SubType=0x1f
 String1=0x05,Articoli sportivi
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="16 15 90 2"   Colormode=32
 "!!	c #000000"  alpha=15
 "!#	c #B0AAD1"  alpha=14
@@ -12689,7 +13154,7 @@ DayXpm="16 15 90 2"   Colormode=32
 Type=0x02f
 SubType=0x00
 ExtendedLabels=N
-FontStyle=NormalFont
+FontStyle=Default
 CustomColor=No
 DayXpm="17 11 5 1"   Colormode=16
 "!	c #000000"
@@ -12717,6 +13182,8 @@ Type=0x02f
 SubType=0x01
 String1=0x05,Distributore carburante
 ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
 DayXpm="12 14 16 1"   Colormode=16
 "!	c #000C98"
 "#	c #F8FCF8"
@@ -13149,95 +13616,26 @@ Type=0x02f
 SubType=0x0b
 String1=0x05,Parcheggio
 ExtendedLabels=N
-DayXpm="14 14 72 2"   Colormode=32
-"!!	c #8295B9"  alpha=13
-"!#	c #5675B1"  alpha=4
-"!%	c #5674B1"  alpha=4
-"!?	c #8798BC"  alpha=4
-"!$	c #5B78B3"  alpha=3
-"!*	c #003399"  alpha=0
-"!=	c #0B3C9D"  alpha=0
-"!1	c #1A47A3"  alpha=0
-"!2	c #1C49A4"  alpha=0
-"!3	c #1947A3"  alpha=0
-"!4	c #0C3D9E"  alpha=0
-"!5	c #5B78B3"  alpha=1
-"!6	c #5B78B3"  alpha=2
-"!7	c #4167B3"  alpha=0
-"!8	c #98ACD6"  alpha=0
-"!9	c #A6B7DB"  alpha=0
-"#!	c #9FB3D9"  alpha=0
-"##	c #7893C9"  alpha=0
-"#%	c #2D57AB"  alpha=0
-"#?	c #02349A"  alpha=0
-"#$	c #5A78B3"  alpha=1
-"#*	c #6483C1"  alpha=0
-"#=	c #E1E7F3"  alpha=0
-"#1	c #A7B9DC"  alpha=0
-"#2	c #8FA6D2"  alpha=0
-"#3	c #98ADD6"  alpha=0
-"#4	c #CAD5EA"  alpha=0
-"#5	c #A3B5DA"  alpha=0
-"#6	c #214EA6"  alpha=0
-"#7	c #5C78B4"  alpha=2
-"#8	c #D6DEEE"  alpha=0
-"#9	c #4066B3"  alpha=0
-"%!	c #0C3C9E"  alpha=0
-"%#	c #1342A0"  alpha=0
-"%%	c #6382C0"  alpha=0
-"%?	c #D5DDEE"  alpha=0
-"%$	c #5375BA"  alpha=0
-"%*	c #5C79B4"  alpha=1
-"%=	c #375FAF"  alpha=0
-"%1	c #013499"  alpha=0
-"%2	c #446AB4"  alpha=0
-"%3	c #DCE3F1"  alpha=0
-"%4	c #5C7DBE"  alpha=0
-"%5	c #5C79B4"  alpha=0
-"%6	c #5275BA"  alpha=0
-"%7	c #6281C0"  alpha=0
-"%8	c #BFCCE5"  alpha=0
-"%9	c #C4CFE7"  alpha=0
-"?!	c #315AAD"  alpha=0
-"?#	c #5D79B4"  alpha=0
-"?%	c #E8EDF6"  alpha=0
-"??	c #EBEFF7"  alpha=0
-"?$	c #E5EAF5"  alpha=0
-"?*	c #E4E9F4"  alpha=0
-"?=	c #C1CDE7"  alpha=0
-"?1	c #476CB5"  alpha=0
-"?2	c #D8E0EF"  alpha=0
-"?3	c #5476BA"  alpha=0
-"?4	c #2550A7"  alpha=0
-"?5	c #204CA6"  alpha=0
-"?6	c #08399C"  alpha=0
-"?7	c #5D7AB4"  alpha=0
-"?8	c #5D7AB4"  alpha=15
-"?9	c #D4DDEE"  alpha=0
-"$!	c #8AA1D0"  alpha=0
-"$#	c #2450A7"  alpha=0
-"$%	c #5E7BB4"  alpha=15
-"$?	c #1746A2"  alpha=0
-"$$	c #06389B"  alpha=0
-"$*	c #8698BB"  alpha=9
-"$=	c #5A77B3"  alpha=3
-"$1	c #899ABC"  alpha=5
-"!!!#!#!#!%!%!%!%!%!%!%!%!%!?"
-"!$!*!*!=!1!2!2!3!4!*!*!*!*!5"
-"!6!*!*!7!8!9!9#!###%#?!*!*#$"
-"!6!*!*#*#=#1#2#3#4#5#6!*!*#$"
-"#7!*!*#*#8#9%!%#%%%?%$!*!*#$"
-"%*!*!*#*%?%=!*%1%2%3%4!*!*#$"
-"%5!*!*#*%3##%6%7%8%9?!!*!*#$"
-"?#!*!*#*?%???$?*?=?1!*!*!*#$"
-"?#!*!*#*?2?3?4?5?6!*!*!*!*#$"
-"?7!*!*#*%?%=!*!*!*!*!*!*!*#$"
-"?8!*!*#*?9%=!*!*!*!*!*!*!*#$"
-"?8!*!*!7$!$#!*!*!*!*!*!*!*#$"
-"$%!*!*!=$?$$!*!*!*!*!*!*!*!5"
-"$*$=$=$=$=!$!$!$!$!$!$!$!$$1"
+DayXpm="14 14 2 1"   Colormode=32
+"!	c #3965FF"  alpha=0
+"#	c #FFFFFF"  alpha=0
+"!!!!!!!!!!!!!!"
+"!!!!!!!!!!!!!!"
+"!!!!#####!!!!!"
+"!!!!######!!!!"
+"!!!!#!!!!#!!!!"
+"!!!!#!!!!#!!!!"
+"!!!!######!!!!"
+"!!!!#####!!!!!"
+"!!!!#!!!!!!!!!"
+"!!!!#!!!!!!!!!"
+"!!!!#!!!!!!!!!"
+"!!!!#!!!!!!!!!"
+"!!!!!!!!!!!!!!"
+"!!!!!!!!!!!!!!"
 ;12345678901234
 [end]
+
 
 
 [_point]
@@ -14826,14 +15224,14 @@ DayXpm="14 14 29 2"   Colormode=16
 "    !#!%!%#5#?#4!!!%!%!#    "
 "      !#!#!%!%!%!%!#!#      "
 "          !#!#!#!#          "
-;12345678901234
+;1234567890123456789012345678
 [end]
 
 
 [_point]
 Type=0x04c
 SubType=0x01
-String1=0x04,Segnavia
+String1=0x05,Segnavia
 ExtendedLabels=N
 DayXpm="15 15 3 1"   Colormode=16
 "!	c #000000"
@@ -14855,6 +15253,59 @@ DayXpm="15 15 3 1"   Colormode=16
 "###############"
 "###############"
 ;123456789012345
+[end]
+
+
+[_point]
+Type=0x4c
+SubType=0x02
+String1=0x05,Mappa informativa
+ExtendedLabels=N
+Xpm="15 15 2 1"
+"!   c #00CAFF"
+"#   c #000000"
+"!!!!!!!!!!!!!!!"
+"!!!!!!!!!!!!!!!"
+"!!!!!!!!!!!!!!!"
+"!!!##!!!!!##!!!"
+"!!!###!!!###!!!"
+"!!!####!####!!!"
+"!!!##!###!##!!!"
+"!!!##!!#!!##!!!"
+"!!!##!!!!!##!!!"
+"!!!##!!!!!##!!!"
+"!!!##!!!!!##!!!"
+"!!!##!!!!!##!!!"
+"!!!!!!!!!!!!!!!"
+"!!!!!!!!!!!!!!!"
+"!!!!!!!!!!!!!!!"
+;123456789012345
+[end]
+
+
+[_point]
+Type=0x4c
+SubType=0x03
+String1=0x05,Pannello informativo
+ExtendedLabels=N
+Xpm="15 15 2 1"
+"    c #007db4"
+"#   c #ffffff"
+"               "
+"               "
+"      ###      "
+"      ###      "
+"      ###      "
+"               "
+"     #####     "
+"      ###      "
+"      ###      "
+"      ###      "
+"      ###      "
+"      ###      "
+"     #####     "
+"               "
+"               "
 [end]
 
 
@@ -15591,7 +16042,7 @@ DayXpm="17 17 4 1"   Colormode=0
 [_point]
 Type=0x061
 SubType=0x04
-String1=0x05,vertice di raffittimento
+String1=0x05,Vertice di raffittimento
 ExtendedLabels=N
 DayXpm="17 17 5 1"   Colormode=16
 "!	c #FFFFFF"
@@ -15747,7 +16198,7 @@ DayXpm="17 17 65 2"   Colormode=0
 [_point]
 Type=0x061
 SubType=0x1d
-String1=0x05,Spuntone roccioso
+String1=0x05,Masso erratico
 ExtendedLabels=N
 DayXpm="17 15 114 2"   Colormode=0
 "!!	c #FFFFFF"
@@ -15910,6 +16361,23 @@ DayXpm="17 17 3 1"   Colormode=16
 "      !!!!       "
 "                 "
 ;12345678901234567
+[end]
+
+
+[_point]
+Type=0x063
+SubType=0x00
+String1=0x05,Punto quotato
+ExtendedLabels=N
+FontStyle=NormalFont
+CustomColor=No
+DayXpm="4 4 1 1"   Colormode=16
+"  	c none"
+"    "
+"    "
+"    "
+"    "
+;1234
 [end]
 
 
@@ -16919,9 +17387,9 @@ DayXpm="16 16 8 1"   Colormode=32
 "!!!!!!!!!!!!!!!!"
 "##########!!!!!!"
 "###########!!!!!"
-"##########%!!!!!"
-"?????????$!!!!!!"
-"!!!!!*=!1!!!!!!!"
+"###########!!!!!"
+"##########!!!!!!"
+"!!!!!!!!!!!!!!!!"
 "!!!!!!!!!!!!!!!!"
 "!!!!!!##########"
 "!!!!!###########"

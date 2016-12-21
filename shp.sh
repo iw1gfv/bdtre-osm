@@ -13,15 +13,15 @@ fi
 
 
 #crea la cartella per i file uniti se non è già esistente
-if [ -d ~/bdtre-osm-piemonte/shp-uniti ]; then
-    echo "~/bdtre-osm-piemonte/shp-uniti esiste."
+if [ -d $shpuniti ]; then
+    echo "$shpuniti esiste."
 else
-    mkdir ~/bdtre-osm-piemonte/shp-uniti
+    mkdir $shpuniti
 fi
 
 
 #cancella i file nella directory
-rm -r ~/bdtre-osm-piemonte/shp-uniti/*
+rm -r $shpuniti/*
 
 
 cd $sbdtre  
@@ -33,8 +33,6 @@ for i in $(find . -type f -name "*.shp")
 	 tmp2=${i#*_}  
 	 tmp=`basename $tmp2`  
 	 echo $tmp  
-#	 tmp3=${tmp#*_}  
-#	 echo $tmp3  
 	 tipodishp=`echo "${tmp%\_*}"`  
          echo $tipodishp  
   

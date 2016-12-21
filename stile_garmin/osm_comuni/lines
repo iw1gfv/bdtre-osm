@@ -19,17 +19,8 @@
 
 
 
-route=ferry {set mkgmap:numbers = false }
-route=ferry & (motorcar=no | motor_vehicle=no) {add mkgmap:ferry=1} [0x1b resolution 21]
-route=ferry {add mkgmap:ferry=1} [0x1b resolution 21]
-
-
-<finalize>
-# The finalizer section is executed for each element when a rule with an element type matches
-include 'inc/address';
-name=* { name '${name}' }
-
-highway=* & ref=* { addlabel '${ref}' }
-highway=* & int_ref=* { addlabel '${int_ref}' }
-highway=* & nat_ref=* { addlabel '${nat_ref}' }
-highway=* & reg_ref=* { addlabel '${reg_ref}' }
+# Confini nazionali provinciali e comunali
+#boundary=administrativeboundary=administrative { name '${mkgmap:boundary_name}' }
+boundary=administrative & admin_level=4 [0x1e resolution 16]
+boundary=administrative & admin_level=6 [0x1c resolution 18]
+boundary=administrative & admin_level=8 [0x1d resolution 22]

@@ -7,6 +7,10 @@ sbdtre="sorgenti-bdtre"
 #shp usati, directory che conterrà i files shp utili alla creazione della mappa ////directory non più usata
 shpusati="shp-usati"
 
+#shp uniti, directory che conterrà i files shp uniti
+shpuniti="shp-uniti"
+
+
 #uscita osm, directory che conterrà i files osm
 uscitaosm="uscita-osm"
 
@@ -15,13 +19,10 @@ uscitamap="uscita-map"
 
 #shp da usare:
 #esempio 001066_el_idr_2016.shp diventa el_idr perde i _ prima e dopo, i valori vanno messi fra " e separati da uno spazio
-sdu="aatt ab_cda acc_int acc_pc ac_ped ac_vei albero argine ar_vrd ar_vms attr_sp bosco cl_agr cv_aes comuni diga edifc edi_min el_div el_idr ele_cp fil_al f_nter for_pc ghi_nv invaso man_tr mn_ind mu_div mu_sos nd_ele op_reg par_ar pe_uins ponte ps_inc sc_dis sv_str scarpt sp_acq tr_ele toponomastica cv_liv p_altim"
+sdu="aatt ab_cda acc_int acc_pc ac_ped ac_vei albero argine ar_vrd ar_vms attr_sp bosco cl_agr cv_aes comuni diga edifc edi_min el_div el_idr ele_cp fil_al f_nter for_pc ghi_nv invaso man_tr mn_ind mu_div mu_sos nd_ele op_reg par_ar pe_uins ponte ps_inc sc_dis sv_str scarpt sp_acq tr_ele toponomastica v_rete cv_liv p_altim"
 
 # indirizzo per scaricare il file del piemonte
 urlpiemonte="http://geodati.fmach.it/gfoss_geodata/osm/output_osm_regioni/piemonte.pbf"
-
-#directory piemonte.osm, directory dove si trova il file scaricato
-piemonteosm="piemonte.osm"
 
 #Percorso completo del file ogr2osm.py
 ogr2osm=~/ogr2osm/ogr2osm.py
@@ -33,17 +34,21 @@ osmosis=~/osmosis/bin/osmosis
 
 #Variabili creazione mappa Garmin
 
-#Cartella per i file di lavoroDTM10
-dtm="DTM10"
 
 #Percorso completo di Mkgmap
-mkgmap=~/mkgmap-r3694/mkgmap.jar
+mkgmap=~/mkgmap-r3627/mkgmap.jar
 
 #Percorso completo di Splitter
-splitter=~/splitter-r439/splitter.jar
+splitter=~/splitter-r427/splitter.jar
 
 #Directory in cui vengono messi i file IMG del BDTRE
 BDTRE_IMG="bdtre-img"
+
+#directory in cui vengono messi i file IMg di OSM
+piemonteosm="piemonte.osm"
+
+#directory delle mappe per garmin
+finale="finale"
 
 #Allocazione Ram da utilizzare per splitter e mkgmap
 Xmx=-Xmx15000M

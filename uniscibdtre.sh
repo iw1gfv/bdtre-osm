@@ -44,7 +44,6 @@ done
 ############################################################### seconda parte
 
 #Unisce i tipi di files in uno solo
-#listafiles=`ls UNITO_*.pbf`
 listafiles=`ls UNITO_*.pbf`
 numfiles=`echo $listafiles | wc -w`
 echo $listafiles
@@ -65,9 +64,5 @@ argmerge=`yes " --merge" | head -n $nummerge`
 echo "$numfiles da unire"
 
 #converte
-#$osmosis $arg $argmerge  --wb file=bdtre.pbf
 $osmosis $arg $argmerge  --wb file=../$uscitaosm/bdtre.pbf omitmetadata=true
 date
-
-
-

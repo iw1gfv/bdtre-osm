@@ -1,3 +1,24 @@
+#	These style files are part of the BDTRE-OSM package.
+#	I refer to them as a 'program' in the licensing text below.
+
+#	Copyright (C) 2016  Galosso Lucio
+
+#	This program is free software: you can redistribute it and/or modify
+#	it under the terms of the GNU General Public License as published by
+#	the Free Software Foundation, either version 3 of the License, or
+#	(at your option) any later version.
+
+#	This program is distributed in the hope that it will be useful,
+#	but WITHOUT ANY WARRANTY; without even the implied warranty of
+#	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#	GNU General Public License for more details.
+
+#	You should have received a copy of the GNU General Public License
+#	along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+
+
 leisure=* & sport=* & name=* { set name='${name} (${sport})' }
 leisure=* & sport=* & name!=* { add name='${sport}' }
 
@@ -38,14 +59,14 @@ landuse=landfill [0x10f10 resolution 21]
 landuse=quarry [0x0c resolution 20]
 #landuse=railway [0x6 resolution 21]
 #landuse=residential [0x2 resolution 20]
-#landuse=vineyard [0x10f03 resolution 21]
-landuse=cemetery | landuse=cemetary | amenity=grave_yard [0x1a resolution 21]
+landuse=vineyard [0x10f03 resolution 21]
+landuse=cemetery | landuse=cemetary | amenity=grave_yard {add mkgmap:label:1='${name}' | 'Cimitero'}[0x1a resolution 21]
 
 leisure=dog_park [0x8 resolution 22]
 leisure=golf_course [0x18 resolution 20]
 #leisure=multi | leisure=ice_rink | leisure=pitch | leisure=stadium | leisure=sports_center | leisure=sports_centre | landuse=recreation_ground {name '${name} (${sport})' | '${name}' | '${sport}' } [0x19 resolution 20]
 #leisure=track & area=yes {name '${name} (${sport})' | '${name}' } [0x19 resolution 20]
-#leisure=playground [0x10104 resolution 22]
+leisure=playground [0x10104 resolution 22]
 #leisure=water_park | leisure=marina | leisure=swimming_pool [0x9 resolution 20]
 
 power=generator & generator:source=solar [0x10f07 resolution 21]
@@ -55,7 +76,7 @@ tourism=camp_site [0x2e resolution 20]
 tourism=caravan_site [0x2e resolution 20]
 tourism=zoo [0x22 resolution 20]
 
-#waterway=dam [0x10f02 resolution 21]
+waterway=dam [0x10f02 resolution 21]
 #waterway=riverbank [0x46 resolution 17]
 
 

@@ -9,54 +9,62 @@ source "./configurazione"
 data=`date +%Y-%m`
 
 
-
 #cancella i file zip esistenti
 cd $dirzip
-rm *.zip
+rm *$data.zip
 
 cd ..
 
 
 
-#prepara il file zip con le mappe della versione PC
+#prepara la cartella con le mappe e la documentazione della versione per PC
+
+cp -r $dirzip/Garmin $dirzip/Bdtre-osm-PC
+
+cp -r finale/mappe $dirzip/Bdtre-osm-PC/
+
+#esegue lo zip e cancella la cartella precedentemente creata
 
 cd $dirzip
-cd Garmin
 
-#aggiunge la documentazione
-zip -r "../bdtre-osm-pc-$data.zip" *
+zip -r "Bdtre-osm-PC-$data.zip" Bdtre-osm-PC
 
-#aggiunge la mappa
-cd ../../finale
-zip -r ../"$dirzip"/bdtre-osm-pc-$data.zip ./mappe
+rm -r Bdtre-osm-PC
 
 cd ..
 
 
 
-#prepara il file zip con le mappe della versione GPS tutto insieme
+#prepara la cartella con le mappe e la documentazione della versione per GPS
+
+cp -r $dirzip/GPS $dirzip/Bdtre-osm-GPS
+
+cp -r finale/etrex/* $dirzip/Bdtre-osm-GPS/
+
+#esegue lo zip e cancella la cartella precedentemente creata
 
 cd $dirzip
-cd GPS
 
-#aggiunge la documentazione
-zip -r "../bdtre-osm-gps-$data.zip" *
+zip -r "Bdtre-osm-GPS-$data.zip" Bdtre-osm-GPS
 
-#aggiunge la mappa
-cd ../../finale/etrex
-zip -r ../../"$dirzip"/bdtre-osm-gps-$data.zip gmapsupp.img
+rm -r Bdtre-osm-GPS
 
 cd ..
-cd ..
 
-#prepara il file zip con le mappe della versione GPS con file separati
+
+
+#prepara la cartella con le mappe e la documentazione della versione per GPS
+
+cp -r $dirzip/GPS_separato $dirzip/Bdtre-osm-GPS_separato
+
+cp -r finale/64 $dirzip/Bdtre-osm-GPS_separato/
+
+#esegue lo zip e cancella la cartella precedentemente creata
 
 cd $dirzip
-cd GPS_separato
 
-#aggiunge la documentazione
-zip -r "../bdtre-osm-gps_separato-$data.zip" *
+zip -r "Bdtre-osm-GPS_separato-$data.zip" Bdtre-osm-GPS_separato
 
-#aggiunge la mappa
-cd ../../finale
-zip -r ../"$dirzip"/bdtre-osm-gps_separato-$data.zip ./64
+rm -r Bdtre-osm-GPS_separato
+
+cd ..

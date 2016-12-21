@@ -19,7 +19,7 @@
 
 
 
-amenity=parking [ 0x05 resolution 22]
+amenity=parking {add mkgmap:label:1='Parcheggio ${name}' | 'Parcheggio'}[ 0x05 resolution 22 default_name 'Parcheggio']
 
 
 <finalize>
