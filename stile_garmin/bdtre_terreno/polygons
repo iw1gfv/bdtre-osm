@@ -88,5 +88,4 @@ PE_UINS_TY='parco giochi'		[0x10104 resolution 21]
 PE_UINS_TY='parco/giardino'		[0x17 resolution 21]
 
 #sc_dis
-SC_DIS_TY=scavo				[0x10f10 resolution 21 default_name 'Discarica' ]
 SC_DIS_TY=discarica			[0x10f10 resolution 21 default_name 'Discarica' ]

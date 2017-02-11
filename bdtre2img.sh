@@ -9,9 +9,17 @@ if [[ ! -e $mkgmap ]]
 then
   echo "Non trovo $mkgmap, assicurati di averlo scaricato o di"
   echo "aver seguito il percorso giusto"
-  exit 2
+  exit 3
 fi
 
+# Verifica che sia presente splitter.jar per convertire in formato garmin i file OSM
+
+if [[ ! -e $splitter ]]
+then
+  echo "Non trovo $splitter, assicurati di averlo scaricato o di"
+  echo "aver seguito il percorso giusto"
+  exit 2
+fi
 
 #verifica che sia presente la cartella con i file del BDTRE convertiti in OSM
 if [[ ! -d $uscitaosm ]]
@@ -277,12 +285,14 @@ rm $BDTRE_IMG/osm*.*
 
 #divide e converte la cava in formato IMG
 
+$osmosis -v --read-pbf-fast file=$uscitaosm/UNITO_cv_aes.pbf --rbf file=$uscitaosm/UNITO_sc_dis.pbf --merge --wb file=$uscitaosm/UNITO_cava.pbf omitmetadata=true
+
 java $Xmx -jar $splitter \
 --max-nodes=50000 \
 --max-areas=300 \
 --mapid=66126001 \
 --output-dir=$BDTRE_IMG \
-$uscitaosm/UNITO_cv_aes.pbf
+$uscitaosm/UNITO_cava.pbf
 
 
 for infile in $BDTRE_IMG/66126*.osm.pbf
@@ -305,6 +315,7 @@ for infile in $BDTRE_IMG/66126*.osm.pbf
   $infile
 done
 
+rm $uscitaosm/UNITO_cava.pbf
 rm $BDTRE_IMG/areas.*
 rm $BDTRE_IMG/densities-out.txt
 rm $BDTRE_IMG/temp*.*

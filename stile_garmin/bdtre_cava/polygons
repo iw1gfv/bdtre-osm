@@ -23,3 +23,6 @@
 
 CV_AES_TY=cava			{ name '${CV_AES_NOM}'}	[0x0c resolution 20]
 CV_AES_TY='Non conosciuto'	{ name '${CV_AES_NOM}'}	[0x0c resolution 20]
+
+#sc_dis
+SC_DIS_TY=scavo				[0x0c resolution 20]

@@ -2627,7 +2627,7 @@ Xpm="32 2 2  1"
 ;12345678901234567890123456789012
 String1=0x05,Confine
 ExtendedLabels=N
-FontStyle=NoLabel (invisible)
+FontStyle=Default
 CustomColor=No
 [end]
 
@@ -2642,7 +2642,7 @@ Xpm="0 0 2 0"
 "2 c #C0C4C0"
 String1=0x05,Confine
 ExtendedLabels=N
-FontStyle=NoLabel (invisible)
+FontStyle=Default
 CustomColor=No
 [end]
 
@@ -2657,7 +2657,7 @@ Xpm="0 0 2 0"
 "2 c #F8FCF8"
 String1=0x05,Confine
 ExtendedLabels=N
-FontStyle=NoLabel (invisible)
+FontStyle=Default
 CustomColor=No
 [end]
 

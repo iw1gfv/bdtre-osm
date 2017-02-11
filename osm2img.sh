@@ -37,7 +37,15 @@ cd $piemonteosm
 #scarica il file OSM
 wget $urlpiemonte
 
+#ritaglia i dati sul confine della regione piemonte, all'interno dell cartella confini sono presenti anche i file delle province,
+#è possibile cambiare il poligono di taglio cambiando il nome PIEMONTE.poly con uno di quelli contenuti nella cartella
+#P.S. cambiando il nome di taglio è sottinteso che anche la parte BDTRE sia tagliata di conseguenza
+
+  $osmosis --rbf file=piemonte.pbf --bp file=../confini/PIEMONTE.poly --wb file=piemontecut.pbf
+
+
 cd ..
+
 
 #crea e converte le energie rinnovabili
 
@@ -46,7 +54,7 @@ java $Xmx -jar $splitter \
 --max-areas=300 \
 --mapid=66129001 \
 --output-dir=$piemonteosm \
-$piemonteosm/piemonte.pbf
+$piemonteosm/piemontecut.pbf
 
 
 for infile in $piemonteosm/*.osm.pbf
@@ -87,7 +95,7 @@ java $Xmx -jar $splitter \
 --max-areas=300 \
 --mapid=66130001 \
 --output-dir=$piemonteosm \
-$piemonteosm/piemonte.pbf
+$piemonteosm/piemontecut.pbf
 
 
 for infile in $piemonteosm/*.osm.pbf
@@ -128,7 +136,7 @@ java $Xmx -jar $splitter \
 --max-areas=300 \
 --mapid=66131001 \
 --output-dir=$piemonteosm \
-$piemonteosm/piemonte.pbf
+$piemonteosm/piemontecut.pbf
 
 
 for infile in $piemonteosm/*.osm.pbf
@@ -169,7 +177,7 @@ java $Xmx -jar $splitter \
 --max-areas=300 \
 --mapid=66134001 \
 --output-dir=$piemonteosm \
-$piemonteosm/piemonte.pbf
+$piemonteosm/piemontecut.pbf
 
 
 for infile in $piemonteosm/*.osm.pbf
@@ -210,7 +218,7 @@ java $Xmx -jar $splitter \
 --max-areas=300 \
 --mapid=66135001 \
 --output-dir=$piemonteosm \
-$piemonteosm/piemonte.pbf
+$piemonteosm/piemontecut.pbf
 
 
 for infile in $piemonteosm/*.osm.pbf
@@ -251,7 +259,7 @@ java $Xmx -jar $splitter \
 --max-areas=300 \
 --mapid=66138001 \
 --output-dir=$piemonteosm \
-$piemonteosm/piemonte.pbf
+$piemonteosm/piemontecut.pbf
 
 
 for infile in $piemonteosm/*.osm.pbf
@@ -292,7 +300,7 @@ java $Xmx -jar $splitter \
 --max-areas=300 \
 --mapid=66141001 \
 --output-dir=$piemonteosm \
-$piemonteosm/piemonte.pbf
+$piemonteosm/piemontecut.pbf
 
 
 for infile in $piemonteosm/*.osm.pbf
@@ -333,7 +341,7 @@ java $Xmx -jar $splitter \
 --max-areas=300 \
 --mapid=66142001 \
 --output-dir=$piemonteosm \
-$piemonteosm/piemonte.pbf
+$piemonteosm/piemontecut.pbf
 
 
 for infile in $piemonteosm/*.osm.pbf
@@ -376,7 +384,7 @@ java $Xmx -jar $splitter \
 --max-areas=300 \
 --mapid=66143001 \
 --output-dir=$piemonteosm \
-$piemonteosm/piemonte.pbf
+$piemonteosm/piemontecut.pbf
 
 
 for infile in $piemonteosm/*.osm.pbf
@@ -416,7 +424,7 @@ java $Xmx -jar $splitter \
 --max-areas=300 \
 --mapid=66144001 \
 --output-dir=$piemonteosm \
-$piemonteosm/piemonte.pbf
+$piemonteosm/piemontecut.pbf
 
 
 for infile in $piemonteosm/*.osm.pbf
@@ -456,7 +464,7 @@ java $Xmx -jar $splitter \
 --max-areas=300 \
 --mapid=66146001 \
 --output-dir=$piemonteosm \
-$piemonteosm/piemonte.pbf
+$piemonteosm/piemontecut.pbf
 
 
 for infile in $piemonteosm/*.osm.pbf
@@ -497,7 +505,7 @@ java $Xmx -jar $splitter \
 --max-areas=300 \
 --mapid=66150001 \
 --output-dir=$piemonteosm \
-$piemonteosm/piemonte.pbf
+$piemonteosm/piemontecut.pbf
 
 
 for infile in $piemonteosm/*.osm.pbf

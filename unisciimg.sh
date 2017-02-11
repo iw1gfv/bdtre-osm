@@ -367,12 +367,8 @@ java -jar $mkgmap \
   --product-id=29               \
   $BDTRE_Toponimi               \
   --draw-priority=39            \
-  --family-name="BDTRE Numero civico" \
-  --product-id=30               \
-  $BDTRE_Civico                 \
-  --draw-priority=40            \
   --family-name="OSM Poi"       \
-  --product-id=31               \
+  --product-id=30               \
   $OSM_Poi                      \
   $MASTER_TYPFILE
 
@@ -418,7 +414,6 @@ $GMT -j -o finale/mappe/gmapsupp.img \
      $OSM_Alberi	\
      $BDTRE_Quota       \
      $BDTRE_Toponimi    \
-     $BDTRE_Civico      \
      $OSM_Poi           \
      $MASTER_TYPFILE
 

@@ -1,4 +1,5 @@
-openstreetmap data: (c) openstreetmap.org contributors, see http://wiki.openstreetmap.org/index.php/attribution
+openstreetmap data: (c) OpenStreetMap.org contributors, see http://wiki.openstreetmap.org/index.php/attribution
 openstreetmap data are licensed under Open Database License, see www.opendatacommons.org/licenses/odbl
+
 La mappa BDTRE-OSM è rilasciata con licenza Creative Commons CC-BY-NC-SA 4.0 (Attribuzione - Non commerciale - Condividi allo stesso modo 4.0 Internazionale),
 il testo completo è disponibile all'indirizzo http://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
