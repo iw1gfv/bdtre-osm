@@ -27,10 +27,10 @@ then
 fi
 
 #crea la cartella per i file IMG se non è già esistente
-if [ -d $finale ]; then
+if [ -d finale ]; then
     echo "finale esiste."
 else
-    mkdir $finale
+    mkdir finale
 fi
 
 

@@ -1,4 +1,4 @@
-[_id]
+﻿[_id]
 ProductCode=1
 FID=2000
 CodePage=1252
@@ -1385,6 +1385,14 @@ FontStyle=Default
 CustomColor=No
 Xpm="0 0 1 0"
 "1 c #6064F8"
+[end]
+
+
+[_polygon]
+Type=0x4a
+ExtendedLabels=N
+Xpm="0 0 1 0"
+"1 c #F8FCC8"
 [end]
 
 

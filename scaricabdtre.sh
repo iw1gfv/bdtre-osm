@@ -12,18 +12,29 @@ else
     mkdir $sbdtrez
 fi
 
+#crea la cartella dei file sorgenti del BDTRE se non è già esistente
+if [ -d $sbdtre ]; then
+    echo "$sbdtre esiste."
+else
+    mkdir $sbdtre
+fi
+
+#rimuove i files presenti nella cartella
+rm $sbdtrez/*
+rm $sbdtre/*
 
 cd $sbdtrez
 
-#ciclo di scaricamento 
-cat ../comuni/lista_comuni.txt | \
-while read riga; do
-echo $riga
+#scarica i file Bdtre
+for i in {001001..103090} 
+do
+echo $i
+wget http://www.datigeo-piem-download.it/static/regp01/BDTRE2017_VECTOR/BDTRE_DATABASE_GEOTOPOGRAFICO_2017-LIMI_COMUNI_10_GAIMSDWL-$i-EPSG32632-SHP.zip
 
-#prende il codice del comune
-codice=`echo $riga | cut -d " " -f 1`
+done
 
-#scarica il file
-wget -nc http://www.datigeo-piem-download.it/static/regp01/BDTRE2016_VECTOR/BDTRE_DATABASE_GEOTOPOGRAFICO_2016-LIMI_COMUNI_10_GAIMSDWL-$codice-EPSG32632-SHP.zip -nv
+cd ..
 
-done 
+#entra nella directory dei files non zippati ed estrae li i files della bdtre
+cd $sbdtre
+unzip -o ../$sbdtrez/\*.zip
