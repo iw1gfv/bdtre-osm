@@ -216,7 +216,8 @@ Gli script non sono pensati per avere un diverso albero delle directory, si poss
 4.1 Sequenza di script comuni per la creazione delle mappe
 ----------------------------------------------------------
 scaricabdtre.sh
-unzipbdtre.sh
+scaricadtm.sh
+shpcurve.sh
 shpaosm.sh
 uniscibdtre.sh
 
