@@ -2692,7 +2692,7 @@ BorderWidth=0
 Xpm="0 0 1 0"
 "1 c #BD958B"
 String1=0x05,Curva intermedia
-ExtendedLabels=N
+ExtendedLabels=Y
 FontStyle=Default
 CustomColor=No
 [end]
@@ -2706,7 +2706,7 @@ BorderWidth=0
 Xpm="0 0 1 0"
 "1 c #BD958B"
 String1=0x05,Curva direttrice
-ExtendedLabels=N
+ExtendedLabels=Y
 FontStyle=Default
 CustomColor=No
 [end]

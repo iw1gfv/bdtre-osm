@@ -38,6 +38,8 @@ done
 #rinomina i file vrt
 rename 's/.tif.vrt/.vrt/g' *.tif.vrt
 
+for filename in *.vrt ; do mv $filename DTM_$filename; done
+
 #crea le curve
 
 for i in $(find -name "*.vrt")  

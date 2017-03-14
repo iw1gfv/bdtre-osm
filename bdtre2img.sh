@@ -48,7 +48,7 @@ java $Xmx -jar $splitter \
 --max-areas=300 \
 --mapid=66120001 \
 --output-dir=$BDTRE_IMG \
-$uscitaosm/UNITO_comuni.pbf
+$uscitaosm/UNITO_limi_comuni.pbf
 
 
 for infile in $BDTRE_IMG/66120*.osm.pbf
@@ -610,12 +610,18 @@ rm $BDTRE_IMG/osm*.*
 
 #divide e converte le curve di livello in formato IMG
 
+#ritaglia i dati sul confine della regione piemonte, all'interno dell cartella confini sono presenti anche i file delle province,
+#è possibile cambiare il poligono di taglio cambiando il nome PIEMONTE.poly con uno di quelli contenuti nella cartella
+#P.S. cambiando il nome di taglio è sottinteso che anche la parte BDTRE sia tagliata di conseguenza
+
+  osmconvert $uscitaosm/UNITO_DTM5.pbf -B=./confini/Torino.poly -o=$uscitaosm/curvecut.pbf
+
 java $Xmx -jar $splitter \
---max-nodes=2000000 \
+--max-nodes=3000000 \
 --max-areas=300 \
 --mapid=66140001 \
 --output-dir=$BDTRE_IMG \
-$uscitaosm/UNITO_cv_liv.pbf
+$uscitaosm/curvecut.pbf
 
 
 for infile in $BDTRE_IMG/66140*.osm.pbf
@@ -628,16 +634,17 @@ for infile in $BDTRE_IMG/66140*.osm.pbf
     --description="BDTRE Curve di livello" \
     --country-name="Italia" \
     --region-name="Piemonte" \
-    --copyright-message="$copyright" \
+    --copyright-message="$copyrightcurve" \
     --output-dir=$BDTRE_IMG \
     --style-file=stile_garmin/bdtre_curve \
     --show-profiles=1 \
     --draw-priority=30 \
     --transparent \
-    --license-file=stile_garmin/bdtre_licenza.txt \
+    --license-file=stile_garmin/curve_licenza.txt \
   $infile
 done
 
+rm $uscitaosm/curvecut.pbf
 rm $BDTRE_IMG/areas.*
 rm $BDTRE_IMG/densities-out.txt
 rm $BDTRE_IMG/temp*.*
@@ -689,10 +696,10 @@ rm $BDTRE_IMG/osm*.*
 
 #divide e converte i punti quotati in formato IMG
 
-$osmosis -v --read-pbf-fast file=$uscitaosm/UNITO_p_altim.pbf --rbf file=$uscitaosm/UNITO_v_rete.pbf --merge --wb file=$uscitaosm/UNITO_quotati.pbf omitmetadata=true
+$osmosis -v --read-pbf-fast file=$uscitaosm/UNITO_pt_quo.pbf --rbf file=$uscitaosm/UNITO_v_rete.pbf --merge --wb file=$uscitaosm/UNITO_quotati.pbf omitmetadata=true
 
 java $Xmx -jar $splitter \
---max-nodes=30000 \
+--max-nodes=45000 \
 --max-areas=300 \
 --mapid=66147001 \
 --output-dir=$BDTRE_IMG \

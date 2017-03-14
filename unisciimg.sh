@@ -19,13 +19,6 @@ then
   exit 2
 fi
 
-#verifica che sia presente la cartella con i file di OSM convertiti in IMG
-if [[ ! -d $piemonteosm ]]
-then
-  echo "Non esiste la cartella $piemonteosm, fai girare lo script osm2img.sh prima di questo"
-  exit 1
-fi
-
 #crea la cartella per i file IMG se non è già esistente
 if [ -d finale ]; then
     echo "finale esiste."

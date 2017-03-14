@@ -41,7 +41,7 @@ wget $urlpiemonte
 #è possibile cambiare il poligono di taglio cambiando il nome PIEMONTE.poly con uno di quelli contenuti nella cartella
 #P.S. cambiando il nome di taglio è sottinteso che anche la parte BDTRE sia tagliata di conseguenza
 
-  $osmosis --rbf file=piemonte.pbf --bp file=../confini/PIEMONTE.poly --wb file=piemontecut.pbf
+  osmconvert piemonte.pbf -B=../confini/PIEMONTE.poly -o=piemontecut.pbf
 
 
 cd ..

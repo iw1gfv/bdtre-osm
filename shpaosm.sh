@@ -53,13 +53,12 @@ cd ../$uscitaosm
 sed -i 's/NOME/name/g' *_toponomastica_*
 
 #curve di livello rimuove anche gli zeri finali sulla quota
-sed -i 's/CV_LIV_Q/name/g' *_cv_liv_* 
-sed -i 's/.0000"\/><tag k/"\/><tag k/g' *_cv_liv_*
+sed -i 's/.000"\/><tag k/"\/><tag k/g' *_DTM5_*
 
 
 #Punti quotati
-sed -i 's/QUOTA/name/g' *_p_altim_* 
-sed -i 's/[0-9][0-9][0-9]"\/>/"\/>/g' *_p_altim_*
+sed -i 's/PT_QUO_Q/name/g' *_pt_quo_* 
+sed -i 's/[0-9][0-9][0-9][0-9][0-9]"\/>/"\/>/g' *_pt_quo_*
 
 
 

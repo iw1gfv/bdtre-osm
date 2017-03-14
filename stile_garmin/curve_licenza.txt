@@ -1,4 +1,4 @@
-Cartografia realizzata da Michele Marchello e Lucio Galosso, basato su “BDTRE - Database GeoTopografico - 2017”.
+“Curve di livello realizzate da Michele Marchello e Lucio Galosso, basata sul dataset DTM 2009-2011 Piemonte ICE della Regione Piemonte”
 
 La titolarità piena ed esclusiva del documento “BDTRE - Database GeoTopografico - 2016” 
 e di "Carta Tecnica Regionale vettoriale in scala 1:10.000 della Regione Piemonte, [edizione 1991-2005]" è

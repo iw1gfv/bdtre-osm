@@ -21,10 +21,10 @@
 
 
 #punto quotato
-TIPO=2.08.06 | TIPO=2.08.07 | TIPO=2.09.05  { name '${name|conv:m=>ft}' } [0x6300 resolution 22]
+PT_QUO_SED=suolo					{ name '${name|conv:m=>ft}' } [0x6300 resolution 22]
 
 
 #Vertici di rete
-V_RETE_TY='raffittimento regionale/provinciale' 	{ name 'ID. ${V_RETE_ID}'} [0x6104 resolution 22 ]
-V_RETE_TY='rdn (rete dinamica nazionale)'		{ name 'ID. ${V_RETE_ID}'} [0x6102 resolution 22 ]
+V_RETE_TY='raffittimento regionale/provinciale' 	{ name 'ID. ${V_RETE_ID}'} [0x6104 resolution 22]
+V_RETE_TY='rdn (rete dinamica nazionale)'		{ name 'ID. ${V_RETE_ID}'} [0x6102 resolution 22]
 
