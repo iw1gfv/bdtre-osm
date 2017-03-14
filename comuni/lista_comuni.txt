@@ -313,6 +313,7 @@
 001313	Viù
 001314	Volpiano
 001315	Volvera
+001316  Mappano
 002002	Alagna Valsesia
 002003	Albano Vercellese
 002004	Alice Castello

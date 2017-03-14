@@ -614,7 +614,7 @@ rm $BDTRE_IMG/osm*.*
 #è possibile cambiare il poligono di taglio cambiando il nome PIEMONTE.poly con uno di quelli contenuti nella cartella
 #P.S. cambiando il nome di taglio è sottinteso che anche la parte BDTRE sia tagliata di conseguenza
 
-  osmconvert $uscitaosm/UNITO_DTM5.pbf -B=./confini/Torino.poly -o=$uscitaosm/curvecut.pbf
+  osmconvert $uscitaosm/UNITO_DTM5.pbf -B=./confini/PIEMONTE.poly -o=$uscitaosm/curvecut.pbf
 
 java $Xmx -jar $splitter \
 --max-nodes=3000000 \

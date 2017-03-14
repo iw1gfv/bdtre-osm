@@ -25,13 +25,18 @@ rm $sbdtre/*
 
 cd $sbdtrez
 
-#scarica i file Bdtre
-for i in {001001..103090} 
-do
-echo $i
-wget http://www.datigeo-piem-download.it/static/regp01/BDTRE2017_VECTOR/BDTRE_DATABASE_GEOTOPOGRAFICO_2017-LIMI_COMUNI_10_GAIMSDWL-$i-EPSG32632-SHP.zip
+#ciclo di scaricamento 
+cat ../comuni/lista_comuni.txt | \
+while read riga; do
+echo $riga
 
-done
+#prende il codice del comune
+codice=`echo $riga | cut -d " " -f 1`
+
+#scarica il file
+wget -nc http://www.datigeo-piem-download.it/static/regp01/BDTRE2017_VECTOR/BDTRE_DATABASE_GEOTOPOGRAFICO_2017-LIMI_COMUNI_10_GAIMSDWL-$codice-EPSG32632-SHP.zip -nv
+
+done 
 
 cd ..
 
