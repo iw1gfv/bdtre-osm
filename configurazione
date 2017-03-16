@@ -60,14 +60,13 @@ Xmx=-Xmx15000M
 copyrightosm="(c) OpenStreetMap contributors, www.openstreetmap.org"
 
 #inserimento del copyriht dei dati BDTRE
-copyright="Cartografia realizzata da $Licenziatario, basata sul dataset DTM 2009-2011 Piemonte ICE della Regione Piemonte”
+copyright="Cartografia realizzata da Marchello e Lucio Galosso, basata sul dataset DTM 2009-2011 Piemonte ICE della Regione Piemonte”
 
 #inserimento del copyriht dei dati DTM
-copyrightcurve="Curve di livello realizzate da $Licenziatario, basato su “BDTRE - Database GeoTopografico - 2017”
+copyrightcurve="Curve di livello realizzate da Marchello e Lucio Galosso, basato su “BDTRE Database GeoTopografico 2017”
 
 #La Regione Piemonte chiede che nell'attribuzione della licenza compaia il nome di chi realizza la mappa
-#Inserisci il tuo nome alla voce Licenziatario
-Licenziatario="Michele Marchello e Lucio Galosso"
+#Inserisci il tuo nome al posto di "Michele Marchello e Lucio Galosso"
 
 #File di testo padre dei file typ
 TYPFILE_VERSION=bdtre

@@ -22,7 +22,7 @@ fi
 rm -r $tif/*.vrt
 
 #elimina i file DTM5.SHP nella cartella
-rm -r $sbdtre/DTM5*
+rm -r $sbdtre/*DTM5*.*
 
 cd $tif
 
@@ -45,7 +45,7 @@ for filename in *.vrt ; do mv $filename DTM_$filename; done
 for i in $(find -name "*.vrt")  
 	 do
 	 echo "creo le curve di livello per $i"
-gdal_contour -a name -i 10.0 -f "ESRI Shapefile" "$i" "../$sbdtre/$i.shp"
+gdal_contour -a name -i 10.0 -inodata -f "ESRI Shapefile" "$i" "../$sbdtre/$i.shp"
 
 done
 

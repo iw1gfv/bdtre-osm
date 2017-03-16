@@ -1,12 +1,11 @@
-Cartografia realizzata da Michele Marchello e Lucio Galosso, basato su “BDTRE - Database GeoTopografico - 2017”.
+Cartografia realizzata da Michele Marchello e Lucio Galosso, basata su “BDTRE - Database GeoTopografico - 2017”
 
-La titolarità piena ed esclusiva del documento “BDTRE - Database GeoTopografico - 2016” 
-e di "Carta Tecnica Regionale vettoriale in scala 1:10.000 della Regione Piemonte, [edizione 1991-2005]" è
-di Regione Piemonte (ai sensi della L. 633/41 e s.m.i.).
-
-Regione Piemonte autorizza la libera e gratuita consultazione, estrazione, riproduzione e modifica dei dati 
-in essa contenuti da parte di chiunque vi abbia interesse per qualunque fine, purché nel rispetto dei termini 
-della licenza Creative Commons – Attribuzione 2.5 Italia (testo integrale: http://creativecommons.org/licenses/by/2.5/it/legalcode).
+La titolarità piena ed esclusiva del documento “BDTRE - Database GeoTopografico - 2017” 
+è di Regione Piemonte (ai sensi della L. 633/41 e s.m.i.).
+Regione Piemonte autorizza la libera e gratuita consultazione, estrazione, riproduzione e
+modifica dei dati in essa contenuti da parte di chiunque vi abbia interesse per qualunque fine,
+purché nel rispetto dei termini della licenza Creative Commons – Attribuzione 2.5 Italia (testo
+integrale: http://creativecommons.org/licenses/by/2.5/it/legalcode).
 
 La mappa BDTRE-OSM è rilasciata con licenza Creative Commons CC-BY-NC-SA 4.0 (Attribuzione - Non commerciale - Condividi allo stesso modo 4.0 Internazionale),
 il testo completo è disponibile all'indirizzo http://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
