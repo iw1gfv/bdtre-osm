@@ -21,10 +21,16 @@
 
 
 #punto quotato
+PT_QUO_SED='al piede'					{ name '${name|conv:m=>ft}' } [0x6300 resolution 22]
+PT_QUO_SED=altro					{ name '${name|conv:m=>ft}' } [0x6300 resolution 22]
+PT_QUO_SED='in gronda o su copertura'			{ name '${name|conv:m=>ft}' } [0x6300 resolution 22]
+PT_QUO_SED='strada o infrastruttura di circolazione'	{ name '${name|conv:m=>ft}' } [0x6300 resolution 22]
+PT_QUO_SED='su acqua'					{ name '${name|conv:m=>ft}' } [0x6300 resolution 22]
 PT_QUO_SED=suolo					{ name '${name|conv:m=>ft}' } [0x6300 resolution 22]
 
 
 #Vertici di rete
 V_RETE_TY='raffittimento regionale/provinciale' 	{ name 'ID. ${V_RETE_ID}'} [0x6104 resolution 22]
+V_RETE_TY='raffittimento di altri enti'		 	{ name 'ID. ${V_RETE_ID}'} [0x6104 resolution 22]
 V_RETE_TY='rdn (rete dinamica nazionale)'		{ name 'ID. ${V_RETE_ID}'} [0x6102 resolution 22]
 

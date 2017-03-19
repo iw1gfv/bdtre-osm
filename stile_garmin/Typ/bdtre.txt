@@ -78,6 +78,7 @@ Type=0x10f0b,6
 Type=0x10f0c,6
 Type=0x10f0d,6
 Type=0x10f00,6
+Type=0x10f12,6
 Type=0x04,10
 Type=0x14,10
 Type=0x15,10
@@ -1243,7 +1244,7 @@ Xpm="0 0 1 0"
 
 
 [_polygon]
-Type=0x36
+Type=0x38
 String1=0x05,Distributore carburante
 ExtendedLabels=N
 FontStyle=Default
@@ -1578,7 +1579,7 @@ Xpm="32 32 2 1"
 
 [_polygon]
 Type=0x55
-String1=0x05,Chiusa
+String1=0x05,Struttura idraulica
 ExtendedLabels=N
 FontStyle=Default
 CustomColor=No
@@ -2269,6 +2270,15 @@ Xpm="32 32 2 1"
 "##!##!#!##!#####################"
 "!!!!!!!!!!!!!###################"
 ;12345678901234567890123456789012
+[end]
+
+
+[_polygon]
+Type=0x10f12
+String1=0x05,Prato
+ExtendedLabels=N
+Xpm="0 0 1 0"
+"1 c #399500"
 [end]
 
 

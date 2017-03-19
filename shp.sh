@@ -41,7 +41,7 @@ for i in $(find . -type f -name "*.shp")
       if [ -f "../shp-uniti/$tipodishp.shp" ]  
       then  
            echo "unisce"  
-           ogr2ogr -f 'ESRI Shapefile' -update -skipfailures -append ../shp-uniti/$tipodishp.shp $i	   
+           ogr2ogr -f 'ESRI Shapefile' -update -explodecollections -skipfailures -append ../shp-uniti/$tipodishp.shp $i	   
       else  
            echo "crea shp"  
            ogr2ogr -f 'ESRI Shapefile' "../shp-uniti/$tipodishp.shp" $i

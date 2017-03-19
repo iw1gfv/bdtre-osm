@@ -408,7 +408,7 @@ rm $BDTRE_IMG/osm*.*
 
 #divide e converte le strade in formato IMG
 
-$osmosis -v --read-pbf-fast file=$uscitaosm/UNITO_ac_vei.pbf --rbf file=$uscitaosm/UNITO_ac_ped.pbf --rbf file=$uscitaosm/UNITO_ar_vms.pbf --rbf file=$uscitaosm/UNITO_man_tr.pbf --rbf file=$uscitaosm/UNITO_ponte.pbf --rbf file=$uscitaosm/UNITO_aatt.pbf --merge --merge --merge --merge --merge --wb file=$uscitaosm/UNITO_strade.pbf omitmetadata=true
+$osmosis -v --read-pbf-fast file=$uscitaosm/UNITO_ac_cic.pbf --rbf file=$uscitaosm/UNITO_ac_vei.pbf --rbf file=$uscitaosm/UNITO_ac_ped.pbf --rbf file=$uscitaosm/UNITO_ar_vms.pbf --rbf file=$uscitaosm/UNITO_man_tr.pbf --rbf file=$uscitaosm/UNITO_ponte.pbf --rbf file=$uscitaosm/UNITO_aatt.pbf --merge --merge --merge --merge --merge --merge --wb file=$uscitaosm/UNITO_strade.pbf omitmetadata=true
 
 java $Xmx -jar $splitter \
 --max-nodes=2000000 \
@@ -634,7 +634,7 @@ for infile in $BDTRE_IMG/66140*.osm.pbf
     --description="BDTRE Curve di livello" \
     --country-name="Italia" \
     --region-name="Piemonte" \
-    --copyright-message="$copyrightcurve" \
+    --copyright-message="$copycurve" \
     --output-dir=$BDTRE_IMG \
     --style-file=stile_garmin/bdtre_curve \
     --show-profiles=1 \

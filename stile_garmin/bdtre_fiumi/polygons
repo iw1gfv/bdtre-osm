@@ -21,12 +21,17 @@
 
 
 #fiumi
-AB_CDA_LIV='Non conosciuto'		[ 0x46 resolution 18 ]
-AB_CDA_LIV='non in sottopasso'		[ 0x46 resolution 18 ]
-AB_CDA_LIV='in sottopasso'		[ 0x47 resolution 18 ]
+AB_CDA_LIV='Non conosciuto'	{ name '${NOME_ABBR}'}	[ 0x46 resolution 18 ]
+AB_CDA_LIV='non in sottopasso'	{ name '${NOME_ABBR}'}	[ 0x46 resolution 18 ]
+AB_CDA_LIV='in sottopasso'	{ name '${NOME_ABBR}'}	[ 0x47 resolution 18 ]
 
 
 #op_reg
-OP_REG_TY='briglia/pescaia'		[ 0x55 resolution 18 ]
-OP_REG_TY=chiusa			[ 0x55 resolution 18 ]
-OP_REG_TY='Non conosciuto'		[ 0x55 resolution 18 ]
+OP_REG_TY=altro							[ 0x55 resolution 20 ]
+OP_REG_TY='briglia/pescaia'		{ name '${OP_REG_TY}'}	[ 0x55 resolution 20 ]
+OP_REG_TY=chiusa			{ name '${OP_REG_TY}'}	[ 0x55 resolution 20 ]
+OP_REG_TY='manufatto di derivazione'	{ name '${OP_REG_TY}'}	[ 0x55 resolution 20 ]
+OP_REG_TY='Non conosciuto'					[ 0x55 resolution 20 ]
+OP_REG_TY=partitore			{ name '${OP_REG_TY}'}	[ 0x55 resolution 20 ]
+OP_REG_TY=sfioratore			{ name '${OP_REG_TY}'}	[ 0x55 resolution 20 ]
+OP_REG_TY=sostegno			{ name '${OP_REG_TY}'}	[ 0x55 resolution 20 ]

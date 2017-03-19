@@ -58,7 +58,7 @@ sed -i 's/.000"\/><tag k/"\/><tag k/g' *_DTM5_*
 
 #Punti quotati
 sed -i 's/PT_QUO_Q/name/g' *_pt_quo_* 
-sed -i 's/[0-9][0-9][0-9][0-9][0-9]"\/>/"\/>/g' *_pt_quo_*
+sed -i 's/[0-9][0-9][0-9][0-9]"\/>/"\/>/g' *_pt_quo_*
 
 
 

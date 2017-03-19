@@ -21,11 +21,14 @@
 
 #aatt
 
-AATT_TY=cortile				[ 0x10f0d resolution 22 ]
-AATT_TY=corte				[ 0x10f0d resolution 22 ]
-AATT_TY=aia				[ 0x10f0d resolution 22 ]
-AATT_TY=cavedio				[ 0x10f0d resolution 22 ]
-AATT_TY='spazio interno generico'	[ 0x10f0d resolution 22 ]
+AATT_TY=aia					[ 0x10f0d resolution 22 ]
+AATT_TY=altro					[ 0x10f0d resolution 22 ]
+AATT_TY=cavedio					[ 0x10f0d resolution 22 ]
+AATT_TY=chiostro				[ 0x10f0d resolution 22 ]
+AATT_TY=corte					[ 0x10f0d resolution 22 ]
+AATT_TY=cortile					[ 0x10f0d resolution 22 ]
+AATT_TY='resede, spazio esterno generico'	[ 0x10f12 resolution 22 ]
+AATT_TY='spazio interno generico'		[ 0x10f0d resolution 22 ]
 
 #Elemento copertura
 

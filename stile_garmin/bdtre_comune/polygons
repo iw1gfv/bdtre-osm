@@ -21,4 +21,5 @@
 
 #Comune
 
-ENTE_FOR=ISTAT   { name '${COMUNE_NOM}'}   	[ 0x02 resolution 21 ]
+ENTE_FOR=ISTAT			{ name '${COMUNE_NOM}'}   	[ 0x02 resolution 21 ]
+ENTE_FOR='REGIONE PIEMONTE'	{ name '${COMUNE_NOM}'}   	[ 0x02 resolution 21 ]

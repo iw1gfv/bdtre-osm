@@ -22,7 +22,7 @@ uscitamap="uscita-map"
 
 #shp da usare:
 #esempio 001066_el_idr_2016.shp diventa el_idr perde i _ prima e dopo, i valori vanno messi fra " e separati da uno spazio
-sdu="aatt ab_cda limi_comuni v_rete pt_quo DTM5"
+sdu="aatt ab_cda ac_cic ac_ped ac_vei limi_comuni op_reg v_rete pt_quo DTM5"
 
 # indirizzo per scaricare il file del piemonte
 urlpiemonte="http://geodati.fmach.it/gfoss_geodata/osm/output_osm_regioni/piemonte.pbf"
@@ -60,16 +60,16 @@ Xmx=-Xmx15000M
 copyrightosm="(c) OpenStreetMap contributors, www.openstreetmap.org"
 
 #inserimento del copyriht dei dati BDTRE
-copyright="Cartografia realizzata da Marchello e Lucio Galosso, basata sul dataset DTM 2009-2011 Piemonte ICE della Regione Piemonte”
+copyright="Cartografia realizzata da Michele Marchello e Lucio Galosso, basata sul dataset DTM 2009-2011 Piemonte ICE della Regione Piemonte"
 
 #inserimento del copyriht dei dati DTM
-copyrightcurve="Curve di livello realizzate da Marchello e Lucio Galosso, basato su “BDTRE Database GeoTopografico 2017”
+copycurve="Curve di livello realizzate da Michele Marchello e Lucio Galosso, basato su BDTRE Database GeoTopografico 2017"
 
 #La Regione Piemonte chiede che nell'attribuzione della licenza compaia il nome di chi realizza la mappa
 #Inserisci il tuo nome al posto di "Michele Marchello e Lucio Galosso"
 
 #File di testo padre dei file typ
-TYPFILE_VERSION=bdtre
+TYPFILE_VERSION="bdtre"
 
 #Percorso comleto di Gmaptool
 GMT=~/gmt/gmt
@@ -78,3 +78,4 @@ GMT=~/gmt/gmt
 #variabili per la pubbicazione online dei files zip
 
 dirzip="zip"
+
