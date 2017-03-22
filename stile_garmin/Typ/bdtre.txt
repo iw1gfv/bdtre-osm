@@ -28,16 +28,16 @@ Type=0x4d,1
 Type=0x4f,1
 Type=0x51,1
 Type=0x1b,2
-Type=0x36,2
-Type=0x2f,2
-Type=0x31,2
 Type=0x34,2
 Type=0x37,2
 Type=0x46,2
 Type=0x47,2
 Type=0x50,2
 Type=0x2a,3
+Type=0x2f,3
+Type=0x31,3
 Type=0x33,3
+Type=0x36,3
 Type=0x0c,3
 Type=0x26,3
 Type=0x10f01,3
@@ -1159,7 +1159,7 @@ Xpm="32 32 2 1"
 
 [_polygon]
 Type=0x2f
-String1=0x05,Area pedonale
+String1=0x05,Vialetto/vicolo
 ExtendedLabels=N
 FontStyle=Default
 CustomColor=No
@@ -1223,7 +1223,6 @@ Xpm="0 0 1 0"
 
 [_polygon]
 Type=0x36
-String1=0x05,Isola spartitraffico
 ExtendedLabels=N
 FontStyle=Default
 CustomColor=No
@@ -2643,8 +2642,8 @@ Xpm="32 2 2  1"
 "!!!!####!!!!####!!!!####!!!!####"
 "!!!!####!!!!####!!!!####!!!!####"
 ;12345678901234567890123456789012
-String1=0x05,Confine
-ExtendedLabels=N
+String1=0x05,Confine Provinciale
+ExtendedLabels=Y
 FontStyle=Default
 CustomColor=No
 [end]
@@ -2658,8 +2657,8 @@ BorderWidth=0
 Xpm="0 0 2 0"
 "1 c #FF3000"
 "2 c #C0C4C0"
-String1=0x05,Confine
-ExtendedLabels=N
+String1=0x05,Confine Comunale
+ExtendedLabels=Y
 FontStyle=Default
 CustomColor=No
 [end]
@@ -2673,8 +2672,8 @@ BorderWidth=0
 Xpm="0 0 2 0"
 "1 c #000000"
 "2 c #F8FCF8"
-String1=0x05,Confine
-ExtendedLabels=N
+String1=0x05,Confine Regionale
+ExtendedLabels=Y
 FontStyle=Default
 CustomColor=No
 [end]

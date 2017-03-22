@@ -21,9 +21,9 @@
 
 
 #punto quotato
-PT_QUO_SED='al piede'					{ name '${name|conv:m=>ft}' } [0x6300 resolution 22]
+#PT_QUO_SED='al piede'					{ name '${name|conv:m=>ft}' } [0x6300 resolution 22]
 PT_QUO_SED=altro					{ name '${name|conv:m=>ft}' } [0x6300 resolution 22]
-PT_QUO_SED='in gronda o su copertura'			{ name '${name|conv:m=>ft}' } [0x6300 resolution 22]
+#PT_QUO_SED='in gronda o su copertura'			{ name '${name|conv:m=>ft}' } [0x6300 resolution 22]
 PT_QUO_SED='strada o infrastruttura di circolazione'	{ name '${name|conv:m=>ft}' } [0x6300 resolution 22]
 PT_QUO_SED='su acqua'					{ name '${name|conv:m=>ft}' } [0x6300 resolution 22]
 PT_QUO_SED=suolo					{ name '${name|conv:m=>ft}' } [0x6300 resolution 22]

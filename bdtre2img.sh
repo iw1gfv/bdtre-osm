@@ -43,12 +43,14 @@ rm -r $BDTRE_IMG/*
 
 #divide e converte il comune in formato IMG
 
+$osmosis -v --read-pbf-fast file=$uscitaosm/UNITO_limi_comuni.pbf --rbf file=$uscitaosm/UNITO_lim_com.pbf --merge --wb file=$uscitaosm/UNITO_comuni.pbf omitmetadata=true
+
 java $Xmx -jar $splitter \
---max-nodes=200000 \
+--max-nodes=300000 \
 --max-areas=300 \
 --mapid=66120001 \
 --output-dir=$BDTRE_IMG \
-$uscitaosm/UNITO_limi_comuni.pbf
+$uscitaosm/UNITO_comuni.pbf
 
 
 for infile in $BDTRE_IMG/66120*.osm.pbf
@@ -70,6 +72,7 @@ for infile in $BDTRE_IMG/66120*.osm.pbf
   $infile
 done
 
+rm $uscitaosm/UNITO_comuni.pbf
 rm $BDTRE_IMG/areas.*
 rm $BDTRE_IMG/densities-out.txt
 rm $BDTRE_IMG/temp*.*

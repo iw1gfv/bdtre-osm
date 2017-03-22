@@ -22,7 +22,7 @@ uscitamap="uscita-map"
 
 #shp da usare:
 #esempio 001066_el_idr_2016.shp diventa el_idr perde i _ prima e dopo, i valori vanno messi fra " e separati da uno spazio
-sdu="aatt ab_cda ac_cic ac_ped ac_vei limi_comuni op_reg v_rete pt_quo DTM5"
+sdu="aatt ab_cda ac_cic ac_ped ac_vei ar_vms lim_com limi_comuni man_tr op_reg ponte sv_str v_rete pt_quo DTM5"
 
 # indirizzo per scaricare il file del piemonte
 urlpiemonte="http://geodati.fmach.it/gfoss_geodata/osm/output_osm_regioni/piemonte.pbf"
