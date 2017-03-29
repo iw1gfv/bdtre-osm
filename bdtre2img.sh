@@ -46,7 +46,7 @@ rm -r $BDTRE_IMG/*
 $osmosis -v --read-pbf-fast file=$uscitaosm/UNITO_limi_comuni.pbf --rbf file=$uscitaosm/UNITO_lim_com.pbf --merge --wb file=$uscitaosm/UNITO_comuni.pbf omitmetadata=true
 
 java $Xmx -jar $splitter \
---max-nodes=300000 \
+--max-nodes=400000 \
 --max-areas=300 \
 --mapid=66120001 \
 --output-dir=$BDTRE_IMG \
@@ -250,7 +250,7 @@ $osmosis -v --read-pbf-fast file=$uscitaosm/UNITO_ab_cda.pbf --rbf file=$uscitao
 
 
 java $Xmx -jar $splitter \
---max-nodes=300000 \
+--max-nodes=500000 \
 --max-areas=300 \
 --mapid=66125001 \
 --output-dir=$BDTRE_IMG \
@@ -411,10 +411,10 @@ rm $BDTRE_IMG/osm*.*
 
 #divide e converte le strade in formato IMG
 
-$osmosis -v --read-pbf-fast file=$uscitaosm/UNITO_ac_cic.pbf --rbf file=$uscitaosm/UNITO_ac_vei.pbf --rbf file=$uscitaosm/UNITO_ac_ped.pbf --rbf file=$uscitaosm/UNITO_ar_vms.pbf --rbf file=$uscitaosm/UNITO_man_tr.pbf --rbf file=$uscitaosm/UNITO_ponte.pbf --rbf file=$uscitaosm/UNITO_aatt.pbf --merge --merge --merge --merge --merge --merge --wb file=$uscitaosm/UNITO_strade.pbf omitmetadata=true
+$osmosis -v --read-pbf-fast file=$uscitaosm/UNITO_ac_vei.pbf --rbf file=$uscitaosm/UNITO_ac_ped.pbf --rbf file=$uscitaosm/UNITO_ar_vms.pbf --rbf file=$uscitaosm/UNITO_man_tr.pbf --rbf file=$uscitaosm/UNITO_ponte.pbf --rbf file=$uscitaosm/UNITO_ac_cic.pbf --merge --merge --merge --merge --merge --wb file=$uscitaosm/UNITO_strade.pbf omitmetadata=true
 
 java $Xmx -jar $splitter \
---max-nodes=2000000 \
+--max-nodes=3000000 \
 --max-areas=300 \
 --mapid=66132001 \
 --output-dir=$BDTRE_IMG \
@@ -617,10 +617,10 @@ rm $BDTRE_IMG/osm*.*
 #è possibile cambiare il poligono di taglio cambiando il nome PIEMONTE.poly con uno di quelli contenuti nella cartella
 #P.S. cambiando il nome di taglio è sottinteso che anche la parte BDTRE sia tagliata di conseguenza
 
-  osmconvert $uscitaosm/UNITO_DTM5.pbf -B=./confini/PIEMONTE.poly -o=$uscitaosm/curvecut.pbf
+  osmconvert $uscitaosm/UNITO_DTM5.pbf -B=./confini/PIEMONTE.poly --drop-broken-refs -o=$uscitaosm/curvecut.pbf
 
 java $Xmx -jar $splitter \
---max-nodes=3000000 \
+--max-nodes=4000000 \
 --max-areas=300 \
 --mapid=66140001 \
 --output-dir=$BDTRE_IMG \
@@ -783,7 +783,7 @@ rm $BDTRE_IMG/osm*.*
 $osmosis -v --read-pbf-fast file=$uscitaosm/UNITO_acc_int.pbf --rbf file=$uscitaosm/UNITO_acc_pc.pbf --merge --wb file=$uscitaosm/UNITO_civico.pbf omitmetadata=true
 
 java $Xmx -jar $splitter \
---max-nodes=50000 \
+--max-nodes=60000 \
 --max-areas=300 \
 --mapid=66149001 \
 --output-dir=$BDTRE_IMG \

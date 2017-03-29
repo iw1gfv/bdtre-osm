@@ -29,15 +29,15 @@ Type=0x4f,1
 Type=0x51,1
 Type=0x1b,2
 Type=0x34,2
-Type=0x37,2
 Type=0x46,2
 Type=0x47,2
 Type=0x50,2
+Type=0x31,2
+Type=0x36,2
+Type=0x37,3
 Type=0x2a,3
 Type=0x2f,3
-Type=0x31,3
 Type=0x33,3
-Type=0x36,3
 Type=0x0c,3
 Type=0x26,3
 Type=0x10f01,3
@@ -1175,7 +1175,7 @@ ExtendedLabels=N
 FontStyle=Default
 CustomColor=No
 Xpm="0 0 1 0"
-"1 c #FFC000"
+"1 c #A4A4A4"
 [end]
 
 
@@ -1227,7 +1227,7 @@ ExtendedLabels=N
 FontStyle=Default
 CustomColor=No
 Xpm="0 0 1 0"
-"1 c #FFC040"
+"1 c #BD3000"
 [end]
 
 
@@ -1249,7 +1249,7 @@ ExtendedLabels=N
 FontStyle=Default
 CustomColor=No
 Xpm="0 0 1 0"
-"1 c #FFC040"
+"1 c #BD9520"
 [end]
 
 

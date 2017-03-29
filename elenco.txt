@@ -14,15 +14,24 @@ aatt (area antropizzata?)
 ab_cda
 ac_cic
 ac_ped
+ac_vei
+albero
+ar_vms
 DTM5
+fil_al
+lim_com
 limi_comuni
+man_tr
 op_reg
+ponte
 pt_quo
-Vrete
+sv_str
+V_rete
+
 
 NON UTILIZZATI
 
-
+alveo
 
 
 
