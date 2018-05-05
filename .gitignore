@@ -1,12 +1,4 @@
-/bounds/
 /BDTRE/
-/DTM5/
-/TIF/
-/bdtre-img/
-/shp-uniti/
-/sorgenti-bdtre/
-/uscita-osm/
-/finale/
-/stile_garmin/Typ/*.TYP
-/stile_garmin/Typ/*.typ
-/zip/*.zip
+/SHP-UNITI/
+/SORGENTI-BDTRE/
+

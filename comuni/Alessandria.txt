@@ -3,7 +3,6 @@
 006003	Alessandria
 006004	Alfiano Natta
 006005	Alice Bel Colle
-006006	Alluvioni Cambiò
 006007	Altavilla Monferrato
 006008	Alzano Scrivia
 006009	Arquata Scrivia
@@ -39,7 +38,6 @@
 006039	Casale Monferrato
 006040	Casalnoceto
 006041	Casasco
-006042	Cassano Spinola
 006043	Cassine
 006044	Cassinelle
 006045	Castellania
@@ -73,11 +71,10 @@
 006073	Frassineto Po
 006074	Fresonara
 006075	Frugarolo
-006076	Fubine
+006076	Fubine Monferrato
 006077	Gabiano
 006078	Gamalero
 006079	Garbagna
-006080	Gavazzana
 006081	Gavi
 006082	Giarole
 006083	Gremiasco
@@ -127,7 +124,6 @@
 006127	Pasturana
 006128	Pecetto di Valenza
 006129	Pietra Marazzi
-006130	Piovera
 006131	Pomaro Monferrato
 006132	Pontecurone
 006133	Pontestura
@@ -188,3 +184,5 @@
 006188	Volpedo
 006189	Volpeglino
 006190	Voltaggio
+006191	Cassano Spinola
+006192	Alluvioni Piovera

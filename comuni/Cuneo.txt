@@ -11,7 +11,7 @@
 004011	Barbaresco
 004012	Barge
 004013	Barolo
-004014	Bastia Mondov√¨
+004014	Bastia MondovÏ
 004015	Battifollo
 004016	Beinette
 004017	Bellino
@@ -39,8 +39,8 @@
 004039	Caprauna
 004040	Caraglio
 004041	Caramagna Piemonte
-004042	Card√®
-004043	Carr√π
+004042	CardË
+004043	Carr˘
 004044	Cartignano
 004045	Casalgrasso
 004046	Castagnito
@@ -66,7 +66,7 @@
 004066	Ceva
 004067	Cherasco
 004068	Chiusa di Pesio
-004069	Cigli√®
+004069	CigliË
 004070	Cissone
 004071	Clavesana
 004072	Corneliano d'Alba
@@ -127,11 +127,11 @@
 004127	Monasterolo Casotto
 004128	Monasterolo di Savigliano
 004129	Monchiero
-004130	Mondov√¨
+004130	MondovÏ
 004131	Monesiglio
 004132	Monforte d'Alba
-004133	Mont√†
-004134	Montaldo di Mondov√¨
+004133	Mont‡
+004134	Montaldo di MondovÏ
 004135	Montaldo Roero
 004136	Montanera
 004137	Montelupo Albese
@@ -185,9 +185,9 @@
 004185	Robilante
 004186	Roburent
 004187	Roccabruna
-004188	Rocca Cigli√®
+004188	Rocca CigliË
 004189	Rocca de' Baldi
-004190	Roccaforte Mondov√¨
+004190	Roccaforte MondovÏ
 004191	Roccasparvera
 004192	Roccavione
 004193	Rocchetta Belbo
@@ -205,9 +205,9 @@
 004205	Sampeyre
 004206	San Benedetto Belbo
 004207	San Damiano Macra
-004208	Sanfr√®
+004208	SanfrË
 004209	Sanfront
-004210	San Michele Mondov√¨
+004210	San Michele MondovÏ
 004211	Sant'Albano Stura
 004212	Santa Vittoria d'Alba
 004213	Santo Stefano Belbo
@@ -224,12 +224,12 @@
 004224	Stroppo
 004225	Tarantasca
 004226	Torre Bormida
-004227	Torre Mondov√¨
+004227	Torre MondovÏ
 004228	Torre San Giorgio
 004229	Torresina
 004230	Treiso
 004231	Trezzo Tinella
-004232	Trinit√†
+004232	Trinit‡
 004233	Valdieri
 004234	Valgrana
 004235	Valloriate
@@ -242,7 +242,7 @@
 004242	Vicoforte
 004243	Vignolo
 004244	Villafalletto
-004245	Villanova Mondov√¨
+004245	Villanova MondovÏ
 004246	Villanova Solaro
 004247	Villar San Costanzo
 004248	Vinadio

@@ -1,4 +1,4 @@
-001001	Agli√®
+001001	AgliË
 001002	Airasca
 001003	Ala di Stura
 001004	Albiano d'Ivrea
@@ -83,7 +83,7 @@
 001083	Ciconio
 001084	Cintano
 001085	Cinzano
-001086	Ciri√®
+001086	CiriË
 001087	Claviere
 001088	Coassolo Torinese
 001089	Coazze
@@ -95,7 +95,7 @@
 001095	Cossano Canavese
 001096	Cuceglio
 001097	Cumiana
-001098	Cuorgn√®
+001098	CuorgnË
 001099	Druento
 001100	Exilles
 001101	Favria
@@ -134,18 +134,18 @@
 001134	Locana
 001135	Lombardore
 001136	Lombriasco
-001137	Loranz√®
+001137	LoranzË
 001138	Lugnacco
 001139	Luserna San Giovanni
 001140	Lusernetta
-001141	Lusigli√®
+001141	LusigliË
 001142	Macello
 001143	Maglione
 001144	Marentino
 001145	Massello
 001146	Mathi
 001147	Mattie
-001148	Mazz√®
+001148	MazzË
 001149	Meana di Susa
 001150	Mercenasco
 001151	Meugliano
@@ -223,7 +223,7 @@
 001223	Romano Canavese
 001224	Ronco Canavese
 001225	Rondissone
-001226	Ror√†
+001226	Ror‡
 001227	Roure
 001228	Rosta
 001229	Rubiana
@@ -292,8 +292,8 @@
 001292	Venaria Reale
 001293	Verolengo
 001294	Verrua Savoia
-001295	Vestign√®
-001296	Vialfr√®
+001295	VestignË
+001296	VialfrË
 001297	Vico Canavese
 001298	Vidracco
 001299	Vigone
@@ -310,10 +310,10 @@
 001310	Virle Piemonte
 001311	Vische
 001312	Vistrorio
-001313	Vi√π
+001313	Vi˘
 001314	Volpiano
 001315	Volvera
-001316  Mappano
+001316	Mappano
 002002	Alagna Valsesia
 002003	Albano Vercellese
 002004	Alice Castello
@@ -321,12 +321,11 @@
 002007	Asigliano Vercellese
 002008	Balmuccia
 002009	Balocco
-002011	Bianz√®
+002011	BianzË
 002014	Boccioleto
 002015	Borgo d'Ale
 002016	Borgosesia
 002017	Borgo Vercelli
-002019	Breia
 002021	Buronzo
 002025	Campertogno
 002029	Carcoforo
@@ -335,7 +334,6 @@
 002032	Carisio
 002033	Casanova Elvo
 002035	San Giacomo Vercellese
-002038	Cellio
 002041	Cervatto
 002042	Cigliano
 002043	Civiasco
@@ -372,8 +370,6 @@
 002107	Quarona
 002108	Quinto Vercellese
 002110	Rassa
-002111	Rima San Giuseppe
-002112	Rimasco
 002113	Rimella
 002114	Riva Valdobbia
 002115	Rive
@@ -381,12 +377,11 @@
 002118	Ronsecco
 002121	Rossa
 002122	Rovasenda
-002123	Sabbia
 002126	Salasco
 002127	Sali Vercellese
 002128	Saluggia
 002131	San Germano Vercellese
-002133	Santhi√†
+002133	Santhi‡
 002134	Scopa
 002135	Scopello
 002137	Serravalle Sesia
@@ -400,6 +395,8 @@
 002163	Villarboit
 002164	Villata
 002166	Vocca
+002170	Alto Sermenza
+002171	Cellio con Breia
 003001	Agrate Conturbia
 003002	Ameno
 003006	Armeno
@@ -501,7 +498,7 @@
 004011	Barbaresco
 004012	Barge
 004013	Barolo
-004014	Bastia Mondov√¨
+004014	Bastia MondovÏ
 004015	Battifollo
 004016	Beinette
 004017	Bellino
@@ -529,8 +526,8 @@
 004039	Caprauna
 004040	Caraglio
 004041	Caramagna Piemonte
-004042	Card√®
-004043	Carr√π
+004042	CardË
+004043	Carr˘
 004044	Cartignano
 004045	Casalgrasso
 004046	Castagnito
@@ -556,7 +553,7 @@
 004066	Ceva
 004067	Cherasco
 004068	Chiusa di Pesio
-004069	Cigli√®
+004069	CigliË
 004070	Cissone
 004071	Clavesana
 004072	Corneliano d'Alba
@@ -617,11 +614,11 @@
 004127	Monasterolo Casotto
 004128	Monasterolo di Savigliano
 004129	Monchiero
-004130	Mondov√¨
+004130	MondovÏ
 004131	Monesiglio
 004132	Monforte d'Alba
-004133	Mont√†
-004134	Montaldo di Mondov√¨
+004133	Mont‡
+004134	Montaldo di MondovÏ
 004135	Montaldo Roero
 004136	Montanera
 004137	Montelupo Albese
@@ -675,9 +672,9 @@
 004185	Robilante
 004186	Roburent
 004187	Roccabruna
-004188	Rocca Cigli√®
+004188	Rocca CigliË
 004189	Rocca de' Baldi
-004190	Roccaforte Mondov√¨
+004190	Roccaforte MondovÏ
 004191	Roccasparvera
 004192	Roccavione
 004193	Rocchetta Belbo
@@ -695,9 +692,9 @@
 004205	Sampeyre
 004206	San Benedetto Belbo
 004207	San Damiano Macra
-004208	Sanfr√®
+004208	SanfrË
 004209	Sanfront
-004210	San Michele Mondov√¨
+004210	San Michele MondovÏ
 004211	Sant'Albano Stura
 004212	Santa Vittoria d'Alba
 004213	Santo Stefano Belbo
@@ -714,12 +711,12 @@
 004224	Stroppo
 004225	Tarantasca
 004226	Torre Bormida
-004227	Torre Mondov√¨
+004227	Torre MondovÏ
 004228	Torre San Giorgio
 004229	Torresina
 004230	Treiso
 004231	Trezzo Tinella
-004232	Trinit√†
+004232	Trinit‡
 004233	Valdieri
 004234	Valgrana
 004235	Valloriate
@@ -732,7 +729,7 @@
 004242	Vicoforte
 004243	Vignolo
 004244	Villafalletto
-004245	Villanova Mondov√¨
+004245	Villanova MondovÏ
 004246	Villanova Solaro
 004247	Villar San Costanzo
 004248	Vinadio
@@ -821,7 +818,7 @@
 005083	Penango
 005084	Piea
 005085	Pino d'Asti
-005086	Piov√† Massaia
+005086	Piov‡ Massaia
 005087	Portacomaro
 005088	Quaranti
 005089	Refrancore
@@ -861,7 +858,6 @@
 006003	Alessandria
 006004	Alfiano Natta
 006005	Alice Bel Colle
-006006	Alluvioni Cambi√≤
 006007	Altavilla Monferrato
 006008	Alzano Scrivia
 006009	Arquata Scrivia
@@ -897,7 +893,6 @@
 006039	Casale Monferrato
 006040	Casalnoceto
 006041	Casasco
-006042	Cassano Spinola
 006043	Cassine
 006044	Cassinelle
 006045	Castellania
@@ -931,11 +926,10 @@
 006073	Frassineto Po
 006074	Fresonara
 006075	Frugarolo
-006076	Fubine
+006076	Fubine Monferrato
 006077	Gabiano
 006078	Gamalero
 006079	Garbagna
-006080	Gavazzana
 006081	Gavi
 006082	Giarole
 006083	Gremiasco
@@ -985,7 +979,6 @@
 006127	Pasturana
 006128	Pecetto di Valenza
 006129	Pietra Marazzi
-006130	Piovera
 006131	Pomaro Monferrato
 006132	Pontecurone
 006133	Pontestura
@@ -1046,6 +1039,8 @@
 006188	Volpedo
 006189	Volpeglino
 006190	Voltaggio
+006191	Cassano Spinola
+006192	Alluvioni Piovera
 096001	Ailoche
 096002	Andorno Micca
 096003	Benna
@@ -1060,7 +1055,7 @@
 096013	Caprile
 096014	Casapinta
 096015	Castelletto Cervo
-096016	Cavagli√†
+096016	Cavagli‡
 096017	Cerreto Castello
 096018	Cerrione
 096019	Coggiola
@@ -1099,7 +1094,6 @@
 096057	Sala Biellese
 096058	Salussola
 096059	Sandigliano
-096061	Selve Marcone
 096062	Soprana
 096063	Sordevolo
 096064	Sostegno
@@ -1201,4 +1195,3 @@
 103076	Villette
 103077	Vogogna
 103078	Borgomezzavalle
-

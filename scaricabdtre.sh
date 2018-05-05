@@ -1,5 +1,6 @@
 #!/bin/bash
-#Questo file scarica la bdtre
+
+#Questo file scarica i file bdtre vettoriale e li decomprime nella cartella dei file sorgenti
 
 #carica il file di configuraione delle variabili
 source "./configurazione"
@@ -19,27 +20,32 @@ else
     mkdir $sbdtre
 fi
 
-#rimuove i files presenti nella cartella
-rm $sbdtrez/*
-rm $sbdtre/*
 
+#rimuove i files presenti nella cartella
+#rm $sbdtrez/*
+#rm $sbdtre/*
+
+
+#si sposta nella cartella dei file zippati
 cd $sbdtrez
 
-#ciclo di scaricamento 
-cat ../comuni/lista_comuni.txt | \
-while read riga; do
-echo $riga
 
-#prende il codice del comune
-codice=`echo $riga | cut -d " " -f 1`
+#comincia il ciclo di scaricamento
 
-#scarica il file
-wget -nc http://www.datigeo-piem-download.it/static/regp01/BDTRE2017_VECTOR/BDTRE_DATABASE_GEOTOPOGRAFICO_2017-LIMI_COMUNI_10_GAIMSDWL-$codice-EPSG32632-SHP.zip -nv
+	#legge il file con i codici
+	cat ../comuni/Torino.txt | \
+	while read riga; do
+	echo $riga
 
-done 
+	#prende il codice del comune
+	codice=`echo $riga | cut -d " " -f 1`
 
-cd ..
+	#scarica il file
+	wget -nc http://www.datigeo-piem-download.it/static/regp01/BDTRE2018_VECTOR/BDTRE_DATABASE_GEOTOPOGRAFICO_2018-LIMI_COMUNI_10_GAIMSDWL-$codice-EPSG32632-SHP.zip
 
-#entra nella directory dei files non zippati ed estrae li i files della bdtre
-cd $sbdtre
+	done
+
+ 
+#entra nella directory dei files non zippati ed estrae i files della bdtre
+cd ../$sbdtre
 unzip -o ../$sbdtrez/\*.zip

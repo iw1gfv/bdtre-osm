@@ -81,7 +81,7 @@
 005083	Penango
 005084	Piea
 005085	Pino d'Asti
-005086	Piov√† Massaia
+005086	Piov‡ Massaia
 005087	Portacomaro
 005088	Quaranti
 005089	Refrancore

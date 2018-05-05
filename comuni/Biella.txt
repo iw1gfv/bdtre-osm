@@ -12,7 +12,7 @@
 096013	Caprile
 096014	Casapinta
 096015	Castelletto Cervo
-096016	Cavagli√†
+096016	Cavagli‡
 096017	Cerreto Castello
 096018	Cerrione
 096019	Coggiola
@@ -51,7 +51,6 @@
 096057	Sala Biellese
 096058	Salussola
 096059	Sandigliano
-096061	Selve Marcone
 096062	Soprana
 096063	Sordevolo
 096064	Sostegno

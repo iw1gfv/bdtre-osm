@@ -1,17 +1,11 @@
 #sorgenti bdtre zippati, directory che contiene i file zippati del BDTRE scaricati
 sbdtrez="BDTRE"
 
-#sorgenti bdtre zippati, directory che contiene i file zippati del Dtm5 scaricati
-sdtm="DTM5"
-
-#TIF, directory che contiene i file Tif del Dtm5 non zippati
-tif="TIF"
-
 #sorgentibdtre, directory che contiene i file non zippati
-sbdtre="sorgenti-bdtre"
+sbdtre="SORGENTI-BDTRE"
 
 #shp uniti, directory che conterrà i files shp uniti
-shpuniti="shp-uniti"
+shpuniti="SHP-UNITI"
 
 
 #uscita osm, directory che conterrà i files osm
@@ -22,7 +16,7 @@ uscitamap="uscita-map"
 
 #shp da usare:
 #esempio 001066_el_idr_2016.shp diventa el_idr perde i _ prima e dopo, i valori vanno messi fra " e separati da uno spazio
-sdu="aatt ab_cda ac_cic acc_int acc_pc ac_ped ac_vei albero ar_vms fil_al lim_com limi_comuni man_tr op_reg ponte sv_str v_rete pt_quo DTM5"
+sdu="cv_liv"
 
 # indirizzo per scaricare il file del piemonte
 urlpiemonte="http://geodati.fmach.it/gfoss_geodata/osm/output_osm_regioni/piemonte.pbf"
@@ -39,7 +33,7 @@ osmosis=~/osmosis/bin/osmosis
 
 
 #Percorso completo di Mkgmap
-mkgmap=~/mkgmap-r3842/mkgmap.jar
+mkgmap=~/mkgmap-r3880/mkgmap.jar
 
 #Percorso completo di Splitter
 splitter=~/splitter-r580/splitter.jar
@@ -47,10 +41,13 @@ splitter=~/splitter-r580/splitter.jar
 #Directory in cui vengono messi i file IMG del BDTRE
 BDTRE_IMG="bdtre-img"
 
-#directory in cui vengono messi i file IMg di OSM
+#Directory in cui si trovano le curve di livello
+CURVE="curve"
+
+#Directory in cui vengono messi i file IMg di OSM
 piemonteosm="piemonte.osm"
 
-#directory delle mappe per garmin
+#Directory delle mappe per garmin
 finale="finale"
 
 #Allocazione Ram da utilizzare per splitter e mkgmap

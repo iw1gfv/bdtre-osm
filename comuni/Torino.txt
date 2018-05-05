@@ -1,4 +1,4 @@
-001001	AgliÃ¨
+001001	Agliè
 001002	Airasca
 001003	Ala di Stura
 001004	Albiano d'Ivrea
@@ -83,7 +83,7 @@
 001083	Ciconio
 001084	Cintano
 001085	Cinzano
-001086	CiriÃ¨
+001086	Ciriè
 001087	Claviere
 001088	Coassolo Torinese
 001089	Coazze
@@ -95,7 +95,7 @@
 001095	Cossano Canavese
 001096	Cuceglio
 001097	Cumiana
-001098	CuorgnÃ¨
+001098	Cuorgnè
 001099	Druento
 001100	Exilles
 001101	Favria
@@ -134,18 +134,18 @@
 001134	Locana
 001135	Lombardore
 001136	Lombriasco
-001137	LoranzÃ¨
+001137	Loranzè
 001138	Lugnacco
 001139	Luserna San Giovanni
 001140	Lusernetta
-001141	LusigliÃ¨
+001141	Lusigliè
 001142	Macello
 001143	Maglione
 001144	Marentino
 001145	Massello
 001146	Mathi
 001147	Mattie
-001148	MazzÃ¨
+001148	Mazzè
 001149	Meana di Susa
 001150	Mercenasco
 001151	Meugliano
@@ -223,7 +223,7 @@
 001223	Romano Canavese
 001224	Ronco Canavese
 001225	Rondissone
-001226	RorÃ 
+001226	Rorà
 001227	Roure
 001228	Rosta
 001229	Rubiana
@@ -292,8 +292,8 @@
 001292	Venaria Reale
 001293	Verolengo
 001294	Verrua Savoia
-001295	VestignÃ¨
-001296	VialfrÃ¨
+001295	Vestignè
+001296	Vialfrè
 001297	Vico Canavese
 001298	Vidracco
 001299	Vigone
@@ -310,7 +310,7 @@
 001310	Virle Piemonte
 001311	Vische
 001312	Vistrorio
-001313	ViÃ¹
+001313	Viù
 001314	Volpiano
 001315	Volvera
-001316  Mappano
+001316	Mappano

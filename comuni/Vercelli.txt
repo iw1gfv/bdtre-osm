@@ -5,12 +5,11 @@
 002007	Asigliano Vercellese
 002008	Balmuccia
 002009	Balocco
-002011	Bianz√®
+002011	BianzË
 002014	Boccioleto
 002015	Borgo d'Ale
 002016	Borgosesia
 002017	Borgo Vercelli
-002019	Breia
 002021	Buronzo
 002025	Campertogno
 002029	Carcoforo
@@ -19,7 +18,6 @@
 002032	Carisio
 002033	Casanova Elvo
 002035	San Giacomo Vercellese
-002038	Cellio
 002041	Cervatto
 002042	Cigliano
 002043	Civiasco
@@ -56,8 +54,6 @@
 002107	Quarona
 002108	Quinto Vercellese
 002110	Rassa
-002111	Rima San Giuseppe
-002112	Rimasco
 002113	Rimella
 002114	Riva Valdobbia
 002115	Rive
@@ -65,12 +61,11 @@
 002118	Ronsecco
 002121	Rossa
 002122	Rovasenda
-002123	Sabbia
 002126	Salasco
 002127	Sali Vercellese
 002128	Saluggia
 002131	San Germano Vercellese
-002133	Santhi√†
+002133	Santhi‡
 002134	Scopa
 002135	Scopello
 002137	Serravalle Sesia
@@ -84,3 +79,5 @@
 002163	Villarboit
 002164	Villata
 002166	Vocca
+002170	Alto Sermenza
+002171	Cellio con Breia
