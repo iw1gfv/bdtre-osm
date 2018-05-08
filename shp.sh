@@ -1,13 +1,16 @@
 #!/bin/bash
+
+#Questo script unisce i singoli file shp in un unico file shp (un file per tipo di shp) in modo da poterli vedere facilmente con Qgis
+
+
 #carica il file di configuraione delle variabili
 source "./configurazione"
 
-#file per unire gli shp in modo da poterli vedere facilmente con qgis
 
 #verifica che sia presente la cartella con i file sorgenti del BDTRE
 if [[ ! -d $sbdtre ]]
 then
-  echo "Non esiste la cartella $sbdtre, fai girare lo script unzipbdtre.sh prima di questo"
+  echo "Non esiste la cartella $sbdtre, fai girare lo script scaricabdtre.sh prima di questo"
   exit 1
 fi
 
@@ -20,12 +23,15 @@ else
 fi
 
 
-#cancella i file nella directory
+#cancella i file eventualmente presenti nella cartella
 rm -r $shpuniti/*
 
 
-cd $sbdtre  
+#si sposta nella cartella dei file sorgenti
+cd $sbdtre
 
+
+#inizia il ciclo di unione e creazione dei file shp in base alla tipologia
 for i in $(find . -type f -name "*.shp")  
 	 do  
 	  
@@ -38,12 +44,12 @@ for i in $(find . -type f -name "*.shp")
   
 
    #unisce i file shp  
-      if [ -f "../shp-uniti/$tipodishp.shp" ]  
+      if [ -f "../$shpuniti/$tipodishp.shp" ]  
       then  
            echo "unisce"  
-           ogr2ogr -f 'ESRI Shapefile' -update -explodecollections -skipfailures -append ../shp-uniti/$tipodishp.shp $i	   
+           ogr2ogr -f 'ESRI Shapefile' -update -explodecollections -skipfailures -append ../$shpuniti/$tipodishp.shp $i	   
       else  
            echo "crea shp"  
-           ogr2ogr -f 'ESRI Shapefile' "../shp-uniti/$tipodishp.shp" $i
+           ogr2ogr -f 'ESRI Shapefile' "../$shpuniti/$tipodishp.shp" $i
 fi
 done

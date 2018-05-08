@@ -1,6 +1,7 @@
 #!/bin/bash
 
-#Questo file scarica i file bdtre vettoriale e li decomprime nella cartella dei file sorgenti
+#Questo script scarica i file BDTRE vettoriale e li decomprime nella cartella dei file sorgenti
+
 
 #carica il file di configuraione delle variabili
 source "./configurazione"
@@ -21,9 +22,9 @@ else
 fi
 
 
-#rimuove i files presenti nella cartella
-#rm $sbdtrez/*
-#rm $sbdtre/*
+#rimuove i files eventualmente presenti nelle cartelle
+rm $sbdtrez/*
+rm $sbdtre/*
 
 
 #si sposta nella cartella dei file zippati
@@ -32,8 +33,11 @@ cd $sbdtrez
 
 #comincia il ciclo di scaricamento
 
-	#legge il file con i codici
-	cat ../comuni/Torino.txt | \
+#lista_comuni.txt scarica tutti i comuni della regione Piemonte, se desideri scaricare solo una delle province devi cambiare il file lista_comuni.txt con il file della provincia desiderata, i file relativi alle province sono all'interno della cartella comuni
+#se desideri scaricare solo alcuni comuni puoi creare un file txt ad hoc e cambiare il file di scarico qui sotto
+
+	#legge il file con i codici dei comuni
+	cat ../comuni/lista_comuni.txt | \
 	while read riga; do
 	echo $riga
 
