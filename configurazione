@@ -9,14 +9,14 @@ shpuniti="SHP-UNITI"
 
 
 #uscita osm, directory che conterrà i files osm
-uscitaosm="uscita-osm"
+uscitaosm="USCITA-OSM"
 
 #uscita map, directory che conterrà i files map
-uscitamap="uscita-map"
+uscitamap="USCITA-MAP"
 
 #shp da usare:
 #esempio 001066_el_idr_2016.shp diventa el_idr perde i _ prima e dopo, i valori vanno messi fra " e separati da uno spazio
-sdu="cv_liv"
+sdu="limi_comuni cv_liv pt_quo"
 
 # indirizzo per scaricare il file del piemonte
 urlpiemonte="http://geodati.fmach.it/gfoss_geodata/osm/output_osm_regioni/piemonte.pbf"
@@ -39,12 +39,9 @@ mkgmap=~/mkgmap-r3880/mkgmap.jar
 splitter=~/splitter-r580/splitter.jar
 
 #Directory in cui vengono messi i file IMG del BDTRE
-BDTRE_IMG="bdtre-img"
+BDTRE_IMG="BDTRE_IMG"
 
-#Directory in cui si trovano le curve di livello
-CURVE="curve"
-
-#Directory in cui vengono messi i file IMg di OSM
+#Directory in cui vengono messi i file IMG di OSM
 piemonteosm="piemonte.osm"
 
 #Directory delle mappe per garmin
@@ -54,13 +51,10 @@ finale="finale"
 Xmx=-Xmx15000M
 
 #copyrigt OSM
-copyrightosm="(c) OpenStreetMap contributors, www.openstreetmap.org"
+copyrightosm="© OpenStreetMap contributors, www.openstreetmap.org"
 
 #inserimento del copyriht dei dati BDTRE
-copyright="Cartografia realizzata da Michele Marchello e Lucio Galosso, basato su BDTRE Database GeoTopografico 2017"
-
-#inserimento del copyriht dei dati DTM
-copycurve="Curve di livello realizzate da Michele Marchello e Lucio Galosso, basata sul dataset DTM 2009-2011 Piemonte ICE della Regione Piemonte"
+copyright="Cartografia realizzata da Michele Marchello e Lucio Galosso, basato su BDTRE Database GeoTopografico 2018"
 
 #La Regione Piemonte chiede che nell'attribuzione della licenza compaia il nome di chi realizza la mappa
 #Inserisci il tuo nome al posto di "Michele Marchello e Lucio Galosso"

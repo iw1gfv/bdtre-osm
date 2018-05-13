@@ -60,7 +60,7 @@ Per creare la mappa occorre che nel sistema (UBUNTU) siano presenti:
 
 -- osmctools
 
--- osmosis
+-- osmosis (aggiungere la stringa 'JAVACMD_OPTIONS=-Xmx8G' nel file'osmosis/bin/osmosis' se non è già stato inserito, inserire al posto di 8 un valore pari alla quantità della vostra RAM)
 
 -- osm2ogr
 
@@ -106,96 +106,11 @@ http://geodati.fmach.it/gfoss_geodata/osm/output_osm_regioni/piemonte.osm.bz2
 Gli estratti regionali vengono aggiornati settimanalmente il giovedì/venerdì.
 
 
-
-3.4 Scaricamento dei dati e conversione dati da formato SHP a formato OSM
--------------------------------------------------------------------------
-
-I dati sono raccolti, su base comunale, in svariati file in formato shapefile ESRI.
-Lo shp è un formato di interscambio per geodati non proprietario e quindi fruibile da tutti.
-
-Il formato shapefile ESRI, non ci consente di poter arrivare ad una mappa per dispositivi Garmin o Android senza doverci avvalere di software proprietari, per poter utilizzare tool e/o software liberi è necessario effettuare una conversione dei dati in ingresso in formato OSM (OpenStreetMap).
-Questo formato è molto potente e vi è uno strumento gratuito per convertire da ESRI shapefile in formato OSM.
-Si chiama ogr2osm ed è disponibile in diverse versioni, questo è quello utilizzato per questa mappa:
-
-https://github.com/pnorman/ogr2osm
-
-Funziona perché il formato shapefile ESRI è OGR-compatibile. I file risultanti in formato OSM non sono decisamente file OSM "appropriati".
-La struttura dei metadati in formato OSM appena creati non corrisponde alla struttura dei file OSM nativi, in quanto la conversione ha solo tradotto le geometrie lasciando invariati i campi a loro assegnati in origine. La comunità OSM forma un consenso su quali tag vengono utilizzati e quali valori dovrebbero essere assegnati alle geometrie.
-Dunque questi dati non sono utilizzabili in un contesto OSM (come, per le importazioni).
-Poiché l'obiettivo è quello di creare una mappa per GPS e dispositivi Android e Garmin, questo non è un problema.
-
-Per prima cosa occorre creare la directory che conterrà i vari file (verificare il nome da dare alla cartella nel file di configurazione, se diverso variare il percorso) e scaricare i file all'interno.
-Per scaricare con wget ed i file preposti, da terminale portarsi nella cartella e dare il comando wget -i nomeprovincia.txt e così via per tutte le province.
-Wget ci metterà del tempo a scaricare tutti i comuni viste le dimensioni notevoli di alcune province, in totale ci vorranno circa 5/6 ore ma molto dipende anche dalla reale velocità di download a disposizione.
-
-Ad esempio, per scaricare i comuni della provincia di Asti, da terminale (nella directory di download) digitare wget -i Asti_D.txt ed inviare, wget andrà avanti fino a che non avrà provveduto a finire e per le altre provincie basta cambiare
-il nome della provincia.
-
-Una volta che si ha a disposizione i file e la relativa directory bisogna scompattare i file. Per farlo si utilizza lo script unzipbdtre.sh che provvede a creare la directory ed a scompattare tutti i file .zip.
-Da terminale (sempre all'interno della directory principale) lanciare lo script che scompatta digitando ./unzipbdtre.sh
-
-Terminato lo scompattamento degli zip è ora del primo passaggio di conversione, dal formato SHP al formato OSM.
-Da terminale (sempre all'interno della directory principale) lanciare lo script che converte digitando ./shpaosm.s
-
-Questo passo è uguale, sia per Android che per Garmin, di qui in poi i passaggi sono diversi.
-
-
-3.6 Conversione dati da formato OSM a formato Mapsforge
---------------------------------------------------------
-Aggiunta dei dati OSM ai dati BDTRE.
-Tramite lo script unisciosmbdtre.sh è possibile scaricare i dati OSM aggiornati ed unirli ai file in formato osm, derivati dal BDTRE, in un unico file in formato osm.
-Il file in formato osm viene convertito con Osmosis ed il plugin mapswriter in formato.map, pronto per essere installato su un dispositivo android.
-Il plugin mapswriter utilizza un file in formato .xml che indica quali tag portare in formato .map e quali tralasciare.
-Perchè la mappa venga visualizzata correttamente, sul dispositivo android deve essere installato il tema, che serve a visualizzare i tag del BDTRE, poichè non rispettano lo standard osm.
-
-
-3.6 Conversione dati da formato OSM a formato IMG Garmin
---------------------------------------------------------
-
-La fase del processo che crea i file in formato IMG Garmin utilizza Mkgmap, uno strumento OSM comunente utilizzato per creare mappe GPS da impiegare nei dispositivi Garmin.
-Mkgmap lavora sulla base di file di stile, all'interno dei quali sono indicati quali elementi prendere e quali tag associare ai vari elementi che verranno poi visualizzati
-sul dispositivo GPS.
-Questi tag ed i loro valori possono essere scelti arbitrariamente, in modo che lo 'strano' tag convertito dai dati BDTRE possa avere un senso per la mappa creata.
-
-Per fare questo lavoro bisogna usare Mkgmap e Splitter che possono essere scaricati da qui:
-
-http://www.mkgmap.org.uk/download/mkgmap.html
-
-http://www.mkgmap.org.uk/download/splitter.html
-
-
 4. Costruzione della mappa, uso  e sequenza degli scripts
 ---------------------------------------------------------
 
 Prima di iniziare a fare girare gli script è bene sistemare i percorsi delle directori in cui si trovano i file scaricati ed i vari tool che concorrono al lavoro.
-le variabili vanno verificate/modificate nel file configurazione, in questo modo gli script vanno a richiamare le medesime senza doverle riscrivere o variare ogni volta che vengono lanciati gli script.
-
-Le variabili da settare sono le seguenti:
-
--- #sorgenti bdtre zippati = Cartella in cui sono presenti i file zippati inerenti i singoli comuni 
-crearla manualmente e scaricare all'interno i file, oppure trasfere la directory con i file
-
--- #sorgentibdtre non zippati = directory in cui verranno messi i file scompattati 
-
--- #shp usati = directory che conterrà i files shp utili alla creazione della mappa
-
--- #uscita osm = directory che conterrà i files osm
-
--- #uscita map = directory che conterrà i files map
-
--- #shp da usare: = specificare quali file shp (per ogni comune sono presenti piu file con diversi elementi territoriali differenti) si intende convertire, a seconda di quello che si vuole convertire o meno bisogna aggiungere o togliere file
-
--- #indirizzo per scaricare il file del piemonte = viene specificato l'indirizzo da cui scaricare i dati di openstreetmap che andranno ad integrarsi con i dati derivanti del BDTRE, in questo caso non bisogna modificare a meno che non cambi l'indirizzo
-
--- #file piemonte.osm = directorye nome del file del file scaricato da gfoss, che contiene i dati di osm da unire alla bdtre.
-
--- #Percorso completo di Mkgmap
-scaricare e mettere nella home e cambiare il percorso nella configurazione con il nome esatto, se hai mkgmap aggiorna solo il percorso
-
--- #Percorso completo di Splitter
-scaricare e mettere nella home e cambiare il percorso nella configurazione con il nome esatto, se hai splitter aggiorna solo il percorso
-
-
+Le variabili vanno verificate/modificate nel file configurazione, in questo modo gli script vanno a richiamare le medesime senza doverle riscrivere o variare ogni volta che vengono lanciati gli script.
 
 Gli script non sono pensati per avere un diverso albero delle directory, si possono modificare i nomi delle directory, ma non la loro posizione.
 
@@ -203,15 +118,13 @@ Gli script non sono pensati per avere un diverso albero delle directory, si poss
 4.1 Sequenza di script comuni per la creazione delle mappe
 ----------------------------------------------------------
 scaricabdtre.sh
-scaricadtm.sh
-shpcurve.sh
+shp.sh (opzionale, serve ad unire i file in formato shp per poter vedere in qgis quali elementi sono presenti
 shpaosm.sh
 uniscibdtre.sh
 
 
 4.2 Sequenza di script per la creazione della mappa per Android
 ---------------------------------------------------------------
-unisciosmbdtre.sh
 osmamap.sh
 
 4.3 Sequenza di script per la creazione della mappa per Garmin
