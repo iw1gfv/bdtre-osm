@@ -21,10 +21,11 @@
 
 
 #laghi
-INVASO_TY='lago artificiale'	{ name '${NOME_ABBR}'} 	[ 0x3f resolution 21 ]
-SP_ACQ_TY=lago		{ name '${NOME_ABBR}'}		[ 0x3c resolution 20 ]
-SP_ACQ_TY=stagno	{ name '${NOME_ABBR}'}		[ 0x3c resolution 20 ]
+INVASO_TY='lago artificiale'	{ name '${INVASO_NOM}'} 	[ 0x3f resolution 20 ]
+SP_ACQ_TY=lago | SP_ACQ_TY='Non conosciuto'	{ name '${SP_ACQ_NOM}'}		[ 0x3c resolution 20 ]
+SP_ACQ_TY=laguna 				[ 0x3c resolution 20 default_name 'Laguna' ]
+SP_ACQ_TY=stagno				[ 0x3c resolution 21 default_name 'Stagno' ]
 
 #Diga
 
-DIGA_TY=muratura	[0x10f02 resolution 21]
+DIGA_AS=reale		[0x10f02 resolution 21]
