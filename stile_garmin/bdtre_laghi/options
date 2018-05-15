@@ -19,6 +19,4 @@
 
 
 
-
-#punto quotato
-PT_QUO_SED=suolo | PT_QUO_SED='strada o infrastruttura di circolazione' | PT_QUO_SED='al piede'	{ name '${name|conv:m=>ft}' } [0x6300 resolution 23]
+levels = 0:24, 1:22, 2:21, 3:20, 4:19, 5:18, 6:16

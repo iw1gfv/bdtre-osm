@@ -20,5 +20,11 @@
 
 
 
-#punto quotato
-PT_QUO_SED=suolo | PT_QUO_SED='strada o infrastruttura di circolazione' | PT_QUO_SED='al piede'	{ name '${name|conv:m=>ft}' } [0x6300 resolution 23]
+#laghi
+INVASO_TY='lago artificiale'	{ name '${NOME_ABBR}'} 	[ 0x3f resolution 21 ]
+SP_ACQ_TY=lago		{ name '${NOME_ABBR}'}		[ 0x3c resolution 20 ]
+SP_ACQ_TY=stagno	{ name '${NOME_ABBR}'}		[ 0x3c resolution 20 ]
+
+#Diga
+
+DIGA_TY=muratura	[0x10f02 resolution 21]

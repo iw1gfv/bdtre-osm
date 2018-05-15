@@ -16,7 +16,7 @@ uscitamap="USCITA-MAP"
 
 #shp da usare:
 #esempio 001066_el_idr_2016.shp diventa el_idr perde i _ prima e dopo, i valori vanno messi fra " e separati da uno spazio
-sdu="limi_comuni cv_liv pt_quo"
+sdu="diga invaso limi_comuni sp_acq cv_liv pt_quo"
 
 # indirizzo per scaricare il file del piemonte
 urlpiemonte="http://geodati.fmach.it/gfoss_geodata/osm/output_osm_regioni/piemonte.pbf"
@@ -33,10 +33,10 @@ osmosis=~/osmosis/bin/osmosis
 
 
 #Percorso completo di Mkgmap
-mkgmap=~/mkgmap-r3880/mkgmap.jar
+mkgmap=~/mkgmap-r4189/mkgmap.jar
 
 #Percorso completo di Splitter
-splitter=~/splitter-r580/splitter.jar
+splitter=~/splitter-r591/splitter.jar
 
 #Directory in cui vengono messi i file IMG del BDTRE
 BDTRE_IMG="BDTRE_IMG"
@@ -45,7 +45,7 @@ BDTRE_IMG="BDTRE_IMG"
 piemonteosm="piemonte.osm"
 
 #Directory delle mappe per garmin
-finale="finale"
+finale="Finale"
 
 #Allocazione Ram da utilizzare per splitter e mkgmap
 Xmx=-Xmx15000M

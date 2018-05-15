@@ -209,7 +209,7 @@ rm $BDTRE_IMG/osm*.*
 $osmosis -v --read-pbf-fast file=$uscitaosm/UNITO_invaso.pbf --rbf file=$uscitaosm/UNITO_sp_acq.pbf --rbf file=$uscitaosm/UNITO_diga.pbf --merge --merge --wb file=$uscitaosm/UNITO_laghi.pbf omitmetadata=true
 
 java $Xmx -jar $splitter \
---max-nodes=50000 \
+--max-nodes=100000 \
 --max-areas=300 \
 --mapid=66124001 \
 --output-dir=$BDTRE_IMG \
