@@ -65,6 +65,10 @@ sed -i 's/.0000"\/><tag k/"\/><tag k/g' *_cv_liv_*
 sed -i 's/PT_QUO_Q/name/g' *_pt_quo_* 
 sed -i 's/[0-9][0-9][0-9][0-9][0-9][0-9]"\/>/"\/>/g' *_pt_quo_*
 
+#Area bagnata da corso d'acqua, cambia l'etichetta S.N.
+sed -i 's/S.N.//g' *_ab_cda_* 
+
+
 #si sposta nella cartella 
 cd ../$sbdtre
 

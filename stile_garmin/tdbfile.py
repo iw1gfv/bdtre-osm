@@ -15,7 +15,7 @@ f = open ( fn , 'rb' )
 
 copyright = [ ( 0 , 3 , 'dati BDTRE: "BDTRE - Database GeoTopografico - 2018"' ) ,
               ( 0 , 3 , "dati openstreetmap: © OpenStreetMap contributors, https://www.openstreetmap.org/copyright/it" ) ,
-              ( 15 , 3 , "Cartografia realizzata da Michele Marchello e Lucio Galosso, basato su BDTRE - Database GeoTopografico - 2016 e su dati openstreetmap" ) ]
+              ( 15 , 3 , "Cartografia realizzata da Michele Marchello e Lucio Galosso, basato su BDTRE - Database GeoTopografico - 2018 e su dati openstreetmap" ) ]
               
 content = ""
 

@@ -20,13 +20,11 @@
 
 
 
-#punto quotato
-PT_QUO_SED='al piede'		{ name '${name|conv:m=>ft}' } [0x6300 resolution 23]
+#fiumi
+AB_CDA_AS=reale		{ name '${NOME}'} [ 0x46 resolution 18 ]
 
-PT_QUO_SED=altro		{ name '${name|conv:m=>ft}' } [0x6300 resolution 23]
 
-PT_QUO_SED='in gronda o su copertura'	{ name '${name|conv:m=>ft}' } [0x6300 resolution 23]
-
-PT_QUO_SED='strada o infrastruttura di circolazione'	{ name '${name|conv:m=>ft}' } [0x6300 resolution 23]
-
-PT_QUO_SED=suolo		{ name '${name|conv:m=>ft}' } [0x6300 resolution 23]
+#op_reg
+OP_REG_TY='briglia/pescaia'		[ 0x55 resolution 18 ]
+OP_REG_TY=chiusa			[ 0x55 resolution 18 ]
+OP_REG_TY='Non conosciuto'		[ 0x55 resolution 18 ]
