@@ -737,7 +737,7 @@ java $Xmx -jar $splitter \
 --max-areas=300 \
 --mapid=66148001 \
 --output-dir=$BDTRE_IMG \
-$uscitaosm/UNITO_toponomastica.pbf
+$uscitaosm/UNITO_loc_sg.pbf
 
 
 for infile in $BDTRE_IMG/66148*.osm.pbf

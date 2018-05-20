@@ -55,7 +55,7 @@ python $ogr2osm --positive-id --id=$id --add-version --add-timestamp --force ./$
 cd ../$uscitaosm
 
 #Toponomastica, cambia l'etichetta NOME in name
-#sed -i 's/NOME/name/g' *_toponomastica_*
+sed -i 's/LOC_SG_TOP/name/g' *_loc_sg_*
 
 #Curve di livello, cambia l'etichetta CV_LIV_Q in name e rimuove anche gli zeri dopo la virgola sulla quota
 sed -i 's/CV_LIV_Q/name/g' *_cv_liv_* 
@@ -64,9 +64,6 @@ sed -i 's/.0000"\/><tag k/"\/><tag k/g' *_cv_liv_*
 #Punti quotati, cambia l'etichetta Quota in name e rimuove anche i numeri dopo la virgola sul valore della quota
 sed -i 's/PT_QUO_Q/name/g' *_pt_quo_* 
 sed -i 's/[0-9][0-9][0-9][0-9][0-9][0-9]"\/>/"\/>/g' *_pt_quo_*
-
-#Area bagnata da corso d'acqua, cambia l'etichetta S.N.
-sed -i 's/S.N.//g' *_ab_cda_* 
 
 
 #si sposta nella cartella 

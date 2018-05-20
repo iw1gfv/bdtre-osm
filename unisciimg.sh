@@ -439,5 +439,7 @@ python stile_garmin/tdbfile.py $finale/mappe/mapset.tdb
 
 #cancella i file
 rm stile_garmin/Typ/*x*.typ
+rm stile_garmin/Typ/*.TYP
+rm stile_garmin/Typ/*.typ
 rm osmmap.tdb
 rm osmmap.img
