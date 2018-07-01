@@ -23,8 +23,8 @@ fi
 
 
 #rimuove i files eventualmente presenti nelle cartelle
-rm $sbdtrez/*
-rm $sbdtre/*
+rm -r $sbdtrez/*
+rm -r $sbdtre/*
 
 
 #si sposta nella cartella dei file zippati

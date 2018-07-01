@@ -20,24 +20,8 @@
 
 
 
-#fiumi
-AB_CDA_SED='in sede sotterranea'		{ name '${NOME}'} [ 0x47 resolution 18 ]
-AB_CDA_SED='in sede pensile'		{ name '${NOME}'} [ 0x46 resolution 18 ]
-AB_CDA_SED='in sede normale'		{ name '${NOME}'} [ 0x46 resolution 18 ]
+#comune
 
-
-ALVEO_A_SE=incisa		[ 0x46 resolution 18 ]
-ALVEO_A_SE=pensile		[ 0x46 resolution 18 ]
-
-
-ALVEO_REG=fiumara		[ 0x46 resolution 18 ]
-ALVEO_REG=fluviale		[ 0x46 resolution 18 ]
-ALVEO_REG=torrentizio		[ 0x46 resolution 18 ]
-
-
-
-
-#op_reg
-OP_REG_TY='briglia/pescaia'		[ 0x55 resolution 18 ]
-OP_REG_TY=chiusa			[ 0x55 resolution 18 ]
-OP_REG_TY='Non conosciuto'		[ 0x55 resolution 18 ]
+LIM_COM_TY=Comune	{ name '${CMDILIMUNO} / ${CMDILIMDUE}'}	[ 0x1d resolution 21 ]
+LIM_COM_TY=Regione	{ name '${CMDILIMUNO} / ${CMDILIMDUE}'}	[ 0x1e resolution 16 ]
+LIM_COM_TY="Provincia/Citta' Metropolitana"	{ name '${CMDILIMUNO} / ${CMDILIMDUE}'}	[ 0x1c resolution 19 ]
