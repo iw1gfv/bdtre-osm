@@ -1,0 +1,97 @@
+#	These style files are part of the BDTRE-OSM package.
+#	I refer to them as a 'program' in the licensing text below.
+
+#	Copyright (C) 2016  Galosso Lucio
+
+#	This program is free software: you can redistribute it and/or modify
+#	it under the terms of the GNU General Public License as published by
+#	the Free Software Foundation, either version 3 of the License, or
+#	(at your option) any later version.
+
+#	This program is distributed in the hope that it will be useful,
+#	but WITHOUT ANY WARRANTY; without even the implied warranty of
+#	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#	GNU General Public License for more details.
+
+#	You should have received a copy of the GNU General Public License
+#	along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+
+
+# map the cycle routes to the icn, ncn, rcn and lcn tags
+
+
+type=route & route=bicycle & network=icn
+	{
+		apply { 
+		set icn_from_relation=yes;
+		set iname='${name}';
+		set iref='$(iref)/${ref}' | '${ref}';
+	} 
+	}
+
+type=route & route=bicycle & network=ncn
+	{
+		apply { 
+		set ncn_from_relation=yes;
+		set nname='${name}';
+		set nref='$(nref)/${ref}' | '${ref}';
+	} 
+	}	
+
+type=route & route=bicycle & network=rcn
+	{
+		apply { 
+		set rcn_from_relation=yes;
+		set rname='${name}';
+		set rref='$(rref)/${ref}' | '${ref}';
+	} 
+	}	
+
+type=route & route=bicycle & network=lcn
+	{
+		apply { 
+		set lcn_from_relation=yes;
+		set lname='${name}';
+		set lref='$(lref)/${ref}' | '${ref}';
+	}
+	} 	
+
+
+type=route & route=bicycle & network=tcn
+	{
+		apply { 
+		set tcn_from_relation=yes;
+		set tname='${name}';
+		set tref='$(tref)/${ref}' | '${ref}';
+	}
+	} 
+
+type=route & route=bicycle & network!=*
+	{
+		apply { 
+		set non_from_relation=yes;
+		set nonname='${name}';
+		set nonref='$(nonref)/${ref}' | '${ref}';
+	}
+	}
+
+type=route & route=bicycle & network!=icn & network!=ncn & network!=rcn & network!=lcn & network!=tcn
+	{
+		apply { 
+		set ab_from_relation=yes;
+		set abname='${name}';
+		set abref='$(abref)/${ref}' | '${ref}';
+	}
+	}	
+
+type=route & route=mtb
+	{
+		apply {
+		set mtb_from_relation=yes;
+		set mname='${name}';
+		set mref='$(mref)/${ref}' | '${ref}';
+	}
+	} 
+

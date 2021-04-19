@@ -28,15 +28,19 @@ Type=0x4d,1
 Type=0x4f,1
 Type=0x51,1
 Type=0x1b,2
-Type=0x36,2
-Type=0x2f,2
-Type=0x31,2
 Type=0x34,2
-Type=0x37,2
 Type=0x46,2
 Type=0x47,2
 Type=0x50,2
+Type=0x10f13,2
+Type=0x10f14,2
+Type=0x10f15,2
+Type=0x10f16,2
+Type=0x31,2
+Type=0x36,2
+Type=0x37,3
 Type=0x2a,3
+Type=0x2f,3
 Type=0x33,3
 Type=0x0c,3
 Type=0x26,3
@@ -78,6 +82,7 @@ Type=0x10f0b,6
 Type=0x10f0c,6
 Type=0x10f0d,6
 Type=0x10f00,6
+Type=0x10f12,6
 Type=0x04,10
 Type=0x14,10
 Type=0x15,10
@@ -1158,7 +1163,7 @@ Xpm="32 32 2 1"
 
 [_polygon]
 Type=0x2f
-String1=0x05,Area pedonale
+String1=0x05,Vialetto/vicolo
 ExtendedLabels=N
 FontStyle=Default
 CustomColor=No
@@ -1174,7 +1179,7 @@ ExtendedLabels=N
 FontStyle=Default
 CustomColor=No
 Xpm="0 0 1 0"
-"1 c #FFC000"
+"1 c #A4A4A4"
 [end]
 
 
@@ -1222,12 +1227,11 @@ Xpm="0 0 1 0"
 
 [_polygon]
 Type=0x36
-String1=0x05,Isola spartitraffico
 ExtendedLabels=N
 FontStyle=Default
 CustomColor=No
 Xpm="0 0 1 0"
-"1 c #FFC040"
+"1 c #BD3000"
 [end]
 
 
@@ -1243,13 +1247,13 @@ Xpm="0 0 1 0"
 
 
 [_polygon]
-Type=0x36
+Type=0x38
 String1=0x05,Distributore carburante
 ExtendedLabels=N
 FontStyle=Default
 CustomColor=No
 Xpm="0 0 1 0"
-"1 c #FFC040"
+"1 c #BD9520"
 [end]
 
 
@@ -1488,8 +1492,8 @@ Xpm="32 32 2 1"
 
 [_polygon]
 Type=0x50
-String1=0x05,Bosco
-ExtendedLabels=N
+String1=0x05,Bosco a prevalenza di latifoglie
+ExtendedLabels=Y
 FontStyle=Default
 CustomColor=No
 Xpm="32 32 2 1"
@@ -1498,19 +1502,23 @@ Xpm="32 32 2 1"
 "################################"
 "################################"
 "################################"
-"########!#######################"
-"########!#######################"
-"#######!!!######################"
-"#######!#!######################"
-"#######!#!######################"
-"######!!#!!#####################"
-"######!###!#####################"
-"######!###!#####################"
-"######!###!!!###################"
+"########!!!#####################"
+"#######!###!####################"
+"######!#####!###################"
+"######!#####!###################"
+"######!#####!###################"
+"######!####!####################"
+"#######!###!!!##################"
 "################################"
 "################################"
 "################################"
-"################################"
+"###############!!!##############"
+"##############!###!#############"
+"#############!#####!############"
+"#############!#####!############"
+"#############!#####!############"
+"#############!####!#############"
+"##############!###!!!###########"
 "################################"
 "################################"
 "################################"
@@ -1521,10 +1529,6 @@ Xpm="32 32 2 1"
 "####################!#####!#####"
 "####################!####!######"
 "#####################!###!!!####"
-"################################"
-"################################"
-"################################"
-"################################"
 "################################"
 "################################"
 ;12345678901234567890123456789012
@@ -1578,7 +1582,7 @@ Xpm="32 32 2 1"
 
 [_polygon]
 Type=0x55
-String1=0x05,Chiusa
+String1=0x05,Struttura idraulica
 ExtendedLabels=N
 FontStyle=Default
 CustomColor=No
@@ -2272,6 +2276,116 @@ Xpm="32 32 2 1"
 [end]
 
 
+[_polygon]
+Type=0x10f12
+String1=0x05,Prato
+ExtendedLabels=N
+FontStyle=Default
+Xpm="0 0 1 0"
+"1 c #399500"
+[end]
+
+
+[_polygon]
+Type=0x10f13
+String1=0x05,Bosco
+ExtendedLabels=Y
+FontStyle=Default
+CustomColor=No
+Xpm="0 0 1 0"
+"1 c #98CC60"
+[end]
+
+
+[_polygon]
+Type=0x10f14
+String1=0x05,Arbusti e macchia
+ExtendedLabels=Y
+FontStyle=Default
+CustomColor=No
+Xpm="32 32 2 1"
+"! c #258725"
+"# c #C8F2A4"
+"####################!###########"
+"####################!###!#######"
+"#################!##!###!#######"
+"#################!###!##!##!####"
+"##################!##!#!##!#####"
+"################!!!!!!!!!!!!!###"
+"#################!!!!!!!!!!!####"
+"##################!!!!!!!!######"
+"################################"
+"######!#########################"
+"######!###!#####################"
+"###!##!###!#####################"
+"###!###!##!##!##################"
+"####!##!#!##!###################"
+"##!!!!!!!!!!!!!#################"
+"###!!!!!!!!!!!##################"
+"####!!!!!!!!####################"
+"################################"
+"#######################!########"
+"#######################!###!####"
+"####################!##!###!####"
+"####################!###!##!##!#"
+"#####################!##!#!##!##"
+"###################!!!!!!!!!!!!!"
+"####################!!!!!!!!!!!#"
+"#####################!!!!!!!!###"
+"####!###########################"
+"####!###!#######################"
+"#!##!###!#######################"
+"#!###!##!##!####################"
+"##!##!#!##!#####################"
+"!!!!!!!!!!!!!###################"
+;12345678901234567890123456789012
+[end]
+
+
+[_polygon]
+Type=0x10f15
+String1=0x05,Bosco a prevalenza di conifere
+ExtendedLabels=Y
+FontStyle=Default
+CustomColor=No
+Xpm="32 32 2 1"
+"! c #258725"
+"# c #C8F2A4"
+"################################"
+"################################"
+"########!#######################"
+"########!#######################"
+"#######!!!######################"
+"#######!!!######################"
+"#######!!!######################"
+"######!!!!!#####################"
+"######!!!!!#####################"
+"######!!!!!#####################"
+"################################"
+"################################"
+"################################"
+"###############!################"
+"###############!################"
+"##############!!!###############"
+"##############!!!###############"
+"##############!!!###############"
+"#############!!!!!##############"
+"#############!!!!!##############"
+"#############!!!!!##############"
+"################################"
+"################################"
+"################################"
+"######################!#########"
+"######################!#########"
+"#####################!!!########"
+"#####################!!!########"
+"#####################!!!########"
+"####################!!!!!#######"
+"####################!!!!!#######"
+"####################!!!!!#######"
+[end]
+
+
 ;====================== LINES ===========================
 
 
@@ -2633,8 +2747,8 @@ Xpm="32 2 2  1"
 "!!!!####!!!!####!!!!####!!!!####"
 "!!!!####!!!!####!!!!####!!!!####"
 ;12345678901234567890123456789012
-String1=0x05,Confine
-ExtendedLabels=N
+String1=0x05,Confine Provinciale
+ExtendedLabels=Y
 FontStyle=Default
 CustomColor=No
 [end]
@@ -2648,8 +2762,8 @@ BorderWidth=0
 Xpm="0 0 2 0"
 "1 c #FF3000"
 "2 c #C0C4C0"
-String1=0x05,Confine
-ExtendedLabels=N
+String1=0x05,Confine Comunale
+ExtendedLabels=Y
 FontStyle=Default
 CustomColor=No
 [end]
@@ -2663,8 +2777,8 @@ BorderWidth=0
 Xpm="0 0 2 0"
 "1 c #000000"
 "2 c #F8FCF8"
-String1=0x05,Confine
-ExtendedLabels=N
+String1=0x05,Confine Regionale
+ExtendedLabels=Y
 FontStyle=Default
 CustomColor=No
 [end]
@@ -2672,13 +2786,13 @@ CustomColor=No
 
 [_line]
 Type=0x20
-UseOrientation=N
+UseOrientation=Y
 LineWidth=1
 BorderWidth=0
 Xpm="0 0 1 0"
-"1 c #BD958B"
+"1 c #C08000"
 String1=0x05,Curva ordinaria
-ExtendedLabels=N
+ExtendedLabels=Y
 FontStyle=NoLabel (invisible)
 CustomColor=No
 [end]
@@ -2686,43 +2800,41 @@ CustomColor=No
 
 [_line]
 Type=0x21
-UseOrientation=N
+UseOrientation=Y
 LineWidth=2
 BorderWidth=0
 Xpm="0 0 1 0"
-"1 c #BD958B"
+"1 c #804000"
 String1=0x05,Curva intermedia
-ExtendedLabels=N
-FontStyle=Default
+ExtendedLabels=Y
+FontStyle=SmallFont
 CustomColor=No
 [end]
 
 
 [_line]
 Type=0x22
-UseOrientation=N
+UseOrientation=Y
 LineWidth=2
 BorderWidth=0
 Xpm="0 0 1 0"
 "1 c #BD958B"
 String1=0x05,Curva direttrice
-ExtendedLabels=N
-FontStyle=Default
+ExtendedLabels=Y
+FontStyle=SmallFont
 CustomColor=No
 [end]
 
 
 [_line]
 Type=0x23
-UseOrientation=N
+UseOrientation=Y
 LineWidth=1
 BorderWidth=0
 Xpm="0 0 1 0"
 "1 c #BD958B"
 String1=0x05,Curva di determinazione incerta
 ExtendedLabels=N
-FontStyle=NoLabel (invisible)
-CustomColor=No
 [end]
 
 
@@ -2736,26 +2848,6 @@ Xpm="32 1 2  1"
 ;12345678901234567890123456789012
 String1=0x05,Divisione del terreno
 ExtendedLabels=N
-FontStyle=Default
-CustomColor=No
-[end]
-
-
-[_line]
-Type=0x25
-UseOrientation=Y
-Xpm="32 4 2  1"
-"! c #00C040"
-"  c none"
-"!!! !!! !!! !!! !!! !!! !!! !!! "
-"!!! !!! !!! !!! !!! !!! !!! !!! "
-" !   !   !   !   !   !   !   !  "
-" !   !   !   !   !   !   !   !  "
-;12345678901234567890123456789012
-String1=0x05,Filare di alberi/siepe
-ExtendedLabels=N
-FontStyle=Default
-CustomColor=No
 [end]
 
 
@@ -2982,6 +3074,27 @@ ExtendedLabels=N
 FontStyle=SmallFont
 CustomColor=No
 [end]
+
+
+[_line]
+Type=0x10e00
+UseOrientation=Y
+Xpm="32 4 2  1"
+"! c #00C040"
+"  c none"
+"!!! !!! !!! !!! !!! !!! !!! !!! "
+"!!! !!! !!! !!! !!! !!! !!! !!! "
+" !   !   !   !   !   !   !   !  "
+" !   !   !   !   !   !   !   !  "
+;12345678901234567890123456789012
+String1=0x05,Filare di alberi/siepe
+ExtendedLabels=N
+FontStyle=Default
+CustomColor=No
+[end]
+
+
+
 
 
 ;====================== POINTS ==========================

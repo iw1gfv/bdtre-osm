@@ -2,7 +2,7 @@
 sbdtrez="BDTRE"
 
 #sorgentibdtre, directory che contiene i file non zippati
-sbdtre="SORGENTI-BDTRE"
+sbdtre="SORGENTI_BDTRE"
 
 #shp uniti, directory che conterrà i files shp uniti
 shpuniti="SHP-UNITI"
@@ -14,9 +14,19 @@ uscitaosm="USCITA-OSM"
 #uscita map, directory che conterrà i files map
 uscitamap="USCITA-MAP"
 
+#sorgenti bdtre zippati, directory che contiene i file zippati del Dtm5 scaricati
+sdtm="DTM5"
+
+#TIF, directory che contiene i file Tif del Dtm5 non zippati
+tif="TIF"
+
+#directory che contiene il file grezzo con le curve a 20 metri
+curve20="CURVE20METRI"
+
 #shp da usare:
-#esempio 001066_el_idr_2016.shp diventa el_idr perde i _ prima e dopo, i valori vanno messi fra " e separati da uno spazio
-sdu="ab_cda alveo alveo_a diga invaso lim_com limi_comuni op_reg sp_acq pt_quo loc_sg cv_liv"
+#esempio el_idr_2021.shp diventa el_idr perde i _ dopo, i valori vanno messi fra " e separati da uno spazio
+sdu="limi_comuni loc_sg loc_sg_line cv_liv pt_quo"
+
 
 # indirizzo per scaricare il file del piemonte
 urlpiemonte="http://geodati.fmach.it/gfoss_geodata/osm/output_osm_regioni/piemonte.pbf"

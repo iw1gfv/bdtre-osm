@@ -13,9 +13,9 @@ f = open ( fn , 'rb' )
 # copyright messages are given as a list of tuples, the tuples contain
 # the relevant header bytes as ints and the actual strings.
 
-copyright = [ ( 0 , 3 , 'dati BDTRE: "BDTRE - Database GeoTopografico - 2018"' ) ,
-              ( 0 , 3 , "dati openstreetmap: © OpenStreetMap contributors, https://www.openstreetmap.org/copyright/it" ) ,
-              ( 15 , 3 , "Cartografia realizzata da Michele Marchello e Lucio Galosso, basato su BDTRE - Database GeoTopografico - 2018 e su dati openstreetmap" ) ]
+copyright = [ ( 0 , 3 , 'dati BDTRE: (c) La titolarità piena ed esclusiva del "BDTRE - Database GeoTopografico - 2021" è di Regione Piemonte (ai sensi della L. 633/41 e s.m.i)' ) ,
+              ( 0 , 3 , "dati openstreetmap: (c) openstreetmap.org contributors, see http://wiki.openstreetmap.org/index.php/attribution" ) ,
+              ( 15 , 3 , "Cartografia realizzata da Michele Marchello e Lucio Galosso, basato su BDTRE - Database GeoTopografico - 2021 e su dati openstreetmap" ) ]
               
 content = ""
 

@@ -47,23 +47,26 @@ for s in $(find -name "*$tipo*.shp" | cut -c3-)
 	 echo "converto $s"
 	 #converte il file in formato OSM
 nomeuscita=`basename $s`
-python $ogr2osm --positive-id --id=$id --add-version --add-timestamp --force ./$s -o "../$uscitaosm/$nomeuscita.osm" 
+python3 $ogr2osm --positive-id --id=$id --add-version --add-timestamp --force ./$s -o "../$uscitaosm/$nomeuscita.osm" 
 
 
 # modifica le etichette dei file OSM in modo da far apaprire le scritte <caption> di mapsforge.
 #si sposta nella cartella dei file OSM
 cd ../$uscitaosm
 
-#Toponomastica, cambia l'etichetta NOME in name
-sed -i 's/LOC_SG_TOP/name/g' *_loc_sg_*
+#Toponomastica, cambia l'etichetta LOC_SG_TOP in name
+sed -i 's/LOC_SG_TOP/name/g' loc_sg_line_*.*
+
+#Toponomastica, cambia l'etichetta LOC_SG_TOP in name
+sed -i 's/LOC_SG_TOP/name/g' loc_sg_*.*
 
 #Curve di livello, cambia l'etichetta CV_LIV_Q in name e rimuove anche gli zeri dopo la virgola sulla quota
-sed -i 's/CV_LIV_Q/name/g' *_cv_liv_* 
-sed -i 's/.0000"\/><tag k/"\/><tag k/g' *_cv_liv_*
+sed -i 's/CV_LIV_Q/name/g' cv_liv_*.*
+sed -i 's/.000000000000000"\/><tag k/"\/><tag k/g' cv_liv_*.*
 
 #Punti quotati, cambia l'etichetta Quota in name e rimuove anche i numeri dopo la virgola sul valore della quota
-sed -i 's/PT_QUO_Q/name/g' *_pt_quo_* 
-sed -i 's/[0-9][0-9][0-9][0-9][0-9][0-9]"\/>/"\/>/g' *_pt_quo_*
+sed -i 's/PT_QUO_Q/name/g' pt_quo_*.*
+sed -i 's/[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]"\/>/"\/>/g' pt_quo_*.*
 
 
 #si sposta nella cartella 

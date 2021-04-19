@@ -6,7 +6,7 @@ Introduzione alla mappa BDTRE-OSM del Piemonte
 
 La mappa BDTRE-OSM del Piemonte è una mappa sinottica che utilizza i dati del BDTRE della Regione Piemonte e OSM (Openstreetmap.org).
 
-La base topografica è derivata dal BDTRE 2018 (aggiornato al 31/01/2018).
+La base topografica è derivata dal BDTRE 2021 (aggiornato al 28/02/2021).
 
 Da una prima analisi dei dati del BDTRE, alcune caratteristiche sono mancanti e/o non pienamente utilizzabili ed allora si implementano in parte con i dati di OSM che sono recenti ma anche incompleti (specialmente in alcune zone).
 
@@ -52,23 +52,27 @@ Tramite l'app che leggerà la mappa bisognerà selezionare il tema bdtre-osm.
 
 Per creare la mappa occorre che nel sistema (UBUNTU) siano presenti:
 
--- gdal-bin
+-- gdal-bin (da installare nel sistema)
 
--- python-gdal
+-- python-gdal (da installare nel sistema)
 
--- openjdk 8
+-- python-lxml (da installare nel sistema)
 
--- osmctools
+-- openjdk 11 (da installare nel sistema)
+
+-- osmctools (da installare nel sistema)
+
+-- osmium-tool (da installare nel sistema)
 
 -- osmosis (aggiungere la stringa 'JAVACMD_OPTIONS=-Xmx8G' nel file'osmosis/bin/osmosis' se non è già stato inserito, inserire al posto di 8 un valore pari alla quantità della vostra RAM)
 
--- osm2ogr
+-- osm2ogr (inserire il percorso completo nel file "configurazione")
 
--- mkgmap
+-- mkgmap (inserire il percorso completo nel file "configurazione")
 
--- splitter
+-- splitter (inserire il percorso completo nel file "configurazione")
 
--- gmt (gmaptool per linux)
+-- gmt (gmaptool per linux) (inserire il percorso completo nel file "configurazione")
 
 
 3.2 Ottenimento dati BDTRE
@@ -81,14 +85,15 @@ I dati originali possono essere scaricati da questa pagina:
  http://www.geoportale.piemonte.it/geocatalogorp/?sezione=catalogo   (cercare per "geotopografico" .....)
 
 
-L'interfaccia non è molto adatta per l'acquisizione di tutti gli oltre 1200 comuni, ma avendo bisogno dei dati, questa è la fonte ufficiale.
-Per aiutare con il processo, una lista di tutti i comuni si trova all'interno della cartella "comuni".
+L'interfaccia non è molto adatta per l'acquisizione di tutti i 11181 comuni, ma avendo bisogno dei dati, questa è la fonte ufficiale.
+Per aiutare con il processo, una lista di tutti i comuni si trova all'interno della cartella "Scarico/comuni".
 
-Nella cartella "comuni" si trova un file txt riepilogativo per il download di tutti i comuni del Piemonte ed i relativi codici ISTAT. Per comodità i comuni sono anche stati divisi in piccoli file per provincia. 
-Per agevolare il dowload sono stati creati questi file da dare in pasto a wget che scarica la regione completa o la singola provincia.
+Nella cartella "Scarico/comuni" si trova un file txt riepilogativo per il download di tutti i comuni del Piemonte ed i relativi codici ISTAT. Per comodità i comuni sono anche stati divisi in piccoli file per provincia. 
+Per agevolare il dowload sono stati creati questi file da dare in pasto a wget che scarica la regione completa o la singola provincia a seconda del file specificato.
+Se per esigenze specifiche servono pochi comuni per una gestione locale, basta creare un file txt su misura e cambiare nello script "scaricabdtre.sh". Se vi serve una singola provincia specifica potete utilizzare quelli già presenti per le singole province. 
 
 I dati BDTRE vengono aggiornati annualmente alla data del 31/12 di ogni anno e resi disponibili nel  mese di marzo/aprile dell'anno successivo.
-Tutti i dati e i servizi della BDTRE pubblicati sono resi disponibili con licenza Creative Commons - BY 2.5, che consente di utilizzare i dati previa attribuzione.
+Tutti i dati e i servizi della BDTRE pubblicati sono resi disponibili con licenza Creative Commons - BY 4.0, che consente di utilizzare i dati previa attribuzione.
 Sul sito del geoportale della Regione Piemonte è presente un link alla licenza, seguendolo è possibile consultare il testo della licenza stessa.
 All'interno di ogni singolo file zip, è allegato un estratto della licenza in formato pdf.
 
@@ -106,6 +111,16 @@ http://geodati.fmach.it/gfoss_geodata/osm/output_osm_regioni/piemonte.osm.bz2
 Gli estratti regionali vengono aggiornati settimanalmente il giovedì/venerdì.
 
 
+3.4 Curve di livello
+--------------------
+
+Le curve di livello presenti nel BDTRE hanno un valore di equidistanza pari a 10 metri, sono curve molto precise e dettagliate che consente una buona analisi del territtorio.
+Per un uso prettamente escursionistico ritengo possano essere eccessive, funzionalmente possono essere impiegate quelle a 20 metri.
+
+Per poter usufruire delle curve a 20 metri bisogna far girare lo script "curve20.sh" che provvede a scaricare i file tif del DTM regionale, crea le curve a 20 metri e le divide su base comunale sostituendole a quelle originali con equidistanza a 10 metri.
+Lo script "curve20a.sh" genera le curve a 20 metri, le taglia su base comunale e le sostituisce a quelle a 10 metri senza scaricare il DTM. Eseguire questo script solamente se è stato scaricato il DTM precedentemente e per ripristinare le curve a 20 metri.
+
+
 4. Costruzione della mappa, uso  e sequenza degli scripts
 ---------------------------------------------------------
 
@@ -115,20 +130,25 @@ Le variabili vanno verificate/modificate nel file configurazione, in questo modo
 Gli script non sono pensati per avere un diverso albero delle directory, si possono modificare i nomi delle directory, ma non la loro posizione.
 
 
-4.1 Sequenza di script comuni per la creazione delle mappe
-----------------------------------------------------------
+4.1 Sequenza di script comuni per la conversione e selezione dei dati
+---------------------------------------------------------------------
+
 scaricabdtre.sh
-shp.sh (opzionale, serve ad unire i file in formato shp per poter vedere in qgis quali elementi sono presenti
+unzipbdtre.sh
+curve20.sh (opzionale, serve solo a cambiare le curve 20 metri con le 10 metri se si vuole meno curve)
+shp.sh (opzionale, serve ad unire i file in formato shp per poter vedere in qgis quali elementi sono presenti)
 shpaosm.sh
 uniscibdtre.sh
 
 
 4.2 Sequenza di script per la creazione della mappa per Android
 ---------------------------------------------------------------
+
 osmamap.sh
 
 4.3 Sequenza di script per la creazione della mappa per Garmin
 ---------------------------------------------------------------
+
 bdtre2img.sh
 osm2img.sh
 unisciimg.sh

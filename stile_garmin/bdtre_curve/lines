@@ -1,7 +1,7 @@
 #	These style files are part of the BDTRE-OSM package.
 #	I refer to them as a 'program' in the licensing text below.
 
-#	Copyright (C) 2018  Galosso Lucio
+#	Copyright (C) 2016  Galosso Lucio
 
 #	This program is free software: you can redistribute it and/or modify
 #	it under the terms of the GNU General Public License as published by
@@ -24,35 +24,31 @@
 
 #Attribuisco a tutte le curve il tag minor_contour
 
-name=*		{ add look = minor_contour }
-
+ID=*		{ add look = minor_contour }
 
 #Assegno la quota ad ogni curva facendo la conversione
 
 look = minor_contour { name '${name|conv:m=>ft}' }
-
 
 #Assegno il tipo di curva in base alla quota
 
 look = minor_contour & ( name ~ '.*[05]00\.0+' )
  { set look = major_contour }
 
+look = minor_contour & ( name ~ '.*[10]00\.0+' )
+ { set look = major_contour }
 
 look = minor_contour & ( name ~ '.*[01]00\.0+' )
  { set look = medium_contour }
 
-
 look = minor_contour & ( name ~ '.*[02]00\.0+' )
  { set look = medium_contour }
-
 
 look = minor_contour & ( name ~ '.*[03]00\.0+' )
  { set look = medium_contour }
 
-
 look = minor_contour & ( name ~ '.*[04]00\.0+' )
  { set look = medium_contour }
-
 
 look = minor_contour & ( name ~ '.*[06]00\.0+' )
  { set look = medium_contour }
@@ -60,23 +56,15 @@ look = minor_contour & ( name ~ '.*[06]00\.0+' )
 look = minor_contour & ( name ~ '.*[07]00\.0+' )
  { set look = medium_contour }
 
-
 look = minor_contour & ( name ~ '.*[08]00\.0+' )
  { set look = medium_contour }
 
-
 look = minor_contour & ( name ~ '.*[09]00\.0+' )
  { set look = medium_contour }
-
-
-look = minor_contour & ( name ~ '.*[01]0\.0+' )
- { set look = minor_contour }
-
 
 #assegno il codice della linea direttrice ed intermedia
 look = major_contour  	{ name '${name}m'}	   [ 0x22 resolution 19 ]
 look = medium_contour   { name '${name}m'}	   [ 0x21 resolution 21 ]
 
-
 #ed infine il codice della linea ordinaria
-look = minor_contour    { name '${name}m'}	   [ 0x20 resolution 23 ]
+look = minor_contour    { name '${name}m'}	   [ 0x20 resolution 22 ]

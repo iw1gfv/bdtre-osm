@@ -10,7 +10,7 @@ source "./configurazione"
 #verifica che sia presente la cartella con i file sorgenti del BDTRE
 if [[ ! -d $sbdtre ]]
 then
-  echo "Non esiste la cartella $sbdtre, fai girare lo script scaricabdtre.sh prima di questo"
+  echo "Non esiste la cartella $sbdtre, fai girare lo script unzipbdtre.sh prima di questo"
   exit 1
 fi
 
@@ -24,6 +24,8 @@ fi
 
 
 #cancella i file eventualmente presenti nella cartella
+echo
+echo cancello i vecchi file
 rm -r $shpuniti/*
 
 
@@ -36,7 +38,7 @@ for i in $(find . -type f -name "*.shp")
 	 do  
 	  
 	 #prende il nome del tipo di shp, togliendo dal primo all'ultimo _   
-	 tmp2=${i#*_}  
+	 tmp2=${i#*}  
 	 tmp=`basename $tmp2`  
 	 echo $tmp  
 	 tipodishp=`echo "${tmp%\_*}"`  
@@ -52,4 +54,9 @@ for i in $(find . -type f -name "*.shp")
            echo "crea shp"  
            ogr2ogr -f 'ESRI Shapefile' "../$shpuniti/$tipodishp.shp" $i
 fi
+
 done
+
+
+#ritorna nella cartella principale
+cd ..

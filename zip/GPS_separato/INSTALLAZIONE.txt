@@ -1,0 +1,51 @@
+Questa versione di BDTRE-OSM è adatta ad essere caricata su dispositivi GPS Garmin che consentono di poter caricare più mappe e quindi non solo il classico gmapsupp.img.
+
+
+>>>>>>>>>>>>>>INSTALLAZIONE SUL DISPOSITIVO GPS<<<<<<<<<<<<<<<<
+
+1 Estrarre la cartella Bdtre-osm-GPS_separato.... contenuta nel file zip sul computer.
+
+2 Creare Una cartella chiamata Garmin in via preferenziale sulla microsd del GPS, se il dispositivo non ne è provvisto utilizzare la memoria interna
+
+3 Copiare i file presenti nella cartella 64 dentro la cartella Garmin (attenzione, se all'interno della cartella esistono già altri file questi verrànno sovrascritti. Conviene fare una copia dei file presente sulla sceda di memoria prima di sovrascriverli se si vuole mantenerli).
+
+4 Rimuovere la microsd dal computer ed inserirla nel GPS
+
+5 Accendere il gps e la mappa verrà caricata
+
+6. dal menù di selezione delle mappe si possono attivare e disattivare i vari livelli della mappa:
+
+
+     "BDTRE Comune"
+     "BDTRE Forme del terreno"
+     "BDTRE Bosco"
+     "BDTRE Coltivazioni"
+     "BDTRE Laghi"
+     "BDTRE Fiumi"
+     "BDTRE Cava"
+     "BDTRE Giardino cittadino"
+     "BDTRE Impianti sportivi"
+     "BDTRE Strade"
+     "BDTRE Edifici"
+     "BDTRE Divisioni del terreno"
+     "BDTRE Canali"
+     "BDTRE Linee elettriche"
+     "BDTRE Curve di livello"
+     "BDTRE Alberi/siepi"
+     "BDTRE Punti quotati"
+     "BDTRE Toponimi"
+     "BDTRE Numero civico"
+     "OSM Energie"
+     "OSM Varie"
+     "OSM Ferrovie"
+     "OSM Aree protette"
+     "OSM Aree militari"
+     "OSM Idrografia"
+     "OSM Confini comunali "
+     "OSM Viabilità"
+     "OSM Ciclovie"
+     "OSM Sentieri"
+     "OSM Alberi"
+     "OSM Poi"
+	
+Questa mappa ed i prossimi aggiornamenti si possono scaricare da piemontegps.altervista.org

@@ -1,0 +1,92 @@
+#	These style files are part of the BDTRE-OSM package.
+#	I refer to them as a 'program' in the licensing text below.
+
+#	Copyright (C) 2016  Galosso Lucio
+
+#	This program is free software: you can redistribute it and/or modify
+#	it under the terms of the GNU General Public License as published by
+#	the Free Software Foundation, either version 3 of the License, or
+#	(at your option) any later version.
+
+#	This program is distributed in the hope that it will be useful,
+#	but WITHOUT ANY WARRANTY; without even the implied warranty of
+#	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#	GNU General Public License for more details.
+
+#	You should have received a copy of the GNU General Public License
+#	along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+
+
+#Forma terreno
+
+F_NTER_TY=rocce					[ 0x35 resolution 20 ]
+#F_NTER_TY='spiaggia/arenile/dune'		[ 0x1b resolution 20 ]
+F_NTER_TY='pietraie e ghiaioni'			[ 0x26 resolution 20 ]
+F_NTER_TY='area nuda'				[ 0x26 resolution 20 ]
+F_NTER_TY='Non conosciuto'			[ 0x26 resolution 20 ]
+
+
+#Forma particolare
+
+FOR_PC_TY='Non conosciuto'			[ 0x4f resolution 20 ]
+FOR_PC_TY=riparie				[ 0x4f resolution 20 ]
+FOR_PC_TY=rupestri				[ 0x4f resolution 20 ]
+
+
+#Scarpata
+
+SCARPT_CON='Non conosciuto'		[0x10f06 resolution 20]
+
+
+#Argine
+
+ARGN_TY='Non conosciuto'		[0x10101 resolution 20]
+
+
+#Ghiacciaio
+
+GHI_NV_TY='superficie di ghiacciaio'	{ name 'Ghiacciaio ${GHI_NV_NOM}'}	[0x4d resolution 16]
+
+
+#Aeroporti / elicotteri
+
+MAN_TR_TY='pista aeroporto non qualificata'			[ 0x07 resolution 20 ]
+MAN_TR_TY='pista di rullaggio'					[ 0x07 resolution 20 ]
+MAN_TR_TY='piattaforma decollo atterraggio elicotteri'		[ 0x0e resolution 21 ]
+
+
+#mu_div
+
+MU_DIV_TY=bastione			[0x10f0b resolution 21]
+MU_DIV_TY=divisori			[0x10f0b resolution 21]
+MU_DIV_TY=muro				[0x10f0b resolution 21]
+MU_DIV_TY='muro a secco'		[0x10f0b resolution 21]
+MU_DIV_TY='muro in muratura'		[0x10f0b resolution 21]
+
+
+#mu_sos
+
+MU_SOS_TY="muro d'ala"			[0x10f0b resolution 21]
+MU_SOS_TY='muro di sostegno'		[0x10f0b resolution 21]
+MU_SOS_TY='muro in muratura'		[0x10f0b resolution 21]
+MU_SOS_TY='Non conosciuto'		[0x10f0b resolution 21]
+MU_SOS_TY='rivestimento naturale'	[0x10f0c resolution 20]
+MU_SOS_TY='scarpata artificiale'	[0x10f06 resolution 20]
+MU_SOS_TY=terrapieno			[0x10f0c resolution 20]
+MU_SOS_TY='terrazzamento agricolo'	[0x10f0c resolution 20]
+
+
+#pe_uins
+PE_UINS_TY='area cimiteriale'		[0x1a resolution 21 default_name 'Cimitero' ]
+PE_UINS_TY=campeggio			[0x2e resolution 20]
+PE_UINS_TY='campo da golf'		[0x18 resolution 20]
+PE_UINS_TY='centrale energia solare'	[0x10f07 resolution 21]
+PE_UINS_TY=depuratore			[0x10f08 resolution 21]
+PE_UINS_TY=parco			[0x17 resolution 21]
+PE_UINS_TY='parco giochi'		[0x10104 resolution 21]
+PE_UINS_TY='parco/giardino'		[0x17 resolution 21]
+
+#sc_dis
+SC_DIS_TY=discarica			[0x10f10 resolution 21 default_name 'Discarica' ]

@@ -1,0 +1,312 @@
+001001 Agliè
+001002 Airasca
+001003 Ala di Stura
+001004 Albiano d'Ivrea
+001006 Almese
+001007 Alpette
+001008 Alpignano
+001009 Andezeno
+001010 Andrate
+001011 Angrogna
+001012 Arignano
+001013 Avigliana
+001014 Azeglio
+001015 Bairo
+001016 Balangero
+001017 Baldissero Canavese
+001018 Baldissero Torinese
+001019 Balme
+001020 Banchette
+001021 Barbania
+001022 Bardonecchia
+001023 Barone Canavese
+001024 Beinasco
+001025 Bibiana
+001026 Bobbio Pellice
+001027 Bollengo
+001028 Borgaro Torinese
+001029 Borgiallo
+001030 Borgofranco d'Ivrea
+001031 Borgomasino
+001032 Borgone Susa
+001033 Bosconero
+001034 Brandizzo
+001035 Bricherasio
+001036 Brosso
+001037 Brozolo
+001038 Bruino
+001039 Brusasco
+001040 Bruzolo
+001041 Buriasco
+001042 Burolo
+001043 Busano
+001044 Bussoleno
+001045 Buttigliera Alta
+001046 Cafasse
+001047 Caluso
+001048 Cambiano
+001049 Campiglione Fenile
+001050 Candia Canavese
+001051 Candiolo
+001052 Canischio
+001053 Cantalupa
+001054 Cantoira
+001055 Caprie
+001056 Caravino
+001057 Carema
+001058 Carignano
+001059 Carmagnola
+001060 Casalborgone
+001061 Cascinette d'Ivrea
+001062 Caselette
+001063 Caselle Torinese
+001064 Castagneto Po
+001065 Castagnole Piemonte
+001066 Castellamonte
+001067 Castelnuovo Nigra
+001068 Castiglione Torinese
+001069 Cavagnolo
+001070 Cavour
+001071 Cercenasco
+001072 Ceres
+001073 Ceresole Reale
+001074 Cesana Torinese
+001075 Chialamberto
+001076 Chianocco
+001077 Chiaverano
+001078 Chieri
+001079 Chiesanuova
+001080 Chiomonte
+001081 Chiusa di San Michele
+001082 Chivasso
+001083 Ciconio
+001084 Cintano
+001085 Cinzano
+001086 Ciriè
+001087 Claviere
+001088 Coassolo Torinese
+001089 Coazze
+001090 Collegno
+001091 Colleretto Castelnuovo
+001092 Colleretto Giacosa
+001093 Condove
+001094 Corio
+001095 Cossano Canavese
+001096 Cuceglio
+001097 Cumiana
+001098 Cuorgnè
+001099 Druento
+001100 Exilles
+001101 Favria
+001102 Feletto
+001103 Fenestrelle
+001104 Fiano
+001105 Fiorano Canavese
+001106 Foglizzo
+001107 Forno Canavese
+001108 Frassinetto
+001109 Front
+001110 Frossasco
+001111 Garzigliana
+001112 Gassino Torinese
+001113 Germagnano
+001114 Giaglione
+001115 Giaveno
+001116 Givoletto
+001117 Gravere
+001118 Groscavallo
+001119 Grosso
+001120 Grugliasco
+001121 Ingria
+001122 Inverso Pinasca
+001123 Isolabella
+001124 Issiglio
+001125 Ivrea
+001126 La Cassa
+001127 La Loggia
+001128 Lanzo Torinese
+001129 Lauriano
+001130 Leini
+001131 Lemie
+001132 Lessolo
+001133 Levone
+001134 Locana
+001135 Lombardore
+001136 Lombriasco
+001137 Loranzè
+001139 Luserna San Giovanni
+001140 Lusernetta
+001141 Lusigliè
+001142 Macello
+001143 Maglione
+001144 Marentino
+001145 Massello
+001146 Mathi
+001147 Mattie
+001148 Mazzè
+001149 Meana di Susa
+001150 Mercenasco
+001152 Mezzenile
+001153 Mombello di Torino
+001154 Mompantero
+001155 Monastero di Lanzo
+001156 Moncalieri
+001157 Moncenisio
+001158 Montaldo Torinese
+001159 Montalenghe
+001160 Montalto Dora
+001161 Montanaro
+001162 Monteu da Po
+001163 Moriondo Torinese
+001164 Nichelino
+001165 Noasca
+001166 Nole
+001167 Nomaglio
+001168 None
+001169 Novalesa
+001170 Oglianico
+001171 Orbassano
+001172 Orio Canavese
+001173 Osasco
+001174 Osasio
+001175 Oulx
+001176 Ozegna
+001177 Palazzo Canavese
+001178 Pancalieri
+001179 Parella
+001180 Pavarolo
+001181 Pavone Canavese
+001183 Pecetto Torinese
+001184 Perosa Argentina
+001185 Perosa Canavese
+001186 Perrero
+001187 Pertusio
+001188 Pessinetto
+001189 Pianezza
+001190 Pinasca
+001191 Pinerolo
+001192 Pino Torinese
+001193 Piobesi Torinese
+001194 Piossasco
+001195 Piscina
+001196 Piverone
+001197 Poirino
+001198 Pomaretto
+001199 Pont Canavese
+001200 Porte
+001201 Pragelato
+001202 Prali
+001203 Pralormo
+001204 Pramollo
+001205 Prarostino
+001206 Prascorsano
+001207 Pratiglione
+001208 Quagliuzzo
+001209 Quassolo
+001210 Quincinetto
+001211 Reano
+001212 Ribordone
+001213 Rivalba
+001214 Rivalta di Torino
+001215 Riva presso Chieri
+001216 Rivara
+001217 Rivarolo Canavese
+001218 Rivarossa
+001219 Rivoli
+001220 Robassomero
+001221 Rocca Canavese
+001222 Roletto
+001223 Romano Canavese
+001224 Ronco Canavese
+001225 Rondissone
+001226 Rorà
+001227 Roure
+001228 Rosta
+001229 Rubiana
+001230 Rueglio
+001231 Salassa
+001232 Salbertrand
+001233 Salerano Canavese
+001234 Salza di Pinerolo
+001235 Samone
+001236 San Benigno Canavese
+001237 San Carlo Canavese
+001238 San Colombano Belmonte
+001239 San Didero
+001240 San Francesco al Campo
+001241 Sangano
+001242 San Germano Chisone
+001243 San Gillio
+001244 San Giorgio Canavese
+001245 San Giorio di Susa
+001246 San Giusto Canavese
+001247 San Martino Canavese
+001248 San Maurizio Canavese
+001249 San Mauro Torinese
+001250 San Pietro Val Lemina
+001251 San Ponso
+001252 San Raffaele Cimena
+001253 San Sebastiano da Po
+001254 San Secondo di Pinerolo
+001255 Sant'Ambrogio di Torino
+001256 Sant'Antonino di Susa
+001257 Santena
+001258 Sauze di Cesana
+001259 Sauze d'Oulx
+001260 Scalenghe
+001261 Scarmagno
+001262 Sciolze
+001263 Sestriere
+001264 Settimo Rottaro
+001265 Settimo Torinese
+001266 Settimo Vittone
+001267 Sparone
+001268 Strambinello
+001269 Strambino
+001270 Susa
+001271 Tavagnasco
+001272 Torino
+001273 Torrazza Piemonte
+001274 Torre Canavese
+001275 Torre Pellice
+001276 Trana
+001278 Traversella
+001279 Traves
+001280 Trofarello
+001281 Usseaux
+001282 Usseglio
+001283 Vaie
+001284 Val della Torre
+001285 Valgioie
+001286 Vallo Torinese
+001287 Valperga
+001288 Valprato Soana
+001289 Varisella
+001290 Vauda Canavese
+001291 Venaus
+001292 Venaria Reale
+001293 Verolengo
+001294 Verrua Savoia
+001295 Vestignè
+001296 Vialfrè
+001298 Vidracco
+001299 Vigone
+001300 Villafranca Piemonte
+001301 Villanova Canavese
+001302 Villarbasse
+001303 Villar Dora
+001304 Villareggia
+001305 Villar Focchiardo
+001306 Villar Pellice
+001307 Villar Perosa
+001308 Villastellone
+001309 Vinovo
+001310 Virle Piemonte
+001311 Vische
+001312 Vistrorio
+001313 Viù
+001314 Volpiano
+001315 Volvera
+001316 Mappano
+001317 Val di Chy
+001318 Valchiusa

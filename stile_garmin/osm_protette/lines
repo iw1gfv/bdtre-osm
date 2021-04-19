@@ -1,0 +1,31 @@
+#	These style files are part of the BDTRE-OSM package.
+#	I refer to them as a 'program' in the licensing text below.
+
+#	Copyright (C) 2016  Galosso Lucio
+
+#	This program is free software: you can redistribute it and/or modify
+#	it under the terms of the GNU General Public License as published by
+#	the Free Software Foundation, either version 3 of the License, or
+#	(at your option) any later version.
+
+#	This program is distributed in the hope that it will be useful,
+#	but WITHOUT ANY WARRANTY; without even the implied warranty of
+#	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#	GNU General Public License for more details.
+
+#	You should have received a copy of the GNU General Public License
+#	along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+
+
+# Confini parchi nazionali e parchi (oasi, ecc)
+boundary=national_park | *=national_park		[0x10217 resolution 19 continue] 
+landuse=nature_reserve | boundary=nature_reserve | boundary=protected_area | landuse=protected_area	{set leisure=nature_reserve}
+leisure=nature_reserve		[0x10217 resolution 19 continue]
+
+
+<finalize>
+# The finalizer section is executed for each element when a rule with an element type matches
+include 'inc/access';
+name=* { name '${name}' }

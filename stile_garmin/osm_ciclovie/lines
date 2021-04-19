@@ -1,0 +1,56 @@
+#	These style files are part of the BDTRE-OSM package.
+#	I refer to them as a 'program' in the licensing text below.
+
+#	Copyright (C) 2016  Galosso Lucio
+
+#	This program is free software: you can redistribute it and/or modify
+#	it under the terms of the GNU General Public License as published by
+#	the Free Software Foundation, either version 3 of the License, or
+#	(at your option) any later version.
+
+#	This program is distributed in the hope that it will be useful,
+#	but WITHOUT ANY WARRANTY; without even the implied warranty of
+#	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#	GNU General Public License for more details.
+
+#	You should have received a copy of the GNU General Public License
+#	along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+
+
+highway=cycleway [0x19 resolution 22]
+
+
+# bicycle
+
+
+#icn_from_relation=yes 		{add mkgmap:label:1='${iref|highway-symbol:hbox}'}		[0x12 resolution 20 continue with_actions]
+icn_from_relation=yes 		{add mkgmap:label:1='${iname}'}					[0x10001 resolution 22 continue with_actions]
+
+#ncn_from_relation=yes 		{add mkgmap:label:1='${nref|highway-symbol:hbox}'} 		[0x12 resolution 20 continue with_actions]
+ncn_from_relation=yes 		{add mkgmap:label:1='${nname}'} 				[0x10001 resolution 22 continue with_actions]
+
+#rcn_from_relation=yes  		{add mkgmap:label:1='${rref|highway-symbol:hbox}'} 		[0x12 resolution 20 continue with_actions]
+rcn_from_relation=yes  		{add mkgmap:label:1='${rname}'} 				[0x10001 resolution 22 continue with_actions]
+
+#lcn_from_relation=yes  		{add mkgmap:label:1='${lref|highway-symbol:hbox}'}		[0x12 resolution 20 continue with_actions]
+lcn_from_relation=yes  		{add mkgmap:label:1='${lname}'}					[0x10001 resolution 22 continue with_actions]
+
+#tcn_from_relation=yes 		{add mkgmap:label:1='${tref|highway-symbol:hbox}'}		[0x12 resolution 20 continue with_actions]
+tcn_from_relation=yes 		{add mkgmap:label:1='${tname}'}					[0x10001 resolution 22 continue with_actions]
+
+#non_from_relation=yes 		{add mkgmap:label:1='${nonref|highway-symbol:hbox}'}		[0x12 resolution 20 continue with_actions]
+non_from_relation=yes 		{add mkgmap:label:1='${nonname}'}				[0x10001 resolution 22 continue with_actions]
+
+#ab_from_relation=yes 		{add mkgmap:label:1='${abref|highway-symbol:hbox}'}		[0x12 resolution 20 continue with_actions]
+ab_from_relation=yes 		{add mkgmap:label:1='${abname}'}				[0x10001 resolution 22 continue with_actions]
+
+#mtb_from_relation=yes 		{add mkgmap:label:1='${mref|highway-symbol:hbox}'}		[0x12 resolution 20 continue with_actions]
+mtb_from_relation=yes 		{add mkgmap:label:1='${mname}'}					[0x10001 resolution 22 continue with_actions]
+
+
+<finalize>
+# The finalizer section is executed for each element when a rule with an element type matches
+include 'inc/access';
+name=* { name '${name}' }

@@ -1,0 +1,31 @@
+#	These style files are part of the BDTRE-OSM package.
+#	I refer to them as a 'program' in the licensing text below.
+
+#	Copyright (C) 2016  Galosso Lucio
+
+#	This program is free software: you can redistribute it and/or modify
+#	it under the terms of the GNU General Public License as published by
+#	the Free Software Foundation, either version 3 of the License, or
+#	(at your option) any later version.
+
+#	This program is distributed in the hope that it will be useful,
+#	but WITHOUT ANY WARRANTY; without even the implied warranty of
+#	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#	GNU General Public License for more details.
+
+#	You should have received a copy of the GNU General Public License
+#	along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+
+
+
+#Piazzola elicotteri
+
+MAN_TR_TY='piattaforma decollo atterraggio elicotteri' & mkgmap:area2poi=true		[ 0x5904 resolution 21 ]
+
+#pe_uins
+
+PE_UINS_TY=campeggio & mkgmap:area2poi=true			[ 0x2b03 resolution 22 ]
+PE_UINS_TY='centrale energia solare' & mkgmap:area2poi=true	[ 0x7206 resolution 21 ]
+PE_UINS_TY='parco giochi' & mkgmap:area2poi=true		[ 0x1b01 resolution 23 ]

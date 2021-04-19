@@ -1,0 +1,15 @@
+Per la creazione del DTM (3D) per i navigatori Garmin servono i file HGT compilati e ricampionati di Sonny (https://data.opendataportal.at).
+
+Da https://data.opendataportal.at/dataset/dtm-italy/resource/dc159b15-a0a2-4b65-ae5b-f4aad851a74f (dati 1") dovete scaricare le piastrelle e metterle dentro questa cartella.
+
+N44E006.zip
+N44E007.zip
+N44E008.zip
+N44E009.zip
+N45E006.zip
+N45E007.zip
+N45E008.zip
+N45E009.zip
+N46E007.zip
+N46E008.zip
+N46E009.zip

@@ -1,0 +1,187 @@
+006001 Acqui Terme
+006002 Albera Ligure
+006003 Alessandria
+006004 Alfiano Natta
+006005 Alice Bel Colle
+006007 Altavilla Monferrato
+006008 Alzano Scrivia
+006009 Arquata Scrivia
+006010 Avolasca
+006011 Balzola
+006012 Basaluzzo
+006013 Bassignana
+006014 Belforte Monferrato
+006015 Bergamasco
+006016 Berzano di Tortona
+006017 Bistagno
+006018 Borghetto di Borbera
+006019 Borgoratto Alessandrino
+006020 Borgo San Martino
+006021 Bosco Marengo
+006022 Bosio
+006023 Bozzole
+006024 Brignano-Frascata
+006025 Cabella Ligure
+006026 Camagna Monferrato
+006027 Camino
+006028 Cantalupo Ligure
+006029 Capriata d'Orba
+006030 Carbonara Scrivia
+006031 Carentino
+006032 Carezzano
+006033 Carpeneto
+006034 Carrega Ligure
+006035 Carrosio
+006036 Cartosio
+006037 Casal Cermelli
+006038 Casaleggio Boiro
+006039 Casale Monferrato
+006040 Casalnoceto
+006041 Casasco
+006043 Cassine
+006044 Cassinelle
+006045 Castellania Coppi
+006046 Castellar Guidobono
+006047 Castellazzo Bormida
+006048 Castelletto d'Erro
+006049 Castelletto d'Orba
+006050 Castelletto Merli
+006051 Castelletto Monferrato
+006052 Castelnuovo Bormida
+006053 Castelnuovo Scrivia
+006054 Castelspina
+006055 Cavatore
+006056 Cella Monte
+006057 Cereseto
+006058 Cerreto Grue
+006059 Cerrina Monferrato
+006060 Coniolo
+006061 Conzano
+006062 Costa Vescovato
+006063 Cremolino
+006065 Denice
+006066 Dernice
+006067 Fabbrica Curone
+006068 Felizzano
+006069 Fraconalto
+006070 Francavilla Bisio
+006071 Frascaro
+006072 Frassinello Monferrato
+006073 Frassineto Po
+006074 Fresonara
+006075 Frugarolo
+006076 Fubine Monferrato
+006077 Gabiano
+006078 Gamalero
+006079 Garbagna
+006081 Gavi
+006082 Giarole
+006083 Gremiasco
+006084 Grognardo
+006085 Grondona
+006086 Guazzora
+006087 Isola Sant'Antonio
+006088 Lerma
+006090 Malvicino
+006091 Masio
+006092 Melazzo
+006093 Merana
+006094 Mirabello Monferrato
+006095 Molare
+006096 Molino dei Torti
+006097 Mombello Monferrato
+006098 Momperone
+006099 Moncestino
+006100 Mongiardino Ligure
+006101 Monleale
+006102 Montacuto
+006103 Montaldeo
+006104 Montaldo Bormida
+006105 Montecastello
+006106 Montechiaro d'Acqui
+006107 Montegioco
+006108 Montemarzino
+006109 Morano sul Po
+006110 Morbello
+006111 Mornese
+006112 Morsasco
+006113 Murisengo
+006114 Novi Ligure
+006115 Occimiano
+006116 Odalengo Grande
+006117 Odalengo Piccolo
+006118 Olivola
+006119 Orsara Bormida
+006120 Ottiglio
+006121 Ovada
+006122 Oviglio
+006123 Ozzano Monferrato
+006124 Paderna
+006125 Pareto
+006126 Parodi Ligure
+006127 Pasturana
+006128 Pecetto di Valenza
+006129 Pietra Marazzi
+006131 Pomaro Monferrato
+006132 Pontecurone
+006133 Pontestura
+006134 Ponti
+006135 Ponzano Monferrato
+006136 Ponzone
+006137 Pozzol Groppo
+006138 Pozzolo Formigaro
+006139 Prasco
+006140 Predosa
+006141 Quargnento
+006142 Quattordio
+006143 Ricaldone
+006144 Rivalta Bormida
+006145 Rivarone
+006146 Roccaforte Ligure
+006147 Rocca Grimalda
+006148 Rocchetta Ligure
+006149 Rosignano Monferrato
+006150 Sala Monferrato
+006151 Sale
+006152 San Cristoforo
+006153 San Giorgio Monferrato
+006154 San Salvatore Monferrato
+006155 San Sebastiano Curone
+006156 Sant'Agata Fossili
+006157 Sardigliano
+006158 Sarezzano
+006159 Serralunga di Crea
+006160 Serravalle Scrivia
+006161 Sezzadio
+006162 Silvano d'Orba
+006163 Solero
+006164 Solonghello
+006165 Spigno Monferrato
+006166 Spineto Scrivia
+006167 Stazzano
+006168 Strevi
+006169 Tagliolo Monferrato
+006170 Tassarolo
+006171 Terruggia
+006172 Terzo
+006173 Ticineto
+006174 Tortona
+006175 Treville
+006176 Trisobbio
+006177 Valenza
+006178 Valmacca
+006179 Vignale Monferrato
+006180 Vignole Borbera
+006181 Viguzzolo
+006182 Villadeati
+006183 Villalvernia
+006184 Villamiroglio
+006185 Villanova Monferrato
+006186 Villaromagnano
+006187 Visone
+006188 Volpedo
+006189 Volpeglino
+006190 Voltaggio
+006191 Cassano Spinola
+006192 Alluvioni Piovera
+006193 Lu e Cuccaro Monferrato

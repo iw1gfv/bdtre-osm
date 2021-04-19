@@ -1,0 +1,53 @@
+#	These style files are part of the BDTRE-OSM package.
+#	I refer to them as a 'program' in the licensing text below.
+
+#	Copyright (C) 2016  Galosso Lucio
+
+#	This program is free software: you can redistribute it and/or modify
+#	it under the terms of the GNU General Public License as published by
+#	the Free Software Foundation, either version 3 of the License, or
+#	(at your option) any later version.
+
+#	This program is distributed in the hope that it will be useful,
+#	but WITHOUT ANY WARRANTY; without even the implied warranty of
+#	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#	GNU General Public License for more details.
+
+#	You should have received a copy of the GNU General Public License
+#	along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+
+
+
+#Edificato minore
+EDI_MIN_TY=cappella & mkgmap:area2poi=true     		{ name 'cappella ${EDI_MIN_TY}'}[ 0x2c0b resolution 22 ]
+EDI_MIN_TY='torre, porta' & mkgmap:area2poi=true	{ name '${EDI_MIN_TY}'}		[ 0x6411 resolution 20 ]
+
+
+#Edificato
+EDIFC_USO=municipio & mkgmap:area2poi=true				{ name '${EDIFC_NOME}'}		[ 0x3003 resolution 22 ]
+EDIFC_USO=museo & mkgmap:area2poi=true 					{ name '${EDIFC_NOME}'}		[ 0x2c02 resolution 22 ]
+EDIFC_USO='sede di scuola' & mkgmap:area2poi=true			{ name '${EDIFC_NOME}'}		[ 0x2c05 resolution 22 ]
+EDIFC_USO=istruzione & mkgmap:area2poi=true				{ name '${EDIFC_NOME}'}		[ 0x2c05 resolution 22 ]
+EDIFC_USO=biblioteca & mkgmap:area2poi=true				{ name '${EDIFC_NOME}'}		[ 0x2c03 resolution 24 ]
+EDIFC_USO=campeggio & mkgmap:area2poi=true				{ name '${EDIFC_NOME}'}		[ 0x2b03 resolution 22 ]
+EDIFC_USO='centrale elettrica' & mkgmap:area2poi=true			{ name '${EDIFC_NOME}'}		[ 0x7200 resolution 22 ]
+EDIFC_USO=cinema & mkgmap:area2poi=true					{ name '${EDIFC_NOME}'}		[ 0x2d03 resolution 24 ]
+EDIFC_USO='rifugio montano' & mkgmap:area2poi=true			{ name '${EDIFC_NOME}'}		[ 0x2b08 resolution 22 ]
+#EDIFC_USO=sanit & mkgmap:area2poi=true					{ name '${EDIFC_NOME}'}		[ 0x3002 resolution 22 ]
+EDIFC_USO='sede clinica' & mkgmap:area2poi=true				{ name '${EDIFC_NOME}'}		[ 0x3002 resolution 22 ]
+EDIFC_USO="sede di forze dell'ordine" & mkgmap:area2poi=true		{ name '${EDIFC_NOME}'}		[ 0x3001 resolution 22 ]
+EDIFC_USO='sede di poste-telegrafi' & mkgmap:area2poi=true		{ name '${EDIFC_NOME}'}		[ 0x2f05 resolution 22 ]
+EDIFC_USO='sede di supermercato, ipermercato' & mkgmap:area2poi=true	{ name '${EDIFC_NOME}'}		[ 0x2e10 resolution 22 ]
+EDIFC_USO='sede di vigili del fuoco' & mkgmap:area2poi=true		{ name '${EDIFC_NOME}'}		[ 0x3008 resolution 22 ]
+EDIFC_USO='sede di ospedale' & mkgmap:area2poi=true			{ name '${EDIFC_NOME}'}		[ 0x3002 resolution 22 ]
+EDIFC_USO='teatro, auditorium' & mkgmap:area2poi=true			{ name '${EDIFC_NOME}'}		[ 0x2c09 resolution 24 ]
+EDIFC_USO=commerciale & mkgmap:area2poi=true				{ name '${EDIFC_NOME}'}		[ 0x2e04 resolution 22 ]
+EDIFC_USO='sede di centro commerciale' & mkgmap:area2poi=true		{ name '${EDIFC_NOME}'}		[ 0x2e04 resolution 22 ]
+EDIFC_TY=chiesa & mkgmap:area2poi=true					{ name '${EDIFC_NOME}'}		[ 0x2c0b resolution 22 ]
+EDIFC_TY=campanile & mkgmap:area2poi=true				{ name '${EDIFC_NOME}'}		[ 0x5b00 resolution 20 ]
+
+
+#pe_uins
+PE_UINS_TY='struttura scolastica' & mkgmap:area2poi=true			[ 0x2c05 resolution 22 ]

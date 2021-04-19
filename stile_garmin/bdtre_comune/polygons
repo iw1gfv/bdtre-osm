@@ -1,7 +1,7 @@
 #	These style files are part of the BDTRE-OSM package.
 #	I refer to them as a 'program' in the licensing text below.
 
-#	Copyright (C) 2018  Galosso Lucio
+#	Copyright (C) 2016  Galosso Lucio
 
 #	This program is free software: you can redistribute it and/or modify
 #	it under the terms of the GNU General Public License as published by
@@ -21,5 +21,5 @@
 
 #Comune
 
-ENTE_FOR=ISTAT		   { name '${COMUNE_NOM}'}   	[ 0x02 resolution 21 ]
-ENTE_FOR='REGIONE PIEMONTE'	   { name '${COMUNE_NOM}'}   	[ 0x02 resolution 21 ]
+ENTE_FOR=ISTAT			{ name '${COMUNE_NOM}'}   	[ 0x02 resolution 21 ]
+ENTE_FOR='REGIONE PIEMONTE'	{ name '${COMUNE_NOM}'}   	[ 0x02 resolution 21 ]

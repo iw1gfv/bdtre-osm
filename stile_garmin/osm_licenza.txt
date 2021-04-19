@@ -1,8 +1,5 @@
-openstreetmap data: © OpenStreetMap contributors, www.openstreetmap.org
-
-OpenStreetMap® è open data, e i suoi dati sono distribuiti con licenza Open Data Commons Open Database License (ODbL) dalla OpenStreetMap Foundation (OSMF).
-
-Sei libero di copiare, distribuire, trasmettere e adattare i nostri dati, finché lo attribuisci a OpenStreetMap e ai suoi contributori. Se alteri o ti basi sui nostri dati, puoi distribuire il risultato solo sotto la stessa licenza. Il codice legale completo illustra i tuoi diritti e le tue responsabilità.
+openstreetmap data: (c) OpenStreetMap.org contributors, see http://wiki.openstreetmap.org/index.php/attribution
+openstreetmap data are licensed under Open Database License, see www.opendatacommons.org/licenses/odbl
 
 La mappa BDTRE-OSM è rilasciata con licenza Creative Commons CC-BY-NC-SA 4.0 (Attribuzione - Non commerciale - Condividi allo stesso modo 4.0 Internazionale),
 il testo completo è disponibile all'indirizzo http://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
